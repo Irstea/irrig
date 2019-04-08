@@ -1,0 +1,22 @@
+Options +FollowSymLinks
+Options -MultiViews
+RewriteEngine on
+
+# Assure content type
+AddType application/rdf+xml .rdf
+AddType application/rdf+xml .owl
+addType text/turtle .ttl
+
+# Rewrite rules for CASOO
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml.*(text/html|application/xhtml\+xml|text/\*|\*/\*)
+RewriteCond %{HTTP_ACCEPT} text/html [OR]
+RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml 
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.*
+RewriteRule ^$ https://github.com/Irstea/irrig  [R=303,NE,L]
+RewriteCond %{HTTP_ACCEPT} ^.*application/rdf\+xml.* 
+RewriteRule ^$ https://github.com/Irstea/irrig.owl [R=303,NE,L]
+RewriteCond %{HTTP_ACCEPT} ^.*text/turtle.* 
+RewriteRule ^$ https://github.com/Irstea/irrig.ttl [R=303,NE,L]
+
+#default response: owl
+RewriteRule ^$ https://github.com/Irstea/irrig.owl [R=303,NE,L]
