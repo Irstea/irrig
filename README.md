@@ -5,7 +5,7 @@ Specific Irrigation Ontology for the experimentation in Irstea, center Clermont 
 ----
 
 **Name**: irrig  
-**URL**: <https://w3id.org/obs4agri/irrig#>  
+**URL**: <https://w3id.org/irrig#>  
 **Link to**: <https://github.com/Irstea/irrig>  
   
 ### Contact:  
