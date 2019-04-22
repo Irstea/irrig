@@ -89,6 +89,147 @@
     
 
 
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericValue">
+        <rdfs:label xml:lang="en">has numeric value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:label xml:lang="en">has unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology.irstea.fr/casoo#greaterThan -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology.irstea.fr/casoo#greaterThan">
+        <rdfs:domain rdf:resource="http://www.ontology.irstea.fr/casoo#State"/>
+        <rdfs:range rdf:resource="http://www.ontology.irstea.fr/casoo#State"/>
+        <rdfs:comment xml:lang="en">Relation between a casoo:State and another casoo:State. The first State is greater than the second State in the sense of qualitative or chronological.</rdfs:comment>
+        <rdfs:label xml:lang="en">greater than</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology.irstea.fr/casoo#greaterThanOrEqualTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology.irstea.fr/casoo#greaterThanOrEqualTo">
+        <rdfs:domain rdf:resource="http://www.ontology.irstea.fr/casoo#State"/>
+        <rdfs:range rdf:resource="http://www.ontology.irstea.fr/casoo#State"/>
+        <rdfs:comment xml:lang="en">Relation between a casoo:State and another casoo:State. The first State is greater than or equal to the second State in the sense of qualitative or chronological.</rdfs:comment>
+        <rdfs:label xml:lang="en">greater than or equal to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology.irstea.fr/casoo#hasBoundary -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology.irstea.fr/casoo#hasBoundary">
+        <rdfs:domain rdf:resource="http://www.ontology.irstea.fr/casoo#State"/>
+        <rdfs:range rdf:resource="http://www.ontology.irstea.fr/casoo#Boundary"/>
+        <rdfs:comment xml:lang="en">Relation linking a casoo:State and a casoo:Boundary. The casoo:Boundary contains a value representing a limit of a state.</rdfs:comment>
+        <rdfs:label xml:lang="en">has boundary</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology.irstea.fr/casoo#hasResultState -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology.irstea.fr/casoo#hasResultState">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/sosa/hasResult"/>
+        <rdfs:domain rdf:resource="http://www.ontology.irstea.fr/casoo#Deduction"/>
+        <rdfs:range rdf:resource="http://www.ontology.irstea.fr/casoo#State"/>
+        <rdfs:comment xml:lang="en">Relation between a casoo:Deduction and a caso:State. The casoo:Deduction has a result in the form of a  casoo:State.</rdfs:comment>
+        <rdfs:label xml:lang="en">has result state</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology.irstea.fr/casoo#hasState -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology.irstea.fr/casoo#hasState">
+        <rdfs:domain rdf:resource="http://www.ontology.irstea.fr/casoo#Property"/>
+        <rdfs:range rdf:resource="http://www.ontology.irstea.fr/casoo#State"/>
+        <rdfs:comment xml:lang="en">Relation between a casoo:Property and casoo:State of the Property</rdfs:comment>
+        <rdfs:label xml:lang="en">has state</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology.irstea.fr/casoo#hasValidTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology.irstea.fr/casoo#hasValidTime">
+        <rdfs:domain rdf:resource="http://www.ontology.irstea.fr/casoo#Deduction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment xml:lang="en">Interval or instant that represents a period or a moment that an entity linked to a state by a deduction.</rdfs:comment>
+        <rdfs:label xml:lang="en">has valid time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology.irstea.fr/casoo#lesserThan -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology.irstea.fr/casoo#lesserThan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.ontology.irstea.fr/casoo#State"/>
+        <rdfs:range rdf:resource="http://www.ontology.irstea.fr/casoo#State"/>
+        <rdfs:comment xml:lang="en">Relation between a casoo:State and another casoo:State. The first State is lesser than the second State in the sense of qualitative or chronological.</rdfs:comment>
+        <rdfs:label xml:lang="en">lesser than</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology.irstea.fr/casoo#lesserThanOrEqualTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology.irstea.fr/casoo#lesserThanOrEqualTo">
+        <rdfs:domain rdf:resource="http://www.ontology.irstea.fr/casoo#State"/>
+        <rdfs:range rdf:resource="http://www.ontology.irstea.fr/casoo#State"/>
+        <rdfs:comment xml:lang="en">Relation between a casoo:State and another casoo:State. The first State is lesser than or equal to the second State in the sense of qualitative or chronological.</rdfs:comment>
+        <rdfs:label xml:lang="en">lesser than or equal to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology.irstea.fr/casoo#triggersFunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology.irstea.fr/casoo#triggersFunction">
+        <rdfs:domain rdf:resource="http://www.ontology.irstea.fr/casoo#Actuation"/>
+        <rdfs:range rdf:resource="https://w3id.org/saref#Function"/>
+        <rdfs:comment xml:lang="en">Relation between a casoo:Actuation and a saref:Function. The casoo:Actuation trigger the operation of a saref:Function.</rdfs:comment>
+        <rdfs:label xml:lang="en">triggers function</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
+        <rdfs:domain rdf:resource="http://www.ontology.irstea.fr/casoo#Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:comment xml:lang="en">A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">was derived from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy">
+        <rdfs:domain rdf:resource="http://www.ontology.irstea.fr/casoo#Actuation"/>
+        <rdfs:range rdf:resource="http://www.ontology.irstea.fr/casoo#Deduction"/>
+        <rdfs:comment xml:lang="en">Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation.</rdfs:comment>
+        <rdfs:label xml:lang="en">was influence by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.w3.org/ns/sosa/actsOnProperty -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/actsOnProperty">
@@ -281,9 +422,21 @@
     
 
 
+    <!-- http://www.w3.org/ns/ssn/isProxyFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/isProxyFor"/>
+    
+
+
     <!-- http://www.w3.org/ns/ssn/wasOriginatedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/wasOriginatedBy"/>
+    
+
+
+    <!-- https://w3id.org/saref#actsUpon -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/saref#actsUpon"/>
     
 
 
@@ -296,6 +449,18 @@
         <rdfs:comment>A relationship between an entity (such as a function) and a command</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/saref#"/>
         <rdfs:label>has command</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/saref#hasFunction -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/saref#hasFunction">
+        <rdfs:domain rdf:resource="https://w3id.org/saref#Device"/>
+        <rdfs:range rdf:resource="https://w3id.org/saref#Function"/>
+        <rdfs:comment>A relationship identifying the type of function of a device</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/saref#"/>
+        <rdfs:label>has function</rdfs:label>
     </owl:ObjectProperty>
     
 
