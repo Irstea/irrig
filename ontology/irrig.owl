@@ -79,6 +79,52 @@
     
 
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericValue">
+        <rdfs:label xml:lang="en">has numeric value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:label xml:lang="en">has unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">
+        <rdfs:label xml:lang="en">has numerical value</rdfs:label>
+    </owl:DatatypeProperty>
+    
 
 
     <!-- 
@@ -88,6 +134,17 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/Unit -->
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit">
+        <rdfs:comment xml:lang="en">A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called &quot;metre&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">unit</rdfs:label>
+    </owl:Class>
+    
 
 
     <!-- http://www.w3id.org/def/irrig#CropGrowthBoundary -->
@@ -316,19 +373,6 @@
         <rdfs:label xml:lang="en">A sensor o system that measure weather conditions.</rdfs:label>
         <rdfs:label xml:lang="en">Weather station</rdfs:label>
     </owl:Class>
-    
-
-
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
 </rdf:RDF>
 
 
