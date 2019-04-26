@@ -27,6 +27,7 @@
         <dc:title xml:lang="en">Irrigation Ontology for experimentation in TSCF, Irstea Clermont-Fd.</dc:title>
         <vann:preferredNamespacePrefix>irrig</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/def/irrig#</vann:preferredNamespaceUri>
+        <terms:contributor>https://orcid.org/0000-0002-0421-452X</terms:contributor>
         <owl:versionInfo>1.0.0</owl:versionInfo>
         <terms:contributor rdf:resource="http://orcid.org/0000-0002-7011-4535"/>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
