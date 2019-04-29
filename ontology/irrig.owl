@@ -227,6 +227,14 @@
     
 
 
+    <!-- http://www.w3id.org/def/irrig#IntensityProperty -->
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#IntensityProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3id.org/def/irrig#IrrigationActuation -->
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#IrrigationActuation">
@@ -243,6 +251,14 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
         <rdfs:comment xml:lang="en">Property dedicated to the moisture in the soil.</rdfs:comment>
         <rdfs:label xml:lang="en">Moisture property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#RainIntensittyState -->
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#RainIntensittyState">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/casoo#State"/>
     </owl:Class>
     
 
@@ -374,6 +390,369 @@
         <rdfs:label xml:lang="en">A sensor o system that measure weather conditions.</rdfs:label>
         <rdfs:label xml:lang="en">Weather station</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#FeatureOfInterest_Air -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#FeatureOfInterest_Air">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#FeatureOfInterest_Crop -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#FeatureOfInterest_Crop">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#FeatureOfInterest_Rain -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#FeatureOfInterest_Rain">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#FeatureOfInterest_RootZone -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#FeatureOfInterest_RootZone">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#FeatureOfInterest_Soil30cmDepth -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil30cmDepth">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#FeatureOfInterest_Soil60cmDepth -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil60cmDepth">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#ObservableProperty_Air_MaxTemperaturePerDay -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Air_MaxTemperaturePerDay">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#ObservableProperty_Air_MinTemperaturePerDay -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Air_MinTemperaturePerDay">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#ObservableProperty_Air_Temperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Air_Temperature">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#ObservableProperty_Crop_Growth -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Crop_Growth">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#GrowthPorperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#ObservableProperty_Crop_Stage -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Crop_Stage">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#ObservableProperty_Crop_WaterNeed -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Crop_WaterNeed">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#StressProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#ObservableProperty_Rain_Intensity -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Rain_Intensity">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#IntensityProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#ObservableProperty_Rain_Quantity -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Rain_Quantity">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#ObservableProperty_Rain_TotalQuantityPerDay -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Rain_TotalQuantityPerDay">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#ObservableProperty_RootZone_AverageMoisturePerDay -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_RootZone_AverageMoisturePerDay">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#ObservableProperty_RootZone_MoistureLevel -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_RootZone_MoistureLevel">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#MoistureProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_AverageMoisturePerDay -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_AverageMoisturePerDay">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_Moisture -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_Moisture">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_AverageMoisturePerDay -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_AverageMoisturePerDay">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_Moisture -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_Moisture">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_Crop_Growth_Init -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_Growth_Init">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_Crop_Growth_R1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_Growth_R1">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_Crop_Growth_R1d15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_Growth_R1d15">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_Crop_Growth_R5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_Growth_R5">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_Crop_Growth_R5hg45 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_Growth_R5hg45">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_Crop_Growth_V2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_Growth_V2">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_Crop_Growth_V7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_Growth_V7">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_Crop_Growth_V7d25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_Growth_V7d25">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_Crop_WaterNeed_No -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_WaterNeed_No">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropWaterNeedState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_Crop_WaterNeed_Wait -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_WaterNeed_Wait">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropWaterNeedState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_Crop_WaterNeed_Yes -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_WaterNeed_Yes">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropWaterNeedState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_Crop_WaterNeed_init -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_WaterNeed_init">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropWaterNeedState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_Rain_Intensity_Heavy -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Rain_Intensity_Heavy">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensittyState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_Rain_Intensity_Light -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Rain_Intensity_Light">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensittyState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_Rain_Intensity_Moderate -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Rain_Intensity_Moderate">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensittyState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Average -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Average">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Dry -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Dry">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_High -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_High">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Init -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Init">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Low">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Saturated -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Saturated">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_VeryHigh -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_VeryHigh">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_VeryLow -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_VeryLow">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
