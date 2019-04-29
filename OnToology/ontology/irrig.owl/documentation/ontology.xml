@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.w3id.org/def/irrig/"
-     xml:base="http://www.w3id.org/def/irrig/"
+<rdf:RDF xmlns="http://www.w3id.org/def/irrig#"
+     xml:base="http://www.w3id.org/def/irrig"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,14 +9,13 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="http://schema.org/">
-    <owl:Ontology rdf:about="http://www.w3id.org/def/irrig/">
-        <owl:versionIRI rdf:resource="http://www.w3id.org/def/irrig/1.0/"/>
-        <owl:imports rdf:resource="http://www.w3id.org/def/1.0/caso/"/>
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.w3id.org/def/irrig">
+        <owl:versionIRI rdf:resource="http://www.w3id.org/def/1.0/irrig"/>
+        <owl:imports rdf:resource="http://www.w3id.org/def/1.0/caso"/>
         <dc:description xml:lang="en">IRRIG is an Irrigation Ontology for experimentation in TSCF, Irstea Clermont-Fd.</dc:description>
         <dc:publisher rdf:resource="https://www.irstea.fr/en/research/research-units/tscf"/>
-        <dc:title xml:lang="en">Irrigation Ontology for experimentation in TSCF, Irstea Clermont-Fd</dc:title>
+        <dc:title xml:lang="en">Irrigation ontology for experimentation in TSCF</dc:title>
         <terms:contributor rdf:resource="http://orcid.org/0000-0002-7011-4535"/>
         <terms:contributor>https://orcid.org/0000-0002-0421-452X</terms:contributor>
         <terms:creator rdf:resource="http://purl.org/net/mpoveda"/>
@@ -39,20 +38,6 @@
      -->
 
 
-    
-
-
-    <!-- http://schema.org/domainIncludes -->
-
-
-    <owl:AnnotationProperty rdf:about="http://schema.org/domainIncludes"/>
-    
-
-
-    <!-- http://schema.org/rangeIncludes -->
-
-
-    <owl:AnnotationProperty rdf:about="http://schema.org/rangeIncludes"/>
     
 
 

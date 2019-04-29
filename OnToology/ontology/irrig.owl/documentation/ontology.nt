@@ -1,18 +1,18 @@
-<http://www.w3id.org/def/irrig/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.w3id.org/def/irrig/> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3id.org/def/irrig/1.0/> .
-<http://www.w3id.org/def/irrig/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3id.org/def/1.0/caso/> .
-<http://www.w3id.org/def/irrig/> <http://purl.org/dc/elements/1.1/description> "IRRIG is an Irrigation Ontology for experimentation in TSCF, Irstea Clermont-Fd."@en .
-<http://www.w3id.org/def/irrig/> <http://purl.org/dc/elements/1.1/publisher> <https://www.irstea.fr/en/research/research-units/tscf> .
-<http://www.w3id.org/def/irrig/> <http://purl.org/dc/elements/1.1/title> "Irrigation Ontology for experimentation in TSCF, Irstea Clermont-Fd"@en .
-<http://www.w3id.org/def/irrig/> <http://purl.org/dc/terms/contributor> <http://orcid.org/0000-0002-7011-4535> .
-<http://www.w3id.org/def/irrig/> <http://purl.org/dc/terms/contributor> "https://orcid.org/0000-0002-0421-452X" .
-<http://www.w3id.org/def/irrig/> <http://purl.org/dc/terms/creator> <http://purl.org/net/mpoveda> .
-<http://www.w3id.org/def/irrig/> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-3076-5499> .
-<http://www.w3id.org/def/irrig/> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-3517-0945> .
-<http://www.w3id.org/def/irrig/> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
-<http://www.w3id.org/def/irrig/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "irrig" .
-<http://www.w3id.org/def/irrig/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/def/irrig#" .
-<http://www.w3id.org/def/irrig/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<http://www.w3id.org/def/irrig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3id.org/def/irrig> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3id.org/def/1.0/irrig> .
+<http://www.w3id.org/def/irrig> <http://www.w3.org/2002/07/owl#imports> <http://www.w3id.org/def/1.0/caso> .
+<http://www.w3id.org/def/irrig> <http://purl.org/dc/elements/1.1/description> "IRRIG is an Irrigation Ontology for experimentation in TSCF, Irstea Clermont-Fd."@en .
+<http://www.w3id.org/def/irrig> <http://purl.org/dc/elements/1.1/publisher> <https://www.irstea.fr/en/research/research-units/tscf> .
+<http://www.w3id.org/def/irrig> <http://purl.org/dc/elements/1.1/title> "Irrigation ontology for experimentation in TSCF"@en .
+<http://www.w3id.org/def/irrig> <http://purl.org/dc/terms/contributor> <http://orcid.org/0000-0002-7011-4535> .
+<http://www.w3id.org/def/irrig> <http://purl.org/dc/terms/contributor> "https://orcid.org/0000-0002-0421-452X" .
+<http://www.w3id.org/def/irrig> <http://purl.org/dc/terms/creator> <http://purl.org/net/mpoveda> .
+<http://www.w3id.org/def/irrig> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-3076-5499> .
+<http://www.w3id.org/def/irrig> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-3517-0945> .
+<http://www.w3id.org/def/irrig> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
+<http://www.w3id.org/def/irrig> <http://purl.org/vocab/vann/preferredNamespacePrefix> "irrig" .
+<http://www.w3id.org/def/irrig> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/def/irrig#" .
+<http://www.w3id.org/def/irrig> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
 # 
 # 
 # #################################################################
@@ -21,12 +21,6 @@
 # #
 # #################################################################
 # 
-# 
-# http://schema.org/domainIncludes
-<http://schema.org/domainIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://schema.org/rangeIncludes
-<http://schema.org/rangeIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
