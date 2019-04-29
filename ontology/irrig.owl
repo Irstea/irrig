@@ -19,11 +19,11 @@
      xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:sosa="http://www.w3.org/ns/sosa/">
-    <owl:Ontology rdf:about="http://www.w3id.org/def/irrig/">
-        <owl:versionIRI rdf:resource="http://www.w3id.org/def/irrig/1.0/"/>
-        <owl:imports rdf:resource="http://www.w3id.org/def/1.0/caso/"/>
+    <owl:Ontology rdf:about="http://www.w3id.org/def/irrig">
+        <owl:versionIRI rdf:resource="http://www.w3id.org/def/1.0/irrig"/>
+        <owl:imports rdf:resource="http://www.w3id.org/def/1.0/caso"/>
         <terms:creator rdf:resource="http://purl.org/net/mpoveda"/>
-        <dc:title xml:lang="en">Irrigation Ontology for experimentation in TSCF, Irstea Clermont-Fd</dc:title>
+        <dc:title xml:lang="en">Irrigation ontology for experimentation in TSCF</dc:title>
         <vann:preferredNamespacePrefix>irrig</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/def/irrig#</vann:preferredNamespaceUri>
         <terms:contributor>https://orcid.org/0000-0002-0421-452X</terms:contributor>
