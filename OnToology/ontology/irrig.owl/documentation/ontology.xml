@@ -1,0 +1,466 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3id.org/def/irrig/"
+     xml:base="http://www.w3id.org/def/irrig/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="http://www.w3id.org/def/irrig/">
+        <owl:versionIRI rdf:resource="http://www.w3id.org/def/irrig/1.0/"/>
+        <owl:imports rdf:resource="http://www.w3id.org/def/1.0/casoo/"/>
+        <dc:publisher rdf:resource="https://www.irstea.fr/en/research/research-units/tscf"/>
+        <dc:title xml:lang="en">Irrigation Ontology for experimentation in TSCF, Irstea Clermont-Fd.</dc:title>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-7011-4535"/>
+        <terms:contributor>https://orcid.org/0000-0002-0421-452X</terms:contributor>
+        <terms:creator rdf:resource="http://purl.org/net/mpoveda"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-3076-5499"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-3517-0945"/>
+        <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <vann:preferredNamespacePrefix>irrig</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/def/irrig#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">IRRIG is an Irrigation Ontology for experimentation in TSCF, Irstea Clermont-Fd.</rdfs:comment>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/domainIncludes"/>
+    
+
+
+    <!-- http://schema.org/rangeIncludes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/rangeIncludes"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericValue -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericValue">
+        <rdfs:label xml:lang="en">has numeric value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:label xml:lang="en">has unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">
+        <rdfs:label xml:lang="en">has numerical value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/Unit -->
+
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit">
+        <rdfs:comment xml:lang="en">A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called &quot;metre&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/Property -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/Property"/>
+    
+
+
+    <!-- http://www.w3id.org/def/casoo#Actuation -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/casoo#Actuation"/>
+    
+
+
+    <!-- http://www.w3id.org/def/casoo#Boundary -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/casoo#Boundary"/>
+    
+
+
+    <!-- http://www.w3id.org/def/casoo#Deduction -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/casoo#Deduction"/>
+    
+
+
+    <!-- http://www.w3id.org/def/casoo#Observation -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/casoo#Observation"/>
+    
+
+
+    <!-- http://www.w3id.org/def/casoo#State -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/casoo#State"/>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#CropGrowthBoundary -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#CropGrowthBoundary">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/casoo#Boundary"/>
+        <rdfs:comment xml:lang="en">Limits to define a crop growth state and distinguish this state to other states.</rdfs:comment>
+        <rdfs:label xml:lang="en">Crop Growth Boundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#CropGrowthDeduction -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#CropGrowthDeduction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/casoo#Deduction"/>
+        <rdfs:comment xml:lang="en">The inference result that determine the crop growth state at a specific time.</rdfs:comment>
+        <rdfs:label xml:lang="en">Crop Growth Deduction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#CropGrowthObservation -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#CropGrowthObservation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/casoo#Observation"/>
+        <rdfs:comment xml:lang="en">The act that a sensor carries out an crop growth observation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Crop growth observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#CropGrowthState -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#CropGrowthState">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/casoo#State"/>
+        <rdfs:comment xml:lang="en">Situation that a crop growth property has qualitative data that distinguish with other situations. This is a definitive class including the following states: init, v2, v7, v7d25, r1, r1d15, r5, r5hg45.</rdfs:comment>
+        <rdfs:label xml:lang="en">Crop Growth State</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#CropWaterNeedBoundary -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#CropWaterNeedBoundary">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/casoo#Boundary"/>
+        <rdfs:comment xml:lang="en">Limits to define a crop water need state and distinguish this state to other states.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#CropWaterNeedDeduction -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#CropWaterNeedDeduction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/casoo#Deduction"/>
+        <rdfs:comment xml:lang="en">The inference result that determine the crop water need state at a specific time.</rdfs:comment>
+        <rdfs:label xml:lang="en">Crop Water Need Deduction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#CropWaterNeedState -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#CropWaterNeedState">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/casoo#State"/>
+        <rdfs:comment xml:lang="en">Situation that a crop water need property has qualitative data that distinguish with other situations. This is a definitive class including the following states: init, no, yes, wait.</rdfs:comment>
+        <rdfs:label xml:lang="en">Crop Water Need State</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#GrowthPorperty -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#GrowthPorperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:comment xml:lang="en">Property dedicated to the growth of plants.</rdfs:comment>
+        <rdfs:label xml:lang="en">Growth property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#IrrigationActuation -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#IrrigationActuation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/casoo#Actuation"/>
+        <rdfs:comment xml:lang="en">The act that an actuator carries out an irrigation action.</rdfs:comment>
+        <rdfs:label xml:lang="en">Irrigation actuation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#MoistureProperty -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#MoistureProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:comment xml:lang="en">Property dedicated to the moisture in the soil.</rdfs:comment>
+        <rdfs:label xml:lang="en">Moisture property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/casoo#Boundary"/>
+        <rdfs:comment xml:lang="en">Limits to define a root zone moisture level state and distinguish this state to other states.</rdfs:comment>
+        <rdfs:label xml:lang="en">Root Zone Moisture Level Boundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#RootZoneMoistureLevelDeduction -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#RootZoneMoistureLevelDeduction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/casoo#Deduction"/>
+        <rdfs:comment xml:lang="en">The inference result that determine the rootzone moisture level state at a specific time.</rdfs:comment>
+        <rdfs:label xml:lang="en">Root Zone Moisture Level Deduction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#RootZoneMoistureLevelState -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/casoo#State"/>
+        <rdfs:comment xml:lang="en">Situation that a root zone moisture level has qualitative data that distinguish with other situation. This is a definitive class including the following states: init, saturated, very high, high, average, low, very low, dry.</rdfs:comment>
+        <rdfs:label xml:lang="en">Root Zone Moisture Level State</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#RootZoneMoisturePerDayObservation -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#RootZoneMoisturePerDayObservation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/casoo#Observation"/>
+        <rdfs:comment xml:lang="en">The act that a sensor carries out an root zone moisture per day observation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Root zone moisture per day observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#Soil30cmDepthAverageMoisturePerDayObservation -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#Soil30cmDepthAverageMoisturePerDayObservation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/casoo#Observation"/>
+        <rdfs:comment xml:lang="en">The act that a sensor carries out an average moisture per day observation at 30 cmp depth soil.</rdfs:comment>
+        <rdfs:label xml:lang="en">Soil 30cm Depth Average Moisture Per Day Observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#Soil30cmDepthMoistureObservation -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#Soil30cmDepthMoistureObservation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/casoo#Observation"/>
+        <rdfs:comment xml:lang="en">The act that a sensor carries out a moisture observation at 30 cm depth soil.</rdfs:comment>
+        <rdfs:label xml:lang="en">Soil 30cm Depth Moisture Observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#Soil60cmDepthAverageMoisturePerDayObservation -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#Soil60cmDepthAverageMoisturePerDayObservation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/casoo#Observation"/>
+        <rdfs:comment xml:lang="en">The act that a sensor carries out an average moisture per day observation at 60 cmp depth soil.</rdfs:comment>
+        <rdfs:label xml:lang="en">Soil 60cm Depth Average Moisture Per Day Observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#Soil60cmDepthMoistureObservation -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#Soil60cmDepthMoistureObservation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/casoo#Observation"/>
+        <rdfs:comment xml:lang="en">The act that a sensor carries out a moisture observation at 60 cm depth soil.</rdfs:comment>
+        <rdfs:label xml:lang="en">Soil 60cm Depth Moisture Observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#StressProperty -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#StressProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:comment xml:lang="en">Property dedicated to the stress of plants.</rdfs:comment>
+        <rdfs:label xml:lang="en">Stress property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4agri#Pluviometer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4agri#Pluviometer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Sensor"/>
+        <rdfs:label xml:lang="en">A sensor that measures the rain fall.</rdfs:label>
+        <rdfs:label xml:lang="en">Pluviometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4agri#SoilTensiometer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4agri#SoilTensiometer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Sensor"/>
+        <rdfs:label xml:lang="en">A sensor that measures the soil moisture.</rdfs:label>
+        <rdfs:label xml:lang="en">Soil tensiometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4agri#WateringValve -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4agri#WateringValve">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Actuator"/>
+        <rdfs:comment xml:lang="en">An actuator that open the water valve.</rdfs:comment>
+        <rdfs:label xml:lang="en">WateringValve</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4agri#WeatherStation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4agri#WeatherStation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Sensor"/>
+        <rdfs:label xml:lang="en">A sensor o system that measure weather conditions.</rdfs:label>
+        <rdfs:label xml:lang="en">Weather station</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/saref#Actuator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/saref#Actuator"/>
+    
+
+
+    <!-- https://w3id.org/saref#Sensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/saref#Sensor"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/ -->
+
+
