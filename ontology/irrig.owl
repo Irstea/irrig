@@ -9,10 +9,11 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ssn="http://www.w3.org/ns/ssn/"
      xmlns:saref4agri="https://w3id.org/def/saref4agri#"
+     xmlns:caso="http://www.w3id.org/def/caso#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:caso="http://www.w3id.org/def/caso#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:irrig="http://www.w3id.org/def/irrig#"
      xmlns:time="http://www.w3.org/2006/time#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:prov="http://www.w3.org/ns/prov#"
@@ -22,17 +23,17 @@
     <owl:Ontology rdf:about="http://www.w3id.org/def/irrig">
         <owl:versionIRI rdf:resource="http://www.w3id.org/def/1.0/irrig"/>
         <owl:imports rdf:resource="http://www.w3id.org/def/1.0/caso"/>
-        <terms:creator rdf:resource="https://orcid.org/0000-0002-3076-5499"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0003-3587-0367"/>
-        <dc:title xml:lang="en">Irrigation ontology for experimentation in TSCF</dc:title>
         <vann:preferredNamespacePrefix>irrig</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/def/irrig#</vann:preferredNamespaceUri>
         <terms:contributor>https://orcid.org/0000-0002-0421-452X</terms:contributor>
         <owl:versionInfo>1.0.0</owl:versionInfo>
+        <dc:description xml:lang="en">IRRIG is an Irrigation Ontology for experimentation in TSCF, Irstea Clermont-Fd.</dc:description>
         <terms:contributor rdf:resource="http://orcid.org/0000-0002-7011-4535"/>
+        <dc:title xml:lang="en">Irrigation ontology for experimentation in TSCF</dc:title>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-3517-0945"/>
-        <dc:description xml:lang="en">IRRIG is an Irrigation Ontology for experimentation in TSCF, Irstea Clermont-Fd.</dc:description>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-3076-5499"/>
         <dc:publisher rdf:resource="https://www.irstea.fr/en/research/research-units/tscf"/>
     </owl:Ontology>
     
@@ -47,6 +48,8 @@
      -->
 
     
+
+
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
