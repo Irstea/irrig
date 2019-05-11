@@ -300,7 +300,9 @@
                                                                   ) ;
                                                rdf:type owl:Class
                                              ] ;
-                         rdfs:subClassOf <http://www.w3id.org/def/caso#Observation> .
+                         rdfs:subClassOf <http://www.w3id.org/def/caso#Observation> ;
+                         rdfs:comment "The act that a sensor carries out an rain quantity observation."@en ;
+                         rdfs:label "Rain Quantity Observation"@en .
 
 
 ###  http://www.w3id.org/def/irrig#RainTotalQuantityPerDayObservation
@@ -317,7 +319,9 @@
                                                                              ) ;
                                                           rdf:type owl:Class
                                                         ] ;
-                                    rdfs:subClassOf <http://www.w3id.org/def/caso#Observation> .
+                                    rdfs:subClassOf <http://www.w3id.org/def/caso#Observation> ;
+                                    rdfs:comment "The act that a sensor carries out a total rain quantity per day observation."@en ;
+                                    rdfs:label "Rain Total Quantity Per Day Observation"@en .
 
 
 ###  http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary
@@ -492,7 +496,14 @@
 <https://w3id.org/def/saref4agri#SoilTensiometer> rdf:type owl:Class ;
                                                   rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
                                                   rdfs:comment "A sensor that measures the soil moisture."@en ;
-                                                  rdfs:label "Soil tensiometer"@en .
+                                                  rdfs:label "Soil Tensiometer"@en .
+
+
+###  https://w3id.org/def/saref4agri#Thermometer
+<https://w3id.org/def/saref4agri#Thermometer> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
+                                              rdfs:comment "A sensor that measure weather conditions."@en ;
+                                              rdfs:label "Thermometer"@en .
 
 
 ###  https://w3id.org/def/saref4agri#WateringValve
@@ -500,13 +511,6 @@
                                                 rdfs:subClassOf <https://w3id.org/saref#Actuator> ;
                                                 rdfs:comment "An actuator that open the water valve."@en ;
                                                 rdfs:label "WateringValve"@en .
-
-
-###  https://w3id.org/def/saref4agri#WeatherStation
-<https://w3id.org/def/saref4agri#WeatherStation> rdf:type owl:Class ;
-                                                 rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
-                                                 rdfs:comment "A sensor that measure weather conditions."@en ;
-                                                 rdfs:label "Weather station"@en .
 
 
 #################################################################

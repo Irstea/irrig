@@ -351,6 +351,8 @@ _:genid58 <http://www.w3.org/2002/07/owl#hasValue> <http://www.w3id.org/def/irri
 _:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3id.org/def/irrig#RainQuantityObservation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/caso#Observation> .
+<http://www.w3id.org/def/irrig#RainQuantityObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "The act that a sensor carries out an rain quantity observation."@en .
+<http://www.w3id.org/def/irrig#RainQuantityObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Rain Quantity Observation"@en .
 # 
 # http://www.w3id.org/def/irrig#RainTotalQuantityPerDayObservation
 <http://www.w3id.org/def/irrig#RainTotalQuantityPerDayObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -373,6 +375,8 @@ _:genid64 <http://www.w3.org/2002/07/owl#hasValue> <http://www.w3id.org/def/irri
 _:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3id.org/def/irrig#RainTotalQuantityPerDayObservation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/caso#Observation> .
+<http://www.w3id.org/def/irrig#RainTotalQuantityPerDayObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "The act that a sensor carries out a total rain quantity per day observation."@en .
+<http://www.w3id.org/def/irrig#RainTotalQuantityPerDayObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Rain Total Quantity Per Day Observation"@en .
 # 
 # http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary
 <http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -586,19 +590,19 @@ _:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://w3id.org/def/saref4agri#SoilTensiometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/saref4agri#SoilTensiometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Sensor> .
 <https://w3id.org/def/saref4agri#SoilTensiometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that measures the soil moisture."@en .
-<https://w3id.org/def/saref4agri#SoilTensiometer> <http://www.w3.org/2000/01/rdf-schema#label> "Soil tensiometer"@en .
+<https://w3id.org/def/saref4agri#SoilTensiometer> <http://www.w3.org/2000/01/rdf-schema#label> "Soil Tensiometer"@en .
+# 
+# https://w3id.org/def/saref4agri#Thermometer
+<https://w3id.org/def/saref4agri#Thermometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/saref4agri#Thermometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Sensor> .
+<https://w3id.org/def/saref4agri#Thermometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that measure weather conditions."@en .
+<https://w3id.org/def/saref4agri#Thermometer> <http://www.w3.org/2000/01/rdf-schema#label> "Thermometer"@en .
 # 
 # https://w3id.org/def/saref4agri#WateringValve
 <https://w3id.org/def/saref4agri#WateringValve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/saref4agri#WateringValve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Actuator> .
 <https://w3id.org/def/saref4agri#WateringValve> <http://www.w3.org/2000/01/rdf-schema#comment> "An actuator that open the water valve."@en .
 <https://w3id.org/def/saref4agri#WateringValve> <http://www.w3.org/2000/01/rdf-schema#label> "WateringValve"@en .
-# 
-# https://w3id.org/def/saref4agri#WeatherStation
-<https://w3id.org/def/saref4agri#WeatherStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/saref4agri#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Sensor> .
-<https://w3id.org/def/saref4agri#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that measure weather conditions."@en .
-<https://w3id.org/def/saref4agri#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#label> "Weather station"@en .
 # 
 # 
 # 

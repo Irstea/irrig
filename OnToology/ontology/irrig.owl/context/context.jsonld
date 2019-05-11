@@ -61,6 +61,9 @@
       "@id" : "http://www.w3id.org/def/caso#hasOpenLowerBoundary",
       "@type" : "@id"
     },
+    "Thermometer" : {
+      "@id" : "https://w3id.org/def/saref4agri#Thermometer"
+    },
     "RainQuantityObservation" : {
       "@id" : "http://www.w3id.org/def/irrig#RainQuantityObservation"
     },
@@ -162,9 +165,6 @@
     "hasUnit" : {
       "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit",
       "@type" : "@id"
-    },
-    "WeatherStation" : {
-      "@id" : "https://w3id.org/def/saref4agri#WeatherStation"
     },
     "State" : {
       "@id" : "http://www.w3id.org/def/caso#State"

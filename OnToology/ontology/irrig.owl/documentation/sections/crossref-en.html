@@ -54,15 +54,11 @@ This section provides details for each class and property defined by Irrigation 
       </li>
       <li>
          <a href="#RainQuantityObservation"
-            title="http://www.w3id.org/def/irrig#RainQuantityObservation">
-            <span>rain quantity observation</span>
-         </a>
+            title="http://www.w3id.org/def/irrig#RainQuantityObservation">Rain Quantity Observation</a>
       </li>
       <li>
          <a href="#RainTotalQuantityPerDayObservation"
-            title="http://www.w3id.org/def/irrig#RainTotalQuantityPerDayObservation">
-            <span>rain total quantity per day observation</span>
-         </a>
+            title="http://www.w3id.org/def/irrig#RainTotalQuantityPerDayObservation">Rain Total Quantity Per Day Observation</a>
       </li>
       <li>
          <a href="#RootZoneMoistureLevelBoundary"
@@ -97,10 +93,13 @@ This section provides details for each class and property defined by Irrigation 
             title="http://www.w3id.org/def/irrig#Soil60cmDepthMoistureObservation">Soil 60cm Depth Moisture Observation</a>
       </li>
       <li>
-         <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil tensiometer</a>
+         <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil Tensiometer</a>
       </li>
       <li>
          <a href="#StressProperty" title="http://www.w3id.org/def/irrig#StressProperty">Stress property</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/saref4agri#Thermometer" title="https://w3id.org/def/saref4agri#Thermometer">Thermometer</a>
       </li>
       <li>
          <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
@@ -108,9 +107,6 @@ This section provides details for each class and property defined by Irrigation 
       </li>
       <li>
          <a href="#https://w3id.org/def/saref4agri#WateringValve" title="https://w3id.org/def/saref4agri#WateringValve">WateringValve</a>
-      </li>
-      <li>
-         <a href="#https://w3id.org/def/saref4agri#WeatherStation" title="https://w3id.org/def/saref4agri#WeatherStation">Weather station</a>
       </li>
    </ul>
    <div class="entity" id="CropGrowthDeduction">
@@ -534,12 +530,15 @@ This section provides details for each class and property defined by Irrigation 
       </dl>
    </div>
    <div class="entity" id="RainQuantityObservation">
-      <h3>rain quantity observation<sup class="type-c" title="class">c</sup>
+      <h3>Rain Quantity Observation<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#RainQuantityObservation</p>
+      <div class="comment">
+         <span class="markdown">The act that a sensor carries out an rain quantity observation.</span>
+      </div>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -558,12 +557,15 @@ This section provides details for each class and property defined by Irrigation 
       </dl>
    </div>
    <div class="entity" id="RainTotalQuantityPerDayObservation">
-      <h3>rain total quantity per day observation<sup class="type-c" title="class">c</sup>
+      <h3>Rain Total Quantity Per Day Observation<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#RainTotalQuantityPerDayObservation</p>
+      <div class="comment">
+         <span class="markdown">The act that a sensor carries out a total rain quantity per day observation.</span>
+      </div>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -842,7 +844,7 @@ This section provides details for each class and property defined by Irrigation 
       </dl>
    </div>
    <div class="entity" id="https://w3id.org/def/saref4agri#SoilTensiometer">
-      <h3>Soil tensiometer<sup class="type-c" title="class">c</sup>
+      <h3>Soil Tensiometer<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -891,6 +893,23 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="https://w3id.org/def/saref4agri#Thermometer">
+      <h3>Thermometer<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/saref4agri#Thermometer</p>
+      <div class="comment">
+         <span class="markdown">A sensor that measure weather conditions.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/saref#Sensor">sensor</span>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit">
       <h3>Unit<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -929,23 +948,6 @@ This section provides details for each class and property defined by Irrigation 
          <dd>
             <a href="#Valve_01" title="http://www.w3id.org/def/irrig#Valve_01">valve 01</a>
             <sup class="type-ni" title="named individual">ni</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="https://w3id.org/def/saref4agri#WeatherStation">
-      <h3>Weather station<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/saref4agri#WeatherStation</p>
-      <div class="comment">
-         <span class="markdown">A sensor that measure weather conditions.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <span class="dotted" title="https://w3id.org/saref#Sensor">sensor</span>
          </dd>
       </dl>
    </div>
@@ -1974,7 +1976,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil tensiometer</a>
+            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil Tensiometer</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1989,7 +1991,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil tensiometer</a>
+            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil Tensiometer</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2004,7 +2006,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil tensiometer</a>
+            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil Tensiometer</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2019,7 +2021,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil tensiometer</a>
+            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil Tensiometer</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2034,7 +2036,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil tensiometer</a>
+            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil Tensiometer</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2049,7 +2051,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil tensiometer</a>
+            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil Tensiometer</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
