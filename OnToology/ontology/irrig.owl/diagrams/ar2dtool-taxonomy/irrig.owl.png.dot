@@ -1,0 +1,33 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "irrig:RootZoneMoistureLevelBoundary" "saref4agri:WateringValve" "irrig:CropWaterNeedState" "saref4agri:Pluviometer" "irrig:Soil30cmDepthAverageMoisturePerDayObservation" "irrig:CropGrowthDeduction" "irrig:RootZoneMoisturePerDayObservation" "irrig:RootZoneMoistureLevelDeduction" "irrig:MoistureProperty" "irrig:RootZoneMoistureLevelState" "irrig:RainIntensityDeduction" "irrig:Soil60cmDepthAverageMoisturePerDayObservation" "irrig:GrowthProperty" "irrig:RainIntensityBoundary" "irrig:RainTotalQuantityPerDayObservation" "irrig:CropWaterNeedDeduction" "irrig:Soil30cmDepthMoistureObservation" "irrig:CropGrowthObservation" "irrig:IrrigationActuation" "irrig:IntensityProperty" "saref4agri:Thermometer" "irrig:Soil60cmDepthMoistureObservation" "irrig:CropGrowthState" "saref4agri:SoilTensiometer" "irrig:StressProperty" "irrig:RainIntensittyState" "irrig:RainQuantityObservation" ; /*classes style*/
+	"irrig:RainIntensityBoundary" -> "caso:Boundary" [ label = "rdfs:subClassOf" ];
+	"irrig:RainIntensityDeduction" -> "caso:Deduction" [ label = "rdfs:subClassOf" ];
+	"irrig:RootZoneMoistureLevelDeduction" -> "caso:Deduction" [ label = "rdfs:subClassOf" ];
+	"irrig:RainTotalQuantityPerDayObservation" -> "caso:Observation" [ label = "rdfs:subClassOf" ];
+	"irrig:Soil60cmDepthMoistureObservation" -> "caso:Observation" [ label = "rdfs:subClassOf" ];
+	"irrig:IrrigationActuation" -> "caso:Actuation" [ label = "rdfs:subClassOf" ];
+	"irrig:CropWaterNeedState" -> "caso:State" [ label = "rdfs:subClassOf" ];
+	"irrig:StressProperty" -> "ssn:Property" [ label = "rdfs:subClassOf" ];
+	"irrig:RainIntensittyState" -> "caso:State" [ label = "rdfs:subClassOf" ];
+	"saref4agri:Thermometer" -> "saref:Sensor" [ label = "rdfs:subClassOf" ];
+	"irrig:CropGrowthState" -> "caso:State" [ label = "rdfs:subClassOf" ];
+	"irrig:CropGrowthObservation" -> "caso:Observation" [ label = "rdfs:subClassOf" ];
+	"irrig:RainQuantityObservation" -> "caso:Observation" [ label = "rdfs:subClassOf" ];
+	"saref4agri:SoilTensiometer" -> "saref:Sensor" [ label = "rdfs:subClassOf" ];
+	"irrig:Soil30cmDepthAverageMoisturePerDayObservation" -> "caso:Observation" [ label = "rdfs:subClassOf" ];
+	"irrig:Soil60cmDepthAverageMoisturePerDayObservation" -> "caso:Observation" [ label = "rdfs:subClassOf" ];
+	"irrig:GrowthProperty" -> "ssn:Property" [ label = "rdfs:subClassOf" ];
+	"irrig:CropWaterNeedDeduction" -> "caso:Deduction" [ label = "rdfs:subClassOf" ];
+	"irrig:MoistureProperty" -> "ssn:Property" [ label = "rdfs:subClassOf" ];
+	"irrig:RootZoneMoistureLevelState" -> "caso:State" [ label = "rdfs:subClassOf" ];
+	"irrig:RootZoneMoisturePerDayObservation" -> "caso:Observation" [ label = "rdfs:subClassOf" ];
+	"irrig:IntensityProperty" -> "ssn:Property" [ label = "rdfs:subClassOf" ];
+	"irrig:CropGrowthDeduction" -> "caso:Deduction" [ label = "rdfs:subClassOf" ];
+	"saref4agri:WateringValve" -> "saref:Actuator" [ label = "rdfs:subClassOf" ];
+	"irrig:Soil30cmDepthMoistureObservation" -> "caso:Observation" [ label = "rdfs:subClassOf" ];
+	"saref4agri:Pluviometer" -> "saref:Sensor" [ label = "rdfs:subClassOf" ];
+	"irrig:RootZoneMoistureLevelBoundary" -> "caso:Boundary" [ label = "rdfs:subClassOf" ];
+
+}
