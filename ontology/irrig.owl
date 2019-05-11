@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.w3id.org/def/irrig#"
+<rdf:RDF xmlns="http://www.w3id.org/def/irrig"
      xml:base="http://www.w3id.org/def/irrig"
      xmlns:schema="http://schema.org/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -22,7 +22,7 @@
      xmlns:sosa="http://www.w3.org/ns/sosa/">
     <owl:Ontology rdf:about="http://www.w3id.org/def/irrig">
         <owl:versionIRI rdf:resource="http://www.w3id.org/def/irrig/201905"/>
-        <owl:imports rdf:resource="http://www.w3id.org/def/1.0/caso"/>
+        <owl:imports rdf:resource="https://irstea.github.io/caso/OnToology/ontology/caso.owl/documentation/ontology.xml"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0003-3587-0367"/>
         <vann:preferredNamespacePrefix>irrig</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/def/irrig#</vann:preferredNamespaceUri>
@@ -131,7 +131,7 @@
 
     <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit">
         <rdfs:comment xml:lang="en">A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called &quot;metre&quot;.</rdfs:comment>
-        <rdfs:label xml:lang="en">unit</rdfs:label>
+        <rdfs:label xml:lang="en">Unit</rdfs:label>
     </owl:Class>
     
 
@@ -181,6 +181,7 @@
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#CropWaterNeedBoundary">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Boundary"/>
         <rdfs:comment xml:lang="en">Limits to define a crop water need state and distinguish this state to other states.</rdfs:comment>
+        <rdfs:label xml:lang="en">Crop Water Need Boundary</rdfs:label>
     </owl:Class>
     
 
@@ -219,6 +220,8 @@
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#IntensityProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:comment xml:lang="en">Property dedicated to the intensity of rainfall.</rdfs:comment>
+        <rdfs:label xml:lang="en">Intensity property</rdfs:label>
     </owl:Class>
     
 
@@ -247,6 +250,8 @@
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#RainIntensittyState">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#State"/>
+        <rdfs:comment xml:lang="en">Situation that a rain intensity level has qualitative data that distinguish with other situation. This is a definitive class including the following states: init, light, moderate, heavy.</rdfs:comment>
+        <rdfs:label xml:lang="en">Rain Intensity State</rdfs:label>
     </owl:Class>
     
 
@@ -345,7 +350,7 @@
 
     <owl:Class rdf:about="https://w3id.org/def/saref4agri#Pluviometer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Sensor"/>
-        <rdfs:label xml:lang="en">A sensor that measures the rain fall.</rdfs:label>
+        <rdfs:comment xml:lang="en">A sensor that measures the rain fall.</rdfs:comment>
         <rdfs:label xml:lang="en">Pluviometer</rdfs:label>
     </owl:Class>
     
@@ -355,7 +360,7 @@
 
     <owl:Class rdf:about="https://w3id.org/def/saref4agri#SoilTensiometer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Sensor"/>
-        <rdfs:label xml:lang="en">A sensor that measures the soil moisture.</rdfs:label>
+        <rdfs:comment xml:lang="en">A sensor that measures the soil moisture.</rdfs:comment>
         <rdfs:label xml:lang="en">Soil tensiometer</rdfs:label>
     </owl:Class>
     
@@ -375,7 +380,7 @@
 
     <owl:Class rdf:about="https://w3id.org/def/saref4agri#WeatherStation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Sensor"/>
-        <rdfs:label xml:lang="en">A sensor o system that measure weather conditions.</rdfs:label>
+        <rdfs:comment xml:lang="en">A sensor that measure weather conditions.</rdfs:comment>
         <rdfs:label xml:lang="en">Weather station</rdfs:label>
     </owl:Class>
     
