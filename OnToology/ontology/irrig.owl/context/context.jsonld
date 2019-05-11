@@ -1,0 +1,218 @@
+{
+  "@context" : {
+    "CropGrowthState" : {
+      "@id" : "http://www.w3id.org/def/irrig#CropGrowthState"
+    },
+    "hasClosedUpperBoundary" : {
+      "@id" : "http://www.w3id.org/def/caso#hasClosedUpperBoundary",
+      "@type" : "@id"
+    },
+    "Unit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "SoilTensiometer" : {
+      "@id" : "https://w3id.org/def/saref4agri#SoilTensiometer"
+    },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "Platform" : {
+      "@id" : "http://www.w3.org/ns/sosa/Platform"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Soil60cmDepthMoistureObservation" : {
+      "@id" : "http://www.w3id.org/def/irrig#Soil60cmDepthMoistureObservation"
+    },
+    "RootZoneMoisturePerDayObservation" : {
+      "@id" : "http://www.w3id.org/def/irrig#RootZoneMoisturePerDayObservation"
+    },
+    "IntensityProperty" : {
+      "@id" : "http://www.w3id.org/def/irrig#IntensityProperty"
+    },
+    "StressProperty" : {
+      "@id" : "http://www.w3id.org/def/irrig#StressProperty"
+    },
+    "hosts" : {
+      "@id" : "http://www.w3.org/ns/sosa/hosts",
+      "@type" : "@id"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
+    },
+    "CropGrowthObservation" : {
+      "@id" : "http://www.w3id.org/def/irrig#CropGrowthObservation"
+    },
+    "hasOpenUpperBoundary" : {
+      "@id" : "http://www.w3id.org/def/caso#hasOpenUpperBoundary",
+      "@type" : "@id"
+    },
+    "domainIncludes" : {
+      "@id" : "http://schema.org/domainIncludes"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasOpenLowerBoundary" : {
+      "@id" : "http://www.w3id.org/def/caso#hasOpenLowerBoundary",
+      "@type" : "@id"
+    },
+    "Thermometer" : {
+      "@id" : "https://w3id.org/def/saref4agri#Thermometer"
+    },
+    "RainQuantityObservation" : {
+      "@id" : "http://www.w3id.org/def/irrig#RainQuantityObservation"
+    },
+    "MoistureProperty" : {
+      "@id" : "http://www.w3id.org/def/irrig#MoistureProperty"
+    },
+    "GrowthProperty" : {
+      "@id" : "http://www.w3id.org/def/irrig#GrowthProperty"
+    },
+    "Boundary" : {
+      "@id" : "http://www.w3id.org/def/caso#Boundary"
+    },
+    "RootZoneMoistureLevelBoundary" : {
+      "@id" : "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"
+    },
+    "note" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "RootZoneMoistureLevelState" : {
+      "@id" : "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "WateringValve" : {
+      "@id" : "https://w3id.org/def/saref4agri#WateringValve"
+    },
+    "hasClosedLowerBoundary" : {
+      "@id" : "http://www.w3id.org/def/caso#hasClosedLowerBoundary",
+      "@type" : "@id"
+    },
+    "rangeIncludes" : {
+      "@id" : "http://schema.org/rangeIncludes"
+    },
+    "Soil30cmDepthMoistureObservation" : {
+      "@id" : "http://www.w3id.org/def/irrig#Soil30cmDepthMoistureObservation"
+    },
+    "RainTotalQuantityPerDayObservation" : {
+      "@id" : "http://www.w3id.org/def/irrig#RainTotalQuantityPerDayObservation"
+    },
+    "hasNumericalValue" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "CropWaterNeedDeduction" : {
+      "@id" : "http://www.w3id.org/def/irrig#CropWaterNeedDeduction"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "RainIntensityBoundary" : {
+      "@id" : "http://www.w3id.org/def/irrig#RainIntensityBoundary"
+    },
+    "RainIntensittyState" : {
+      "@id" : "http://www.w3id.org/def/irrig#RainIntensittyState"
+    },
+    "Soil30cmDepthAverageMoisturePerDayObservation" : {
+      "@id" : "http://www.w3id.org/def/irrig#Soil30cmDepthAverageMoisturePerDayObservation"
+    },
+    "Property" : {
+      "@id" : "http://www.w3.org/ns/ssn/Property"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "Deduction" : {
+      "@id" : "http://www.w3id.org/def/caso#Deduction"
+    },
+    "CropWaterNeedState" : {
+      "@id" : "http://www.w3id.org/def/irrig#CropWaterNeedState"
+    },
+    "hasNumericValue" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericValue",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "Pluviometer" : {
+      "@id" : "https://w3id.org/def/saref4agri#Pluviometer"
+    },
+    "hasFeatureOfInterest" : {
+      "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
+      "@type" : "@id"
+    },
+    "observedProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/observedProperty",
+      "@type" : "@id"
+    },
+    "hasUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit",
+      "@type" : "@id"
+    },
+    "State" : {
+      "@id" : "http://www.w3id.org/def/caso#State"
+    },
+    "RootZoneMoistureLevelDeduction" : {
+      "@id" : "http://www.w3id.org/def/irrig#RootZoneMoistureLevelDeduction"
+    },
+    "Actuator" : {
+      "@id" : "https://w3id.org/saref#Actuator"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "ObservableProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "System" : {
+      "@id" : "http://www.w3.org/ns/ssn/System"
+    },
+    "CropGrowthDeduction" : {
+      "@id" : "http://www.w3id.org/def/irrig#CropGrowthDeduction"
+    },
+    "IrrigationActuation" : {
+      "@id" : "http://www.w3id.org/def/irrig#IrrigationActuation"
+    },
+    "Soil60cmDepthAverageMoisturePerDayObservation" : {
+      "@id" : "http://www.w3id.org/def/irrig#Soil60cmDepthAverageMoisturePerDayObservation"
+    },
+    "Actuation" : {
+      "@id" : "http://www.w3id.org/def/caso#Actuation"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "RainIntensityDeduction" : {
+      "@id" : "http://www.w3id.org/def/irrig#RainIntensityDeduction"
+    },
+    "Observation" : {
+      "@id" : "http://www.w3id.org/def/caso#Observation"
+    },
+    "Sensor" : {
+      "@id" : "https://w3id.org/saref#Sensor"
+    }
+  }
+}
