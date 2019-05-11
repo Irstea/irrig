@@ -1,0 +1,846 @@
+@prefix : <http://www.w3id.org/def/irrig#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3id.org/def/irrig> .
+
+<http://www.w3id.org/def/irrig> rdf:type owl:Ontology ;
+                                 owl:versionIRI <http://www.w3id.org/def/irrig/201905> ;
+                                 owl:imports <https://irstea.github.io/caso/OnToology/ontology/caso.owl/documentation/ontology.xml> ;
+                                 <http://purl.org/dc/elements/1.1/description> "IRRIG is an Irrigation Ontology for experimentation in TSCF, Irstea Clermont-Fd."@en ;
+                                 <http://purl.org/dc/elements/1.1/publisher> <https://www.irstea.fr/en/research/research-units/tscf> ;
+                                 <http://purl.org/dc/elements/1.1/title> "Irrigation ontology for experimentation in TSCF"@en ;
+                                 <http://purl.org/dc/terms/contributor> <http://orcid.org/0000-0002-7011-4535> ,
+                                                                        "https://orcid.org/0000-0002-0421-452X" ;
+                                 <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-3076-5499> ,
+                                                                    <https://orcid.org/0000-0002-3517-0945> ,
+                                                                    <https://orcid.org/0000-0003-3587-0367> ;
+                                 <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
+                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "irrig" ;
+                                 <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/def/irrig#" ;
+                                 owl:versionInfo "1.0.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericValue
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericValue> rdf:type owl:ObjectProperty ;
+                                                                            rdfs:label "has numeric value"@en .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                    rdfs:range <http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> ;
+                                                                    rdfs:label "has unit"@en .
+
+
+###  http://www.w3.org/ns/sosa/hosts
+<http://www.w3.org/ns/sosa/hosts> rdf:type owl:ObjectProperty ;
+                                  <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Platform> ;
+                                  <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Actuator> ,
+                                                                    <http://www.w3.org/ns/sosa/Platform> ,
+                                                                    <http://www.w3.org/ns/sosa/Sampler> ,
+                                                                    <http://www.w3.org/ns/sosa/Sensor> ;
+                                  rdfs:comment "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it."@en ;
+                                  rdfs:isDefinedBy <http://www.w3.org/ns/sosa/> ;
+                                  rdfs:label "hosts"@en ;
+                                  <http://www.w3.org/2004/02/skos/core#definition> "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it."@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:label "has numerical value"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/Unit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> rdf:type owl:Class ;
+                                                                 rdfs:comment "A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called \"metre\"."@en ;
+                                                                 rdfs:label "Unit"@en .
+
+
+###  http://www.w3.org/ns/sosa/Platform
+<http://www.w3.org/ns/sosa/Platform> rdf:type owl:Class ;
+                                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://www.w3.org/ns/sosa/hosts> ;
+                                                       owl:allValuesFrom <http://www.w3.org/ns/ssn/System>
+                                                     ] ;
+                                     rdfs:comment "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."@en ;
+                                     rdfs:isDefinedBy <http://www.w3.org/ns/sosa/> ;
+                                     rdfs:label "Platform"@en ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."@en ;
+                                     <http://www.w3.org/2004/02/skos/core#example> "A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators."@en .
+
+
+###  http://www.w3id.org/def/irrig#CropGrowthDeduction
+:CropGrowthDeduction rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( <http://www.w3id.org/def/caso#Deduction>
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
+                                                                  owl:hasValue :FeatureOfInterest_Crop
+                                                                ]
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+                                                                  owl:hasValue :ObservableProperty_Crop_Growth
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:subClassOf <http://www.w3id.org/def/caso#Deduction> ;
+                     rdfs:comment "The inference result that determine the crop growth state at a specific time."@en ;
+                     rdfs:label "Crop Growth Deduction"@en .
+
+
+###  http://www.w3id.org/def/irrig#CropGrowthObservation
+:CropGrowthObservation rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( <http://www.w3id.org/def/caso#Observation>
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
+                                                                    owl:hasValue :FeatureOfInterest_Crop
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+                                                                    owl:hasValue :ObservableProperty_Crop_Stage
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                       rdfs:subClassOf <http://www.w3id.org/def/caso#Observation> ;
+                       rdfs:comment "The act that a sensor carries out an crop growth observation."@en ;
+                       rdfs:label "Crop growth observation"@en .
+
+
+###  http://www.w3id.org/def/irrig#CropGrowthState
+:CropGrowthState rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3id.org/def/caso#State> ;
+                 rdfs:comment "Situation that a crop growth property has qualitative data that distinguish with other situations. This is a definitive class including the following states: init, v2, v7, v7d25, r1, r1d15, r5, r5hg45."@en ;
+                 rdfs:label "Crop Growth State"@en .
+
+
+###  http://www.w3id.org/def/irrig#CropWaterNeedDeduction
+:CropWaterNeedDeduction rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( <http://www.w3id.org/def/caso#Deduction>
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
+                                                                     owl:hasValue :FeatureOfInterest_Crop
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+                                                                     owl:hasValue :ObservableProperty_Crop_WaterNeed
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        rdfs:subClassOf <http://www.w3id.org/def/caso#Deduction> ;
+                        rdfs:comment "The inference result that determine the crop water need state at a specific time."@en ;
+                        rdfs:label "Crop Water Need Deduction"@en .
+
+
+###  http://www.w3id.org/def/irrig#CropWaterNeedState
+:CropWaterNeedState rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.w3id.org/def/caso#State> ;
+                    rdfs:comment "Situation that a crop water need property has qualitative data that distinguish with other situations. This is a definitive class including the following states: init, no, yes, wait."@en ;
+                    rdfs:label "Crop Water Need State"@en .
+
+
+###  http://www.w3id.org/def/irrig#GrowthProperty
+:GrowthProperty rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> ;
+                rdfs:comment "Property dedicated to the growth of plants."@en ;
+                rdfs:label "Growth property"@en .
+
+
+###  http://www.w3id.org/def/irrig#IntensityProperty
+:IntensityProperty rdf:type owl:Class ;
+                   rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> ;
+                   rdfs:comment "Property dedicated to the intensity of rainfall."@en ;
+                   rdfs:label "Intensity property"@en .
+
+
+###  http://www.w3id.org/def/irrig#IrrigationActuation
+:IrrigationActuation rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Class ;
+                                           owl:unionOf ( [ owl:intersectionOf ( <http://www.w3id.org/def/caso#Actuation>
+                                                                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
+                                                                                                         owl:hasValue :FeatureOfInterest_Soil60cmDepth
+                                                                                                       ]
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+                                                                                                         owl:hasValue :ObservableProperty_Soil60cmDepth_Moisture
+                                                                                                       ]
+                                                                                                     ) ;
+                                                                                  rdf:type owl:Class
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ]
+                                                         [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
+                                                                                  owl:hasValue :FeatureOfInterest_Soil30cmDepth
+                                                                                ]
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+                                                                                  owl:hasValue :ObservableProperty_Soil30cmDepth_Moisture
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ]
+                                                       )
+                                         ] ;
+                     rdfs:subClassOf <http://www.w3id.org/def/caso#Actuation> ;
+                     rdfs:comment "The act that an actuator carries out an irrigation action."@en ;
+                     rdfs:label "Irrigation actuation"@en .
+
+
+###  http://www.w3id.org/def/irrig#MoistureProperty
+:MoistureProperty rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> ;
+                  rdfs:comment "Property dedicated to the moisture in the soil."@en ;
+                  rdfs:label "Moisture property"@en .
+
+
+###  http://www.w3id.org/def/irrig#RainIntensittyState
+:RainIntensittyState rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( <http://www.w3id.org/def/caso#State>
+                                                                [ rdf:type owl:Class ;
+                                                                  owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://www.w3id.org/def/caso#hasClosedLowerBoundary> ;
+                                                                                  owl:someValuesFrom :RainIntensityBoundary
+                                                                                ]
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://www.w3id.org/def/caso#hasOpenLowerBoundary> ;
+                                                                                  owl:someValuesFrom :RainIntensityBoundary
+                                                                                ]
+                                                                              )
+                                                                ]
+                                                                [ rdf:type owl:Class ;
+                                                                  owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://www.w3id.org/def/caso#hasClosedUpperBoundary> ;
+                                                                                  owl:someValuesFrom :RainIntensityBoundary
+                                                                                ]
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://www.w3id.org/def/caso#hasOpenUpperBoundary> ;
+                                                                                  owl:someValuesFrom :RainIntensityBoundary
+                                                                                ]
+                                                                              )
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:subClassOf <http://www.w3id.org/def/caso#State> ;
+                     rdfs:comment "Situation that a rain intensity level has qualitative data that distinguish with other situation. This is a definitive class including the following states: init, light, moderate, heavy."@en ;
+                     rdfs:label "Rain Intensity State"@en .
+
+
+###  http://www.w3id.org/def/irrig#RainIntensityBoundary
+:RainIntensityBoundary rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.w3id.org/def/caso#Boundary> ;
+                       rdfs:comment "Limits to define a rain intensity state and distinguish this state to other states."@en ;
+                       rdfs:label "Rain Intensity Boundary"@en .
+
+
+###  http://www.w3id.org/def/irrig#RainIntensityDeduction
+:RainIntensityDeduction rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( <http://www.w3id.org/def/caso#Deduction>
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
+                                                                     owl:hasValue :FeatureOfInterest_Rain
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+                                                                     owl:hasValue :ObservableProperty_Rain_Intensity
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        rdfs:subClassOf <http://www.w3id.org/def/caso#Deduction> ;
+                        rdfs:comment "The inference result that determine the rain intensity state at a specific time."@en ;
+                        rdfs:label "Rain Intensity Deduction"@en .
+
+
+###  http://www.w3id.org/def/irrig#RainQuantityObservation
+:RainQuantityObservation rdf:type owl:Class ;
+                         owl:equivalentClass [ owl:intersectionOf ( <http://www.w3id.org/def/caso#Observation>
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
+                                                                      owl:hasValue :FeatureOfInterest_Rain
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+                                                                      owl:hasValue :ObservableProperty_Rain_Quantity
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] ;
+                         rdfs:subClassOf <http://www.w3id.org/def/caso#Observation> .
+
+
+###  http://www.w3id.org/def/irrig#RainTotalQuantityPerDayObservation
+:RainTotalQuantityPerDayObservation rdf:type owl:Class ;
+                                    owl:equivalentClass [ owl:intersectionOf ( <http://www.w3id.org/def/caso#Observation>
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
+                                                                                 owl:hasValue :FeatureOfInterest_Rain
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+                                                                                 owl:hasValue :ObservableProperty_Rain_TotalQuantityPerDay
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ] ;
+                                    rdfs:subClassOf <http://www.w3id.org/def/caso#Observation> .
+
+
+###  http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary
+:RootZoneMoistureLevelBoundary rdf:type owl:Class ;
+                               rdfs:subClassOf <http://www.w3id.org/def/caso#Boundary> ;
+                               rdfs:comment "Limits to define a root zone moisture level state and distinguish this state to other states."@en ;
+                               rdfs:label "Root Zone Moisture Level Boundary"@en .
+
+
+###  http://www.w3id.org/def/irrig#RootZoneMoistureLevelDeduction
+:RootZoneMoistureLevelDeduction rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( <http://www.w3id.org/def/caso#Deduction>
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
+                                                                             owl:hasValue :FeatureOfInterest_RootZone
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+                                                                             owl:hasValue :ObservableProperty_RootZone_MoistureLevel
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] ;
+                                rdfs:subClassOf <http://www.w3id.org/def/caso#Deduction> ;
+                                rdfs:comment "The inference result that determine the rootzone moisture level state at a specific time."@en ;
+                                rdfs:label "Root Zone Moisture Level Deduction"@en .
+
+
+###  http://www.w3id.org/def/irrig#RootZoneMoistureLevelState
+:RootZoneMoistureLevelState rdf:type owl:Class ;
+                            owl:equivalentClass [ owl:intersectionOf ( <http://www.w3id.org/def/caso#State>
+                                                                       [ rdf:type owl:Class ;
+                                                                         owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <http://www.w3id.org/def/caso#hasClosedLowerBoundary> ;
+                                                                                         owl:someValuesFrom :RootZoneMoistureLevelBoundary
+                                                                                       ]
+                                                                                       [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <http://www.w3id.org/def/caso#hasOpenLowerBoundary> ;
+                                                                                         owl:someValuesFrom :RootZoneMoistureLevelBoundary
+                                                                                       ]
+                                                                                     )
+                                                                       ]
+                                                                       [ rdf:type owl:Class ;
+                                                                         owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <http://www.w3id.org/def/caso#hasClosedUpperBoundary> ;
+                                                                                         owl:someValuesFrom :RootZoneMoistureLevelBoundary
+                                                                                       ]
+                                                                                       [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <http://www.w3id.org/def/caso#hasOpenUpperBoundary> ;
+                                                                                         owl:someValuesFrom :RootZoneMoistureLevelBoundary
+                                                                                       ]
+                                                                                     )
+                                                                       ]
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ] ;
+                            rdfs:subClassOf <http://www.w3id.org/def/caso#State> ;
+                            rdfs:comment "Situation that a root zone moisture level has qualitative data that distinguish with other situation. This is a definitive class including the following states: init, saturated, very high, high, average, low, very low, dry."@en ;
+                            rdfs:label "Root Zone Moisture Level State"@en .
+
+
+###  http://www.w3id.org/def/irrig#RootZoneMoisturePerDayObservation
+:RootZoneMoisturePerDayObservation rdf:type owl:Class ;
+                                   owl:equivalentClass [ owl:intersectionOf ( <http://www.w3id.org/def/caso#Observation>
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
+                                                                                owl:hasValue :FeatureOfInterest_RootZone
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+                                                                                owl:hasValue :ObservableProperty_RootZone_AverageMoisturePerDay
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ;
+                                   rdfs:subClassOf <http://www.w3id.org/def/caso#Observation> ;
+                                   rdfs:comment "The act that a sensor carries out an root zone moisture per day observation."@en ;
+                                   rdfs:label "Root zone moisture per day observation"@en .
+
+
+###  http://www.w3id.org/def/irrig#Soil30cmDepthAverageMoisturePerDayObservation
+:Soil30cmDepthAverageMoisturePerDayObservation rdf:type owl:Class ;
+                                               owl:equivalentClass [ owl:intersectionOf ( <http://www.w3id.org/def/caso#Observation>
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
+                                                                                            owl:hasValue :FeatureOfInterest_Soil30cmDepth
+                                                                                          ]
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+                                                                                            owl:hasValue :ObservableProperty_Soil30cmDepth_AverageMoisturePerDay
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
+                                               rdfs:subClassOf <http://www.w3id.org/def/caso#Observation> ;
+                                               rdfs:comment "The act that a sensor carries out an average moisture per day observation at 30 cmp depth soil."@en ;
+                                               rdfs:label "Soil 30cm Depth Average Moisture Per Day Observation"@en .
+
+
+###  http://www.w3id.org/def/irrig#Soil30cmDepthMoistureObservation
+:Soil30cmDepthMoistureObservation rdf:type owl:Class ;
+                                  owl:equivalentClass [ owl:intersectionOf ( <http://www.w3id.org/def/caso#Observation>
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
+                                                                               owl:hasValue :FeatureOfInterest_Soil30cmDepth
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+                                                                               owl:hasValue :ObservableProperty_Soil30cmDepth_Moisture
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ] ;
+                                  rdfs:subClassOf <http://www.w3id.org/def/caso#Observation> ;
+                                  rdfs:comment "The act that a sensor carries out a moisture observation at 30 cm depth soil."@en ;
+                                  rdfs:label "Soil 30cm Depth Moisture Observation"@en .
+
+
+###  http://www.w3id.org/def/irrig#Soil60cmDepthAverageMoisturePerDayObservation
+:Soil60cmDepthAverageMoisturePerDayObservation rdf:type owl:Class ;
+                                               owl:equivalentClass [ owl:intersectionOf ( <http://www.w3id.org/def/caso#Observation>
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
+                                                                                            owl:hasValue :FeatureOfInterest_Soil60cmDepth
+                                                                                          ]
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+                                                                                            owl:hasValue :ObservableProperty_Soil60cmDepth_AverageMoisturePerDay
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
+                                               rdfs:subClassOf <http://www.w3id.org/def/caso#Observation> ;
+                                               rdfs:comment "The act that a sensor carries out an average moisture per day observation at 60 cmp depth soil."@en ;
+                                               rdfs:label "Soil 60cm Depth Average Moisture Per Day Observation"@en .
+
+
+###  http://www.w3id.org/def/irrig#Soil60cmDepthMoistureObservation
+:Soil60cmDepthMoistureObservation rdf:type owl:Class ;
+                                  owl:equivalentClass [ owl:intersectionOf ( <http://www.w3id.org/def/caso#Observation>
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
+                                                                               owl:hasValue :FeatureOfInterest_Soil60cmDepth
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+                                                                               owl:hasValue :ObservableProperty_Soil60cmDepth_Moisture
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ] ;
+                                  rdfs:subClassOf <http://www.w3id.org/def/caso#Observation> ;
+                                  rdfs:comment "The act that a sensor carries out a moisture observation at 60 cm depth soil."@en ;
+                                  rdfs:label "Soil 60cm Depth Moisture Observation"@en .
+
+
+###  http://www.w3id.org/def/irrig#StressProperty
+:StressProperty rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> ;
+                rdfs:comment "Property dedicated to the stress of plants."@en ;
+                rdfs:label "Stress property"@en .
+
+
+###  https://w3id.org/def/saref4agri#Pluviometer
+<https://w3id.org/def/saref4agri#Pluviometer> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
+                                              rdfs:comment "A sensor that measures the rain fall."@en ;
+                                              rdfs:label "Pluviometer"@en .
+
+
+###  https://w3id.org/def/saref4agri#SoilTensiometer
+<https://w3id.org/def/saref4agri#SoilTensiometer> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
+                                                  rdfs:comment "A sensor that measures the soil moisture."@en ;
+                                                  rdfs:label "Soil tensiometer"@en .
+
+
+###  https://w3id.org/def/saref4agri#WateringValve
+<https://w3id.org/def/saref4agri#WateringValve> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://w3id.org/saref#Actuator> ;
+                                                rdfs:comment "An actuator that open the water valve."@en ;
+                                                rdfs:label "WateringValve"@en .
+
+
+###  https://w3id.org/def/saref4agri#WeatherStation
+<https://w3id.org/def/saref4agri#WeatherStation> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
+                                                 rdfs:comment "A sensor that measure weather conditions."@en ;
+                                                 rdfs:label "Weather station"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_High
+:Boundary_Rain_Quantity_High rdf:type owl:NamedIndividual ,
+                                      :RainIntensityBoundary .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_Low
+:Boundary_Rain_Quantity_Low rdf:type owl:NamedIndividual ,
+                                     :RainIntensityBoundary .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_Maximum
+:Boundary_Rain_Quantity_Maximum rdf:type owl:NamedIndividual ,
+                                         :RainIntensityBoundary .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_Minimum
+:Boundary_Rain_Quantity_Minimum rdf:type owl:NamedIndividual ,
+                                         :RainIntensityBoundary .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Average
+:Boundary_RootZone_Tension_Average rdf:type owl:NamedIndividual ,
+                                            :RootZoneMoistureLevelBoundary .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_High
+:Boundary_RootZone_Tension_High rdf:type owl:NamedIndividual ,
+                                         :RootZoneMoistureLevelBoundary .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Low
+:Boundary_RootZone_Tension_Low rdf:type owl:NamedIndividual ,
+                                        :RootZoneMoistureLevelBoundary .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Maximum
+:Boundary_RootZone_Tension_Maximum rdf:type owl:NamedIndividual ,
+                                            :RootZoneMoistureLevelBoundary .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Minimum
+:Boundary_RootZone_Tension_Minimum rdf:type owl:NamedIndividual ,
+                                            :RootZoneMoistureLevelBoundary .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Saturation
+:Boundary_RootZone_Tension_Saturation rdf:type owl:NamedIndividual ,
+                                               :RootZoneMoistureLevelBoundary .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_VeryHigh
+:Boundary_RootZone_Tension_VeryHigh rdf:type owl:NamedIndividual ,
+                                             :RootZoneMoistureLevelBoundary .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_VeryLow
+:Boundary_RootZone_Tension_VeryLow rdf:type owl:NamedIndividual ,
+                                            :RootZoneMoistureLevelBoundary .
+
+
+###  http://www.w3id.org/def/irrig#FeatureOfInterest_Air
+:FeatureOfInterest_Air rdf:type owl:NamedIndividual ,
+                                <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+
+
+###  http://www.w3id.org/def/irrig#FeatureOfInterest_Crop
+:FeatureOfInterest_Crop rdf:type owl:NamedIndividual ,
+                                 <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+
+
+###  http://www.w3id.org/def/irrig#FeatureOfInterest_Rain
+:FeatureOfInterest_Rain rdf:type owl:NamedIndividual ,
+                                 <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+
+
+###  http://www.w3id.org/def/irrig#FeatureOfInterest_RootZone
+:FeatureOfInterest_RootZone rdf:type owl:NamedIndividual ,
+                                     <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+
+
+###  http://www.w3id.org/def/irrig#FeatureOfInterest_Soil30cmDepth
+:FeatureOfInterest_Soil30cmDepth rdf:type owl:NamedIndividual ,
+                                          <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+
+
+###  http://www.w3id.org/def/irrig#FeatureOfInterest_Soil60cmDepth
+:FeatureOfInterest_Soil60cmDepth rdf:type owl:NamedIndividual ,
+                                          <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+
+
+###  http://www.w3id.org/def/irrig#ObservableProperty_Air_MaxTemperaturePerDay
+:ObservableProperty_Air_MaxTemperaturePerDay rdf:type owl:NamedIndividual ,
+                                                      <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  http://www.w3id.org/def/irrig#ObservableProperty_Air_MinTemperaturePerDay
+:ObservableProperty_Air_MinTemperaturePerDay rdf:type owl:NamedIndividual ,
+                                                      <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  http://www.w3id.org/def/irrig#ObservableProperty_Air_Temperature
+:ObservableProperty_Air_Temperature rdf:type owl:NamedIndividual ,
+                                             <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  http://www.w3id.org/def/irrig#ObservableProperty_Crop_Growth
+:ObservableProperty_Crop_Growth rdf:type owl:NamedIndividual ,
+                                         :GrowthProperty .
+
+
+###  http://www.w3id.org/def/irrig#ObservableProperty_Crop_Stage
+:ObservableProperty_Crop_Stage rdf:type owl:NamedIndividual ,
+                                        <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  http://www.w3id.org/def/irrig#ObservableProperty_Crop_WaterNeed
+:ObservableProperty_Crop_WaterNeed rdf:type owl:NamedIndividual ,
+                                            :StressProperty .
+
+
+###  http://www.w3id.org/def/irrig#ObservableProperty_Rain_Intensity
+:ObservableProperty_Rain_Intensity rdf:type owl:NamedIndividual ,
+                                            :IntensityProperty .
+
+
+###  http://www.w3id.org/def/irrig#ObservableProperty_Rain_Quantity
+:ObservableProperty_Rain_Quantity rdf:type owl:NamedIndividual ,
+                                           <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  http://www.w3id.org/def/irrig#ObservableProperty_Rain_TotalQuantityPerDay
+:ObservableProperty_Rain_TotalQuantityPerDay rdf:type owl:NamedIndividual ,
+                                                      <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  http://www.w3id.org/def/irrig#ObservableProperty_RootZone_AverageMoisturePerDay
+:ObservableProperty_RootZone_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
+                                                            <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  http://www.w3id.org/def/irrig#ObservableProperty_RootZone_MoistureLevel
+:ObservableProperty_RootZone_MoistureLevel rdf:type owl:NamedIndividual ,
+                                                    :MoistureProperty .
+
+
+###  http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_AverageMoisturePerDay
+:ObservableProperty_Soil30cmDepth_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
+                                                                 <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_Moisture
+:ObservableProperty_Soil30cmDepth_Moisture rdf:type owl:NamedIndividual ,
+                                                    <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_AverageMoisturePerDay
+:ObservableProperty_Soil60cmDepth_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
+                                                                 <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_Moisture
+:ObservableProperty_Soil60cmDepth_Moisture rdf:type owl:NamedIndividual ,
+                                                    <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  http://www.w3id.org/def/irrig#Pluviometer_01
+:Pluviometer_01 rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/def/saref4agri#Pluviometer> .
+
+
+###  http://www.w3id.org/def/irrig#Pluviometer_02
+:Pluviometer_02 rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/def/saref4agri#Pluviometer> .
+
+
+###  http://www.w3id.org/def/irrig#Sonde_01
+:Sonde_01 rdf:type owl:NamedIndividual ,
+                   <https://w3id.org/def/saref4agri#SoilTensiometer> .
+
+
+###  http://www.w3id.org/def/irrig#Sonde_02
+:Sonde_02 rdf:type owl:NamedIndividual ,
+                   <https://w3id.org/def/saref4agri#SoilTensiometer> .
+
+
+###  http://www.w3id.org/def/irrig#Sonde_03
+:Sonde_03 rdf:type owl:NamedIndividual ,
+                   <https://w3id.org/def/saref4agri#SoilTensiometer> .
+
+
+###  http://www.w3id.org/def/irrig#Sonde_04
+:Sonde_04 rdf:type owl:NamedIndividual ,
+                   <https://w3id.org/def/saref4agri#SoilTensiometer> .
+
+
+###  http://www.w3id.org/def/irrig#Sonde_05
+:Sonde_05 rdf:type owl:NamedIndividual ,
+                   <https://w3id.org/def/saref4agri#SoilTensiometer> .
+
+
+###  http://www.w3id.org/def/irrig#Sonde_06
+:Sonde_06 rdf:type owl:NamedIndividual ,
+                   <https://w3id.org/def/saref4agri#SoilTensiometer> .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_Growth_Init
+:State_Crop_Growth_Init rdf:type owl:NamedIndividual ,
+                                 :CropGrowthState .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_Growth_R1
+:State_Crop_Growth_R1 rdf:type owl:NamedIndividual ,
+                               :CropGrowthState .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_Growth_R1d15
+:State_Crop_Growth_R1d15 rdf:type owl:NamedIndividual ,
+                                  :CropGrowthState .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_Growth_R5
+:State_Crop_Growth_R5 rdf:type owl:NamedIndividual ,
+                               :CropGrowthState .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_Growth_R5hg45
+:State_Crop_Growth_R5hg45 rdf:type owl:NamedIndividual ,
+                                   :CropGrowthState .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_Growth_V2
+:State_Crop_Growth_V2 rdf:type owl:NamedIndividual ,
+                               :CropGrowthState .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_Growth_V7
+:State_Crop_Growth_V7 rdf:type owl:NamedIndividual ,
+                               :CropGrowthState .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_Growth_V7d25
+:State_Crop_Growth_V7d25 rdf:type owl:NamedIndividual ,
+                                  :CropGrowthState .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_WaterNeed_No
+:State_Crop_WaterNeed_No rdf:type owl:NamedIndividual ,
+                                  :CropWaterNeedState .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_WaterNeed_Wait
+:State_Crop_WaterNeed_Wait rdf:type owl:NamedIndividual ,
+                                    :CropWaterNeedState .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_WaterNeed_Yes
+:State_Crop_WaterNeed_Yes rdf:type owl:NamedIndividual ,
+                                   :CropWaterNeedState .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_WaterNeed_init
+:State_Crop_WaterNeed_init rdf:type owl:NamedIndividual ,
+                                    :CropWaterNeedState .
+
+
+###  http://www.w3id.org/def/irrig#State_Rain_Intensity_Heavy
+:State_Rain_Intensity_Heavy rdf:type owl:NamedIndividual ,
+                                     :RainIntensittyState .
+
+
+###  http://www.w3id.org/def/irrig#State_Rain_Intensity_Init
+:State_Rain_Intensity_Init rdf:type owl:NamedIndividual ,
+                                    :RainIntensittyState .
+
+
+###  http://www.w3id.org/def/irrig#State_Rain_Intensity_Light
+:State_Rain_Intensity_Light rdf:type owl:NamedIndividual ,
+                                     :RainIntensittyState .
+
+
+###  http://www.w3id.org/def/irrig#State_Rain_Intensity_Moderate
+:State_Rain_Intensity_Moderate rdf:type owl:NamedIndividual ,
+                                        :RainIntensittyState .
+
+
+###  http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Average
+:State_RootZone_MoistureLevel_Average rdf:type owl:NamedIndividual ,
+                                               :RootZoneMoistureLevelState .
+
+
+###  http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Dry
+:State_RootZone_MoistureLevel_Dry rdf:type owl:NamedIndividual ,
+                                           :RootZoneMoistureLevelState .
+
+
+###  http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_High
+:State_RootZone_MoistureLevel_High rdf:type owl:NamedIndividual ,
+                                            :RootZoneMoistureLevelState .
+
+
+###  http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Init
+:State_RootZone_MoistureLevel_Init rdf:type owl:NamedIndividual ,
+                                            :RootZoneMoistureLevelState .
+
+
+###  http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Low
+:State_RootZone_MoistureLevel_Low rdf:type owl:NamedIndividual ,
+                                           :RootZoneMoistureLevelState .
+
+
+###  http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Saturated
+:State_RootZone_MoistureLevel_Saturated rdf:type owl:NamedIndividual ,
+                                                 :RootZoneMoistureLevelState .
+
+
+###  http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_VeryHigh
+:State_RootZone_MoistureLevel_VeryHigh rdf:type owl:NamedIndividual ,
+                                                :RootZoneMoistureLevelState .
+
+
+###  http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_VeryLow
+:State_RootZone_MoistureLevel_VeryLow rdf:type owl:NamedIndividual ,
+                                               :RootZoneMoistureLevelState .
+
+
+###  http://www.w3id.org/def/irrig#Valve_01
+:Valve_01 rdf:type owl:NamedIndividual ,
+                   <https://w3id.org/def/saref4agri#WateringValve> .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
