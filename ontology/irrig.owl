@@ -435,6 +435,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
+        <rdfs:comment xml:lang="en">The act that a sensor carries out an rain quantity observation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Rain Quantity Observation</rdfs:label>
     </owl:Class>
     
 
@@ -458,6 +460,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
+        <rdfs:comment xml:lang="en">The act that a sensor carries out a total rain quantity per day observation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Rain Total Quantity Per Day Observation</rdfs:label>
     </owl:Class>
     
 
@@ -688,7 +692,17 @@
     <owl:Class rdf:about="https://w3id.org/def/saref4agri#SoilTensiometer">
         <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Sensor"/>
         <rdfs:comment xml:lang="en">A sensor that measures the soil moisture.</rdfs:comment>
-        <rdfs:label xml:lang="en">Soil tensiometer</rdfs:label>
+        <rdfs:label xml:lang="en">Soil Tensiometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4agri#Thermometer -->
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4agri#Thermometer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Sensor"/>
+        <rdfs:comment xml:lang="en">A sensor that measure weather conditions.</rdfs:comment>
+        <rdfs:label xml:lang="en">Thermometer</rdfs:label>
     </owl:Class>
     
 
@@ -699,16 +713,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Actuator"/>
         <rdfs:comment xml:lang="en">An actuator that open the water valve.</rdfs:comment>
         <rdfs:label xml:lang="en">WateringValve</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/saref4agri#WeatherStation -->
-
-    <owl:Class rdf:about="https://w3id.org/def/saref4agri#WeatherStation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Sensor"/>
-        <rdfs:comment xml:lang="en">A sensor that measure weather conditions.</rdfs:comment>
-        <rdfs:label xml:lang="en">Weather station</rdfs:label>
     </owl:Class>
     
 
