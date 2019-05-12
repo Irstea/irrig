@@ -1022,65 +1022,65 @@
     
 
 
-    <!-- http://www.w3id.org/def/irrig#Pluviometer_01 -->
+    <!-- http://www.w3id.org/def/irrig#Pluviometer_01_Rain_Quantity -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Pluviometer_01">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Pluviometer_01_Rain_Quantity">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#Pluviometer"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.w3id.org/def/irrig#Pluviometer_02 -->
+    <!-- http://www.w3id.org/def/irrig#Pluviometer_02_Rain_Quantity -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Pluviometer_02">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Pluviometer_02_Rain_Quantity">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#Pluviometer"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_01 -->
+    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_01_Soil30cmDepth_Moisutre -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_01">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_01_Soil30cmDepth_Moisutre">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_02 -->
+    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_02_Soil30cmDepth_Moisture -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_02">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_02_Soil30cmDepth_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_03 -->
+    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_03_Soil30cmDepth_Moisture -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_03">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_03_Soil30cmDepth_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_04 -->
+    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_04_Soil60cmDepth_Moisture -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_04">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_04_Soil60cmDepth_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_05 -->
+    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_05_Soil60cmDepth_Moisture -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_05">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_05_Soil60cmDepth_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_06 -->
+    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_06_Soil60cmDepth_Moisture -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_06">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_06_Soil60cmDepth_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
     </owl:NamedIndividual>
     
@@ -1278,9 +1278,9 @@
     
 
 
-    <!-- http://www.w3id.org/def/irrig#WateringValve_01 -->
+    <!-- http://www.w3id.org/def/irrig#WateringValve_01_Soil_Moisture -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#WateringValve_01">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#WateringValve_01_Soil_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#WateringValve"/>
     </owl:NamedIndividual>
 </rdf:RDF>
