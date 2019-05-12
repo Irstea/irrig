@@ -1038,9 +1038,9 @@
     
 
 
-    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_01_Soil30cmDepth_Moisutre -->
+    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_01_Soil30cmDepth_Moisture -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_01_Soil30cmDepth_Moisutre">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_01_Soil30cmDepth_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
     </owl:NamedIndividual>
     
