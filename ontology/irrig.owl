@@ -79,33 +79,6 @@
     
 
 
-    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:range rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
-        <rdfs:comment xml:lang="en">This property links an entity to a unit.</rdfs:comment>
-        <rdfs:label xml:lang="en">has unit</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/hosts -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hosts">
-        <schema:domainIncludes rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
-        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Actuator"/>
-        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
-        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Sampler"/>
-        <schema:rangeIncludes rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-        <rdfs:comment xml:lang="en">Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-        <rdfs:label xml:lang="en">hosts</rdfs:label>
-        <skos:definition xml:lang="en">Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it.</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -114,15 +87,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue -->
-
-    <owl:DatatypeProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">
-        <rdfs:comment xml:lang="en">This data property shows the numeric value of an entity.</rdfs:comment>
-        <rdfs:label xml:lang="en">has numerical value</rdfs:label>
-    </owl:DatatypeProperty>
     
 
 
@@ -164,34 +128,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/Unit -->
-
-    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit">
-        <rdfs:comment xml:lang="en">A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called &quot;metre&quot;.</rdfs:comment>
-        <rdfs:label xml:lang="en">Unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/Platform -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Platform">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hosts"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/System"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
-        <rdfs:label xml:lang="en">Platform</rdfs:label>
-        <skos:definition xml:lang="en">A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.</skos:definition>
-        <skos:example xml:lang="en">A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators.</skos:example>
-    </owl:Class>
-    
 
 
     <!-- http://www.w3id.org/def/irrig#CropGrowthDeduction -->
