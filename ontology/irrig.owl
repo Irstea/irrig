@@ -858,6 +858,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#FeatureOfInterest_Air">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Air_MaxTemperaturePerDay"/>
+        <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Air_MinTemperaturePerDay"/>
+        <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Air_Temperature"/>
     </owl:NamedIndividual>
     
 
@@ -866,6 +869,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#FeatureOfInterest_Crop">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Crop_Growth"/>
+        <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Crop_Stage"/>
+        <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Crop_WaterNeed"/>
     </owl:NamedIndividual>
     
 
@@ -874,6 +880,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#FeatureOfInterest_Rain">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Rain_Intensity"/>
+        <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Rain_Quantity"/>
+        <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Rain_TotalQuantityPerDay"/>
     </owl:NamedIndividual>
     
 
@@ -882,6 +891,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#FeatureOfInterest_RootZone">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_RootZone_AverageMoisturePerDay"/>
+        <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_RootZone_MoistureLevel"/>
     </owl:NamedIndividual>
     
 
@@ -890,6 +901,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil30cmDepth">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_AverageMoisturePerDay"/>
+        <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_Moisture"/>
     </owl:NamedIndividual>
     
 
@@ -898,6 +911,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil60cmDepth">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_AverageMoisturePerDay"/>
+        <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_Moisture"/>
     </owl:NamedIndividual>
     
 
