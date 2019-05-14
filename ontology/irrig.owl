@@ -416,6 +416,31 @@
     
 
 
+    <!-- http://www.w3id.org/def/irrig#RootZoneAverageMoisturePerDayObservation -->
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#RootZoneAverageMoisturePerDayObservation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3id.org/def/caso#Observation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
+                        <owl:hasValue rdf:resource="http://www.w3id.org/def/irrig#FeatureOfInterest_RootZone"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
+                        <owl:hasValue rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_RootZone_AverageMoisturePerDay"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
+        <rdfs:comment xml:lang="en">The act that a sensor carries out an root zone moisture per day observation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Root zone moisture per day observation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary -->
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary">
@@ -488,31 +513,6 @@
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#State"/>
         <rdfs:comment xml:lang="en">Situation that a root zone moisture level has qualitative data that distinguish with other situation. This is a definitive class including the following states: init, saturated, very high, high, average, low, very low, dry.</rdfs:comment>
         <rdfs:label xml:lang="en">Root Zone Moisture Level State</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3id.org/def/irrig#RootZoneMoisturePerDayObservation -->
-
-    <owl:Class rdf:about="http://www.w3id.org/def/irrig#RootZoneMoisturePerDayObservation">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3id.org/def/caso#Observation"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
-                        <owl:hasValue rdf:resource="http://www.w3id.org/def/irrig#FeatureOfInterest_RootZone"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
-                        <owl:hasValue rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_RootZone_AverageMoisturePerDay"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">The act that a sensor carries out an root zone moisture per day observation.</rdfs:comment>
-        <rdfs:label xml:lang="en">Root zone moisture per day observation</rdfs:label>
     </owl:Class>
     
 
