@@ -35,6 +35,9 @@ This section provides details for each class and property defined by Irrigation 
          <a href="#MoistureProperty" title="http://www.w3id.org/def/irrig#MoistureProperty">Moisture property</a>
       </li>
       <li>
+         <a href="#http://www.w3.org/ns/sosa/Platform" title="http://www.w3.org/ns/sosa/Platform">Platform</a>
+      </li>
+      <li>
          <a href="#https://w3id.org/def/saref4agri#Pluviometer" title="https://w3id.org/def/saref4agri#Pluviometer">Pluviometer</a>
       </li>
       <li>
@@ -51,11 +54,15 @@ This section provides details for each class and property defined by Irrigation 
       </li>
       <li>
          <a href="#RainQuantityObservation"
-            title="http://www.w3id.org/def/irrig#RainQuantityObservation">Rain Quantity Observation</a>
+            title="http://www.w3id.org/def/irrig#RainQuantityObservation">
+            <span>rain quantity observation</span>
+         </a>
       </li>
       <li>
          <a href="#RainTotalQuantityPerDayObservation"
-            title="http://www.w3id.org/def/irrig#RainTotalQuantityPerDayObservation">Rain Total Quantity Per Day Observation</a>
+            title="http://www.w3id.org/def/irrig#RainTotalQuantityPerDayObservation">
+            <span>rain total quantity per day observation</span>
+         </a>
       </li>
       <li>
          <a href="#RootZoneMoistureLevelBoundary"
@@ -70,8 +77,8 @@ This section provides details for each class and property defined by Irrigation 
             title="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState">Root Zone Moisture Level State</a>
       </li>
       <li>
-         <a href="#RootZoneAverageMoisturePerDayObservation"
-            title="http://www.w3id.org/def/irrig#RootZoneAverageMoisturePerDayObservation">Root zone moisture per day observation</a>
+         <a href="#RootZoneMoisturePerDayObservation"
+            title="http://www.w3id.org/def/irrig#RootZoneMoisturePerDayObservation">Root zone moisture per day observation</a>
       </li>
       <li>
          <a href="#Soil30cmDepthAverageMoisturePerDayObservation"
@@ -90,16 +97,20 @@ This section provides details for each class and property defined by Irrigation 
             title="http://www.w3id.org/def/irrig#Soil60cmDepthMoistureObservation">Soil 60cm Depth Moisture Observation</a>
       </li>
       <li>
-         <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil Tensiometer</a>
+         <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil tensiometer</a>
       </li>
       <li>
          <a href="#StressProperty" title="http://www.w3id.org/def/irrig#StressProperty">Stress property</a>
       </li>
       <li>
-         <a href="#https://w3id.org/def/saref4agri#Thermometer" title="https://w3id.org/def/saref4agri#Thermometer">Thermometer</a>
+         <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+            title="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit">Unit</a>
       </li>
       <li>
          <a href="#https://w3id.org/def/saref4agri#WateringValve" title="https://w3id.org/def/saref4agri#WateringValve">WateringValve</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/saref4agri#WeatherStation" title="https://w3id.org/def/saref4agri#WeatherStation">Weather station</a>
       </li>
    </ul>
    <div class="entity" id="CropGrowthDeduction">
@@ -308,19 +319,19 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>(<span class="dotted" title="http://www.w3id.org/def/caso#Actuation">actuation</span> 
-            <span class="logic">and</span> ((<span class="dotted" title="http://www.w3.org/ns/sosa/actsOnProperty">acts on property</span> 
-            <span class="logic">value</span> 
-            <a href="#ObservableProperty_Soil60cmDepth_Moisture"
-               title="http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_Moisture">observable property soil60cm depth moisture</a>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</span> 
+            <span class="logic">and</span> ((<span class="dotted" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</span> 
             <span class="logic">value</span> 
             <a href="#FeatureOfInterest_Soil60cmDepth"
-               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil60cmDepth">feature of interest soil60cm depth</a>))) <span class="logic">or</span> ((<span class="dotted" title="http://www.w3.org/ns/sosa/actsOnProperty">acts on property</span> 
+               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil60cmDepth">feature of interest soil60cm depth</a>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/observedProperty">observed property</span> 
             <span class="logic">value</span> 
-            <a href="#ObservableProperty_Soil30cmDepth_Moisture"
-               title="http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_Moisture">observable property soil30cm depth moisture</a>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</span> 
+            <a href="#ObservableProperty_Soil60cmDepth_Moisture"
+               title="http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_Moisture">observable property soil60cm depth moisture</a>))) <span class="logic">or</span> ((<span class="dotted" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</span> 
             <span class="logic">value</span> 
             <a href="#FeatureOfInterest_Soil30cmDepth"
-               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil30cmDepth">feature of interest soil30cm depth</a>))</dd>
+               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil30cmDepth">feature of interest soil30cm depth</a>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/observedProperty">observed property</span> 
+            <span class="logic">value</span> 
+            <a href="#ObservableProperty_Soil30cmDepth_Moisture"
+               title="http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_Moisture">observable property soil30cm depth moisture</a>))</dd>
          <dt>has super-classes</dt>
          <dd>
             <span class="dotted" title="http://www.w3id.org/def/caso#Actuation">actuation</span>
@@ -350,6 +361,46 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="http://www.w3.org/ns/sosa/Platform">
+      <h3>Platform<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/sosa/Platform</p>
+      <div class="comment">
+         <span class="markdown">A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/">http://www.w3.org/ns/sosa/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators.</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://www.w3.org/ns/sosa/hosts" title="http://www.w3.org/ns/sosa/hosts">hosts</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://www.w3.org/ns/sosa/hosts" title="http://www.w3.org/ns/sosa/hosts">hosts</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="https://w3id.org/def/saref4agri#Pluviometer">
       <h3>Pluviometer<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -367,10 +418,8 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#Pluviometer_01_Rain_Quantity"
-               title="http://www.w3id.org/def/irrig#Pluviometer_01_Rain_Quantity">pluviometer 01 rain quantity</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Pluviometer_02_Rain_Quantity"
-               title="http://www.w3id.org/def/irrig#Pluviometer_02_Rain_Quantity">pluviometer 02 rain quantity</a>
+            <a href="#Pluviometer_01" title="http://www.w3id.org/def/irrig#Pluviometer_01">pluviometer 01</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Pluviometer_02" title="http://www.w3id.org/def/irrig#Pluviometer_02">pluviometer 02</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -485,15 +534,12 @@ This section provides details for each class and property defined by Irrigation 
       </dl>
    </div>
    <div class="entity" id="RainQuantityObservation">
-      <h3>Rain Quantity Observation<sup class="type-c" title="class">c</sup>
+      <h3>rain quantity observation<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#RainQuantityObservation</p>
-      <div class="comment">
-         <span class="markdown">The act that a sensor carries out an rain quantity observation.</span>
-      </div>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -512,15 +558,12 @@ This section provides details for each class and property defined by Irrigation 
       </dl>
    </div>
    <div class="entity" id="RainTotalQuantityPerDayObservation">
-      <h3>Rain Total Quantity Per Day Observation<sup class="type-c" title="class">c</sup>
+      <h3>rain total quantity per day observation<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#RainTotalQuantityPerDayObservation</p>
-      <div class="comment">
-         <span class="markdown">The act that a sensor carries out a total rain quantity per day observation.</span>
-      </div>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -663,13 +706,13 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="RootZoneAverageMoisturePerDayObservation">
+   <div class="entity" id="RootZoneMoisturePerDayObservation">
       <h3>Root zone moisture per day observation<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#RootZoneAverageMoisturePerDayObservation</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#RootZoneMoisturePerDayObservation</p>
       <div class="comment">
          <span class="markdown">The act that a sensor carries out an root zone moisture per day observation.</span>
       </div>
@@ -799,7 +842,7 @@ This section provides details for each class and property defined by Irrigation 
       </dl>
    </div>
    <div class="entity" id="https://w3id.org/def/saref4agri#SoilTensiometer">
-      <h3>Soil Tensiometer<sup class="type-c" title="class">c</sup>
+      <h3>Soil tensiometer<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -815,18 +858,12 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#SoilTensiometer_01_Soil30cmDepth_Moisture"
-               title="http://www.w3id.org/def/irrig#SoilTensiometer_01_Soil30cmDepth_Moisture">soil tensiometer 01 soil30cm depth moisture</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SoilTensiometer_02_Soil30cmDepth_Moisture"
-               title="http://www.w3id.org/def/irrig#SoilTensiometer_02_Soil30cmDepth_Moisture">soil tensiometer 02 soil30cm depth moisture</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SoilTensiometer_03_Soil30cmDepth_Moisture"
-               title="http://www.w3id.org/def/irrig#SoilTensiometer_03_Soil30cmDepth_Moisture">soil tensiometer 03 soil30cm depth moisture</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SoilTensiometer_04_Soil60cmDepth_Moisture"
-               title="http://www.w3id.org/def/irrig#SoilTensiometer_04_Soil60cmDepth_Moisture">soil tensiometer 04 soil60cm depth moisture</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SoilTensiometer_05_Soil60cmDepth_Moisture"
-               title="http://www.w3id.org/def/irrig#SoilTensiometer_05_Soil60cmDepth_Moisture">soil tensiometer 05 soil60cm depth moisture</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SoilTensiometer_06_Soil60cmDepth_Moisture"
-               title="http://www.w3id.org/def/irrig#SoilTensiometer_06_Soil60cmDepth_Moisture">soil tensiometer 06 soil60cm depth moisture</a>
+            <a href="#Sonde_01" title="http://www.w3id.org/def/irrig#Sonde_01">sonde 01</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Sonde_02" title="http://www.w3id.org/def/irrig#Sonde_02">sonde 02</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Sonde_03" title="http://www.w3id.org/def/irrig#Sonde_03">sonde 03</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Sonde_04" title="http://www.w3id.org/def/irrig#Sonde_04">sonde 04</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Sonde_05" title="http://www.w3id.org/def/irrig#Sonde_05">sonde 05</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Sonde_06" title="http://www.w3id.org/def/irrig#Sonde_06">sonde 06</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -854,20 +891,22 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="https://w3id.org/def/saref4agri#Thermometer">
-      <h3>Thermometer<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit">
+      <h3>Unit<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/saref4agri#Thermometer</p>
+         <strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/resource/om-2/Unit</p>
       <div class="comment">
-         <span class="markdown">A sensor that measure weather conditions.</span>
+         <span class="markdown">A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called "metre".</span>
       </div>
       <dl class="description">
-         <dt>has super-classes</dt>
+         <dt>is in range of</dt>
          <dd>
-            <span class="dotted" title="https://w3id.org/saref#Sensor">sensor</span>
+            <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit"
+               title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit">has unit</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -888,81 +927,131 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#WateringValve_01_Soil_Moisture"
-               title="http://www.w3id.org/def/irrig#WateringValve_01_Soil_Moisture">watering valve 01 soil moisture</a>
+            <a href="#Valve_01" title="http://www.w3id.org/def/irrig#Valve_01">valve 01</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/saref4agri#WeatherStation">
+      <h3>Weather station<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/saref4agri#WeatherStation</p>
+      <div class="comment">
+         <span class="markdown">A sensor that measure weather conditions.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/saref#Sensor">sensor</span>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericValue"
+            title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericValue">has numeric value</a>
+      </li>
+      <li>
+         <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit"
+            title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit">has unit</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/ns/sosa/hosts" title="http://www.w3.org/ns/sosa/hosts">hosts</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericValue">
+      <h3>has numeric value<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericValue</p>
+   </div>
+   <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit">
+      <h3>has unit<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+                  title="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit">Unit</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/ns/sosa/hosts">
+      <h3>hosts<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/sosa/hosts</p>
+      <div class="comment">
+         <span class="markdown">Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it.</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/">http://www.w3.org/ns/sosa/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>domain includes</dt>
+            <dd>
+               <a href="#http://www.w3.org/ns/sosa/Platform" title="http://www.w3.org/ns/sosa/Platform">Platform</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>range includes</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/sosa/Actuator">actuator</span>
+            </dd>
+            <dd>
+               <a href="#http://www.w3.org/ns/sosa/Platform" title="http://www.w3.org/ns/sosa/Platform">Platform</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/sosa/Sampler">sampler</span>
+            </dd>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/sosa/Sensor">sensor</span>
+            </dd>
+         </dl>
+      </div>
    </div>
 </div><div id="dataproperties">
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#https://w3id.org/saref#hasManufacturer" title="https://w3id.org/saref#hasManufacturer">has manufacturer</a>
-      </li>
-      <li>
-         <a href="#https://w3id.org/saref#hasModel" title="https://w3id.org/saref#hasModel">has model</a>
-      </li>
-      <li>
-         <a href="#https://w3id.org/saref#hasName" title="https://w3id.org/saref#hasName">has name</a>
+         <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"
+            title="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">has numerical value</a>
       </li>
    </ul>
-   <div class="entity" id="https://w3id.org/saref#hasManufacturer">
-      <h3>has manufacturer<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">
+      <h3>has numerical value<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/saref#hasManufacturer</p>
-      <div class="comment">
-         <span class="markdown">A relationship identifying the manufacturer of an entity (e.g., device)</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="https://w3id.org/saref#hasModel">
-      <h3>has model<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/saref#hasModel</p>
-      <div class="comment">
-         <span class="markdown">A relationship identifying the model of an entity (e.g., device)</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="https://w3id.org/saref#hasName">
-      <h3>has name<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/saref#hasName</p>
-      <div class="comment">
-         <span class="markdown">A relationship providing the name of an entity (e.g., device)</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-         </dl>
-      </div>
+         <strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue</p>
    </div>
 </div><div id="namedindividuals">
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
@@ -1166,51 +1255,43 @@ This section provides details for each class and property defined by Irrigation 
          </a>
       </li>
       <li>
-         <a href="#Pluviometer_01_Rain_Quantity"
-            title="http://www.w3id.org/def/irrig#Pluviometer_01_Rain_Quantity">
-            <span>pluviometer 01 rain quantity</span>
+         <a href="#Pluviometer_01" title="http://www.w3id.org/def/irrig#Pluviometer_01">
+            <span>pluviometer 01</span>
          </a>
       </li>
       <li>
-         <a href="#Pluviometer_02_Rain_Quantity"
-            title="http://www.w3id.org/def/irrig#Pluviometer_02_Rain_Quantity">
-            <span>pluviometer 02 rain quantity</span>
+         <a href="#Pluviometer_02" title="http://www.w3id.org/def/irrig#Pluviometer_02">
+            <span>pluviometer 02</span>
          </a>
       </li>
       <li>
-         <a href="#SoilTensiometer_01_Soil30cmDepth_Moisture"
-            title="http://www.w3id.org/def/irrig#SoilTensiometer_01_Soil30cmDepth_Moisture">
-            <span>soil tensiometer 01 soil30cm depth moisture</span>
+         <a href="#Sonde_01" title="http://www.w3id.org/def/irrig#Sonde_01">
+            <span>sonde 01</span>
          </a>
       </li>
       <li>
-         <a href="#SoilTensiometer_02_Soil30cmDepth_Moisture"
-            title="http://www.w3id.org/def/irrig#SoilTensiometer_02_Soil30cmDepth_Moisture">
-            <span>soil tensiometer 02 soil30cm depth moisture</span>
+         <a href="#Sonde_02" title="http://www.w3id.org/def/irrig#Sonde_02">
+            <span>sonde 02</span>
          </a>
       </li>
       <li>
-         <a href="#SoilTensiometer_03_Soil30cmDepth_Moisture"
-            title="http://www.w3id.org/def/irrig#SoilTensiometer_03_Soil30cmDepth_Moisture">
-            <span>soil tensiometer 03 soil30cm depth moisture</span>
+         <a href="#Sonde_03" title="http://www.w3id.org/def/irrig#Sonde_03">
+            <span>sonde 03</span>
          </a>
       </li>
       <li>
-         <a href="#SoilTensiometer_04_Soil60cmDepth_Moisture"
-            title="http://www.w3id.org/def/irrig#SoilTensiometer_04_Soil60cmDepth_Moisture">
-            <span>soil tensiometer 04 soil60cm depth moisture</span>
+         <a href="#Sonde_04" title="http://www.w3id.org/def/irrig#Sonde_04">
+            <span>sonde 04</span>
          </a>
       </li>
       <li>
-         <a href="#SoilTensiometer_05_Soil60cmDepth_Moisture"
-            title="http://www.w3id.org/def/irrig#SoilTensiometer_05_Soil60cmDepth_Moisture">
-            <span>soil tensiometer 05 soil60cm depth moisture</span>
+         <a href="#Sonde_05" title="http://www.w3id.org/def/irrig#Sonde_05">
+            <span>sonde 05</span>
          </a>
       </li>
       <li>
-         <a href="#SoilTensiometer_06_Soil60cmDepth_Moisture"
-            title="http://www.w3id.org/def/irrig#SoilTensiometer_06_Soil60cmDepth_Moisture">
-            <span>soil tensiometer 06 soil60cm depth moisture</span>
+         <a href="#Sonde_06" title="http://www.w3id.org/def/irrig#Sonde_06">
+            <span>sonde 06</span>
          </a>
       </li>
       <li>
@@ -1358,9 +1439,8 @@ This section provides details for each class and property defined by Irrigation 
          </a>
       </li>
       <li>
-         <a href="#WateringValve_01_Soil_Moisture"
-            title="http://www.w3id.org/def/irrig#WateringValve_01_Soil_Moisture">
-            <span>watering valve 01 soil moisture</span>
+         <a href="#Valve_01" title="http://www.w3id.org/def/irrig#Valve_01">
+            <span>valve 01</span>
          </a>
       </li>
    </ul>
@@ -1854,13 +1934,13 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Pluviometer_01_Rain_Quantity">
-      <h3>pluviometer 01 rain quantity<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="Pluviometer_01">
+      <h3>pluviometer 01<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Pluviometer_01_Rain_Quantity</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Pluviometer_01</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -1869,13 +1949,13 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Pluviometer_02_Rain_Quantity">
-      <h3>pluviometer 02 rain quantity<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="Pluviometer_02">
+      <h3>pluviometer 02<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Pluviometer_02_Rain_Quantity</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Pluviometer_02</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -1884,92 +1964,92 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="SoilTensiometer_01_Soil30cmDepth_Moisture">
-      <h3>soil tensiometer 01 soil30cm depth moisture<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="Sonde_01">
+      <h3>sonde 01<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#SoilTensiometer_01_Soil30cmDepth_Moisture</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Sonde_01</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil Tensiometer</a>
+            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil tensiometer</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="SoilTensiometer_02_Soil30cmDepth_Moisture">
-      <h3>soil tensiometer 02 soil30cm depth moisture<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="Sonde_02">
+      <h3>sonde 02<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#SoilTensiometer_02_Soil30cmDepth_Moisture</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Sonde_02</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil Tensiometer</a>
+            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil tensiometer</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="SoilTensiometer_03_Soil30cmDepth_Moisture">
-      <h3>soil tensiometer 03 soil30cm depth moisture<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="Sonde_03">
+      <h3>sonde 03<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#SoilTensiometer_03_Soil30cmDepth_Moisture</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Sonde_03</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil Tensiometer</a>
+            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil tensiometer</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="SoilTensiometer_04_Soil60cmDepth_Moisture">
-      <h3>soil tensiometer 04 soil60cm depth moisture<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="Sonde_04">
+      <h3>sonde 04<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#SoilTensiometer_04_Soil60cmDepth_Moisture</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Sonde_04</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil Tensiometer</a>
+            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil tensiometer</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="SoilTensiometer_05_Soil60cmDepth_Moisture">
-      <h3>soil tensiometer 05 soil60cm depth moisture<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="Sonde_05">
+      <h3>sonde 05<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#SoilTensiometer_05_Soil60cmDepth_Moisture</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Sonde_05</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil Tensiometer</a>
+            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil tensiometer</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="SoilTensiometer_06_Soil60cmDepth_Moisture">
-      <h3>soil tensiometer 06 soil60cm depth moisture<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="Sonde_06">
+      <h3>sonde 06<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#SoilTensiometer_06_Soil60cmDepth_Moisture</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Sonde_06</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil Tensiometer</a>
+            <a href="#https://w3id.org/def/saref4agri#SoilTensiometer" title="https://w3id.org/def/saref4agri#SoilTensiometer">Soil tensiometer</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2346,13 +2426,13 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="WateringValve_01_Soil_Moisture">
-      <h3>watering valve 01 soil moisture<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="Valve_01">
+      <h3>valve 01<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#WateringValve_01_Soil_Moisture</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Valve_01</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
