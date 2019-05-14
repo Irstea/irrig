@@ -1,0 +1,31 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "https://w3id.org/saref#Actuator" "https://w3id.org/def/saref4agri#WateringValve" "base:GrowthPorperty" "base:Soil30cmDepthAverageMoisturePerDayObservation" "http://www.w3id.org/def/caso#Observation" "base:Soil30cmDepthMoistureObservation" "base:RootZoneMoistureLevelDeduction" "base:MoistureProperty" "http://www.w3id.org/def/caso#Boundary" "http://www.w3id.org/def/caso#State" "base:Soil60cmDepthMoistureObservation" "https://w3id.org/def/saref4agri#Pluviometer" "https://w3id.org/saref#Sensor" "base:CropGrowthDeduction" "base:RootZoneMoisturePerDayObservation" "base:CropGrowthBoundary" "https://w3id.org/def/saref4agri#SoilTensiometer" "http://www.w3id.org/def/caso#Actuation" "base:CropWaterNeedBoundary" "base:Soil60cmDepthAverageMoisturePerDayObservation" "base:RootZoneMoistureLevelBoundary" "http://www.w3id.org/def/caso#Deduction" "base:IrrigationActuation" "base:CropWaterNeedState" "base:CropGrowthState" "base:CropGrowthObservation" "https://w3id.org/def/saref4agri#WeatherStation" "base:RainIntensittyState" "http://www.w3.org/ns/ssn/Property" "base:RootZoneMoistureLevelState" "base:CropWaterNeedDeduction" "base:StressProperty" "base:IntensityProperty" ; /*classes style*/
+	"base:CropGrowthBoundary" -> "http://www.w3id.org/def/caso#Boundary" [ label = "rdfs:subClassOf" ];
+	"base:CropWaterNeedBoundary" -> "http://www.w3id.org/def/caso#Boundary" [ label = "rdfs:subClassOf" ];
+	"base:RootZoneMoistureLevelDeduction" -> "http://www.w3id.org/def/caso#Deduction" [ label = "rdfs:subClassOf" ];
+	"base:Soil60cmDepthMoistureObservation" -> "http://www.w3id.org/def/caso#Observation" [ label = "rdfs:subClassOf" ];
+	"base:IrrigationActuation" -> "http://www.w3id.org/def/caso#Actuation" [ label = "rdfs:subClassOf" ];
+	"base:CropWaterNeedState" -> "http://www.w3id.org/def/caso#State" [ label = "rdfs:subClassOf" ];
+	"base:StressProperty" -> "http://www.w3.org/ns/ssn/Property" [ label = "rdfs:subClassOf" ];
+	"base:RainIntensittyState" -> "http://www.w3id.org/def/caso#State" [ label = "rdfs:subClassOf" ];
+	"base:CropGrowthState" -> "http://www.w3id.org/def/caso#State" [ label = "rdfs:subClassOf" ];
+	"base:CropGrowthObservation" -> "http://www.w3id.org/def/caso#Observation" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/def/saref4agri#WeatherStation" -> "https://w3id.org/saref#Sensor" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/def/saref4agri#SoilTensiometer" -> "https://w3id.org/saref#Sensor" [ label = "rdfs:subClassOf" ];
+	"base:GrowthPorperty" -> "http://www.w3.org/ns/ssn/Property" [ label = "rdfs:subClassOf" ];
+	"base:Soil30cmDepthAverageMoisturePerDayObservation" -> "http://www.w3id.org/def/caso#Observation" [ label = "rdfs:subClassOf" ];
+	"base:Soil60cmDepthAverageMoisturePerDayObservation" -> "http://www.w3id.org/def/caso#Observation" [ label = "rdfs:subClassOf" ];
+	"base:CropWaterNeedDeduction" -> "http://www.w3id.org/def/caso#Deduction" [ label = "rdfs:subClassOf" ];
+	"base:MoistureProperty" -> "http://www.w3.org/ns/ssn/Property" [ label = "rdfs:subClassOf" ];
+	"base:RootZoneMoistureLevelState" -> "http://www.w3id.org/def/caso#State" [ label = "rdfs:subClassOf" ];
+	"base:RootZoneMoisturePerDayObservation" -> "http://www.w3id.org/def/caso#Observation" [ label = "rdfs:subClassOf" ];
+	"base:IntensityProperty" -> "http://www.w3.org/ns/ssn/Property" [ label = "rdfs:subClassOf" ];
+	"base:CropGrowthDeduction" -> "http://www.w3id.org/def/caso#Deduction" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/def/saref4agri#WateringValve" -> "https://w3id.org/saref#Actuator" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/def/saref4agri#Pluviometer" -> "https://w3id.org/saref#Sensor" [ label = "rdfs:subClassOf" ];
+	"base:Soil30cmDepthMoistureObservation" -> "http://www.w3id.org/def/caso#Observation" [ label = "rdfs:subClassOf" ];
+	"base:RootZoneMoistureLevelBoundary" -> "http://www.w3id.org/def/caso#Boundary" [ label = "rdfs:subClassOf" ];
+
+}
