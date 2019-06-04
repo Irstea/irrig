@@ -664,7 +664,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The inference result that determine the crop growth state at a specific time."
+    "@value" : "CropGrowthDeduction - Act of carrying out an (Observation) Procedure to estimate a State of the CropGrowth Property of the Crop FeatureOfInterest. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -675,13 +675,17 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A CropGrowthDeduction is made by the Software_Agent Sensor based on human observation"
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#CropGrowthObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The act that a sensor carries out an crop growth observation."
+    "@value" : "CropGrowthObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Crop_Stage Property of the Crop FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Crop_Stage ObservableProperty (Property) to describe what the result is an estimate of, and to the Crop FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -692,13 +696,17 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A CropGrowthObservation that made by the CatherineRoussey Sensor (human observation or biology sensor)."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#CropGrowthState",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Situation that a crop growth property has qualitative data that distinguish with other situations. This is a definitive class including the following states: init, v2, v7, v7d25, r1, r1d15, r5, r5hg45."
+    "@value" : "CropGrowthState - A qualitative value of the CropGrowth Property which changes over time, summarizing a set of information about that Property. To evaluate the State of the Property, some Boundaries are defined."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -706,13 +714,17 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3id.org/def/caso#State"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A State V2 is linked to an individual of  CropGrowth Property dedicated to maize crop. The V2 State is reached when two leaves are fully emerged with collars visible in a maize plant. The State appearance could be evaluated by human observation or by automatic method like the Growing Degree Unit (GDU)."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#CropWaterNeedDeduction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The inference result that determine the crop water need state at a specific time."
+    "@value" : "CropWaterNeedDeduction - Act of carrying out an (Observation) Procedure to estimate a State of the CropWaterNeed Property of the Crop FeatureOfInterest. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -723,13 +735,17 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid13"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A CropWaterNeedDeduction that made by the Software_Agent Sensor based on observations made by tensiometer sensor"
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#CropWaterNeedState",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Situation that a crop water need property has qualitative data that distinguish with other situations. This is a definitive class including the following states: init, no, yes, wait."
+    "@value" : "CropWaterNeedState - A qualitative value of the CropWaterNeed Property which changes over time, summarizing a set of information about that Property. To evaluate the State of the Property, some Boundaries are defined."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -737,6 +753,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3id.org/def/caso#State"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Example: The State No of the CropWaterNeed Property represents the fact that the crop does not need water. The State Yes of the CropWaterNeed Property represents the fact that the crop needs extra water."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_Air",
@@ -797,7 +817,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Property dedicated to the growth of plants."
+    "@value" : "GrowthProperty - Growth aspect (characteristic dimension) of an entity representing the physical development or the increasing in amount, number or size of the entity. The Growth aspect of an entity is intrinsic to and cannot exist without the entity. The Growth quality values should be expressed by a qualitative value such as States or by a quantitative value."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -805,13 +825,17 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/ssn/Property"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "CropGrowth is a GrowthProperty representing the physical development of crop."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#IntensityProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Property dedicated to the intensity of rainfall."
+    "@value" : "IntensityProperty - Intensity aspect of an entity representing the strength effect or the level of power per unit area of the entity. The Intensity aspect of the entity is intrinsic to and cannot exist without the entity. The Intensity quality value should be expressed by a qualitative value such as States or by a quantitative value."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -819,13 +843,17 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/ssn/Property"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "RainIntensity is a IntensityProperty representing the strength effect of rain."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#IrrigationActuation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The act that an actuator carries out an irrigation action."
+    "@value" : "IrrigationActuation - Act of carrying out an Irrigation (Actuation) Procedure to change the State of a Moisture ActuatableProperty of a Soil FeatureOfInterest using a watering Actuator. This act is performed during the context exploitation phase of a context aware system. Links to an Actuator to describe what made the Actuation and how; links to an ActuatableProperty to describe the target that the Actuation change; links to a FeatureOfInterest to detail what that property was associated with. When the act is performed based on a Deduction, it should be linked to this Deduction by the wasInfluencedBy property. Links to the Function that is triggered by the Actuation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -836,13 +864,17 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid19"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "An IrrigationActuation is made by Watering Valve Actuator, links to Soil30cmDepth FeatureOfInterest and its Soil30cmDepthMoisture ActuatableProperty."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#MoistureProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Property dedicated to the moisture in the soil."
+    "@value" : "MoistureProperty - Moisture aspect of an entity representing the amount of water available inside the entity. The Moisture aspect of the entity is intrinsic to and cannot exist without the entity. The Moisture quality value should be expressed by a qualitative value such as States or by a quantitative value."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -850,6 +882,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/ssn/Property"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "RootZoneMoistureLevel is a MoistureProperty representing the amount of water available around the soil’s root zone area of a plant."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Air_MaxTemperaturePerDay",
@@ -959,7 +995,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Situation that a rain intensity level has qualitative data that distinguish with other situation. This is a definitive class including the following states: init, light, moderate, heavy."
+    "@value" : "RainIntensityState - A qualitative value of the RainIntensity Property which changes over time, summarizing a set of information about that Property. To evaluate the State of the Property, some Boundaries are defined."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -970,13 +1006,17 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid35"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Example: The State Light of the RainIntensity Property represents a fact that there is no enought rain to take any decision about irrigation."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#RainIntensityBoundary",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Limits to define a rain intensity state and distinguish this state to other states."
+    "@value" : "RainIntensityBoundary - Limit of a State of the RainIntensity Property. The value of the limit is a quantitative data. To store the value, the boundaryValue data property is used."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -984,13 +1024,17 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3id.org/def/caso#Boundary"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "10 mm is the value of the Quantity_Low Boundary that distinguish the Light State from the Moderate State of the RainIntensity Property."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#RainIntensityDeduction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The inference result that determine the rain intensity state at a specific time."
+    "@value" : "RainIntensityDeduction - Act of carrying out an (Observation) Procedure to estimate a State of the RainIntensity Property of the Rain FeatureOfInterest. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1001,13 +1045,17 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid49"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A RainIntensityDeduction that made by the Software_Agent Sensor based on observations made by a pluviometer sensor"
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#RainQuantityObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The act that a sensor carries out an rain quantity observation."
+    "@value" : "RainQuantityObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Rain_Quantity Property of the Rain FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Rain_Quantity ObservableProperty (Property) to describe what the result is an estimate of, and to the Rain FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1018,13 +1066,17 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid55"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A RainQuantityObservation that made by the Pluviometer Sensor."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#RainTotalQuantityPerDayObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The act that a sensor carries out a total rain quantity per day observation."
+    "@value" : "RainQuantityObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Rain_TotalQuantityPerDay Property of the Rain FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Rain_TotalQuantityPerDay ObservableProperty to describe what the result is an estimate of, and to the Rain FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1035,13 +1087,17 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid61"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A RainTotalQuantityPerDayObservation is computed by the SoftwareAgent Sensor based on observations made by a pluviometer."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#RootZoneAverageMoisturePerDayObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The act that a sensor carries out an root zone moisture per day observation."
+    "@value" : "RootZoneAverageMoisturePerDayObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the RootZone_AverageMoisturePerDay Property of the RootZone FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the RootZone_AverageMoisturePerDay ObservableProperty (Property) to describe what the result is an estimate of, and to the RootZone FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1052,13 +1108,17 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid67"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A RootZoneAverageMoisturePerDayObservation is computed by the SoftwareAgent Sensor."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Limits to define a root zone moisture level state and distinguish this state to other states."
+    "@value" : "RootZoneMoistureLevelBoundary - Limit of a State of the RootZoneMoistureLevel Property. The value of the limit is a quantitative data. To store the value, the boundaryValue data property is used."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1066,13 +1126,17 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3id.org/def/caso#Boundary"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "10 cbar is the value of the Tension_VeryHigh Boundary that distinguish the Saturated State from the VeryHigh State of the RootZoneMoistureLevel Property."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#RootZoneMoistureLevelDeduction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The inference result that determine the rootzone moisture level state at a specific time."
+    "@value" : "RootZoneMoistureLevelDeduction - Act of carrying out an (Observation) Procedure to estimate a State of the RootZoneMoistureLevel Property of the RootZone FeatureOfInterest. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1083,13 +1147,17 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid73"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A RootZoneMoistureLevelDeduction that made by the Software_Agent."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Situation that a root zone moisture level has qualitative data that distinguish with other situation. This is a definitive class including the following states: init, saturated, very high, high, average, low, very low, dry."
+    "@value" : "RootZoneMoistureLevelState - A qualitative value of the RootZoneMoistureLevel Property which changes over time, summarizing a set of information about that Property. To evaluate the State of the Property some Boundaries are defined."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1100,13 +1168,17 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid79"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "The State Saturated of the RootZoneMoistureLevel Property represents a fact that the moisture in rootzone is saturated in water."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#Soil30cmDepthAverageMoisturePerDayObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The act that a sensor carries out an average moisture per day observation at 30 cmp depth soil."
+    "@value" : "Soil30cmDepthAverageMoisturePerDayObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Soil30cmDepth_AverageMoisturePerDay Property of the Soil30cmDepth FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Soil30cmDepth_AverageMoisturePerDay ObservableProperty (Property) to describe what the result is an estimate of, and to the Soil30cmDepth FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1117,13 +1189,17 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid93"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A Soil30cmDepthAverageMoisturePerDayObservation is computed by the SoftwareAgent Sensor."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#Soil30cmDepthMoistureObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The act that a sensor carries out a moisture observation at 30 cm depth soil."
+    "@value" : "Soil30cmDepthAverageMoisturePerDayObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Soil30cmDepth_MoisturePerDay Property of the Soil30cmDepth FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Soil30cmDepth_MoisturePerDay ObservableProperty to describe what the result is an estimate of, and to the Soil30cmDepth FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1134,13 +1210,17 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid99"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A Soil30cmDepthMoistureObservation is made by the SoilTensiometer_01 Sensor placed at 30 cm depth in the soil."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#Soil60cmDepthAverageMoisturePerDayObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The act that a sensor carries out an average moisture per day observation at 60 cmp depth soil."
+    "@value" : "Soil60cmDepthAverageMoisturePerDayObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Soil60cmDepth_AverageMoisturePerDay Property of the Soil60cmDepth FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Soil60cmDepth_AverageMoisturePerDay ObservableProperty to describe what the result is an estimate of, and to the Soil60cmDepth FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1151,13 +1231,17 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid105"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A Soil60cmDepthAverageMoisturePerDayObservation ismade by the SoftwareAgent Sensor."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#Soil60cmDepthMoistureObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The act that a sensor carries out a moisture observation at 60 cm depth soil."
+    "@value" : "Soil60cmDepthAverageMoisturePerDayObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Soil60cmDepth_MoisturePerDay Property of the Soil60cmDepth FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Soil60cmDepth_MoisturePerDay ObservableProperty to describe what the result is an estimate of, and to the Soil60cmDepth FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1168,6 +1252,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid111"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A Soil60cmDepthMoistureObservation is made by the Tensiometer Sensor placed at 60 cm depth in the soil."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#SoilTensiometer_01_Soil30cmDepth_Moisture",
@@ -1264,7 +1352,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Property dedicated to the stress of plants."
+    "@value" : "StressProperty - Stress aspect of an entity representing the pressure inside the entity. The Stress aspect of the entity is intrinsic to and cannot exist without the entity. The Stress quality values should be expressed by a qualitative value such as States or by a quantitative value."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1272,6 +1360,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/ssn/Property"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "CropWaterNeed is a StressProperty representing the stress inside the plant when it needs extra water. It corresponds to the drought stress."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#WateringValve_01_Soil_Moisture",

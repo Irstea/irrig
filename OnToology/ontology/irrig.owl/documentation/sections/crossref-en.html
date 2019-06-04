@@ -110,8 +110,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#CropGrowthDeduction</p>
       <div class="comment">
-         <span class="markdown">The inference result that determine the crop growth state at a specific time.</span>
+         <span class="markdown">CropGrowthDeduction - Act of carrying out an (Observation) Procedure to estimate a State of the CropGrowth Property of the Crop FeatureOfInterest. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>A CropGrowthDeduction is made by the Software_Agent Sensor based on human observation</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -137,8 +143,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#CropGrowthObservation</p>
       <div class="comment">
-         <span class="markdown">The act that a sensor carries out an crop growth observation.</span>
+         <span class="markdown">CropGrowthObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Crop_Stage Property of the Crop FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Crop_Stage ObservableProperty (Property) to describe what the result is an estimate of, and to the Crop FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>A CropGrowthObservation that made by the CatherineRoussey Sensor (human observation or biology sensor).</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -164,8 +176,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#CropGrowthState</p>
       <div class="comment">
-         <span class="markdown">Situation that a crop growth property has qualitative data that distinguish with other situations. This is a definitive class including the following states: init, v2, v7, v7d25, r1, r1d15, r5, r5hg45.</span>
+         <span class="markdown">CropGrowthState - A qualitative value of the CropGrowth Property which changes over time, summarizing a set of information about that Property. To evaluate the State of the Property, some Boundaries are defined.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>A State V2 is linked to an individual of  CropGrowth Property dedicated to maize crop. The V2 State is reached when two leaves are fully emerged with collars visible in a maize plant. The State appearance could be evaluated by human observation or by automatic method like the Growing Degree Unit (GDU).</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -201,8 +219,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#CropWaterNeedDeduction</p>
       <div class="comment">
-         <span class="markdown">The inference result that determine the crop water need state at a specific time.</span>
+         <span class="markdown">CropWaterNeedDeduction - Act of carrying out an (Observation) Procedure to estimate a State of the CropWaterNeed Property of the Crop FeatureOfInterest. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>A CropWaterNeedDeduction that made by the Software_Agent Sensor based on observations made by tensiometer sensor</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -228,8 +252,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#CropWaterNeedState</p>
       <div class="comment">
-         <span class="markdown">Situation that a crop water need property has qualitative data that distinguish with other situations. This is a definitive class including the following states: init, no, yes, wait.</span>
+         <span class="markdown">CropWaterNeedState - A qualitative value of the CropWaterNeed Property which changes over time, summarizing a set of information about that Property. To evaluate the State of the Property, some Boundaries are defined.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>Example: The State No of the CropWaterNeed Property represents the fact that the crop does not need water. The State Yes of the CropWaterNeed Property represents the fact that the crop needs extra water.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -257,8 +287,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#GrowthProperty</p>
       <div class="comment">
-         <span class="markdown">Property dedicated to the growth of plants.</span>
+         <span class="markdown">GrowthProperty - Growth aspect (characteristic dimension) of an entity representing the physical development or the increasing in amount, number or size of the entity. The Growth aspect of an entity is intrinsic to and cannot exist without the entity. The Growth quality values should be expressed by a qualitative value such as States or by a quantitative value.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>CropGrowth is a GrowthProperty representing the physical development of crop.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -280,8 +316,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#IntensityProperty</p>
       <div class="comment">
-         <span class="markdown">Property dedicated to the intensity of rainfall.</span>
+         <span class="markdown">IntensityProperty - Intensity aspect of an entity representing the strength effect or the level of power per unit area of the entity. The Intensity aspect of the entity is intrinsic to and cannot exist without the entity. The Intensity quality value should be expressed by a qualitative value such as States or by a quantitative value.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>RainIntensity is a IntensityProperty representing the strength effect of rain.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -303,8 +345,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#IrrigationActuation</p>
       <div class="comment">
-         <span class="markdown">The act that an actuator carries out an irrigation action.</span>
+         <span class="markdown">IrrigationActuation - Act of carrying out an Irrigation (Actuation) Procedure to change the State of a Moisture ActuatableProperty of a Soil FeatureOfInterest using a watering Actuator. This act is performed during the context exploitation phase of a context aware system. Links to an Actuator to describe what made the Actuation and how; links to an ActuatableProperty to describe the target that the Actuation change; links to a FeatureOfInterest to detail what that property was associated with. When the act is performed based on a Deduction, it should be linked to this Deduction by the wasInfluencedBy property. Links to the Function that is triggered by the Actuation.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>An IrrigationActuation is made by Watering Valve Actuator, links to Soil30cmDepth FeatureOfInterest and its Soil30cmDepthMoisture ActuatableProperty.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>(<span class="dotted" title="http://www.w3id.org/def/caso#Actuation">actuation</span> 
@@ -335,8 +383,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#MoistureProperty</p>
       <div class="comment">
-         <span class="markdown">Property dedicated to the moisture in the soil.</span>
+         <span class="markdown">MoistureProperty - Moisture aspect of an entity representing the amount of water available inside the entity. The Moisture aspect of the entity is intrinsic to and cannot exist without the entity. The Moisture quality value should be expressed by a qualitative value such as States or by a quantitative value.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>RootZoneMoistureLevel is a MoistureProperty representing the amount of water available around the soil’s root zone area of a plant.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -383,8 +437,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#RainIntensityBoundary</p>
       <div class="comment">
-         <span class="markdown">Limits to define a rain intensity state and distinguish this state to other states.</span>
+         <span class="markdown">RainIntensityBoundary - Limit of a State of the RainIntensity Property. The value of the limit is a quantitative data. To store the value, the boundaryValue data property is used.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>10 mm is the value of the Quantity_Low Boundary that distinguish the Light State from the Moderate State of the RainIntensity Property.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -412,8 +472,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#RainIntensityDeduction</p>
       <div class="comment">
-         <span class="markdown">The inference result that determine the rain intensity state at a specific time.</span>
+         <span class="markdown">RainIntensityDeduction - Act of carrying out an (Observation) Procedure to estimate a State of the RainIntensity Property of the Rain FeatureOfInterest. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>A RainIntensityDeduction that made by the Software_Agent Sensor based on observations made by a pluviometer sensor</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -439,8 +505,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#RainIntensittyState</p>
       <div class="comment">
-         <span class="markdown">Situation that a rain intensity level has qualitative data that distinguish with other situation. This is a definitive class including the following states: init, light, moderate, heavy.</span>
+         <span class="markdown">RainIntensityState - A qualitative value of the RainIntensity Property which changes over time, summarizing a set of information about that Property. To evaluate the State of the Property, some Boundaries are defined.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>Example: The State Light of the RainIntensity Property represents a fact that there is no enought rain to take any decision about irrigation.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -492,8 +564,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#RainQuantityObservation</p>
       <div class="comment">
-         <span class="markdown">The act that a sensor carries out an rain quantity observation.</span>
+         <span class="markdown">RainQuantityObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Rain_Quantity Property of the Rain FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Rain_Quantity ObservableProperty (Property) to describe what the result is an estimate of, and to the Rain FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>A RainQuantityObservation that made by the Pluviometer Sensor.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -519,8 +597,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#RainTotalQuantityPerDayObservation</p>
       <div class="comment">
-         <span class="markdown">The act that a sensor carries out a total rain quantity per day observation.</span>
+         <span class="markdown">RainQuantityObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Rain_TotalQuantityPerDay Property of the Rain FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Rain_TotalQuantityPerDay ObservableProperty to describe what the result is an estimate of, and to the Rain FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>A RainTotalQuantityPerDayObservation is computed by the SoftwareAgent Sensor based on observations made by a pluviometer.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -546,8 +630,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary</p>
       <div class="comment">
-         <span class="markdown">Limits to define a root zone moisture level state and distinguish this state to other states.</span>
+         <span class="markdown">RootZoneMoistureLevelBoundary - Limit of a State of the RootZoneMoistureLevel Property. The value of the limit is a quantitative data. To store the value, the boundaryValue data property is used.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>10 cbar is the value of the Tension_VeryHigh Boundary that distinguish the Saturated State from the VeryHigh State of the RootZoneMoistureLevel Property.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -583,8 +673,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#RootZoneMoistureLevelDeduction</p>
       <div class="comment">
-         <span class="markdown">The inference result that determine the rootzone moisture level state at a specific time.</span>
+         <span class="markdown">RootZoneMoistureLevelDeduction - Act of carrying out an (Observation) Procedure to estimate a State of the RootZoneMoistureLevel Property of the RootZone FeatureOfInterest. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>A RootZoneMoistureLevelDeduction that made by the Software_Agent.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -610,8 +706,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#RootZoneMoistureLevelState</p>
       <div class="comment">
-         <span class="markdown">Situation that a root zone moisture level has qualitative data that distinguish with other situation. This is a definitive class including the following states: init, saturated, very high, high, average, low, very low, dry.</span>
+         <span class="markdown">RootZoneMoistureLevelState - A qualitative value of the RootZoneMoistureLevel Property which changes over time, summarizing a set of information about that Property. To evaluate the State of the Property some Boundaries are defined.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>The State Saturated of the RootZoneMoistureLevel Property represents a fact that the moisture in rootzone is saturated in water.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -671,8 +773,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#RootZoneAverageMoisturePerDayObservation</p>
       <div class="comment">
-         <span class="markdown">The act that a sensor carries out an root zone moisture per day observation.</span>
+         <span class="markdown">RootZoneAverageMoisturePerDayObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the RootZone_AverageMoisturePerDay Property of the RootZone FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the RootZone_AverageMoisturePerDay ObservableProperty (Property) to describe what the result is an estimate of, and to the RootZone FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>A RootZoneAverageMoisturePerDayObservation is computed by the SoftwareAgent Sensor.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -698,8 +806,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#Soil30cmDepthAverageMoisturePerDayObservation</p>
       <div class="comment">
-         <span class="markdown">The act that a sensor carries out an average moisture per day observation at 30 cmp depth soil.</span>
+         <span class="markdown">Soil30cmDepthAverageMoisturePerDayObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Soil30cmDepth_AverageMoisturePerDay Property of the Soil30cmDepth FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Soil30cmDepth_AverageMoisturePerDay ObservableProperty (Property) to describe what the result is an estimate of, and to the Soil30cmDepth FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>A Soil30cmDepthAverageMoisturePerDayObservation is computed by the SoftwareAgent Sensor.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -725,8 +839,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#Soil30cmDepthMoistureObservation</p>
       <div class="comment">
-         <span class="markdown">The act that a sensor carries out a moisture observation at 30 cm depth soil.</span>
+         <span class="markdown">Soil30cmDepthAverageMoisturePerDayObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Soil30cmDepth_MoisturePerDay Property of the Soil30cmDepth FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Soil30cmDepth_MoisturePerDay ObservableProperty to describe what the result is an estimate of, and to the Soil30cmDepth FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>A Soil30cmDepthMoistureObservation is made by the SoilTensiometer_01 Sensor placed at 30 cm depth in the soil.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -752,8 +872,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#Soil60cmDepthAverageMoisturePerDayObservation</p>
       <div class="comment">
-         <span class="markdown">The act that a sensor carries out an average moisture per day observation at 60 cmp depth soil.</span>
+         <span class="markdown">Soil60cmDepthAverageMoisturePerDayObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Soil60cmDepth_AverageMoisturePerDay Property of the Soil60cmDepth FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Soil60cmDepth_AverageMoisturePerDay ObservableProperty to describe what the result is an estimate of, and to the Soil60cmDepth FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>A Soil60cmDepthAverageMoisturePerDayObservation ismade by the SoftwareAgent Sensor.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -779,8 +905,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#Soil60cmDepthMoistureObservation</p>
       <div class="comment">
-         <span class="markdown">The act that a sensor carries out a moisture observation at 60 cm depth soil.</span>
+         <span class="markdown">Soil60cmDepthAverageMoisturePerDayObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Soil60cmDepth_MoisturePerDay Property of the Soil60cmDepth FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Soil60cmDepth_MoisturePerDay ObservableProperty to describe what the result is an estimate of, and to the Soil60cmDepth FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>A Soil60cmDepthMoistureObservation is made by the Tensiometer Sensor placed at 60 cm depth in the soil.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -839,8 +971,14 @@ This section provides details for each class and property defined by Irrigation 
       <p>
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#StressProperty</p>
       <div class="comment">
-         <span class="markdown">Property dedicated to the stress of plants.</span>
+         <span class="markdown">StressProperty - Stress aspect of an entity representing the pressure inside the entity. The Stress aspect of the entity is intrinsic to and cannot exist without the entity. The Stress quality values should be expressed by a qualitative value such as States or by a quantitative value.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>CropWaterNeed is a StressProperty representing the stress inside the plant when it needs extra water. It corresponds to the drought stress.</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
