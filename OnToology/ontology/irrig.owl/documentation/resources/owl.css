@@ -245,16 +245,4 @@ pre {
   color:black;
   line-height:1.1em;
   padding:1em;
-  white-space: pre-wrap;                                      
-  -ms-word-break: break-all;                                  
-  word-break: break-all;                                      
-  word-wrap: break-word;                                     
-  -ms-word-wrap: break-all;                                  
-  -webkit-word-break: break-word;                            
-  -webkit-word-wrap: break-word;                             
-  word-break: break-word;    
-  word-wrap: break-word;                                 
-  -webkit-hyphens: auto;    
-  -moz-hyphens: auto;                                        
-  hyphens: auto;  
 }
