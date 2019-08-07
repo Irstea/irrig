@@ -887,6 +887,7 @@
     <!-- http://www.w3id.org/def/irrig#ObservableProperty_Crop_Growth -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Crop_Growth">
+        <rdf:type rdf:resource="http://www.w3id.org/def/caso#Property"/>
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#GrowthProperty"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Crop_Growth_Init"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Crop_Growth_R1"/>
@@ -911,6 +912,7 @@
     <!-- http://www.w3id.org/def/irrig#ObservableProperty_Crop_WaterNeed -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Crop_WaterNeed">
+        <rdf:type rdf:resource="http://www.w3id.org/def/caso#Property"/>
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#StressProperty"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Crop_WaterNeed_No"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Crop_WaterNeed_Wait"/>
@@ -923,6 +925,7 @@
     <!-- http://www.w3id.org/def/irrig#ObservableProperty_Rain_Intensity -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Rain_Intensity">
+        <rdf:type rdf:resource="http://www.w3id.org/def/caso#Property"/>
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#IntensityProperty"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Rain_Intensity_Heavy"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Rain_Intensity_Init"/>
@@ -959,6 +962,7 @@
     <!-- http://www.w3id.org/def/irrig#ObservableProperty_RootZone_MoistureLevel -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_RootZone_MoistureLevel">
+        <rdf:type rdf:resource="http://www.w3id.org/def/caso#Property"/>
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#MoistureProperty"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Average"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Dry"/>
