@@ -701,6 +701,14 @@
     
 
 
+    <!-- http://www.w3id.org/def/irrig#Actuator_WateringValve_01_Soil_Moisture -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Actuator_WateringValve_01_Soil_Moisture">
+        <rdf:type rdf:resource="https://w3id.org/def/saref4agri#WateringValve"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_High -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_High">
@@ -1008,65 +1016,65 @@
     
 
 
-    <!-- http://www.w3id.org/def/irrig#Pluviometer_01_Rain_Quantity -->
+    <!-- http://www.w3id.org/def/irrig#Sensor_Pluviometer_01_Rain_Quantity -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Pluviometer_01_Rain_Quantity">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Sensor_Pluviometer_01_Rain_Quantity">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#Pluviometer"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.w3id.org/def/irrig#Pluviometer_02_Rain_Quantity -->
+    <!-- http://www.w3id.org/def/irrig#Sensor_Pluviometer_02_Rain_Quantity -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Pluviometer_02_Rain_Quantity">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Sensor_Pluviometer_02_Rain_Quantity">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#Pluviometer"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_01_Soil30cmDepth_Moisture -->
+    <!-- http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_01_Soil30cmDepth_Moisture">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_02_Soil30cmDepth_Moisture -->
+    <!-- http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_02_Soil30cmDepth_Moisture">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_03_Soil30cmDepth_Moisture -->
+    <!-- http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_03_Soil30cmDepth_Moisture">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_04_Soil60cmDepth_Moisture -->
+    <!-- http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_04_Soil60cmDepth_Moisture">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_05_Soil60cmDepth_Moisture -->
+    <!-- http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_05_Soil60cmDepth_Moisture">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.w3id.org/def/irrig#SoilTensiometer_06_Soil60cmDepth_Moisture -->
+    <!-- http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#SoilTensiometer_06_Soil60cmDepth_Moisture">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
     </owl:NamedIndividual>
     
@@ -1260,14 +1268,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_VeryLow">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.w3id.org/def/irrig#WateringValve_01_Soil_Moisture -->
-
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#WateringValve_01_Soil_Moisture">
-        <rdf:type rdf:resource="https://w3id.org/def/saref4agri#WateringValve"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
