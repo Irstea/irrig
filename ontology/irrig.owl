@@ -904,7 +904,7 @@
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Crop_Growth_R5hg45"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Crop_Growth_V2"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Crop_Growth_V7"/>
-        <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Crop_Growth_V7d25"/>
+        <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Crop_Growth_V7d20"/>
     </owl:NamedIndividual>
     
 
@@ -1136,9 +1136,9 @@
     
 
 
-    <!-- http://www.w3id.org/def/irrig#State_Crop_Growth_V7d25 -->
+    <!-- http://www.w3id.org/def/irrig#State_Crop_Growth_V7d20 -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_Growth_V7d25">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_Growth_V7d20">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
     </owl:NamedIndividual>
     
