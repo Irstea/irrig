@@ -149,21 +149,6 @@
     <!-- http://www.w3id.org/def/irrig#CropGrowthObservation -->
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#CropGrowthObservation">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3id.org/def/caso#Observation"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
-                        <owl:hasValue rdf:resource="http://www.w3id.org/def/irrig#FeatureOfInterest_Crop"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
-                        <owl:hasValue rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Crop_Stage"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
         <rdfs:comment xml:lang="en">CropGrowthObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Crop_Stage Property of the Crop FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Crop_Stage ObservableProperty (Property) to describe what the result is an estimate of, and to the Crop FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
         <rdfs:label xml:lang="en">Crop growth observation</rdfs:label>
@@ -821,7 +806,6 @@
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#FeatureOfInterest_Crop">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Crop_Growth"/>
-        <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Crop_Stage"/>
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Crop_WaterNeed"/>
     </owl:NamedIndividual>
     
@@ -905,14 +889,6 @@
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Crop_Growth_V2"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Crop_Growth_V7"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Crop_Growth_V7d20"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.w3id.org/def/irrig#ObservableProperty_Crop_Stage -->
-
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Crop_Stage">
-        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
     </owl:NamedIndividual>
     
 
