@@ -1,0 +1,59 @@
+###  http://www.ontology.irstea.fr/arvalis/CropStageBoundary
+arvalis:CropStageBoundary rdf:type owl:Class ;
+                          rdfs:subClassOf caso:Boundary .
+
+
+###  http://www.w3.org/2006/time#DateTimeDescription
+time:DateTimeDescription rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/time#DateTimeInterval
+time:DateTimeInterval rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/time#Duration
+time:Duration rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/time#GeneralDateTimeDescription
+time:GeneralDateTimeDescription rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/time#Instant
+time:Instant rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/time#Interval
+time:Interval rdf:type owl:Class ;
+              rdfs:subClassOf time:TemporalEntity ;
+              rdfs:comment "A temporal entity with an extent or duration"@en ;
+              rdfs:label "Time interval"@en ;
+              skos:definition "A temporal entity with an extent or duration"@en .
+
+
+###  http://www.w3.org/2006/time#TemporalDuration
+time:TemporalDuration rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/time#TemporalUnit
+time:TemporalUnit rdf:type owl:Class ;
+                  rdfs:subClassOf time:TemporalDuration ;
+                  rdfs:comment "A standard duration, which provides a scale factor for a time extent, or the granularity or precision for a time position."@en ;
+                  rdfs:label "Temporal unit"@en ;
+                  skos:changeNote """Remove enumeration from definition, in order to allow other units to be used when required in other coordinate systems. 
+NOTE: existing units are still present as members of the class, but the class membership is now open. 
+
+In the original OWL-Time the following constraint appeared: 
+  owl:oneOf (
+      time:unitSecond
+      time:unitMinute
+      time:unitHour
+      time:unitDay
+      time:unitWeek
+      time:unitMonth
+      time:unitYear
+    ) ;"""@en ;
+                  skos:definition "A standard duration, which provides a scale factor for a time extent, or the granularity or precision for a time position."@en ;
+                  skos:note "Membership of the class TemporalUnit is open, to allow for other temporal units used in some technical applications (e.g. millions of years, Baha'i month)."@en .
+
+

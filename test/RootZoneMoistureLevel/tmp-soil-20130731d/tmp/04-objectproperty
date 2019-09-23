@@ -1,0 +1,68 @@
+###  http://www.w3.org/2006/time#hasBeginning
+time:hasBeginning rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf time:hasTime ;
+                  rdfs:domain time:TemporalEntity ;
+                  rdfs:range time:Instant ;
+                  rdfs:comment "Beginning of a temporal entity"@en ;
+                  rdfs:label "has beginning"@en ;
+                  skos:definition "Beginning of a temporal entity."@en .
+
+
+###  http://www.w3.org/2006/time#hasDateTimeDescription
+time:hasDateTimeDescription rdf:type owl:ObjectProperty ;
+                            rdfs:domain time:DateTimeInterval ;
+                            rdfs:range time:GeneralDateTimeDescription ;
+                            rdfs:comment "Value of DateTimeInterval expressed as a structured value. The beginning and end of the interval coincide with the limits of the shortest element in the description."@en ;
+                            rdfs:label "has Date-Time description"@en ;
+                            skos:definition "Value of DateTimeInterval expressed as a structured value. The beginning and end of the interval coincide with the limits of the shortest element in the description."@en .
+
+
+###  http://www.w3.org/2006/time#hasDuration
+time:hasDuration rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf time:hasTemporalDuration ;
+                 rdfs:range time:Duration ;
+                 rdfs:comment "Duration of a temporal entity, expressed as a scaled value or nominal value"@en ;
+                 rdfs:label "has duration"@en ;
+                 skos:definition "Duration of a temporal entity, event or activity, or thing, expressed as a scaled value"@en .
+
+
+###  http://www.w3.org/2006/time#hasEnd
+time:hasEnd rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf time:hasTime ;
+            rdfs:domain time:TemporalEntity ;
+            rdfs:range time:Instant ;
+            rdfs:comment "End of a temporal entity."@en ;
+            rdfs:label "has end"@en ;
+            skos:definition "End of a temporal entity."@en .
+
+
+###  http://www.w3.org/2006/time#hasTemporalDuration
+time:hasTemporalDuration rdf:type owl:ObjectProperty ;
+                         rdfs:domain time:TemporalEntity ;
+                         rdfs:range time:TemporalDuration ;
+                         rdfs:comment "Duration of a temporal entity."@en ;
+                         rdfs:label "has temporal duration"@en ;
+                         skos:definition "Duration of a temporal entity."@en .
+
+
+###  http://www.w3.org/2006/time#hasTime
+time:hasTime rdf:type owl:ObjectProperty ;
+             rdfs:range time:TemporalEntity ;
+             rdfs:comment "Supports the association of a temporal entity (instant or interval) to any thing"@en ;
+             rdfs:label "has time"@en ;
+             skos:definition "Supports the association of a temporal entity (instant or interval) to any thing"@en ;
+             skos:editorialNote "Feature at risk - added in 2017 revision, and not yet widely used. "@en .
+
+
+###  http://www.w3.org/2006/time#unitType
+time:unitType rdf:type owl:ObjectProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( time:Duration
+                                          time:GeneralDateTimeDescription
+                                        )
+                          ] ;
+              rdfs:range time:TemporalUnit ;
+              rdfs:comment "The temporal unit which provides the precision of a date-time value or scale of a temporal extent"@en ;
+              rdfs:label "temporal unit type"@en .
+
+

@@ -284,44 +284,10 @@
     
 
 
-    <!-- http://www.w3id.org/def/irrig#RainIntensittyState -->
+    <!-- http://www.w3id.org/def/irrig#PrecipitationProperty -->
 
-    <owl:Class rdf:about="http://www.w3id.org/def/irrig#RainIntensittyState">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3id.org/def/caso#State"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.w3id.org/def/caso#hasClosedLowerBoundary"/>
-                                <owl:someValuesFrom rdf:resource="http://www.w3id.org/def/irrig#RainIntensityBoundary"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.w3id.org/def/caso#hasOpenLowerBoundary"/>
-                                <owl:someValuesFrom rdf:resource="http://www.w3id.org/def/irrig#RainIntensityBoundary"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.w3id.org/def/caso#hasClosedUpperBoundary"/>
-                                <owl:someValuesFrom rdf:resource="http://www.w3id.org/def/irrig#RainIntensityBoundary"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.w3id.org/def/caso#hasOpenUpperBoundary"/>
-                                <owl:someValuesFrom rdf:resource="http://www.w3id.org/def/irrig#RainIntensityBoundary"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#State"/>
-        <rdfs:comment xml:lang="en">RainIntensityState - A qualitative value of the RainIntensity Property which changes over time, summarizing a set of information about that Property. To evaluate the State of the Property, some Boundaries are defined.</rdfs:comment>
-        <rdfs:label xml:lang="en">Rain Intensity State</rdfs:label>
-        <skos:example xml:lang="en">Example: The State Light of the RainIntensity Property represents a fact that there is no enought rain to take any decision about irrigation.</skos:example>
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#PrecipitationProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
     </owl:Class>
     
 
@@ -359,6 +325,48 @@
         <rdfs:comment xml:lang="en">RainIntensityDeduction - Act of carrying out an (Observation) Procedure to estimate a State of the RainIntensity Property of the Rain FeatureOfInterest. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time.</rdfs:comment>
         <rdfs:label xml:lang="en">Rain Intensity Deduction</rdfs:label>
         <skos:example xml:lang="en">A RainIntensityDeduction that made by the Software_Agent Sensor based on observations made by a pluviometer sensor</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#RainIntensityState -->
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#RainIntensityState">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3id.org/def/caso#State"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3id.org/def/caso#hasClosedLowerBoundary"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3id.org/def/irrig#RainIntensityBoundary"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3id.org/def/caso#hasOpenLowerBoundary"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3id.org/def/irrig#RainIntensityBoundary"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3id.org/def/caso#hasClosedUpperBoundary"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3id.org/def/irrig#RainIntensityBoundary"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3id.org/def/caso#hasOpenUpperBoundary"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3id.org/def/irrig#RainIntensityBoundary"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#State"/>
+        <rdfs:comment xml:lang="en">RainIntensityState - A qualitative value of the RainIntensity Property which changes over time, summarizing a set of information about that Property. To evaluate the State of the Property, some Boundaries are defined.</rdfs:comment>
+        <rdfs:label xml:lang="en">Rain Intensity State</rdfs:label>
+        <skos:example xml:lang="en">Example: The State Light of the RainIntensity Property represents a fact that there is no enought rain to take any decision about irrigation.</skos:example>
     </owl:Class>
     
 
@@ -635,6 +643,14 @@
     
 
 
+    <!-- http://www.w3id.org/def/irrig#TemperatureProperty -->
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#TemperatureProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/def/saref4agri#Pluviometer -->
 
     <owl:Class rdf:about="https://w3id.org/def/saref4agri#Pluviometer">
@@ -856,6 +872,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Air_MaxTemperaturePerDay">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#TemperatureProperty"/>
     </owl:NamedIndividual>
     
 
@@ -864,6 +881,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Air_MinTemperaturePerDay">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#TemperatureProperty"/>
     </owl:NamedIndividual>
     
 
@@ -872,6 +890,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Air_Temperature">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#TemperatureProperty"/>
     </owl:NamedIndividual>
     
 
@@ -911,6 +930,7 @@
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Rain_Intensity">
         <rdf:type rdf:resource="http://www.w3id.org/def/caso#Property"/>
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#IntensityProperty"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#PrecipitationProperty"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Rain_Intensity_Heavy"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Rain_Intensity_Init"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Rain_Intensity_Light"/>
@@ -923,6 +943,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Rain_Quantity">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#PrecipitationProperty"/>
     </owl:NamedIndividual>
     
 
@@ -931,6 +952,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Rain_TotalQuantityPerDay">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#PrecipitationProperty"/>
     </owl:NamedIndividual>
     
 
@@ -939,6 +961,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_RootZone_AverageMoisturePerDay">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#MoistureProperty"/>
     </owl:NamedIndividual>
     
 
@@ -964,6 +987,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_AverageMoisturePerDay">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#MoistureProperty"/>
     </owl:NamedIndividual>
     
 
@@ -972,6 +996,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_Moisture">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#MoistureProperty"/>
     </owl:NamedIndividual>
     
 
@@ -980,6 +1005,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_AverageMoisturePerDay">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#MoistureProperty"/>
     </owl:NamedIndividual>
     
 
@@ -988,6 +1014,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_Moisture">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#MoistureProperty"/>
     </owl:NamedIndividual>
     
 
@@ -1155,7 +1182,7 @@
     <!-- http://www.w3id.org/def/irrig#State_Rain_Intensity_Heavy -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Rain_Intensity_Heavy">
-        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensittyState"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityState"/>
     </owl:NamedIndividual>
     
 
@@ -1163,7 +1190,7 @@
     <!-- http://www.w3id.org/def/irrig#State_Rain_Intensity_Init -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Rain_Intensity_Init">
-        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensittyState"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityState"/>
     </owl:NamedIndividual>
     
 
@@ -1171,7 +1198,7 @@
     <!-- http://www.w3id.org/def/irrig#State_Rain_Intensity_Light -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Rain_Intensity_Light">
-        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensittyState"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityState"/>
     </owl:NamedIndividual>
     
 
@@ -1179,7 +1206,7 @@
     <!-- http://www.w3id.org/def/irrig#State_Rain_Intensity_Moderate -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Rain_Intensity_Moderate">
-        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensittyState"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityState"/>
     </owl:NamedIndividual>
     
 
