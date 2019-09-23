@@ -76,6 +76,9 @@
     "Boundary" : {
       "@id" : "http://www.w3id.org/def/caso#Boundary"
     },
+    "TemperatureProperty" : {
+      "@id" : "http://www.w3id.org/def/irrig#TemperatureProperty"
+    },
     "hasProperty" : {
       "@id" : "http://www.w3.org/ns/ssn/hasProperty",
       "@type" : "@id"
@@ -85,6 +88,9 @@
     },
     "note" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "PrecipitationProperty" : {
+      "@id" : "http://www.w3id.org/def/irrig#PrecipitationProperty"
     },
     "RootZoneMoistureLevelState" : {
       "@id" : "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"
@@ -111,6 +117,9 @@
     "preferredNamespacePrefix" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
     },
+    "RainIntensityState" : {
+      "@id" : "http://www.w3id.org/def/irrig#RainIntensityState"
+    },
     "CropWaterNeedDeduction" : {
       "@id" : "http://www.w3id.org/def/irrig#CropWaterNeedDeduction"
     },
@@ -119,9 +128,6 @@
     },
     "RainIntensityBoundary" : {
       "@id" : "http://www.w3id.org/def/irrig#RainIntensityBoundary"
-    },
-    "RainIntensittyState" : {
-      "@id" : "http://www.w3id.org/def/irrig#RainIntensittyState"
     },
     "Soil30cmDepthAverageMoisturePerDayObservation" : {
       "@id" : "http://www.w3id.org/def/irrig#Soil30cmDepthAverageMoisturePerDayObservation"
