@@ -38,6 +38,12 @@ This section provides details for each class and property defined by Irrigation 
          <a href="#https://w3id.org/def/saref4agri#Pluviometer" title="https://w3id.org/def/saref4agri#Pluviometer">Pluviometer</a>
       </li>
       <li>
+         <a href="#PrecipitationProperty"
+            title="http://www.w3id.org/def/irrig#PrecipitationProperty">
+            <span>precipitation property</span>
+         </a>
+      </li>
+      <li>
          <a href="#RainIntensityBoundary"
             title="http://www.w3id.org/def/irrig#RainIntensityBoundary">Rain Intensity Boundary</a>
       </li>
@@ -46,8 +52,7 @@ This section provides details for each class and property defined by Irrigation 
             title="http://www.w3id.org/def/irrig#RainIntensityDeduction">Rain Intensity Deduction</a>
       </li>
       <li>
-         <a href="#RainIntensittyState"
-            title="http://www.w3id.org/def/irrig#RainIntensittyState">Rain Intensity State</a>
+         <a href="#RainIntensityState" title="http://www.w3id.org/def/irrig#RainIntensityState">Rain Intensity State</a>
       </li>
       <li>
          <a href="#RainQuantityObservation"
@@ -96,6 +101,12 @@ This section provides details for each class and property defined by Irrigation 
          <a href="#StressProperty" title="http://www.w3id.org/def/irrig#StressProperty">Stress Property</a>
       </li>
       <li>
+         <a href="#TemperatureProperty"
+            title="http://www.w3id.org/def/irrig#TemperatureProperty">
+            <span>temperature property</span>
+         </a>
+      </li>
+      <li>
          <a href="#https://w3id.org/def/saref4agri#Thermometer" title="https://w3id.org/def/saref4agri#Thermometer">Thermometer</a>
       </li>
       <li>
@@ -121,24 +132,17 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Deduction" title="http://www.w3id.org/def/caso#Deduction">deduction</a> 
-            <span class="logic">and</span> 
-						(
-            <a href="http://www.w3.org/ns/sosa/hasFeatureOfInterest" 
-								title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Deduction">deduction</span> 
+            <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</span> 
             <span class="logic">value</span> 
             <a href="#FeatureOfInterest_Crop"
-               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Crop">feature of interest crop</a>) 
-						<span class="logic">and</span> 
-						(
-            <a href="http://www.w3.org/ns/sosa/observedProperty"
-              	title="http://www.w3.org/ns/sosa/observedProperty">observed property</a> 
+               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Crop">feature of interest crop</a>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/observedProperty">observed property</span> 
             <span class="logic">value</span> 
             <a href="#ObservableProperty_Crop_Growth"
                title="http://www.w3id.org/def/irrig#ObservableProperty_Crop_Growth">observable property crop growth</a>)</dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Deduction" title="http://www.w3id.org/def/caso#Deduction">deduction</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Deduction">deduction</span>
          </dd>
       </dl>
    </div>
@@ -159,23 +163,9 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
       </dl>
       <dl class="description">
-         <dt>is equivalent to</dt>
-         <dd>
-            <a href="http://www.w3id.org/def/caso#Observation" title="http://www.w3id.org/def/caso#Observation">observation</a> 
-            <span class="logic">and</span> (
-            <a href="http://www.w3.org/ns/sosa/hasFeatureOfInterest" 
-								title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a> 
-            <span class="logic">value</span> 
-            <a href="#FeatureOfInterest_Crop"
-               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Crop">feature of interest crop</a>) <span class="logic">and</span> (
-            <a href="http://www.w3.org/ns/sosa/observedProperty"
-              	title="http://www.w3.org/ns/sosa/observedProperty">observed property</a> 
-            <span class="logic">value</span> 
-            <a href="#ObservableProperty_Crop_Stage"
-               title="http://www.w3id.org/def/irrig#ObservableProperty_Crop_Stage">observable property crop stage</a>)</dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Observation" title="http://www.w3id.org/def/caso#Observation">observation</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Observation">observation</span>
          </dd>
       </dl>
    </div>
@@ -198,7 +188,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#State" title="http://www.w3id.org/def/caso#State">state</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#State">state</span>
          </dd>
          <dt>has members</dt>
          <dd>
@@ -216,8 +206,8 @@ This section provides details for each class and property defined by Irrigation 
                title="http://www.w3id.org/def/irrig#State_Crop_Growth_V2">state crop growth v2</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#State_Crop_Growth_V7"
                title="http://www.w3id.org/def/irrig#State_Crop_Growth_V7">state crop growth v7</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#State_Crop_Growth_V7d25"
-               title="http://www.w3id.org/def/irrig#State_Crop_Growth_V7d25">state crop growth v7d25</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#State_Crop_Growth_V7d20"
+               title="http://www.w3id.org/def/irrig#State_Crop_Growth_V7d20">state crop growth v7d20</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -241,21 +231,17 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Deduction" title="http://www.w3id.org/def/caso#Deduction">deduction</a> 
-            <span class="logic">and</span> (
-            <a href="http://www.w3.org/ns/sosa/hasFeatureOfInterest" 
-								title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Deduction">deduction</span> 
+            <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</span> 
             <span class="logic">value</span> 
             <a href="#FeatureOfInterest_Crop"
-               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Crop">feature of interest crop</a>) <span class="logic">and</span> ( 
-            <a href="http://www.w3.org/ns/sosa/observedProperty"
-              	title="http://www.w3.org/ns/sosa/observedProperty">observed property</a> 
+               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Crop">feature of interest crop</a>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/observedProperty">observed property</span> 
             <span class="logic">value</span> 
             <a href="#ObservableProperty_Crop_WaterNeed"
                title="http://www.w3id.org/def/irrig#ObservableProperty_Crop_WaterNeed">observable property crop water need</a>)</dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Deduction" title="http://www.w3id.org/def/caso#Deduction">deduction</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Deduction">deduction</span>
          </dd>
       </dl>
    </div>
@@ -278,7 +264,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#State" title="http://www.w3id.org/def/caso#State">state</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#State">state</span>
          </dd>
          <dt>has members</dt>
          <dd>
@@ -313,12 +299,14 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3.org/ns/ssn/Property" title="http://www.w3.org/ns/ssn/Property">property</a>
+            <span class="dotted" title="http://www.w3.org/ns/ssn/Property">property</span>
          </dd>
          <dt>has members</dt>
          <dd>
             <a href="#ObservableProperty_Crop_Growth"
                title="http://www.w3id.org/def/irrig#ObservableProperty_Crop_Growth">observable property crop growth</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ObservableProperty_Crop_Stage"
+               title="http://www.w3id.org/def/irrig#ObservableProperty_Crop_Stage">observable property crop stage</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -342,7 +330,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3.org/ns/ssn/Property" title="http://www.w3.org/ns/ssn/Property">property</a>
+            <span class="dotted" title="http://www.w3.org/ns/ssn/Property">property</span>
          </dd>
          <dt>has members</dt>
          <dd>
@@ -370,33 +358,23 @@ This section provides details for each class and property defined by Irrigation 
       </dl>
       <dl class="description">
          <dt>is equivalent to</dt>
-         <dd>(
-						<a href="http://www.w3id.org/def/caso#Actuation" title="http://www.w3id.org/def/caso#Actuation">actuation</a> 
-            <span class="logic">and</span> ((
-						<span class="dotted" title="http://www.w3.org/ns/sosa/actsOnProperty">acts on property</span> 
-            <a href="http://www.w3.org/ns/sosa/actsOnProperty" 
-								title="http://www.w3.org/ns/sosa/actsOnProperty">acts on property</a> 
+         <dd>(<span class="dotted" title="http://www.w3id.org/def/caso#Actuation">actuation</span> 
+            <span class="logic">and</span> ((<span class="dotted" title="http://www.w3.org/ns/sosa/actsOnProperty">acts on property</span> 
             <span class="logic">value</span> 
             <a href="#ObservableProperty_Soil60cmDepth_Moisture"
-               title="http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_Moisture">observable property soil60cm depth moisture</a>) <span class="logic">and</span> ( 
-            <a href="http://www.w3.org/ns/sosa/hasFeatureOfInterest" 
-								title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a> 
+               title="http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_Moisture">observable property soil60cm depth moisture</a>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</span> 
             <span class="logic">value</span> 
             <a href="#FeatureOfInterest_Soil60cmDepth"
-               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil60cmDepth">feature of interest soil60cm depth</a>))) <span class="logic">or</span> (( 
-            <a href="http://www.w3.org/ns/sosa/actsOnProperty" 
-								title="http://www.w3.org/ns/sosa/actsOnProperty">acts on property</a> 
+               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil60cmDepth">feature of interest soil60cm depth</a>))) <span class="logic">or</span> ((<span class="dotted" title="http://www.w3.org/ns/sosa/actsOnProperty">acts on property</span> 
             <span class="logic">value</span> 
             <a href="#ObservableProperty_Soil30cmDepth_Moisture"
-               title="http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_Moisture">observable property soil30cm depth moisture</a>) <span class="logic">and</span> (
-            <a href="http://www.w3.org/ns/sosa/hasFeatureOfInterest" 
-								title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a> 
+               title="http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_Moisture">observable property soil30cm depth moisture</a>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</span> 
             <span class="logic">value</span> 
             <a href="#FeatureOfInterest_Soil30cmDepth"
                title="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil30cmDepth">feature of interest soil30cm depth</a>))</dd>
          <dt>has super-classes</dt>
          <dd>
-						<a href="http://www.w3id.org/def/caso#Actuation" title="http://www.w3id.org/def/caso#Actuation">actuation</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Actuation">actuation</span>
          </dd>
       </dl>
    </div>
@@ -419,12 +397,22 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3.org/ns/ssn/Property" title="http://www.w3.org/ns/ssn/Property">property</a>
+            <span class="dotted" title="http://www.w3.org/ns/ssn/Property">property</span>
          </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#ObservableProperty_RootZone_MoistureLevel"
+            <a href="#ObservableProperty_RootZone_AverageMoisturePerDay"
+               title="http://www.w3id.org/def/irrig#ObservableProperty_RootZone_AverageMoisturePerDay">observable property root zone average moisture per day</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ObservableProperty_RootZone_MoistureLevel"
                title="http://www.w3id.org/def/irrig#ObservableProperty_RootZone_MoistureLevel">observable property root zone moisture level</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ObservableProperty_Soil30cmDepth_AverageMoisturePerDay"
+               title="http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_AverageMoisturePerDay">observable property soil30cm depth average moisture per day</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ObservableProperty_Soil30cmDepth_Moisture"
+               title="http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_Moisture">observable property soil30cm depth moisture</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ObservableProperty_Soil60cmDepth_AverageMoisturePerDay"
+               title="http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_AverageMoisturePerDay">observable property soil60cm depth average moisture per day</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ObservableProperty_Soil60cmDepth_Moisture"
+               title="http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_Moisture">observable property soil60cm depth moisture</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -442,14 +430,38 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="https://w3id.org/saref#Sensor" title="https://w3id.org/saref#Sensor">sensor</a>
+            <span class="dotted" title="https://w3id.org/saref#Sensor">sensor</span>
          </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#Pluviometer_01_Rain_Quantity"
-               title="http://www.w3id.org/def/irrig#Pluviometer_01_Rain_Quantity">pluviometer 01 rain quantity</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Pluviometer_02_Rain_Quantity"
-               title="http://www.w3id.org/def/irrig#Pluviometer_02_Rain_Quantity">pluviometer 02 rain quantity</a>
+            <a href="#Sensor_Pluviometer_01_Rain_Quantity"
+               title="http://www.w3id.org/def/irrig#Sensor_Pluviometer_01_Rain_Quantity">sensor pluviometer 01 rain quantity</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Sensor_Pluviometer_02_Rain_Quantity"
+               title="http://www.w3id.org/def/irrig#Sensor_Pluviometer_02_Rain_Quantity">sensor pluviometer 02 rain quantity</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PrecipitationProperty">
+      <h3>precipitation property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#PrecipitationProperty</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/ssn/Property">property</span>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#ObservableProperty_Rain_Intensity"
+               title="http://www.w3id.org/def/irrig#ObservableProperty_Rain_Intensity">observable property rain intensity</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ObservableProperty_Rain_Quantity"
+               title="http://www.w3id.org/def/irrig#ObservableProperty_Rain_Quantity">observable property rain quantity</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ObservableProperty_Rain_TotalQuantityPerDay"
+               title="http://www.w3id.org/def/irrig#ObservableProperty_Rain_TotalQuantityPerDay">observable property rain total quantity per day</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -473,7 +485,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Boundary" title="http://www.w3id.org/def/caso#Boundary">boundary</span>
+            <span class="dotted" title="http://www.w3id.org/def/caso#Boundary">boundary</span>
          </dd>
          <dt>has members</dt>
          <dd>
@@ -508,31 +520,27 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Deduction" title="http://www.w3id.org/def/caso#Deduction">deduction</a> 
-            <span class="logic">and</span> (
-            <a href="http://www.w3.org/ns/sosa/hasFeatureOfInterest" 
-								title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Deduction">deduction</span> 
+            <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</span> 
             <span class="logic">value</span> 
             <a href="#FeatureOfInterest_Rain"
-               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Rain">feature of interest rain</a>) <span class="logic">and</span> ( 
-            <a href="http://www.w3.org/ns/sosa/observedProperty"
-              	title="http://www.w3.org/ns/sosa/observedProperty">observed property</a> 
+               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Rain">feature of interest rain</a>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/observedProperty">observed property</span> 
             <span class="logic">value</span> 
             <a href="#ObservableProperty_Rain_Intensity"
                title="http://www.w3id.org/def/irrig#ObservableProperty_Rain_Intensity">observable property rain intensity</a>)</dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Deduction" title="http://www.w3id.org/def/caso#Deduction">deduction</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Deduction">deduction</span>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="RainIntensittyState">
+   <div class="entity" id="RainIntensityState">
       <h3>Rain Intensity State<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#RainIntensittyState</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#RainIntensityState</p>
       <div class="comment">
          <span class="markdown">RainIntensityState - A qualitative value of the RainIntensity Property which changes over time, summarizing a set of information about that Property. To evaluate the State of the Property, some Boundaries are defined.</span>
       </div>
@@ -545,35 +553,31 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#State" title="http://www.w3id.org/def/caso#State">state</a> 
-            <span class="logic">and</span> ((
-								<a href="http://www.w3id.org/def/caso#hasClosedLowerBoundary"
-                  title="http://www.w3id.org/def/caso#hasClosedLowerBoundary">has closed lower boundary</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#State">state</span> 
+            <span class="logic">and</span> ((<span class="dotted"
+                  title="http://www.w3id.org/def/caso#hasClosedLowerBoundary">has closed lower boundary</span> 
             <span class="logic">some</span> 
             <a href="#RainIntensityBoundary"
                title="http://www.w3id.org/def/irrig#RainIntensityBoundary">Rain Intensity Boundary</a>
-            <sup class="type-c" title="class">c</sup>) <span class="logic">or</span> (
-								<a href="http://www.w3id.org/def/caso#hasOpenLowerBoundary"
-                  title="http://www.w3id.org/def/caso#hasOpenLowerBoundary">has open lower boundary</a> 
+            <sup class="type-c" title="class">c</sup>) <span class="logic">or</span> (<span class="dotted"
+                  title="http://www.w3id.org/def/caso#hasOpenLowerBoundary">has open lower boundary</span> 
             <span class="logic">some</span> 
             <a href="#RainIntensityBoundary"
                title="http://www.w3id.org/def/irrig#RainIntensityBoundary">Rain Intensity Boundary</a>
-            <sup class="type-c" title="class">c</sup>)) <span class="logic">and</span> ((
-								<a href="http://www.w3id.org/def/caso#hasClosedUpperBoundary"
-                  title="http://www.w3id.org/def/caso#hasClosedUpperBoundary">has closed upper boundary</a> 
+            <sup class="type-c" title="class">c</sup>)) <span class="logic">and</span> ((<span class="dotted"
+                  title="http://www.w3id.org/def/caso#hasClosedUpperBoundary">has closed upper boundary</span> 
             <span class="logic">some</span> 
             <a href="#RainIntensityBoundary"
                title="http://www.w3id.org/def/irrig#RainIntensityBoundary">Rain Intensity Boundary</a>
-            <sup class="type-c" title="class">c</sup>) <span class="logic">or</span> (
-								<a href="http://www.w3id.org/def/caso#hasOpenUpperBoundary"
-                  title="http://www.w3id.org/def/caso#hasOpenUpperBoundary">has open upper boundary</a> 
+            <sup class="type-c" title="class">c</sup>) <span class="logic">or</span> (<span class="dotted"
+                  title="http://www.w3id.org/def/caso#hasOpenUpperBoundary">has open upper boundary</span> 
             <span class="logic">some</span> 
             <a href="#RainIntensityBoundary"
                title="http://www.w3id.org/def/irrig#RainIntensityBoundary">Rain Intensity Boundary</a>
             <sup class="type-c" title="class">c</sup>))</dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#State" title="http://www.w3id.org/def/caso#State">state</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#State">state</span>
          </dd>
          <dt>has members</dt>
          <dd>
@@ -608,21 +612,17 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Observation" title="http://www.w3id.org/def/caso#Observation">observation</a> 
-            <span class="logic">and</span> (
-            <a href="http://www.w3.org/ns/sosa/hasFeatureOfInterest" 
-								title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Observation">observation</span> 
+            <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</span> 
             <span class="logic">value</span> 
             <a href="#FeatureOfInterest_Rain"
-               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Rain">feature of interest rain</a>) <span class="logic">and</span> ( 
-            <a href="http://www.w3.org/ns/sosa/observedProperty"
-              	title="http://www.w3.org/ns/sosa/observedProperty">observed property</a> 
+               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Rain">feature of interest rain</a>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/observedProperty">observed property</span> 
             <span class="logic">value</span> 
             <a href="#ObservableProperty_Rain_Quantity"
                title="http://www.w3id.org/def/irrig#ObservableProperty_Rain_Quantity">observable property rain quantity</a>)</dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Observation" title="http://www.w3id.org/def/caso#Observation">observation</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Observation">observation</span>
          </dd>
       </dl>
    </div>
@@ -645,21 +645,17 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Observation" title="http://www.w3id.org/def/caso#Observation">observation</a> 
-            <span class="logic">and</span> (
-            <a href="http://www.w3.org/ns/sosa/hasFeatureOfInterest" 
-								title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Observation">observation</span> 
+            <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</span> 
             <span class="logic">value</span> 
             <a href="#FeatureOfInterest_Rain"
-               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Rain">feature of interest rain</a>) <span class="logic">and</span> ( 
-            <a href="http://www.w3.org/ns/sosa/observedProperty"
-              	title="http://www.w3.org/ns/sosa/observedProperty">observed property</a> 
+               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Rain">feature of interest rain</a>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/observedProperty">observed property</span> 
             <span class="logic">value</span> 
             <a href="#ObservableProperty_Rain_TotalQuantityPerDay"
                title="http://www.w3id.org/def/irrig#ObservableProperty_Rain_TotalQuantityPerDay">observable property rain total quantity per day</a>)</dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Observation" title="http://www.w3id.org/def/caso#Observation">observation</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Observation">observation</span>
          </dd>
       </dl>
    </div>
@@ -682,7 +678,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Boundary" title="http://www.w3id.org/def/caso#Boundary">boundary</span>
+            <span class="dotted" title="http://www.w3id.org/def/caso#Boundary">boundary</span>
          </dd>
          <dt>has members</dt>
          <dd>
@@ -725,21 +721,17 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Deduction" title="http://www.w3id.org/def/caso#Deduction">deduction</a> 
-            <span class="logic">and</span> (
-            <a href="http://www.w3.org/ns/sosa/hasFeatureOfInterest" 
-								title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Deduction">deduction</span> 
+            <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</span> 
             <span class="logic">value</span> 
             <a href="#FeatureOfInterest_RootZone"
-               title="http://www.w3id.org/def/irrig#FeatureOfInterest_RootZone">feature of interest root zone</a>) <span class="logic">and</span> ( 
-            <a href="http://www.w3.org/ns/sosa/observedProperty"
-              	title="http://www.w3.org/ns/sosa/observedProperty">observed property</a> 
+               title="http://www.w3id.org/def/irrig#FeatureOfInterest_RootZone">feature of interest root zone</a>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/observedProperty">observed property</span> 
             <span class="logic">value</span> 
             <a href="#ObservableProperty_RootZone_MoistureLevel"
                title="http://www.w3id.org/def/irrig#ObservableProperty_RootZone_MoistureLevel">observable property root zone moisture level</a>)</dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Deduction" title="http://www.w3id.org/def/caso#Deduction">deduction</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Deduction">deduction</span>
          </dd>
       </dl>
    </div>
@@ -762,7 +754,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#State" title="http://www.w3id.org/def/caso#State">state</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#State">state</span> 
             <span class="logic">and</span> ((<span class="dotted"
                   title="http://www.w3id.org/def/caso#hasClosedLowerBoundary">has closed lower boundary</span> 
             <span class="logic">some</span> 
@@ -786,7 +778,7 @@ This section provides details for each class and property defined by Irrigation 
             <sup class="type-c" title="class">c</sup>))</dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#State" title="http://www.w3id.org/def/caso#State">state</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#State">state</span>
          </dd>
          <dt>has members</dt>
          <dd>
@@ -829,21 +821,17 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Observation" title="http://www.w3id.org/def/caso#Observation">observation</a> 
-            <span class="logic">and</span> (
-            <a href="http://www.w3.org/ns/sosa/hasFeatureOfInterest" 
-								title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Observation">observation</span> 
+            <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</span> 
             <span class="logic">value</span> 
             <a href="#FeatureOfInterest_RootZone"
-               title="http://www.w3id.org/def/irrig#FeatureOfInterest_RootZone">feature of interest root zone</a>) <span class="logic">and</span> ( 
-            <a href="http://www.w3.org/ns/sosa/observedProperty"
-              	title="http://www.w3.org/ns/sosa/observedProperty">observed property</a> 
+               title="http://www.w3id.org/def/irrig#FeatureOfInterest_RootZone">feature of interest root zone</a>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/observedProperty">observed property</span> 
             <span class="logic">value</span> 
             <a href="#ObservableProperty_RootZone_AverageMoisturePerDay"
                title="http://www.w3id.org/def/irrig#ObservableProperty_RootZone_AverageMoisturePerDay">observable property root zone average moisture per day</a>)</dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Observation" title="http://www.w3id.org/def/caso#Observation">observation</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Observation">observation</span>
          </dd>
       </dl>
    </div>
@@ -866,21 +854,17 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Observation" title="http://www.w3id.org/def/caso#Observation">observation</a> 
-            <span class="logic">and</span> (
-            <a href="http://www.w3.org/ns/sosa/hasFeatureOfInterest" 
-								title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Observation">observation</span> 
+            <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</span> 
             <span class="logic">value</span> 
             <a href="#FeatureOfInterest_Soil30cmDepth"
-               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil30cmDepth">feature of interest soil30cm depth</a>) <span class="logic">and</span> ( 
-            <a href="http://www.w3.org/ns/sosa/observedProperty"
-              	title="http://www.w3.org/ns/sosa/observedProperty">observed property</a> 
+               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil30cmDepth">feature of interest soil30cm depth</a>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/observedProperty">observed property</span> 
             <span class="logic">value</span> 
             <a href="#ObservableProperty_Soil30cmDepth_AverageMoisturePerDay"
                title="http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_AverageMoisturePerDay">observable property soil30cm depth average moisture per day</a>)</dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Observation" title="http://www.w3id.org/def/caso#Observation">observation</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Observation">observation</span>
          </dd>
       </dl>
    </div>
@@ -903,21 +887,17 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Observation" title="http://www.w3id.org/def/caso#Observation">observation</a> 
-            <span class="logic">and</span> (
-            <a href="http://www.w3.org/ns/sosa/hasFeatureOfInterest" 
-								title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Observation">observation</span> 
+            <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</span> 
             <span class="logic">value</span> 
             <a href="#FeatureOfInterest_Soil30cmDepth"
-               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil30cmDepth">feature of interest soil30cm depth</a>) <span class="logic">and</span> ( 
-            <a href="http://www.w3.org/ns/sosa/observedProperty"
-              	title="http://www.w3.org/ns/sosa/observedProperty">observed property</a> 
+               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil30cmDepth">feature of interest soil30cm depth</a>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/observedProperty">observed property</span> 
             <span class="logic">value</span> 
             <a href="#ObservableProperty_Soil30cmDepth_Moisture"
                title="http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_Moisture">observable property soil30cm depth moisture</a>)</dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Observation" title="http://www.w3id.org/def/caso#Observation">observation</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Observation">observation</span>
          </dd>
       </dl>
    </div>
@@ -940,21 +920,17 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Observation" title="http://www.w3id.org/def/caso#Observation">observation</a> 
-            <span class="logic">and</span> (
-            <a href="http://www.w3.org/ns/sosa/hasFeatureOfInterest" 
-								title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Observation">observation</span> 
+            <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</span> 
             <span class="logic">value</span> 
             <a href="#FeatureOfInterest_Soil60cmDepth"
-               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil60cmDepth">feature of interest soil60cm depth</a>) <span class="logic">and</span> ( 
-            <a href="http://www.w3.org/ns/sosa/observedProperty"
-              	title="http://www.w3.org/ns/sosa/observedProperty">observed property</a> 
+               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil60cmDepth">feature of interest soil60cm depth</a>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/observedProperty">observed property</span> 
             <span class="logic">value</span> 
             <a href="#ObservableProperty_Soil60cmDepth_AverageMoisturePerDay"
                title="http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_AverageMoisturePerDay">observable property soil60cm depth average moisture per day</a>)</dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Observation" title="http://www.w3id.org/def/caso#Observation">observation</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Observation">observation</span>
          </dd>
       </dl>
    </div>
@@ -977,21 +953,17 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Observation" title="http://www.w3id.org/def/caso#Observation">observation</a> 
-            <span class="logic">and</span> (
-            <a href="http://www.w3.org/ns/sosa/hasFeatureOfInterest" 
-								title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Observation">observation</span> 
+            <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</span> 
             <span class="logic">value</span> 
             <a href="#FeatureOfInterest_Soil60cmDepth"
-               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil60cmDepth">feature of interest soil60cm depth</a>) <span class="logic">and</span> ( 
-            <a href="http://www.w3.org/ns/sosa/observedProperty"
-              	title="http://www.w3.org/ns/sosa/observedProperty">observed property</a> 
+               title="http://www.w3id.org/def/irrig#FeatureOfInterest_Soil60cmDepth">feature of interest soil60cm depth</a>) <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/ns/sosa/observedProperty">observed property</span> 
             <span class="logic">value</span> 
             <a href="#ObservableProperty_Soil60cmDepth_Moisture"
                title="http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_Moisture">observable property soil60cm depth moisture</a>)</dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3id.org/def/caso#Observation" title="http://www.w3id.org/def/caso#Observation">observation</a> 
+            <span class="dotted" title="http://www.w3id.org/def/caso#Observation">observation</span>
          </dd>
       </dl>
    </div>
@@ -1008,22 +980,22 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="https://w3id.org/saref#Sensor" title="https://w3id.org/saref#Sensor">sensor</a>
+            <span class="dotted" title="https://w3id.org/saref#Sensor">sensor</span>
          </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#SoilTensiometer_01_Soil30cmDepth_Moisture"
-               title="http://www.w3id.org/def/irrig#SoilTensiometer_01_Soil30cmDepth_Moisture">soil tensiometer 01 soil30cm depth moisture</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SoilTensiometer_02_Soil30cmDepth_Moisture"
-               title="http://www.w3id.org/def/irrig#SoilTensiometer_02_Soil30cmDepth_Moisture">soil tensiometer 02 soil30cm depth moisture</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SoilTensiometer_03_Soil30cmDepth_Moisture"
-               title="http://www.w3id.org/def/irrig#SoilTensiometer_03_Soil30cmDepth_Moisture">soil tensiometer 03 soil30cm depth moisture</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SoilTensiometer_04_Soil60cmDepth_Moisture"
-               title="http://www.w3id.org/def/irrig#SoilTensiometer_04_Soil60cmDepth_Moisture">soil tensiometer 04 soil60cm depth moisture</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SoilTensiometer_05_Soil60cmDepth_Moisture"
-               title="http://www.w3id.org/def/irrig#SoilTensiometer_05_Soil60cmDepth_Moisture">soil tensiometer 05 soil60cm depth moisture</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SoilTensiometer_06_Soil60cmDepth_Moisture"
-               title="http://www.w3id.org/def/irrig#SoilTensiometer_06_Soil60cmDepth_Moisture">soil tensiometer 06 soil60cm depth moisture</a>
+            <a href="#Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture"
+               title="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture">sensor soil tensiometer 01 soil30cm depth moisture</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture"
+               title="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture">sensor soil tensiometer 02 soil30cm depth moisture</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture"
+               title="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture">sensor soil tensiometer 03 soil30cm depth moisture</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture"
+               title="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture">sensor soil tensiometer 04 soil60cm depth moisture</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture"
+               title="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture">sensor soil tensiometer 05 soil60cm depth moisture</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture"
+               title="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture">sensor soil tensiometer 06 soil60cm depth moisture</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -1047,12 +1019,36 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.w3.org/ns/ssn/Property" title="http://www.w3.org/ns/ssn/Property">property</a>
+            <span class="dotted" title="http://www.w3.org/ns/ssn/Property">property</span>
          </dd>
          <dt>has members</dt>
          <dd>
             <a href="#ObservableProperty_Crop_WaterNeed"
                title="http://www.w3id.org/def/irrig#ObservableProperty_Crop_WaterNeed">observable property crop water need</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TemperatureProperty">
+      <h3>temperature property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#TemperatureProperty</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/ssn/Property">property</span>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#ObservableProperty_Air_MaxTemperaturePerDay"
+               title="http://www.w3id.org/def/irrig#ObservableProperty_Air_MaxTemperaturePerDay">observable property air max temperature per day</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ObservableProperty_Air_MinTemperaturePerDay"
+               title="http://www.w3id.org/def/irrig#ObservableProperty_Air_MinTemperaturePerDay">observable property air min temperature per day</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ObservableProperty_Air_Temperature"
+               title="http://www.w3id.org/def/irrig#ObservableProperty_Air_Temperature">observable property air temperature</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -1070,7 +1066,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="https://w3id.org/saref#Sensor" title="https://w3id.org/saref#Sensor">sensor</a>
+            <span class="dotted" title="https://w3id.org/saref#Sensor">sensor</span>
          </dd>
       </dl>
    </div>
@@ -1087,12 +1083,12 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="https://w3id.org/saref#Actuator" title="https://w3id.org/saref#Actuator">actuator</span>
+            <span class="dotted" title="https://w3id.org/saref#Actuator">actuator</span>
          </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#WateringValve_01_Soil_Moisture"
-               title="http://www.w3id.org/def/irrig#WateringValve_01_Soil_Moisture">watering valve 01 soil moisture</a>
+            <a href="#Actuator_WateringValve_01_Soil_Moisture"
+               title="http://www.w3id.org/def/irrig#Actuator_WateringValve_01_Soil_Moisture">actuator watering valve 01 soil moisture</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -1170,6 +1166,12 @@ This section provides details for each class and property defined by Irrigation 
 </div><div id="namedindividuals">
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
+      <li>
+         <a href="#Actuator_WateringValve_01_Soil_Moisture"
+            title="http://www.w3id.org/def/irrig#Actuator_WateringValve_01_Soil_Moisture">
+            <span>actuator watering valve 01 soil moisture</span>
+         </a>
+      </li>
       <li>
          <a href="#Boundary_Rain_Quantity_High"
             title="http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_High">
@@ -1369,51 +1371,51 @@ This section provides details for each class and property defined by Irrigation 
          </a>
       </li>
       <li>
-         <a href="#Pluviometer_01_Rain_Quantity"
-            title="http://www.w3id.org/def/irrig#Pluviometer_01_Rain_Quantity">
-            <span>pluviometer 01 rain quantity</span>
+         <a href="#Sensor_Pluviometer_01_Rain_Quantity"
+            title="http://www.w3id.org/def/irrig#Sensor_Pluviometer_01_Rain_Quantity">
+            <span>sensor pluviometer 01 rain quantity</span>
          </a>
       </li>
       <li>
-         <a href="#Pluviometer_02_Rain_Quantity"
-            title="http://www.w3id.org/def/irrig#Pluviometer_02_Rain_Quantity">
-            <span>pluviometer 02 rain quantity</span>
+         <a href="#Sensor_Pluviometer_02_Rain_Quantity"
+            title="http://www.w3id.org/def/irrig#Sensor_Pluviometer_02_Rain_Quantity">
+            <span>sensor pluviometer 02 rain quantity</span>
          </a>
       </li>
       <li>
-         <a href="#SoilTensiometer_01_Soil30cmDepth_Moisture"
-            title="http://www.w3id.org/def/irrig#SoilTensiometer_01_Soil30cmDepth_Moisture">
-            <span>soil tensiometer 01 soil30cm depth moisture</span>
+         <a href="#Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture"
+            title="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture">
+            <span>sensor soil tensiometer 01 soil30cm depth moisture</span>
          </a>
       </li>
       <li>
-         <a href="#SoilTensiometer_02_Soil30cmDepth_Moisture"
-            title="http://www.w3id.org/def/irrig#SoilTensiometer_02_Soil30cmDepth_Moisture">
-            <span>soil tensiometer 02 soil30cm depth moisture</span>
+         <a href="#Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture"
+            title="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture">
+            <span>sensor soil tensiometer 02 soil30cm depth moisture</span>
          </a>
       </li>
       <li>
-         <a href="#SoilTensiometer_03_Soil30cmDepth_Moisture"
-            title="http://www.w3id.org/def/irrig#SoilTensiometer_03_Soil30cmDepth_Moisture">
-            <span>soil tensiometer 03 soil30cm depth moisture</span>
+         <a href="#Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture"
+            title="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture">
+            <span>sensor soil tensiometer 03 soil30cm depth moisture</span>
          </a>
       </li>
       <li>
-         <a href="#SoilTensiometer_04_Soil60cmDepth_Moisture"
-            title="http://www.w3id.org/def/irrig#SoilTensiometer_04_Soil60cmDepth_Moisture">
-            <span>soil tensiometer 04 soil60cm depth moisture</span>
+         <a href="#Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture"
+            title="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture">
+            <span>sensor soil tensiometer 04 soil60cm depth moisture</span>
          </a>
       </li>
       <li>
-         <a href="#SoilTensiometer_05_Soil60cmDepth_Moisture"
-            title="http://www.w3id.org/def/irrig#SoilTensiometer_05_Soil60cmDepth_Moisture">
-            <span>soil tensiometer 05 soil60cm depth moisture</span>
+         <a href="#Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture"
+            title="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture">
+            <span>sensor soil tensiometer 05 soil60cm depth moisture</span>
          </a>
       </li>
       <li>
-         <a href="#SoilTensiometer_06_Soil60cmDepth_Moisture"
-            title="http://www.w3id.org/def/irrig#SoilTensiometer_06_Soil60cmDepth_Moisture">
-            <span>soil tensiometer 06 soil60cm depth moisture</span>
+         <a href="#Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture"
+            title="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture">
+            <span>sensor soil tensiometer 06 soil60cm depth moisture</span>
          </a>
       </li>
       <li>
@@ -1459,9 +1461,9 @@ This section provides details for each class and property defined by Irrigation 
          </a>
       </li>
       <li>
-         <a href="#State_Crop_Growth_V7d25"
-            title="http://www.w3id.org/def/irrig#State_Crop_Growth_V7d25">
-            <span>state crop growth v7d25</span>
+         <a href="#State_Crop_Growth_V7d20"
+            title="http://www.w3id.org/def/irrig#State_Crop_Growth_V7d20">
+            <span>state crop growth v7d20</span>
          </a>
       </li>
       <li>
@@ -1560,13 +1562,22 @@ This section provides details for each class and property defined by Irrigation 
             <span>state root zone moisture level very low</span>
          </a>
       </li>
-      <li>
-         <a href="#WateringValve_01_Soil_Moisture"
-            title="http://www.w3id.org/def/irrig#WateringValve_01_Soil_Moisture">
-            <span>watering valve 01 soil moisture</span>
-         </a>
-      </li>
    </ul>
+   <div class="entity" id="Actuator_WateringValve_01_Soil_Moisture">
+      <h3>actuator watering valve 01 soil moisture<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Actuator_WateringValve_01_Soil_Moisture</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#https://w3id.org/def/saref4agri#WateringValve" title="https://w3id.org/def/saref4agri#WateringValve">WateringValve</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Boundary_Rain_Quantity_High">
       <h3>boundary rain quantity high<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -1769,7 +1780,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="http://www.w3.org/ns/sosa/FeatureOfInterest" title="http://www.w3.org/ns/sosa/FeatureOfInterest">feature of interest</a>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/FeatureOfInterest">feature of interest</span>
          </dd>
       </dl>
    </div>
@@ -1783,7 +1794,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="http://www.w3.org/ns/sosa/FeatureOfInterest" title="http://www.w3.org/ns/sosa/FeatureOfInterest">feature of interest</a>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/FeatureOfInterest">feature of interest</span>
          </dd>
       </dl>
    </div>
@@ -1797,7 +1808,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="http://www.w3.org/ns/sosa/FeatureOfInterest" title="http://www.w3.org/ns/sosa/FeatureOfInterest">feature of interest</a>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/FeatureOfInterest">feature of interest</span>
          </dd>
       </dl>
    </div>
@@ -1811,7 +1822,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="http://www.w3.org/ns/sosa/FeatureOfInterest" title="http://www.w3.org/ns/sosa/FeatureOfInterest">feature of interest</a>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/FeatureOfInterest">feature of interest</span>
          </dd>
       </dl>
    </div>
@@ -1825,7 +1836,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="http://www.w3.org/ns/sosa/FeatureOfInterest" title="http://www.w3.org/ns/sosa/FeatureOfInterest">feature of interest</a>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/FeatureOfInterest">feature of interest</span>
          </dd>
       </dl>
    </div>
@@ -1839,7 +1850,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="http://www.w3.org/ns/sosa/FeatureOfInterest" title="http://www.w3.org/ns/sosa/FeatureOfInterest">feature of interest</a>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/FeatureOfInterest">feature of interest</span>
          </dd>
       </dl>
    </div>
@@ -1853,7 +1864,12 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+         </dd>
+         <dd>
+            <a href="#TemperatureProperty"
+               title="http://www.w3id.org/def/irrig#TemperatureProperty">temperature property</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -1867,7 +1883,12 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+         </dd>
+         <dd>
+            <a href="#TemperatureProperty"
+               title="http://www.w3id.org/def/irrig#TemperatureProperty">temperature property</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -1881,7 +1902,12 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+         </dd>
+         <dd>
+            <a href="#TemperatureProperty"
+               title="http://www.w3id.org/def/irrig#TemperatureProperty">temperature property</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -1894,6 +1920,9 @@ This section provides details for each class and property defined by Irrigation 
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#ObservableProperty_Crop_Growth</p>
       <dl class="description">
          <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3id.org/def/caso#Property">property</span>
+         </dd>
          <dd>
             <a href="#GrowthProperty" title="http://www.w3id.org/def/irrig#GrowthProperty">Growth property</a>
             <sup class="type-c" title="class">c</sup>
@@ -1910,7 +1939,11 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+         </dd>
+         <dd>
+            <a href="#GrowthProperty" title="http://www.w3id.org/def/irrig#GrowthProperty">Growth property</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -1923,6 +1956,9 @@ This section provides details for each class and property defined by Irrigation 
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#ObservableProperty_Crop_WaterNeed</p>
       <dl class="description">
          <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3id.org/def/caso#Property">property</span>
+         </dd>
          <dd>
             <a href="#StressProperty" title="http://www.w3id.org/def/irrig#StressProperty">Stress property</a>
             <sup class="type-c" title="class">c</sup>
@@ -1939,7 +1975,15 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
+            <span class="dotted" title="http://www.w3id.org/def/caso#Property">property</span>
+         </dd>
+         <dd>
             <a href="#IntensityProperty" title="http://www.w3id.org/def/irrig#IntensityProperty">Intensity property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#PrecipitationProperty"
+               title="http://www.w3id.org/def/irrig#PrecipitationProperty">precipitation property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1954,7 +1998,12 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+         </dd>
+         <dd>
+            <a href="#PrecipitationProperty"
+               title="http://www.w3id.org/def/irrig#PrecipitationProperty">precipitation property</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -1968,7 +2017,12 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+         </dd>
+         <dd>
+            <a href="#PrecipitationProperty"
+               title="http://www.w3id.org/def/irrig#PrecipitationProperty">precipitation property</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -1982,7 +2036,11 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+         </dd>
+         <dd>
+            <a href="#MoistureProperty" title="http://www.w3id.org/def/irrig#MoistureProperty">Moisture property</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -1995,6 +2053,9 @@ This section provides details for each class and property defined by Irrigation 
          <strong>IRI:</strong> http://www.w3id.org/def/irrig#ObservableProperty_RootZone_MoistureLevel</p>
       <dl class="description">
          <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3id.org/def/caso#Property">property</span>
+         </dd>
          <dd>
             <a href="#MoistureProperty" title="http://www.w3id.org/def/irrig#MoistureProperty">Moisture property</a>
             <sup class="type-c" title="class">c</sup>
@@ -2011,7 +2072,11 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+         </dd>
+         <dd>
+            <a href="#MoistureProperty" title="http://www.w3id.org/def/irrig#MoistureProperty">Moisture property</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -2025,7 +2090,11 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+         </dd>
+         <dd>
+            <a href="#MoistureProperty" title="http://www.w3id.org/def/irrig#MoistureProperty">Moisture property</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -2039,7 +2108,11 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+         </dd>
+         <dd>
+            <a href="#MoistureProperty" title="http://www.w3id.org/def/irrig#MoistureProperty">Moisture property</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -2053,17 +2126,21 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+         </dd>
+         <dd>
+            <a href="#MoistureProperty" title="http://www.w3id.org/def/irrig#MoistureProperty">Moisture property</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Pluviometer_01_Rain_Quantity">
-      <h3>pluviometer 01 rain quantity<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="Sensor_Pluviometer_01_Rain_Quantity">
+      <h3>sensor pluviometer 01 rain quantity<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Pluviometer_01_Rain_Quantity</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Sensor_Pluviometer_01_Rain_Quantity</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -2072,13 +2149,13 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Pluviometer_02_Rain_Quantity">
-      <h3>pluviometer 02 rain quantity<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="Sensor_Pluviometer_02_Rain_Quantity">
+      <h3>sensor pluviometer 02 rain quantity<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Pluviometer_02_Rain_Quantity</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Sensor_Pluviometer_02_Rain_Quantity</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -2087,13 +2164,13 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="SoilTensiometer_01_Soil30cmDepth_Moisture">
-      <h3>soil tensiometer 01 soil30cm depth moisture<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture">
+      <h3>sensor soil tensiometer 01 soil30cm depth moisture<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#SoilTensiometer_01_Soil30cmDepth_Moisture</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -2102,13 +2179,13 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="SoilTensiometer_02_Soil30cmDepth_Moisture">
-      <h3>soil tensiometer 02 soil30cm depth moisture<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture">
+      <h3>sensor soil tensiometer 02 soil30cm depth moisture<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#SoilTensiometer_02_Soil30cmDepth_Moisture</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -2117,13 +2194,13 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="SoilTensiometer_03_Soil30cmDepth_Moisture">
-      <h3>soil tensiometer 03 soil30cm depth moisture<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture">
+      <h3>sensor soil tensiometer 03 soil30cm depth moisture<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#SoilTensiometer_03_Soil30cmDepth_Moisture</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -2132,13 +2209,13 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="SoilTensiometer_04_Soil60cmDepth_Moisture">
-      <h3>soil tensiometer 04 soil60cm depth moisture<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture">
+      <h3>sensor soil tensiometer 04 soil60cm depth moisture<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#SoilTensiometer_04_Soil60cmDepth_Moisture</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -2147,13 +2224,13 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="SoilTensiometer_05_Soil60cmDepth_Moisture">
-      <h3>soil tensiometer 05 soil60cm depth moisture<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture">
+      <h3>sensor soil tensiometer 05 soil60cm depth moisture<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#SoilTensiometer_05_Soil60cmDepth_Moisture</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -2162,13 +2239,13 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="SoilTensiometer_06_Soil60cmDepth_Moisture">
-      <h3>soil tensiometer 06 soil60cm depth moisture<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture">
+      <h3>sensor soil tensiometer 06 soil60cm depth moisture<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#SoilTensiometer_06_Soil60cmDepth_Moisture</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -2282,13 +2359,13 @@ This section provides details for each class and property defined by Irrigation 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="State_Crop_Growth_V7d25">
-      <h3>state crop growth v7d25<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="State_Crop_Growth_V7d20">
+      <h3>state crop growth v7d20<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#State_Crop_Growth_V7d25</p>
+         <strong>IRI:</strong> http://www.w3id.org/def/irrig#State_Crop_Growth_V7d20</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -2367,8 +2444,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#RainIntensittyState"
-               title="http://www.w3id.org/def/irrig#RainIntensittyState">Rain Intensity State</a>
+            <a href="#RainIntensityState" title="http://www.w3id.org/def/irrig#RainIntensityState">Rain Intensity State</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2383,8 +2459,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#RainIntensittyState"
-               title="http://www.w3id.org/def/irrig#RainIntensittyState">Rain Intensity State</a>
+            <a href="#RainIntensityState" title="http://www.w3id.org/def/irrig#RainIntensityState">Rain Intensity State</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2399,8 +2474,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#RainIntensittyState"
-               title="http://www.w3id.org/def/irrig#RainIntensittyState">Rain Intensity State</a>
+            <a href="#RainIntensityState" title="http://www.w3id.org/def/irrig#RainIntensityState">Rain Intensity State</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2415,8 +2489,7 @@ This section provides details for each class and property defined by Irrigation 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#RainIntensittyState"
-               title="http://www.w3id.org/def/irrig#RainIntensittyState">Rain Intensity State</a>
+            <a href="#RainIntensityState" title="http://www.w3id.org/def/irrig#RainIntensityState">Rain Intensity State</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2545,21 +2618,6 @@ This section provides details for each class and property defined by Irrigation 
          <dd>
             <a href="#RootZoneMoistureLevelState"
                title="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState">Root Zone Moisture Level State</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="WateringValve_01_Soil_Moisture">
-      <h3>watering valve 01 soil moisture<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3id.org/def/irrig#WateringValve_01_Soil_Moisture</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#https://w3id.org/def/saref4agri#WateringValve" title="https://w3id.org/def/saref4agri#WateringValve">WateringValve</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
