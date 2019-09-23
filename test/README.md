@@ -1,9 +1,9 @@
 **Testing guidelines**
 
-Test files are located in irrig/test/[unit-test-type]
+Test files are located in irrig/test/[test-folder]
 
 The test folder is in the format: tmp-[type]-[Date][Version]  
-- **Type**: CropGrowth or RainIntensity or RootZoneMoistureLevel     
+- **Type**: *rain* or *crop* or *soil*     
 - **Date**: is the date of data sample  
 - **Version**: testers could ignore this information.  
 
