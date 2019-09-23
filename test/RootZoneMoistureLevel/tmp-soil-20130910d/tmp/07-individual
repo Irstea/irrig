@@ -1,0 +1,1070 @@
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/millibar
+om:millibar rdf:type owl:NamedIndividual ,
+                     om:Unit ;
+            rdfs:comment "The millibar is a unit of pressure defined as 1.0e-3 bar."@en ;
+            rdfs:label "millibar"@en .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/millimeter
+om:millimeter rdf:type owl:NamedIndividual ,
+                       om:Unit ;
+              rdfs:comment "The millimetre is a unit of length defined as 1.0e-3 metre."@en ;
+              rdfs:label "millimeter"@en .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Boundary_Crop_Growth_ClockEndStateR1
+arvalis:Boundary_Crop_Growth_ClockEndStateR1 rdf:type owl:NamedIndividual ,
+                                                      arvalis:CropStageBoundary ;
+                                             om:hasUnit time:unitDay ;
+                                             caso:boundaryValue 15 .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Boundary_Crop_Growth_ClockEndStateV7
+arvalis:Boundary_Crop_Growth_ClockEndStateV7 rdf:type owl:NamedIndividual ,
+                                                      arvalis:CropStageBoundary ;
+                                             om:hasUnit time:unitDay ;
+                                             caso:boundaryValue 20 .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Sensor_Human_Farmer_01
+arvalis:Sensor_Human_Farmer_01 rdf:type owl:NamedIndividual ,
+                                        sosa:Sensor ;
+                               saref:hasName "Q-Duy NGUYEN"^^xsd:string .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Sensor_SoftwareAgent_01_Soil30cmDepth_AverageMoisturePerDay
+arvalis:Sensor_SoftwareAgent_01_Soil30cmDepth_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
+                                                                             sosa:Sensor .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Sensor_SoftwareAgent_02_Soil30cmDepth_AverageMoisturePerDay
+arvalis:Sensor_SoftwareAgent_02_Soil30cmDepth_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
+                                                                             sosa:Sensor .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Sensor_SoftwareAgent_03_Soil30cmDepth_AverageMoisturePerDay
+arvalis:Sensor_SoftwareAgent_03_Soil30cmDepth_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
+                                                                             sosa:Sensor .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Sensor_SoftwareAgent_04_Soil60cmDepth_AverageMoisturePerDay
+arvalis:Sensor_SoftwareAgent_04_Soil60cmDepth_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
+                                                                             sosa:Sensor .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Sensor_SoftwareAgent_05_Soil60cmDepth_AverageMoisturePerDay
+arvalis:Sensor_SoftwareAgent_05_Soil60cmDepth_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
+                                                                             sosa:Sensor .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Sensor_SoftwareAgent_06_Soil60cmDepth_AverageMoisturePerDay
+arvalis:Sensor_SoftwareAgent_06_Soil60cmDepth_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
+                                                                             sosa:Sensor .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Sensor_SoftwareAgent_Crop_Growth
+arvalis:Sensor_SoftwareAgent_Crop_Growth rdf:type owl:NamedIndividual ,
+                                                  sosa:Sensor .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Sensor_SoftwareAgent_Crop_WaterNeed
+arvalis:Sensor_SoftwareAgent_Crop_WaterNeed rdf:type owl:NamedIndividual ,
+                                                     sosa:Sensor .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Sensor_SoftwareAgent_Rain_Intensity
+arvalis:Sensor_SoftwareAgent_Rain_Intensity rdf:type owl:NamedIndividual ,
+                                                     sosa:Sensor .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Sensor_SoftwareAgent_Rain_TotalQuantityPerDay
+arvalis:Sensor_SoftwareAgent_Rain_TotalQuantityPerDay rdf:type owl:NamedIndividual ,
+                                                               sosa:Sensor .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Sensor_SoftwareAgent_RootZone_AverageMoisturePerDay
+arvalis:Sensor_SoftwareAgent_RootZone_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
+                                                                     sosa:Sensor .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Sensor_SoftwareAgent_RootZone_MoistureLevel
+arvalis:Sensor_SoftwareAgent_RootZone_MoistureLevel rdf:type owl:NamedIndividual ,
+                                                             sosa:Sensor .
+
+
+###  http://www.w3.org/2006/time#unitDay
+time:unitDay rdf:type owl:NamedIndividual ,
+                      time:TemporalUnit ;
+             time:days 1 ;
+             time:hours 0 ;
+             time:minutes 0 ;
+             time:months 0 ;
+             time:seconds 0 ;
+             time:weeks 0 ;
+             time:years 0 ;
+             rdfs:label "Day (unit of temporal duration)"@en ;
+             skos:prefLabel "Tag"@de ,
+                            "dag"@nl ,
+                            "day"@en ,
+                            "dia"@pt ,
+                            "doba"@pl ,
+                            "día"@es ,
+                            "giorno"@it ,
+                            "jour"@fr ,
+                            "يوماً ما"@ar ,
+                            "ある日"@jp ,
+                            "一天"@zh ,
+                            "언젠가"@kr .
+
+
+###  http://www.w3.org/2006/time#unitHour
+time:unitHour rdf:type owl:NamedIndividual ,
+                       time:TemporalUnit ;
+              time:days 0 ;
+              time:hours 1 ;
+              time:minutes 0 ;
+              time:months 0 ;
+              time:seconds 0 ;
+              time:weeks 0 ;
+              time:years 0 ;
+              rdfs:label "Hour (unit of temporal duration)"@en ;
+              skos:prefLabel "Stunde"@de ,
+                             "godzina"@pl ,
+                             "heure"@fr ,
+                             "hora"@es ,
+                             "hora"@pt ,
+                             "hour"@en ,
+                             "ora"@it ,
+                             "uur"@nl ,
+                             "один час\"@ru" ,
+                             "ساعة واحدة"@ar ,
+                             "一小時"@zh ,
+                             "一時間"@jp ,
+                             "한 시간"@kr .
+
+
+###  http://www.w3.org/2006/time#unitMinute
+time:unitMinute rdf:type owl:NamedIndividual ,
+                         time:TemporalUnit ;
+                time:days 0 ;
+                time:hours 0 ;
+                time:minutes 1 ;
+                time:months 0 ;
+                time:seconds 0 ;
+                time:weeks 0 ;
+                time:years 0 ;
+                rdfs:label "Minute (unit of temporal duration)"@en ;
+                skos:prefLabel "Minute"@de ,
+                               "minuta"@pl ,
+                               "minute"@en ,
+                               "minute"@fr ,
+                               "minuto"@es ,
+                               "minuto"@it ,
+                               "minuto"@pt ,
+                               "minuut"@nl ,
+                               "одна минута"@ru ,
+                               "دقيقة واحدة"@ar ,
+                               "一分"@jp ,
+                               "等一下"@zh ,
+                               "분"@kr .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_High
+irrig:Boundary_Rain_Quantity_High om:hasUnit om:millimeter ;
+                                  caso:boundaryValue "40.0"^^xsd:double .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_Low
+irrig:Boundary_Rain_Quantity_Low om:hasUnit om:millimeter ;
+                                 caso:boundaryValue "10.0"^^xsd:double .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_Maximum
+irrig:Boundary_Rain_Quantity_Maximum om:hasUnit om:millimeter ;
+                                     caso:boundaryValue "71.8"^^xsd:double .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_Minimum
+irrig:Boundary_Rain_Quantity_Minimum om:hasUnit om:millimeter ;
+                                     caso:boundaryValue "0.0"^^xsd:double .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Average
+irrig:Boundary_RootZone_Tension_Average om:hasUnit om:millibar ;
+                                        caso:boundaryValue "1400.0"^^xsd:double .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_High
+irrig:Boundary_RootZone_Tension_High om:hasUnit om:millibar ;
+                                     caso:boundaryValue "1200.0"^^xsd:double .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Low
+irrig:Boundary_RootZone_Tension_Low om:hasUnit om:millibar ;
+                                    caso:boundaryValue "1500.0"^^xsd:double .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Maximum
+irrig:Boundary_RootZone_Tension_Maximum om:hasUnit om:millibar ;
+                                        caso:boundaryValue "2000.0"^^xsd:double .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Minimum
+irrig:Boundary_RootZone_Tension_Minimum om:hasUnit om:millibar ;
+                                        caso:boundaryValue "0.0"^^xsd:double .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Saturation
+irrig:Boundary_RootZone_Tension_Saturation om:hasUnit om:millibar ;
+                                           caso:boundaryValue "100.0"^^xsd:double .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_VeryHigh
+irrig:Boundary_RootZone_Tension_VeryHigh om:hasUnit om:millibar ;
+                                         caso:boundaryValue "700.0"^^xsd:double .
+
+
+###  http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_VeryLow
+irrig:Boundary_RootZone_Tension_VeryLow om:hasUnit om:millibar ;
+                                        caso:boundaryValue "1600.0"^^xsd:double .
+
+
+###  http://www.w3id.org/def/irrig#Sensor_Pluviometer_01_Rain_Quantity
+irrig:Sensor_Pluviometer_01_Rain_Quantity saref:hasModel "N/A"^^xsd:string .
+
+
+###  http://www.w3id.org/def/irrig#Sensor_Pluviometer_02_Rain_Quantity
+irrig:Sensor_Pluviometer_02_Rain_Quantity saref:hasModel "N/A"^^xsd:string .
+
+
+###  http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture
+irrig:Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture saref:hasManufacturer "Irrometer"^^xsd:string ;
+                                                       saref:hasModel "2013F13"^^xsd:string ,
+                                                                      "Watermark"^^xsd:string .
+
+
+###  http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture
+irrig:Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture saref:hasManufacturer "Irrometer"^^xsd:string ;
+                                                       saref:hasModel "2013F13"^^xsd:string ,
+                                                                      "Watermark"^^xsd:string .
+
+
+###  http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture
+irrig:Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture saref:hasManufacturer "Irrometer"^^xsd:string ;
+                                                       saref:hasModel "2013F13"^^xsd:string ,
+                                                                      "Watermark"^^xsd:string .
+
+
+###  http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture
+irrig:Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture saref:hasManufacturer "Irrometer"^^xsd:string ;
+                                                       saref:hasModel "2013F13"^^xsd:string ,
+                                                                      "Watermark"^^xsd:string .
+
+
+###  http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture
+irrig:Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture saref:hasManufacturer "Irrometer"^^xsd:string ;
+                                                       saref:hasModel "2013F13"^^xsd:string ,
+                                                                      "Watermark"^^xsd:string .
+
+
+###  http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture
+irrig:Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture saref:hasManufacturer "Irrometer"^^xsd:string ;
+                                                       saref:hasModel "2013F13"^^xsd:string ,
+                                                                      "Watermark"^^xsd:string .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_Growth_R1
+irrig:State_Crop_Growth_R1 caso:greaterThan irrig:State_Crop_Growth_V7d20 ;
+                           caso:hasOpenUpperBoundary arvalis:Boundary_Crop_Growth_ClockEndStateR1 .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_Growth_R1d15
+irrig:State_Crop_Growth_R1d15 caso:greaterThan irrig:State_Crop_Growth_R1 .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_Growth_R5
+irrig:State_Crop_Growth_R5 caso:greaterThan irrig:State_Crop_Growth_R1d15 .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_Growth_R5hg45
+irrig:State_Crop_Growth_R5hg45 caso:greaterThan irrig:State_Crop_Growth_R5 .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_Growth_V2
+irrig:State_Crop_Growth_V2 caso:greaterThan irrig:State_Crop_Growth_Init .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_Growth_V7
+irrig:State_Crop_Growth_V7 caso:greaterThan irrig:State_Crop_Growth_V2 ;
+                           caso:hasOpenUpperBoundary arvalis:Boundary_Crop_Growth_ClockEndStateV7 .
+
+
+###  http://www.w3id.org/def/irrig#State_Crop_Growth_V7d20
+irrig:State_Crop_Growth_V7d20 caso:greaterThan irrig:State_Crop_Growth_V7 .
+
+
+###  http://www.w3id.org/def/irrig#State_Rain_Intensity_Heavy
+irrig:State_Rain_Intensity_Heavy caso:greaterThan irrig:State_Rain_Intensity_Moderate ;
+                                 caso:hasClosedLowerBoundary irrig:Boundary_Rain_Quantity_High ;
+                                 caso:hasOpenUpperBoundary irrig:Boundary_Rain_Quantity_Maximum .
+
+
+###  http://www.w3id.org/def/irrig#State_Rain_Intensity_Light
+irrig:State_Rain_Intensity_Light caso:hasClosedLowerBoundary irrig:Boundary_Rain_Quantity_Minimum ;
+                                 caso:hasOpenUpperBoundary irrig:Boundary_Rain_Quantity_Low .
+
+
+###  http://www.w3id.org/def/irrig#State_Rain_Intensity_Moderate
+irrig:State_Rain_Intensity_Moderate caso:greaterThan irrig:State_Rain_Intensity_Light ;
+                                    caso:hasClosedLowerBoundary irrig:Boundary_Rain_Quantity_Low ;
+                                    caso:hasOpenUpperBoundary irrig:Boundary_Rain_Quantity_High .
+
+
+###  http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Average
+irrig:State_RootZone_MoistureLevel_Average caso:greaterThan irrig:State_RootZone_MoistureLevel_Low ;
+                                           caso:hasClosedLowerBoundary irrig:Boundary_RootZone_Tension_High ;
+                                           caso:hasOpenUpperBoundary irrig:Boundary_RootZone_Tension_Average .
+
+
+###  http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Dry
+irrig:State_RootZone_MoistureLevel_Dry caso:hasClosedLowerBoundary irrig:Boundary_RootZone_Tension_VeryLow ;
+                                       caso:hasOpenUpperBoundary irrig:Boundary_RootZone_Tension_Maximum .
+
+
+###  http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_High
+irrig:State_RootZone_MoistureLevel_High caso:greaterThan irrig:State_RootZone_MoistureLevel_Average ;
+                                        caso:hasClosedLowerBoundary irrig:Boundary_RootZone_Tension_VeryHigh ;
+                                        caso:hasOpenUpperBoundary irrig:Boundary_RootZone_Tension_High .
+
+
+###  http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Low
+irrig:State_RootZone_MoistureLevel_Low caso:greaterThan irrig:State_RootZone_MoistureLevel_VeryLow ;
+                                       caso:hasClosedLowerBoundary irrig:Boundary_RootZone_Tension_Average ;
+                                       caso:hasOpenUpperBoundary irrig:Boundary_RootZone_Tension_Low .
+
+
+###  http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Saturated
+irrig:State_RootZone_MoistureLevel_Saturated caso:greaterThan irrig:State_RootZone_MoistureLevel_VeryHigh ;
+                                             caso:hasClosedLowerBoundary irrig:Boundary_RootZone_Tension_Minimum ;
+                                             caso:hasOpenUpperBoundary irrig:Boundary_RootZone_Tension_Saturation .
+
+
+###  http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_VeryHigh
+irrig:State_RootZone_MoistureLevel_VeryHigh caso:greaterThan irrig:State_RootZone_MoistureLevel_High ;
+                                            caso:hasClosedLowerBoundary irrig:Boundary_RootZone_Tension_Saturation ;
+                                            caso:hasOpenUpperBoundary irrig:Boundary_RootZone_Tension_VeryHigh .
+
+
+###  http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_VeryLow
+irrig:State_RootZone_MoistureLevel_VeryLow caso:greaterThan irrig:State_RootZone_MoistureLevel_Dry ;
+                                           caso:hasClosedLowerBoundary irrig:Boundary_RootZone_Tension_Low ;
+                                           caso:hasOpenUpperBoundary irrig:Boundary_RootZone_Tension_VeryLow .
+
+
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-10T000000_0200
+arvalis:Instant_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-10T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-10T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-10T000000_0200
+arvalis:Dtd_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---10"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Result_Value_0.0_Centibar
+arvalis:Result_Value_0.0_Centibar rdf:type owl:NamedIndividual ,
+                                            sosa:Result ;
+                                   om:hasUnit om:millibar ;
+                                   om:hasNumericalValue "0.0"^^xsd:double .
+
+###  http://www.ontology.irstea.fr/arvalis/Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture
+arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture rdf:type owl:NamedIndividual ,
+                	irrig:Soil30cmDepthMoistureObservation ;
+               	sosa:hasFeatureOfInterest irrig:FeatureOfInterest_Soil30cmDepth ;
+               	sosa:hasResult arvalis:Result_Value_0.0_Centibar ;
+              	sosa:madeBySensor irrig:Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture ;
+           			sosa:observedProperty irrig:ObservableProperty_Soil30cmDepth_Moisture ;
+               	sosa:phenomenonTime arvalis:Instant_2013-09-10T000000_0200 ;
+              	sosa:hasSimpleResult "0.0 cbar"^^rdfs:Literal .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Duration_PT24H
+arvalis:Duration_PT24H rdf:type owl:NamedIndividual ,
+                                time:Duration ;
+                       time:unitType time:unitHour ;
+                       time:numericDuration 24 .
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-10T000000_0200
+arvalis:Instant_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-10T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-10T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-11T000000_0200
+arvalis:Instant_2013-09-11T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-11T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-11T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-10T000000_0200
+arvalis:Dtd_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---10"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-11T000000_0200
+arvalis:Dtd_2013-09-11T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---11"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Interval_PT24H_2013-09-10T000000_0200
+arvalis:Interval_PT24H_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                       time:Interval ;
+                                    	time:hasBeginning arvalis:Instant_2013-09-10T000000_0200 ;
+                                       	time:hasDuration arvalis:Duration_PT24H ;
+                                       	time:hasEnd arvalis:Instant_2013-09-11T000000_0200 .
+
+###  http://www.ontology.irstea.fr/arvalis/Result_Value_0.0_Centibar
+arvalis:Result_Value_0.0_Centibar rdf:type owl:NamedIndividual ,
+                                            sosa:Result ;
+                                   om:hasUnit om:millibar ;
+                                   om:hasNumericalValue "0.0"^^xsd:double .
+
+###  http://www.ontology.irstea.fr/arvalis/Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_01_Soil30cmDepth_AverageMoisturePerDay
+arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_01_Soil30cmDepth_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
+                	irrig:Soil60cmDepthAverageMoisturePerDayObservation ;
+             	prov:wasDerivedFrom arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture ;
+
+               	sosa:hasFeatureOfInterest irrig:FeatureOfInterest_Soil30cmDepth ;
+              	sosa:hasResult arvalis:Result_Value_0.0_Centibar ;
+              	sosa:madeBySensor arvalis:Sensor_SoftwareAgent_01_Soil30cmDepth_AverageMoisturePerDay ;
+              	sosa:observedProperty irrig:ObservableProperty_Soil30cmDepth_AverageMoisturePerDay ;
+              	sosa:phenomenonTime arvalis:Interval_PT24H_2013-09-10T000000_0200 ;
+              	sosa:hasSimpleResult "0.0 cbar"^^rdfs:Literal .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-10T000000_0200
+arvalis:Instant_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-10T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-10T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-10T000000_0200
+arvalis:Dtd_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---10"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Result_Value_2.0_Centibar
+arvalis:Result_Value_2.0_Centibar rdf:type owl:NamedIndividual ,
+                                            sosa:Result ;
+                                   om:hasUnit om:millibar ;
+                                   om:hasNumericalValue "20.0"^^xsd:double .
+
+###  http://www.ontology.irstea.fr/arvalis/Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture
+arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture rdf:type owl:NamedIndividual ,
+                	irrig:Soil30cmDepthMoistureObservation ;
+               	sosa:hasFeatureOfInterest irrig:FeatureOfInterest_Soil30cmDepth ;
+               	sosa:hasResult arvalis:Result_Value_2.0_Centibar ;
+              	sosa:madeBySensor irrig:Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture ;
+           			sosa:observedProperty irrig:ObservableProperty_Soil30cmDepth_Moisture ;
+               	sosa:phenomenonTime arvalis:Instant_2013-09-10T000000_0200 ;
+              	sosa:hasSimpleResult "2.0 cbar"^^rdfs:Literal .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Duration_PT24H
+arvalis:Duration_PT24H rdf:type owl:NamedIndividual ,
+                                time:Duration ;
+                       time:unitType time:unitHour ;
+                       time:numericDuration 24 .
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-10T000000_0200
+arvalis:Instant_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-10T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-10T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-11T000000_0200
+arvalis:Instant_2013-09-11T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-11T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-11T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-10T000000_0200
+arvalis:Dtd_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---10"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-11T000000_0200
+arvalis:Dtd_2013-09-11T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---11"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Interval_PT24H_2013-09-10T000000_0200
+arvalis:Interval_PT24H_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                       time:Interval ;
+                                    	time:hasBeginning arvalis:Instant_2013-09-10T000000_0200 ;
+                                       	time:hasDuration arvalis:Duration_PT24H ;
+                                       	time:hasEnd arvalis:Instant_2013-09-11T000000_0200 .
+
+###  http://www.ontology.irstea.fr/arvalis/Result_Value_2.0_Centibar
+arvalis:Result_Value_2.0_Centibar rdf:type owl:NamedIndividual ,
+                                            sosa:Result ;
+                                   om:hasUnit om:millibar ;
+                                   om:hasNumericalValue "20.0"^^xsd:double .
+
+###  http://www.ontology.irstea.fr/arvalis/Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_02_Soil30cmDepth_AverageMoisturePerDay
+arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_02_Soil30cmDepth_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
+                	irrig:Soil60cmDepthAverageMoisturePerDayObservation ;
+             	prov:wasDerivedFrom arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture ;
+
+               	sosa:hasFeatureOfInterest irrig:FeatureOfInterest_Soil30cmDepth ;
+              	sosa:hasResult arvalis:Result_Value_2.0_Centibar ;
+              	sosa:madeBySensor arvalis:Sensor_SoftwareAgent_02_Soil30cmDepth_AverageMoisturePerDay ;
+              	sosa:observedProperty irrig:ObservableProperty_Soil30cmDepth_AverageMoisturePerDay ;
+              	sosa:phenomenonTime arvalis:Interval_PT24H_2013-09-10T000000_0200 ;
+              	sosa:hasSimpleResult "2.0 cbar"^^rdfs:Literal .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-10T000000_0200
+arvalis:Instant_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-10T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-10T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-10T000000_0200
+arvalis:Dtd_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---10"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Result_Value_74.0_Centibar
+arvalis:Result_Value_74.0_Centibar rdf:type owl:NamedIndividual ,
+                                            sosa:Result ;
+                                   om:hasUnit om:millibar ;
+                                   om:hasNumericalValue "740.0"^^xsd:double .
+
+###  http://www.ontology.irstea.fr/arvalis/Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture
+arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture rdf:type owl:NamedIndividual ,
+                	irrig:Soil30cmDepthMoistureObservation ;
+               	sosa:hasFeatureOfInterest irrig:FeatureOfInterest_Soil30cmDepth ;
+               	sosa:hasResult arvalis:Result_Value_74.0_Centibar ;
+              	sosa:madeBySensor irrig:Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture ;
+           			sosa:observedProperty irrig:ObservableProperty_Soil30cmDepth_Moisture ;
+               	sosa:phenomenonTime arvalis:Instant_2013-09-10T000000_0200 ;
+              	sosa:hasSimpleResult "74.0 cbar"^^rdfs:Literal .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Duration_PT24H
+arvalis:Duration_PT24H rdf:type owl:NamedIndividual ,
+                                time:Duration ;
+                       time:unitType time:unitHour ;
+                       time:numericDuration 24 .
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-10T000000_0200
+arvalis:Instant_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-10T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-10T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-11T000000_0200
+arvalis:Instant_2013-09-11T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-11T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-11T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-10T000000_0200
+arvalis:Dtd_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---10"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-11T000000_0200
+arvalis:Dtd_2013-09-11T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---11"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Interval_PT24H_2013-09-10T000000_0200
+arvalis:Interval_PT24H_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                       time:Interval ;
+                                    	time:hasBeginning arvalis:Instant_2013-09-10T000000_0200 ;
+                                       	time:hasDuration arvalis:Duration_PT24H ;
+                                       	time:hasEnd arvalis:Instant_2013-09-11T000000_0200 .
+
+###  http://www.ontology.irstea.fr/arvalis/Result_Value_74.0_Centibar
+arvalis:Result_Value_74.0_Centibar rdf:type owl:NamedIndividual ,
+                                            sosa:Result ;
+                                   om:hasUnit om:millibar ;
+                                   om:hasNumericalValue "740.0"^^xsd:double .
+
+###  http://www.ontology.irstea.fr/arvalis/Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_03_Soil30cmDepth_AverageMoisturePerDay
+arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_03_Soil30cmDepth_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
+                	irrig:Soil60cmDepthAverageMoisturePerDayObservation ;
+             	prov:wasDerivedFrom arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture ;
+
+               	sosa:hasFeatureOfInterest irrig:FeatureOfInterest_Soil30cmDepth ;
+              	sosa:hasResult arvalis:Result_Value_74.0_Centibar ;
+              	sosa:madeBySensor arvalis:Sensor_SoftwareAgent_03_Soil30cmDepth_AverageMoisturePerDay ;
+              	sosa:observedProperty irrig:ObservableProperty_Soil30cmDepth_AverageMoisturePerDay ;
+              	sosa:phenomenonTime arvalis:Interval_PT24H_2013-09-10T000000_0200 ;
+              	sosa:hasSimpleResult "74.0 cbar"^^rdfs:Literal .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-10T000000_0200
+arvalis:Instant_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-10T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-10T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-10T000000_0200
+arvalis:Dtd_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---10"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Result_Value_183.0_Centibar
+arvalis:Result_Value_183.0_Centibar rdf:type owl:NamedIndividual ,
+                                            sosa:Result ;
+                                   om:hasUnit om:millibar ;
+                                   om:hasNumericalValue "1830.0"^^xsd:double .
+
+###  http://www.ontology.irstea.fr/arvalis/Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture
+arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture rdf:type owl:NamedIndividual ,
+                	irrig:Soil30cmDepthMoistureObservation ;
+               	sosa:hasFeatureOfInterest irrig:FeatureOfInterest_Soil60cmDepth ;
+               	sosa:hasResult arvalis:Result_Value_183.0_Centibar ;
+              	sosa:madeBySensor irrig:Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture ;
+           			sosa:observedProperty irrig:ObservableProperty_Soil60cmDepth_Moisture ;
+               	sosa:phenomenonTime arvalis:Instant_2013-09-10T000000_0200 ;
+              	sosa:hasSimpleResult "183.0 cbar"^^rdfs:Literal .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Duration_PT24H
+arvalis:Duration_PT24H rdf:type owl:NamedIndividual ,
+                                time:Duration ;
+                       time:unitType time:unitHour ;
+                       time:numericDuration 24 .
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-10T000000_0200
+arvalis:Instant_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-10T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-10T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-11T000000_0200
+arvalis:Instant_2013-09-11T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-11T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-11T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-10T000000_0200
+arvalis:Dtd_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---10"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-11T000000_0200
+arvalis:Dtd_2013-09-11T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---11"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Interval_PT24H_2013-09-10T000000_0200
+arvalis:Interval_PT24H_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                       time:Interval ;
+                                    	time:hasBeginning arvalis:Instant_2013-09-10T000000_0200 ;
+                                       	time:hasDuration arvalis:Duration_PT24H ;
+                                       	time:hasEnd arvalis:Instant_2013-09-11T000000_0200 .
+
+###  http://www.ontology.irstea.fr/arvalis/Result_Value_183.0_Centibar
+arvalis:Result_Value_183.0_Centibar rdf:type owl:NamedIndividual ,
+                                            sosa:Result ;
+                                   om:hasUnit om:millibar ;
+                                   om:hasNumericalValue "1830.0"^^xsd:double .
+
+###  http://www.ontology.irstea.fr/arvalis/Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_04_Soil60cmDepth_AverageMoisturePerDay
+arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_04_Soil60cmDepth_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
+                	irrig:Soil60cmDepthAverageMoisturePerDayObservation ;
+             	prov:wasDerivedFrom arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture ;
+
+               	sosa:hasFeatureOfInterest irrig:FeatureOfInterest_Soil60cmDepth ;
+              	sosa:hasResult arvalis:Result_Value_183.0_Centibar ;
+              	sosa:madeBySensor arvalis:Sensor_SoftwareAgent_04_Soil60cmDepth_AverageMoisturePerDay ;
+              	sosa:observedProperty irrig:ObservableProperty_Soil60cmDepth_AverageMoisturePerDay ;
+              	sosa:phenomenonTime arvalis:Interval_PT24H_2013-09-10T000000_0200 ;
+              	sosa:hasSimpleResult "183.0 cbar"^^rdfs:Literal .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-10T000000_0200
+arvalis:Instant_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-10T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-10T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-10T000000_0200
+arvalis:Dtd_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---10"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Result_Value_0.0_Centibar
+arvalis:Result_Value_0.0_Centibar rdf:type owl:NamedIndividual ,
+                                            sosa:Result ;
+                                   om:hasUnit om:millibar ;
+                                   om:hasNumericalValue "0.0"^^xsd:double .
+
+###  http://www.ontology.irstea.fr/arvalis/Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture
+arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture rdf:type owl:NamedIndividual ,
+                	irrig:Soil30cmDepthMoistureObservation ;
+               	sosa:hasFeatureOfInterest irrig:FeatureOfInterest_Soil60cmDepth ;
+               	sosa:hasResult arvalis:Result_Value_0.0_Centibar ;
+              	sosa:madeBySensor irrig:Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture ;
+           			sosa:observedProperty irrig:ObservableProperty_Soil60cmDepth_Moisture ;
+               	sosa:phenomenonTime arvalis:Instant_2013-09-10T000000_0200 ;
+              	sosa:hasSimpleResult "0.0 cbar"^^rdfs:Literal .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Duration_PT24H
+arvalis:Duration_PT24H rdf:type owl:NamedIndividual ,
+                                time:Duration ;
+                       time:unitType time:unitHour ;
+                       time:numericDuration 24 .
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-10T000000_0200
+arvalis:Instant_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-10T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-10T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-11T000000_0200
+arvalis:Instant_2013-09-11T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-11T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-11T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-10T000000_0200
+arvalis:Dtd_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---10"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-11T000000_0200
+arvalis:Dtd_2013-09-11T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---11"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Interval_PT24H_2013-09-10T000000_0200
+arvalis:Interval_PT24H_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                       time:Interval ;
+                                    	time:hasBeginning arvalis:Instant_2013-09-10T000000_0200 ;
+                                       	time:hasDuration arvalis:Duration_PT24H ;
+                                       	time:hasEnd arvalis:Instant_2013-09-11T000000_0200 .
+
+###  http://www.ontology.irstea.fr/arvalis/Result_Value_0.0_Centibar
+arvalis:Result_Value_0.0_Centibar rdf:type owl:NamedIndividual ,
+                                            sosa:Result ;
+                                   om:hasUnit om:millibar ;
+                                   om:hasNumericalValue "0.0"^^xsd:double .
+
+###  http://www.ontology.irstea.fr/arvalis/Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_05_Soil60cmDepth_AverageMoisturePerDay
+arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_05_Soil60cmDepth_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
+                	irrig:Soil60cmDepthAverageMoisturePerDayObservation ;
+             	prov:wasDerivedFrom arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture ;
+
+               	sosa:hasFeatureOfInterest irrig:FeatureOfInterest_Soil60cmDepth ;
+              	sosa:hasResult arvalis:Result_Value_0.0_Centibar ;
+              	sosa:madeBySensor arvalis:Sensor_SoftwareAgent_05_Soil60cmDepth_AverageMoisturePerDay ;
+              	sosa:observedProperty irrig:ObservableProperty_Soil60cmDepth_AverageMoisturePerDay ;
+              	sosa:phenomenonTime arvalis:Interval_PT24H_2013-09-10T000000_0200 ;
+              	sosa:hasSimpleResult "0.0 cbar"^^rdfs:Literal .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-10T000000_0200
+arvalis:Instant_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-10T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-10T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-10T000000_0200
+arvalis:Dtd_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---10"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Result_Value_255.0_Centibar
+arvalis:Result_Value_255.0_Centibar rdf:type owl:NamedIndividual ,
+                                            sosa:Result ;
+                                   om:hasUnit om:millibar ;
+                                   om:hasNumericalValue "2550.0"^^xsd:double .
+
+###  http://www.ontology.irstea.fr/arvalis/Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture
+arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture rdf:type owl:NamedIndividual ,
+                	irrig:Soil30cmDepthMoistureObservation ;
+               	sosa:hasFeatureOfInterest irrig:FeatureOfInterest_Soil60cmDepth ;
+               	sosa:hasResult arvalis:Result_Value_255.0_Centibar ;
+              	sosa:madeBySensor irrig:Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture ;
+           			sosa:observedProperty irrig:ObservableProperty_Soil60cmDepth_Moisture ;
+               	sosa:phenomenonTime arvalis:Instant_2013-09-10T000000_0200 ;
+              	sosa:hasSimpleResult "255.0 cbar"^^rdfs:Literal .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Duration_PT24H
+arvalis:Duration_PT24H rdf:type owl:NamedIndividual ,
+                                time:Duration ;
+                       time:unitType time:unitHour ;
+                       time:numericDuration 24 .
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-10T000000_0200
+arvalis:Instant_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-10T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-10T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-11T000000_0200
+arvalis:Instant_2013-09-11T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-11T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-11T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-10T000000_0200
+arvalis:Dtd_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---10"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-11T000000_0200
+arvalis:Dtd_2013-09-11T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---11"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Interval_PT24H_2013-09-10T000000_0200
+arvalis:Interval_PT24H_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                       time:Interval ;
+                                    	time:hasBeginning arvalis:Instant_2013-09-10T000000_0200 ;
+                                       	time:hasDuration arvalis:Duration_PT24H ;
+                                       	time:hasEnd arvalis:Instant_2013-09-11T000000_0200 .
+
+###  http://www.ontology.irstea.fr/arvalis/Result_Value_255.0_Centibar
+arvalis:Result_Value_255.0_Centibar rdf:type owl:NamedIndividual ,
+                                            sosa:Result ;
+                                   om:hasUnit om:millibar ;
+                                   om:hasNumericalValue "2550.0"^^xsd:double .
+
+###  http://www.ontology.irstea.fr/arvalis/Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_06_Soil60cmDepth_AverageMoisturePerDay
+arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_06_Soil60cmDepth_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
+                	irrig:Soil60cmDepthAverageMoisturePerDayObservation ;
+             	prov:wasDerivedFrom arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture ;
+
+               	sosa:hasFeatureOfInterest irrig:FeatureOfInterest_Soil60cmDepth ;
+              	sosa:hasResult arvalis:Result_Value_255.0_Centibar ;
+              	sosa:madeBySensor arvalis:Sensor_SoftwareAgent_06_Soil60cmDepth_AverageMoisturePerDay ;
+              	sosa:observedProperty irrig:ObservableProperty_Soil60cmDepth_AverageMoisturePerDay ;
+              	sosa:phenomenonTime arvalis:Interval_PT24H_2013-09-10T000000_0200 ;
+              	sosa:hasSimpleResult "255.0 cbar"^^rdfs:Literal .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Duration_PT24H
+arvalis:Duration_PT24H rdf:type owl:NamedIndividual ,
+                                time:Duration ;
+                       time:unitType time:unitHour ;
+                       time:numericDuration 24 .
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-10T000000_0200
+arvalis:Instant_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-10T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-10T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-11T000000_0200
+arvalis:Instant_2013-09-11T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-11T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-11T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-10T000000_0200
+arvalis:Dtd_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---10"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-11T000000_0200
+arvalis:Dtd_2013-09-11T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---11"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Interval_PT24H_2013-09-10T000000_0200
+arvalis:Interval_PT24H_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                       time:Interval ;
+                                    	time:hasBeginning arvalis:Instant_2013-09-10T000000_0200 ;
+                                       	time:hasDuration arvalis:Duration_PT24H ;
+                                       	time:hasEnd arvalis:Instant_2013-09-11T000000_0200 .
+
+###  http://www.ontology.irstea.fr/arvalis/Result_Value_185.0_Centibar
+arvalis:Result_Value_185.0_Centibar rdf:type owl:NamedIndividual ,
+                                            sosa:Result ;
+                                   om:hasUnit om:millibar ;
+                                   om:hasNumericalValue "1850.0"^^xsd:double .
+
+###  http://www.ontology.irstea.fr/arvalis/Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_RootZone_AverageMoisturePerDay
+arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_RootZone_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
+                 	irrig:RootZoneAverageMoisturePerDayObservation ;
+   prov:wasDerivedFrom 	arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_01_Soil30cmDepth_AverageMoisturePerDay ,
+                     	arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_02_Soil30cmDepth_AverageMoisturePerDay ,
+                        arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_03_Soil30cmDepth_AverageMoisturePerDay ,
+                        arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_04_Soil60cmDepth_AverageMoisturePerDay ,
+                        arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_05_Soil60cmDepth_AverageMoisturePerDay ,
+                        arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_06_Soil60cmDepth_AverageMoisturePerDay ;
+               	sosa:hasFeatureOfInterest irrig:FeatureOfInterest_RootZone ;
+              	sosa:hasResult arvalis:Result_Value_185.0_Centibar ;
+                sosa:madeBySensor arvalis:Sensor_SoftwareAgent_RootZone_AverageMoisturePerDay ;
+               	sosa:observedProperty irrig:ObservableProperty_RootZone_AverageMoisturePerDay ;
+                sosa:phenomenonTime arvalis:Interval_PT24H_2013-09-10T000000_0200 ;
+                sosa:hasSimpleResult "185.0 cbar"^^rdfs:Literal .
+
+
+###  http://www.ontology.irstea.fr/arvalis/Duration_PT24H
+arvalis:Duration_PT24H rdf:type owl:NamedIndividual ,
+                                time:Duration ;
+                       time:unitType time:unitHour ;
+                       time:numericDuration 24 .
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-10T000000_0200
+arvalis:Instant_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-10T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-10T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Instant_2013-09-11T000000_0200
+arvalis:Instant_2013-09-11T000000_0200 rdf:type owl:NamedIndividual ,
+                                                time:Instant ;
+							time:hasDateTimeDescription arvalis:Dtd_2013-09-11T000000_0200 ;	
+                                       time:inXSDDateTimeStamp "2013-09-11T00:00:00+02:00"^^xsd:dateTime .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-10T000000_0200
+arvalis:Dtd_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---10"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Dtd_2013-09-11T000000_0200
+arvalis:Dtd_2013-09-11T000000_0200 rdf:type owl:NamedIndividual ,
+                                            time:DateTimeDescription ;
+                                   time:day "---11"^^xsd:gDay ;
+                                   time:month "--09"^^xsd:gMonth ;
+                                   time:year "2013"^^xsd:gYear ;
+                                   time:hour "00"^^xsd:decimal ;
+                                   time:minute "00"^^xsd:decimal ;
+                                   time:second "00"^^xsd:decimal .
+
+###  http://www.ontology.irstea.fr/arvalis/Interval_PT24H_2013-09-10T000000_0200
+arvalis:Interval_PT24H_2013-09-10T000000_0200 rdf:type owl:NamedIndividual ,
+                                                       time:Interval ;
+                                    	time:hasBeginning arvalis:Instant_2013-09-10T000000_0200 ;
+                                       	time:hasDuration arvalis:Duration_PT24H ;
+                                       	time:hasEnd arvalis:Instant_2013-09-11T000000_0200 .
+
+###  http://www.ontology.irstea.fr/arvalis/Deduction_at_PT24H_2013-09-10T000000_0200_on_RootZone_MoistureLevel
+arvalis:Deduction_at_PT24H_2013-09-10T000000_0200_on_RootZone_MoistureLevel rdf:type owl:NamedIndividual ,
+                                                                                     irrig:RootZoneMoistureLevelDeduction ;
+   	prov:wasDerivedFrom arvalis:Observation_at_PT24H_2013-09-10T000000_0200_of_Sensor_SoftwareAgent_RootZone_AverageMoisturePerDay ;
+       	sosa:hasFeatureOfInterest irrig:FeatureOfInterest_RootZone ;
+       	sosa:madeBySensor arvalis:Sensor_SoftwareAgent_Crop_WaterNeed ;
+       	sosa:observedProperty irrig:ObservableProperty_RootZone_MoistureLevel ;
+      	sosa:phenomenonTime arvalis:Interval_PT24H_2013-09-10T000000_0200 .
+
+
+
