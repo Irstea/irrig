@@ -1,3 +1,5 @@
+**Testing guidelines**
+
 Test files are located in irrig/test/[unit-test-type]
 
 The test folder is in the format: tmp-[type]-[Date][Version]  
