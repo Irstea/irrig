@@ -912,6 +912,15 @@
     
 
 
+    <!-- http://www.w3id.org/def/irrig#ObservableProperty_Crop_Stage -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Crop_Stage">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#GrowthProperty"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.w3id.org/def/irrig#ObservableProperty_Crop_WaterNeed -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Crop_WaterNeed">
