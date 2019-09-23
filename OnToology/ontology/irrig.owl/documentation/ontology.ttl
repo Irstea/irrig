@@ -89,18 +89,6 @@
 
 ###  http://www.w3id.org/def/irrig#CropGrowthObservation
 :CropGrowthObservation rdf:type owl:Class ;
-                       owl:equivalentClass [ owl:intersectionOf ( <http://www.w3id.org/def/caso#Observation>
-                                                                  [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
-                                                                    owl:hasValue :FeatureOfInterest_Crop
-                                                                  ]
-                                                                  [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty <http://www.w3.org/ns/sosa/observedProperty> ;
-                                                                    owl:hasValue :ObservableProperty_Crop_Stage
-                                                                  ]
-                                                                ) ;
-                                             rdf:type owl:Class
-                                           ] ;
                        rdfs:subClassOf <http://www.w3id.org/def/caso#Observation> ;
                        rdfs:comment "CropGrowthObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Crop_Stage Property of the Crop FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Crop_Stage ObservableProperty (Property) to describe what the result is an estimate of, and to the Crop FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."@en ;
                        rdfs:label "Crop growth observation"@en ;
@@ -204,38 +192,9 @@
                   <http://www.w3.org/2004/02/skos/core#example> "RootZoneMoistureLevel is a MoistureProperty representing the amount of water available around the soil’s root zone area of a plant."@en .
 
 
-###  http://www.w3id.org/def/irrig#RainIntensittyState
-:RainIntensittyState rdf:type owl:Class ;
-                     owl:equivalentClass [ owl:intersectionOf ( <http://www.w3id.org/def/caso#State>
-                                                                [ rdf:type owl:Class ;
-                                                                  owl:unionOf ( [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty <http://www.w3id.org/def/caso#hasClosedLowerBoundary> ;
-                                                                                  owl:someValuesFrom :RainIntensityBoundary
-                                                                                ]
-                                                                                [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty <http://www.w3id.org/def/caso#hasOpenLowerBoundary> ;
-                                                                                  owl:someValuesFrom :RainIntensityBoundary
-                                                                                ]
-                                                                              )
-                                                                ]
-                                                                [ rdf:type owl:Class ;
-                                                                  owl:unionOf ( [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty <http://www.w3id.org/def/caso#hasClosedUpperBoundary> ;
-                                                                                  owl:someValuesFrom :RainIntensityBoundary
-                                                                                ]
-                                                                                [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty <http://www.w3id.org/def/caso#hasOpenUpperBoundary> ;
-                                                                                  owl:someValuesFrom :RainIntensityBoundary
-                                                                                ]
-                                                                              )
-                                                                ]
-                                                              ) ;
-                                           rdf:type owl:Class
-                                         ] ;
-                     rdfs:subClassOf <http://www.w3id.org/def/caso#State> ;
-                     rdfs:comment "RainIntensityState - A qualitative value of the RainIntensity Property which changes over time, summarizing a set of information about that Property. To evaluate the State of the Property, some Boundaries are defined."@en ;
-                     rdfs:label "Rain Intensity State"@en ;
-                     <http://www.w3.org/2004/02/skos/core#example> "Example: The State Light of the RainIntensity Property represents a fact that there is no enought rain to take any decision about irrigation."@en .
+###  http://www.w3id.org/def/irrig#PrecipitationProperty
+:PrecipitationProperty rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> .
 
 
 ###  http://www.w3id.org/def/irrig#RainIntensityBoundary
@@ -264,6 +223,40 @@
                         rdfs:comment "RainIntensityDeduction - Act of carrying out an (Observation) Procedure to estimate a State of the RainIntensity Property of the Rain FeatureOfInterest. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time."@en ;
                         rdfs:label "Rain Intensity Deduction"@en ;
                         <http://www.w3.org/2004/02/skos/core#example> "A RainIntensityDeduction that made by the Software_Agent Sensor based on observations made by a pluviometer sensor"@en .
+
+
+###  http://www.w3id.org/def/irrig#RainIntensityState
+:RainIntensityState rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( <http://www.w3id.org/def/caso#State>
+                                                               [ rdf:type owl:Class ;
+                                                                 owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://www.w3id.org/def/caso#hasClosedLowerBoundary> ;
+                                                                                 owl:someValuesFrom :RainIntensityBoundary
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://www.w3id.org/def/caso#hasOpenLowerBoundary> ;
+                                                                                 owl:someValuesFrom :RainIntensityBoundary
+                                                                               ]
+                                                                             )
+                                                               ]
+                                                               [ rdf:type owl:Class ;
+                                                                 owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://www.w3id.org/def/caso#hasClosedUpperBoundary> ;
+                                                                                 owl:someValuesFrom :RainIntensityBoundary
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://www.w3id.org/def/caso#hasOpenUpperBoundary> ;
+                                                                                 owl:someValuesFrom :RainIntensityBoundary
+                                                                               ]
+                                                                             )
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ;
+                    rdfs:subClassOf <http://www.w3id.org/def/caso#State> ;
+                    rdfs:comment "RainIntensityState - A qualitative value of the RainIntensity Property which changes over time, summarizing a set of information about that Property. To evaluate the State of the Property, some Boundaries are defined."@en ;
+                    rdfs:label "Rain Intensity State"@en ;
+                    <http://www.w3.org/2004/02/skos/core#example> "Example: The State Light of the RainIntensity Property represents a fact that there is no enought rain to take any decision about irrigation."@en .
 
 
 ###  http://www.w3id.org/def/irrig#RainQuantityObservation
@@ -476,6 +469,11 @@
                 <http://www.w3.org/2004/02/skos/core#example> "CropWaterNeed is a StressProperty representing the stress inside the plant when it needs extra water. It corresponds to the drought stress."@en .
 
 
+###  http://www.w3id.org/def/irrig#TemperatureProperty
+:TemperatureProperty rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> .
+
+
 ###  https://w3id.org/def/saref4agri#Pluviometer
 <https://w3id.org/def/saref4agri#Pluviometer> rdf:type owl:Class ;
                                               rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
@@ -507,6 +505,11 @@
 #################################################################
 #    Individuals
 #################################################################
+
+###  http://www.w3id.org/def/irrig#Actuator_WateringValve_01_Soil_Moisture
+:Actuator_WateringValve_01_Soil_Moisture rdf:type owl:NamedIndividual ,
+                                                  <https://w3id.org/def/saref4agri#WateringValve> .
+
 
 ###  http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_High
 :Boundary_Rain_Quantity_High rdf:type owl:NamedIndividual ,
@@ -580,7 +583,6 @@
 :FeatureOfInterest_Crop rdf:type owl:NamedIndividual ,
                                  <http://www.w3.org/ns/sosa/FeatureOfInterest> ;
                         <http://www.w3.org/ns/ssn/hasProperty> :ObservableProperty_Crop_Growth ,
-                                                               :ObservableProperty_Crop_Stage ,
                                                                :ObservableProperty_Crop_WaterNeed .
 
 
@@ -615,21 +617,25 @@
 
 ###  http://www.w3id.org/def/irrig#ObservableProperty_Air_MaxTemperaturePerDay
 :ObservableProperty_Air_MaxTemperaturePerDay rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/ns/sosa/ObservableProperty> .
+                                                      <http://www.w3.org/ns/sosa/ObservableProperty> ,
+                                                      :TemperatureProperty .
 
 
 ###  http://www.w3id.org/def/irrig#ObservableProperty_Air_MinTemperaturePerDay
 :ObservableProperty_Air_MinTemperaturePerDay rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/ns/sosa/ObservableProperty> .
+                                                      <http://www.w3.org/ns/sosa/ObservableProperty> ,
+                                                      :TemperatureProperty .
 
 
 ###  http://www.w3id.org/def/irrig#ObservableProperty_Air_Temperature
 :ObservableProperty_Air_Temperature rdf:type owl:NamedIndividual ,
-                                             <http://www.w3.org/ns/sosa/ObservableProperty> .
+                                             <http://www.w3.org/ns/sosa/ObservableProperty> ,
+                                             :TemperatureProperty .
 
 
 ###  http://www.w3id.org/def/irrig#ObservableProperty_Crop_Growth
 :ObservableProperty_Crop_Growth rdf:type owl:NamedIndividual ,
+                                         <http://www.w3id.org/def/caso#Property> ,
                                          :GrowthProperty ;
                                 <http://www.w3id.org/def/caso#hasState> :State_Crop_Growth_Init ,
                                                                         :State_Crop_Growth_R1 ,
@@ -638,16 +644,18 @@
                                                                         :State_Crop_Growth_R5hg45 ,
                                                                         :State_Crop_Growth_V2 ,
                                                                         :State_Crop_Growth_V7 ,
-                                                                        :State_Crop_Growth_V7d25 .
+                                                                        :State_Crop_Growth_V7d20 .
 
 
 ###  http://www.w3id.org/def/irrig#ObservableProperty_Crop_Stage
 :ObservableProperty_Crop_Stage rdf:type owl:NamedIndividual ,
-                                        <http://www.w3.org/ns/sosa/ObservableProperty> .
+                                        <http://www.w3.org/ns/sosa/ObservableProperty> ,
+                                        :GrowthProperty .
 
 
 ###  http://www.w3id.org/def/irrig#ObservableProperty_Crop_WaterNeed
 :ObservableProperty_Crop_WaterNeed rdf:type owl:NamedIndividual ,
+                                            <http://www.w3id.org/def/caso#Property> ,
                                             :StressProperty ;
                                    <http://www.w3id.org/def/caso#hasState> :State_Crop_WaterNeed_No ,
                                                                            :State_Crop_WaterNeed_Wait ,
@@ -657,7 +665,9 @@
 
 ###  http://www.w3id.org/def/irrig#ObservableProperty_Rain_Intensity
 :ObservableProperty_Rain_Intensity rdf:type owl:NamedIndividual ,
-                                            :IntensityProperty ;
+                                            <http://www.w3id.org/def/caso#Property> ,
+                                            :IntensityProperty ,
+                                            :PrecipitationProperty ;
                                    <http://www.w3id.org/def/caso#hasState> :State_Rain_Intensity_Heavy ,
                                                                            :State_Rain_Intensity_Init ,
                                                                            :State_Rain_Intensity_Light ,
@@ -666,21 +676,25 @@
 
 ###  http://www.w3id.org/def/irrig#ObservableProperty_Rain_Quantity
 :ObservableProperty_Rain_Quantity rdf:type owl:NamedIndividual ,
-                                           <http://www.w3.org/ns/sosa/ObservableProperty> .
+                                           <http://www.w3.org/ns/sosa/ObservableProperty> ,
+                                           :PrecipitationProperty .
 
 
 ###  http://www.w3id.org/def/irrig#ObservableProperty_Rain_TotalQuantityPerDay
 :ObservableProperty_Rain_TotalQuantityPerDay rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/ns/sosa/ObservableProperty> .
+                                                      <http://www.w3.org/ns/sosa/ObservableProperty> ,
+                                                      :PrecipitationProperty .
 
 
 ###  http://www.w3id.org/def/irrig#ObservableProperty_RootZone_AverageMoisturePerDay
 :ObservableProperty_RootZone_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
-                                                            <http://www.w3.org/ns/sosa/ObservableProperty> .
+                                                            <http://www.w3.org/ns/sosa/ObservableProperty> ,
+                                                            :MoistureProperty .
 
 
 ###  http://www.w3id.org/def/irrig#ObservableProperty_RootZone_MoistureLevel
 :ObservableProperty_RootZone_MoistureLevel rdf:type owl:NamedIndividual ,
+                                                    <http://www.w3id.org/def/caso#Property> ,
                                                     :MoistureProperty ;
                                            <http://www.w3id.org/def/caso#hasState> :State_RootZone_MoistureLevel_Average ,
                                                                                    :State_RootZone_MoistureLevel_Dry ,
@@ -694,62 +708,66 @@
 
 ###  http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_AverageMoisturePerDay
 :ObservableProperty_Soil30cmDepth_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
-                                                                 <http://www.w3.org/ns/sosa/ObservableProperty> .
+                                                                 <http://www.w3.org/ns/sosa/ObservableProperty> ,
+                                                                 :MoistureProperty .
 
 
 ###  http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_Moisture
 :ObservableProperty_Soil30cmDepth_Moisture rdf:type owl:NamedIndividual ,
-                                                    <http://www.w3.org/ns/sosa/ObservableProperty> .
+                                                    <http://www.w3.org/ns/sosa/ObservableProperty> ,
+                                                    :MoistureProperty .
 
 
 ###  http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_AverageMoisturePerDay
 :ObservableProperty_Soil60cmDepth_AverageMoisturePerDay rdf:type owl:NamedIndividual ,
-                                                                 <http://www.w3.org/ns/sosa/ObservableProperty> .
+                                                                 <http://www.w3.org/ns/sosa/ObservableProperty> ,
+                                                                 :MoistureProperty .
 
 
 ###  http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_Moisture
 :ObservableProperty_Soil60cmDepth_Moisture rdf:type owl:NamedIndividual ,
-                                                    <http://www.w3.org/ns/sosa/ObservableProperty> .
+                                                    <http://www.w3.org/ns/sosa/ObservableProperty> ,
+                                                    :MoistureProperty .
 
 
-###  http://www.w3id.org/def/irrig#Pluviometer_01_Rain_Quantity
-:Pluviometer_01_Rain_Quantity rdf:type owl:NamedIndividual ,
-                                       <https://w3id.org/def/saref4agri#Pluviometer> .
+###  http://www.w3id.org/def/irrig#Sensor_Pluviometer_01_Rain_Quantity
+:Sensor_Pluviometer_01_Rain_Quantity rdf:type owl:NamedIndividual ,
+                                              <https://w3id.org/def/saref4agri#Pluviometer> .
 
 
-###  http://www.w3id.org/def/irrig#Pluviometer_02_Rain_Quantity
-:Pluviometer_02_Rain_Quantity rdf:type owl:NamedIndividual ,
-                                       <https://w3id.org/def/saref4agri#Pluviometer> .
+###  http://www.w3id.org/def/irrig#Sensor_Pluviometer_02_Rain_Quantity
+:Sensor_Pluviometer_02_Rain_Quantity rdf:type owl:NamedIndividual ,
+                                              <https://w3id.org/def/saref4agri#Pluviometer> .
 
 
-###  http://www.w3id.org/def/irrig#SoilTensiometer_01_Soil30cmDepth_Moisture
-:SoilTensiometer_01_Soil30cmDepth_Moisture rdf:type owl:NamedIndividual ,
-                                                    <https://w3id.org/def/saref4agri#SoilTensiometer> .
+###  http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture
+:Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/def/saref4agri#SoilTensiometer> .
 
 
-###  http://www.w3id.org/def/irrig#SoilTensiometer_02_Soil30cmDepth_Moisture
-:SoilTensiometer_02_Soil30cmDepth_Moisture rdf:type owl:NamedIndividual ,
-                                                    <https://w3id.org/def/saref4agri#SoilTensiometer> .
+###  http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture
+:Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/def/saref4agri#SoilTensiometer> .
 
 
-###  http://www.w3id.org/def/irrig#SoilTensiometer_03_Soil30cmDepth_Moisture
-:SoilTensiometer_03_Soil30cmDepth_Moisture rdf:type owl:NamedIndividual ,
-                                                    <https://w3id.org/def/saref4agri#SoilTensiometer> .
+###  http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture
+:Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/def/saref4agri#SoilTensiometer> .
 
 
-###  http://www.w3id.org/def/irrig#SoilTensiometer_04_Soil60cmDepth_Moisture
-:SoilTensiometer_04_Soil60cmDepth_Moisture rdf:type owl:NamedIndividual ,
-                                                    <https://w3id.org/def/saref4agri#SoilTensiometer> .
+###  http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture
+:Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/def/saref4agri#SoilTensiometer> .
 
 
-###  http://www.w3id.org/def/irrig#SoilTensiometer_05_Soil60cmDepth_Moisture
-:SoilTensiometer_05_Soil60cmDepth_Moisture rdf:type owl:NamedIndividual ,
-                                                    <https://w3id.org/def/saref4agri#SoilTensiometer> .
+###  http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture
+:Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/def/saref4agri#SoilTensiometer> .
 
 
-###  http://www.w3id.org/def/irrig#SoilTensiometer_06_Soil60cmDepth_Moisture
-:SoilTensiometer_06_Soil60cmDepth_Moisture rdf:type owl:NamedIndividual ,
-                                                    <https://w3id.org/def/saref4agri#SoilTensiometer> .
+###  http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture
+:Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/def/saref4agri#SoilTensiometer> .
 
 
 ###  http://www.w3id.org/def/irrig#State_Crop_Growth_Init
@@ -787,8 +805,8 @@
                                :CropGrowthState .
 
 
-###  http://www.w3id.org/def/irrig#State_Crop_Growth_V7d25
-:State_Crop_Growth_V7d25 rdf:type owl:NamedIndividual ,
+###  http://www.w3id.org/def/irrig#State_Crop_Growth_V7d20
+:State_Crop_Growth_V7d20 rdf:type owl:NamedIndividual ,
                                   :CropGrowthState .
 
 
@@ -814,22 +832,22 @@
 
 ###  http://www.w3id.org/def/irrig#State_Rain_Intensity_Heavy
 :State_Rain_Intensity_Heavy rdf:type owl:NamedIndividual ,
-                                     :RainIntensittyState .
+                                     :RainIntensityState .
 
 
 ###  http://www.w3id.org/def/irrig#State_Rain_Intensity_Init
 :State_Rain_Intensity_Init rdf:type owl:NamedIndividual ,
-                                    :RainIntensittyState .
+                                    :RainIntensityState .
 
 
 ###  http://www.w3id.org/def/irrig#State_Rain_Intensity_Light
 :State_Rain_Intensity_Light rdf:type owl:NamedIndividual ,
-                                     :RainIntensittyState .
+                                     :RainIntensityState .
 
 
 ###  http://www.w3id.org/def/irrig#State_Rain_Intensity_Moderate
 :State_Rain_Intensity_Moderate rdf:type owl:NamedIndividual ,
-                                        :RainIntensittyState .
+                                        :RainIntensityState .
 
 
 ###  http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Average
@@ -870,11 +888,6 @@
 ###  http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_VeryLow
 :State_RootZone_MoistureLevel_VeryLow rdf:type owl:NamedIndividual ,
                                                :RootZoneMoistureLevelState .
-
-
-###  http://www.w3id.org/def/irrig#WateringValve_01_Soil_Moisture
-:WateringValve_01_Soil_Moisture rdf:type owl:NamedIndividual ,
-                                         <https://w3id.org/def/saref4agri#WateringValve> .
 
 
 ###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
