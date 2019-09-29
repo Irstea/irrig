@@ -20,6 +20,9 @@
     "example" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#example"
     },
+    "AmountProperty" : {
+      "@id" : "http://www.w3id.org/def/irrig#AmountProperty"
+    },
     "hasModel" : {
       "@id" : "https://w3id.org/saref#hasModel",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -88,9 +91,6 @@
     },
     "note" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#note"
-    },
-    "PrecipitationProperty" : {
-      "@id" : "http://www.w3id.org/def/irrig#PrecipitationProperty"
     },
     "RootZoneMoistureLevelState" : {
       "@id" : "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"
