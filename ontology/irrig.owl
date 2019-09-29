@@ -120,6 +120,16 @@
     
 
 
+    <!-- http://www.w3id.org/def/irrig#AmountProperty -->
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#AmountProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:comment>AmountProperty - Amount aspect of an entity representing the quantity of the entity.</rdfs:comment>
+        <rdfs:label>Amount Property</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3id.org/def/irrig#CropGrowthDeduction -->
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#CropGrowthDeduction">
@@ -139,7 +149,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Deduction"/>
-        <rdfs:comment xml:lang="en">CropGrowthDeduction - Act of carrying out an (Observation) Procedure to estimate a State of the CropGrowth Property of the Crop FeatureOfInterest. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time.</rdfs:comment>
+        <rdfs:comment xml:lang="en">CropGrowthDeduction - a defined class represents act of carrying out an (Observation) Procedure to estimate a State of the irrig:ObservableProperty_Crop_Growth of the irrig:FeatureOfInterest_Crop. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time.</rdfs:comment>
         <rdfs:label xml:lang="en">Crop Growth Deduction</rdfs:label>
         <skos:example xml:lang="en">A CropGrowthDeduction is made by the Software_Agent Sensor based on human observation</skos:example>
     </owl:Class>
@@ -149,9 +159,24 @@
     <!-- http://www.w3id.org/def/irrig#CropGrowthObservation -->
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#CropGrowthObservation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3id.org/def/caso#Observation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
+                        <owl:hasValue rdf:resource="http://www.w3id.org/def/irrig#FeatureOfInterest_Crop"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
+                        <owl:hasValue rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Crop_Growth"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">CropGrowthObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Crop_Stage Property of the Crop FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Crop_Stage ObservableProperty (Property) to describe what the result is an estimate of, and to the Crop FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
-        <rdfs:label xml:lang="en">Crop growth observation</rdfs:label>
+        <rdfs:comment xml:lang="en">CropGrowthObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_Crop_Growth of the irrig:FeatureOfInterest_Crop. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_Crop_Growth to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_Crop. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
+        <rdfs:label xml:lang="en">Crop Growth Observation</rdfs:label>
         <skos:example xml:lang="en">A CropGrowthObservation that made by the CatherineRoussey Sensor (human observation or biology sensor).</skos:example>
     </owl:Class>
     
@@ -187,7 +212,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Deduction"/>
-        <rdfs:comment xml:lang="en">CropWaterNeedDeduction - Act of carrying out an (Observation) Procedure to estimate a State of the CropWaterNeed Property of the Crop FeatureOfInterest. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time.</rdfs:comment>
+        <rdfs:comment xml:lang="en">CropWaterNeedDeduction - a defined class represents act of carrying out an (Observation) Procedure to estimate a State of the irrig:ObservableProperty_Crop_WaterNeed of the irrig:FeatureOfInterest_Crop. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time.</rdfs:comment>
         <rdfs:label xml:lang="en">Crop Water Need Deduction</rdfs:label>
         <skos:example xml:lang="en">A CropWaterNeedDeduction that made by the Software_Agent Sensor based on observations made by tensiometer sensor</skos:example>
     </owl:Class>
@@ -210,7 +235,7 @@
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#GrowthProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
         <rdfs:comment xml:lang="en">GrowthProperty - Growth aspect (characteristic dimension) of an entity representing the physical development or the increasing in amount, number or size of the entity. The Growth aspect of an entity is intrinsic to and cannot exist without the entity. The Growth quality values should be expressed by a qualitative value such as States or by a quantitative value.</rdfs:comment>
-        <rdfs:label xml:lang="en">Growth property</rdfs:label>
+        <rdfs:label xml:lang="en">Growth Property</rdfs:label>
         <skos:example xml:lang="en">CropGrowth is a GrowthProperty representing the physical development of crop.</skos:example>
     </owl:Class>
     
@@ -221,7 +246,7 @@
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#IntensityProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
         <rdfs:comment xml:lang="en">IntensityProperty - Intensity aspect of an entity representing the strength effect or the level of power per unit area of the entity. The Intensity aspect of the entity is intrinsic to and cannot exist without the entity. The Intensity quality value should be expressed by a qualitative value such as States or by a quantitative value.</rdfs:comment>
-        <rdfs:label xml:lang="en">Intensity property</rdfs:label>
+        <rdfs:label xml:lang="en">Intensity Property</rdfs:label>
         <skos:example xml:lang="en">RainIntensity is a IntensityProperty representing the strength effect of rain.</skos:example>
     </owl:Class>
     
@@ -278,16 +303,8 @@
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#MoistureProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
         <rdfs:comment xml:lang="en">MoistureProperty - Moisture aspect of an entity representing the amount of water available inside the entity. The Moisture aspect of the entity is intrinsic to and cannot exist without the entity. The Moisture quality value should be expressed by a qualitative value such as States or by a quantitative value.</rdfs:comment>
-        <rdfs:label xml:lang="en">Moisture property</rdfs:label>
+        <rdfs:label xml:lang="en">Moisture Property</rdfs:label>
         <skos:example xml:lang="en">RootZoneMoistureLevel is a MoistureProperty representing the amount of water available around the soil’s root zone area of a plant.</skos:example>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3id.org/def/irrig#PrecipitationProperty -->
-
-    <owl:Class rdf:about="http://www.w3id.org/def/irrig#PrecipitationProperty">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
     </owl:Class>
     
 
@@ -322,7 +339,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Deduction"/>
-        <rdfs:comment xml:lang="en">RainIntensityDeduction - Act of carrying out an (Observation) Procedure to estimate a State of the RainIntensity Property of the Rain FeatureOfInterest. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time.</rdfs:comment>
+        <rdfs:comment xml:lang="en">RainIntensityDeduction - a defined class that represents act of carrying out an (Observation) Procedure to estimate a State of the irrig:Observable_Rain_Intensity of the irrig:FeatureOfInterest_Rain. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time.</rdfs:comment>
         <rdfs:label xml:lang="en">Rain Intensity Deduction</rdfs:label>
         <skos:example xml:lang="en">A RainIntensityDeduction that made by the Software_Agent Sensor based on observations made by a pluviometer sensor</skos:example>
     </owl:Class>
@@ -390,7 +407,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">RainQuantityObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Rain_Quantity Property of the Rain FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Rain_Quantity ObservableProperty (Property) to describe what the result is an estimate of, and to the Rain FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">RainQuantityObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of irrig:ObservableProperty_Rain_Quantity of the irrig:FeatureOfInterest_Rain. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_Rain_Quantity to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_Rain. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
         <rdfs:label xml:lang="en">Rain Quantity Observation</rdfs:label>
         <skos:example xml:lang="en">A RainQuantityObservation that made by the Pluviometer Sensor.</skos:example>
     </owl:Class>
@@ -416,7 +433,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">RainQuantityObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Rain_TotalQuantityPerDay Property of the Rain FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Rain_TotalQuantityPerDay ObservableProperty to describe what the result is an estimate of, and to the Rain FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">RainQuantityObservation - a defined that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_Rain_TotalQuantityPerDay of the irrig:FeatureOfInterest_Rain. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_Rain_TotalQuantityPerDay to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_Rain. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
         <rdfs:label xml:lang="en">Rain Total Quantity Per Day Observation</rdfs:label>
         <skos:example xml:lang="en">A RainTotalQuantityPerDayObservation is computed by the SoftwareAgent Sensor based on observations made by a pluviometer.</skos:example>
     </owl:Class>
@@ -442,8 +459,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">RootZoneAverageMoisturePerDayObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the RootZone_AverageMoisturePerDay Property of the RootZone FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the RootZone_AverageMoisturePerDay ObservableProperty (Property) to describe what the result is an estimate of, and to the RootZone FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
-        <rdfs:label xml:lang="en">Root zone moisture per day observation</rdfs:label>
+        <rdfs:comment xml:lang="en">RootZoneAverageMoisturePerDayObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_RootZone_AverageMoisturePerDay  of the  irrig:FeatureOfInterest_RootZone. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_RootZone_AverageMoisturePerDay to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_RootZone. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
+        <rdfs:label xml:lang="en">Root Zone Moisture Per Day Observation</rdfs:label>
         <skos:example xml:lang="en">A RootZoneAverageMoisturePerDayObservation is computed by the SoftwareAgent Sensor.</skos:example>
     </owl:Class>
     
@@ -479,7 +496,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Deduction"/>
-        <rdfs:comment xml:lang="en">RootZoneMoistureLevelDeduction - Act of carrying out an (Observation) Procedure to estimate a State of the RootZoneMoistureLevel Property of the RootZone FeatureOfInterest. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time.</rdfs:comment>
+        <rdfs:comment xml:lang="en">RootZoneMoistureLevelDeduction - a defined class represents act of carrying out an (Observation) Procedure to estimate a State of the irrig:ObservableProperty_RootZone_MoistureLevel of the irrig:FeatureOfInterest_RootZone. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time.</rdfs:comment>
         <rdfs:label xml:lang="en">Root Zone Moisture Level Deduction</rdfs:label>
         <skos:example xml:lang="en">A RootZoneMoistureLevelDeduction that made by the Software_Agent.</skos:example>
     </owl:Class>
@@ -547,7 +564,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">Soil30cmDepthAverageMoisturePerDayObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Soil30cmDepth_AverageMoisturePerDay Property of the Soil30cmDepth FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Soil30cmDepth_AverageMoisturePerDay ObservableProperty (Property) to describe what the result is an estimate of, and to the Soil30cmDepth FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Soil30cmDepthAverageMoisturePerDayObservation - a defined that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_Soil30cmDepth_AverageMoisturePerDay of the irrig:FeatureOfInterest_Soil30cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_Soil30cmDepth_AverageMoisturePerDay to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_Soil30cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
         <rdfs:label xml:lang="en">Soil 30cm Depth Average Moisture Per Day Observation</rdfs:label>
         <skos:example xml:lang="en">A Soil30cmDepthAverageMoisturePerDayObservation is computed by the SoftwareAgent Sensor.</skos:example>
     </owl:Class>
@@ -573,7 +590,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">Soil30cmDepthAverageMoisturePerDayObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Soil30cmDepth_MoisturePerDay Property of the Soil30cmDepth FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Soil30cmDepth_MoisturePerDay ObservableProperty to describe what the result is an estimate of, and to the Soil30cmDepth FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Soil30cmDepthAverageMoisturePerDayObservation - a defined class represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_Soil30cmDepth_MoisturePerDay of the  irrig:FeatureOfInterest_Soil30cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the  irrig:ObservableProperty_Soil30cmDepth_MoisturePerDay to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_Soil30cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
         <rdfs:label xml:lang="en">Soil 30cm Depth Moisture Observation</rdfs:label>
         <skos:example xml:lang="en">A Soil30cmDepthMoistureObservation is made by the SoilTensiometer_01 Sensor placed at 30 cm depth in the soil.</skos:example>
     </owl:Class>
@@ -599,7 +616,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">Soil60cmDepthAverageMoisturePerDayObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Soil60cmDepth_AverageMoisturePerDay Property of the Soil60cmDepth FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Soil60cmDepth_AverageMoisturePerDay ObservableProperty to describe what the result is an estimate of, and to the Soil60cmDepth FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Soil60cmDepthAverageMoisturePerDayObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_Soil60cmDepth_AverageMoisturePerDay of the irrig:FeatureOfInterest_Soil60cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_Soil60cmDepth_AverageMoisturePerDay to describe what the result is an estimate of, and to the  irrig:FeatureOfInterest_Soil60cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
         <rdfs:label xml:lang="en">Soil 60cm Depth Average Moisture Per Day Observation</rdfs:label>
         <skos:example xml:lang="en">A Soil60cmDepthAverageMoisturePerDayObservation ismade by the SoftwareAgent Sensor.</skos:example>
     </owl:Class>
@@ -625,7 +642,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">Soil60cmDepthAverageMoisturePerDayObservation - Act of carrying out an (Observation) Procedure to estimate or calculate a value of the Soil60cmDepth_MoisturePerDay Property of the Soil60cmDepth FeatureOfInterest. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the Soil60cmDepth_MoisturePerDay ObservableProperty to describe what the result is an estimate of, and to the Soil60cmDepth FeatureOfInterest. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Soil60cmDepthAverageMoisturePerDayObservation - an defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_Soil60cmDepth_MoisturePerDay of the irrig:FeatureOfInterest_Soil60cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_Soil60cmDepth_MoisturePerDay to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_Soil60cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
         <rdfs:label xml:lang="en">Soil 60cm Depth Moisture Observation</rdfs:label>
         <skos:example xml:lang="en">A Soil60cmDepthMoistureObservation is made by the Tensiometer Sensor placed at 60 cm depth in the soil.</skos:example>
     </owl:Class>
@@ -637,7 +654,7 @@
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#StressProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
         <rdfs:comment xml:lang="en">StressProperty - Stress aspect of an entity representing the pressure inside the entity. The Stress aspect of the entity is intrinsic to and cannot exist without the entity. The Stress quality values should be expressed by a qualitative value such as States or by a quantitative value.</rdfs:comment>
-        <rdfs:label xml:lang="en">Stress property</rdfs:label>
+        <rdfs:label xml:lang="en">Stress Property</rdfs:label>
         <skos:example xml:lang="en">CropWaterNeed is a StressProperty representing the stress inside the plant when it needs extra water. It corresponds to the drought stress.</skos:example>
     </owl:Class>
     
@@ -647,6 +664,8 @@
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#TemperatureProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:label>Temperature Property</rdfs:label>
+        <rdfs:label>TemperatureProperty - Temperature aspect of an entity representing the measure of how hot or cold of the entity.</rdfs:label>
     </owl:Class>
     
 
@@ -686,7 +705,7 @@
     <owl:Class rdf:about="https://w3id.org/def/saref4agri#WateringValve">
         <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Actuator"/>
         <rdfs:comment xml:lang="en">An actuator that open the water valve.</rdfs:comment>
-        <rdfs:label xml:lang="en">WateringValve</rdfs:label>
+        <rdfs:label xml:lang="en">Watering Valve</rdfs:label>
     </owl:Class>
     
 
@@ -706,6 +725,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Actuator_WateringValve_01_Soil_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#WateringValve"/>
+        <rdfs:comment>Actuator_WateringValve_01_Soil_Moisture - an actuator controls the valve of a watering device n° 01. The actuator indirectly affects soil moisture.</rdfs:comment>
+        <rdfs:label>Actuator Watering  Valve 01 Soil Moisture</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -714,6 +735,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_High">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityBoundary"/>
+        <rdfs:comment>Boundary_Rain_Quantity_High - a boundary line of division between two states of Rain Intensity: Heavy and Moderate.
+
+In the example of Arvalis&apos; dataset, the value of boundary rain quantity high is 40mm.</rdfs:comment>
+        <rdfs:label>Boundary Rain Quantity High</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -722,6 +747,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_Low">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityBoundary"/>
+        <rdfs:comment>Boundary_Rain_Quantity_Low  - a boundary line of division between two states of Rain Intensity: Moderate and Light.
+
+In the example of Arvalis&apos; dataset, the value of boundary rain quantity low is 10mm.</rdfs:comment>
+        <rdfs:label>Boundary Rain Quantity Low</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -730,6 +759,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_Maximum">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityBoundary"/>
+        <rdfs:comment>Boundary_Rain_Quantity_Maximum - a boundary line represents the maximal value that rain quantity cannot surpass.
+
+In the example of Arvalis&apos; dataset, the value of boundary rain quantity maximum is 71.8mm.</rdfs:comment>
+        <rdfs:label>Boundary Rain Quantity Maximum</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -738,6 +771,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_Minimum">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityBoundary"/>
+        <rdfs:comment>Boundary_Rain_Quantity_Maximum - a boundary line represents the minimal value that rain quantity cannot surpass.
+
+In the example of Arvalis&apos; dataset, the value of boundary rain quantity minimum is 0mm.</rdfs:comment>
+        <rdfs:label>Boundary_Rain_Quantity_Minimum</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -746,6 +783,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Average">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"/>
+        <rdfs:comment>Boundary_RootZone_Tension_Average - a boundary line of division between two states of RootZone MoistureLevel: Low and Average.
+
+In the example of Arvalis&apos; dataset, the value of boundary rootzone tension average is 140cbar.</rdfs:comment>
+        <rdfs:label>Boundary RootZone Tension Average</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -754,6 +795,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_High">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"/>
+        <rdfs:comment>Boundary_RootZone_Tension_High - a boundary line of division between two states of RootZone MoistureLevel: Average and High.
+
+In the example of Arvalis&apos; dataset, the value of boundary rootzone tension high is 120cbar</rdfs:comment>
+        <rdfs:label>Boundary RootZone Tension High</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -762,6 +807,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Low">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"/>
+        <rdfs:comment>Boundary_RootZone_Tension_Low - a boundary line of division between two states of RootZone MoistureLevel: VeryLow and Low.
+
+In the example of Arvalis&apos; dataset, the value of boundary rootzone tension low is 150cbar</rdfs:comment>
+        <rdfs:label>Boundary RootZone Tension Low</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -770,6 +819,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Maximum">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"/>
+        <rdfs:comment>Boundary_RootZone_MoistureLevel_Maximum - a boundary line represents the maximal value that RootZone Tension cannot surpass.
+
+In the example of Arvalis&apos; dataset, the value of boundary rootzone tension maximum is 200cbar</rdfs:comment>
+        <rdfs:label>Boundary RootZone Tension Maximum</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -778,6 +831,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Minimum">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"/>
+        <rdfs:comment>Boundary_RootZone_MoistureLevel_Minimum - a boundary line represents the minimal value that RootZone Tension cannot surpass.
+
+In the example of Arvalis&apos; dataset, the value of boundary rootzone tension minimum is 0cbar</rdfs:comment>
+        <rdfs:label>Boundary RootZone Tension Minimum</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -786,6 +843,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Saturation">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"/>
+        <rdfs:comment>Boundary_RootZone_Tension_Saturation - a boundary line of division between two states of RootZone MoistureLevel: VeryHigh and Saturated.
+
+In the example of Arvalis&apos; dataset, the value of boundary rootzone tension saturation is 10cbar</rdfs:comment>
+        <rdfs:label>Boundary RootZone Tension Saturation</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -794,6 +855,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_VeryHigh">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"/>
+        <rdfs:comment>Boundary_RootZone_Tension_VeryHigh - a boundary line of division between two states of RootZone MoistureLevel: High and VeryHigh.
+
+In the example of Arvalis&apos; dataset, the value of boundary rootzone tension very high is 70cbar</rdfs:comment>
+        <rdfs:label>Boundary RootZone Tension VeryHigh</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -802,6 +867,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_VeryLow">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"/>
+        <rdfs:comment>Boundary_RootZone_Tension_VeryLow - a boundary line of division between two states of RootZone MoistureLevel: Dry and VeryLow.
+
+In the example of Arvalis&apos; dataset, the value of boundary rootzone tension very low is 160cbar</rdfs:comment>
+        <rdfs:label>Boundary RootZone Tension VeryLow</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -813,6 +882,8 @@
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Air_MaxTemperaturePerDay"/>
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Air_MinTemperaturePerDay"/>
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Air_Temperature"/>
+        <rdfs:comment>FeatureOfInterest_Air - an instance of the class sosa:FeatureOfInterest that represents air.</rdfs:comment>
+        <rdfs:label>Feature Of Interest Air</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -823,6 +894,10 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Crop_Growth"/>
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Crop_WaterNeed"/>
+        <rdfs:comment>FeatureOfInterest_Crop - an instance of the class sosa:FeatureOfInterest that represents crop. The crop needs to be irrigated. 
+
+In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arvalis&apos; plot in 2013.</rdfs:comment>
+        <rdfs:label>Feature Of Interest Crop</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -834,6 +909,8 @@
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Rain_Intensity"/>
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Rain_Quantity"/>
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Rain_TotalQuantityPerDay"/>
+        <rdfs:comment>FeatureOfInterest_Rain - an instance of the class sosa:FeatureOfInterest that represents rain.</rdfs:comment>
+        <rdfs:label>Feature Of Interest Rain</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -844,6 +921,8 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_RootZone_AverageMoisturePerDay"/>
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_RootZone_MoistureLevel"/>
+        <rdfs:comment>FeatureOfInterest_Rootzone - an instance of the class sosa:FeatureOfInterest that represents rootzone soil of a plant.</rdfs:comment>
+        <rdfs:label>Feature Of Interest Root Zone</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -854,6 +933,8 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_AverageMoisturePerDay"/>
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_Moisture"/>
+        <rdfs:comment>FeatureOfInterest_Soil30cmDepth - an instance of the class sosa:FeatureOfInterest that represents soil at 30cm depth.</rdfs:comment>
+        <rdfs:label>Feature Of Interest Soi at 30cm Depth</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -864,6 +945,8 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_AverageMoisturePerDay"/>
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_Moisture"/>
+        <rdfs:comment>FeatureOfInterest_Soil30cmDepth - an instance of the class sosa:FeatureOfInterest that represents soil at 60cm depth.</rdfs:comment>
+        <rdfs:label>Feature Of Interest Soil at 60cm Depth</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -873,6 +956,8 @@
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Air_MaxTemperaturePerDay">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#TemperatureProperty"/>
+        <rdfs:comment>ObservableProperty_Air_MaxTemperaturePerDay - an instance of the class irrig:TemperatureProperty and sosa:ObservableProperty that represents the observable property of max temperature per day of an air feature of interest.</rdfs:comment>
+        <rdfs:label>Observable Property Air Max Temperature Per Day</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -882,6 +967,8 @@
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Air_MinTemperaturePerDay">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#TemperatureProperty"/>
+        <rdfs:comment>ObservableProperty_Air_MinTemperaturePerDay - an instance of the class irrig:TemperatureProperty and sosa:ObservableProperty that represents the observable property of min temperature per day of an air feature of interest.</rdfs:comment>
+        <rdfs:label>Observable Property Air Min Temperature Per Day</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -891,6 +978,8 @@
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Air_Temperature">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#TemperatureProperty"/>
+        <rdfs:comment>ObservableProperty_Air_Temperature - an instance of the class irrig:TemperatureProperty and sosa:ObservableProperty that represents the observable property of temperature of an air feature of interest.</rdfs:comment>
+        <rdfs:label>Observable Property Air Temperature</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -908,6 +997,8 @@
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Crop_Growth_V2"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Crop_Growth_V7"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Crop_Growth_V7d20"/>
+        <rdfs:comment>ObservableProperty_Crop_Growth - an instance of the class irrig:GrowthProperty and caso:Property that represents the observable property of growth of a crop feature of interest.</rdfs:comment>
+        <rdfs:label>Observable Property Crop Growth</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -915,8 +1006,10 @@
     <!-- http://www.w3id.org/def/irrig#ObservableProperty_Crop_Stage -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Crop_Stage">
-        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/caso#Property"/>
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#GrowthProperty"/>
+        <rdfs:comment>ObservableProperty_Crop_Stage - an instance of the class irrig:GrowthProperty and caso:Property that represents the stage observable property of a crop feature of interest.</rdfs:comment>
+        <rdfs:label>Observable Property Crop Stage</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -930,6 +1023,8 @@
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Crop_WaterNeed_Wait"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Crop_WaterNeed_Yes"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Crop_WaterNeed_init"/>
+        <rdfs:comment>ObservableProperty_Crop_WaterNeed - an instance of the class irrig:StressProperty and caso:Property that represents the observable property of water need of an crop feature of interest.</rdfs:comment>
+        <rdfs:label>Observable Property Crop Water Need</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -939,11 +1034,12 @@
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Rain_Intensity">
         <rdf:type rdf:resource="http://www.w3id.org/def/caso#Property"/>
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#IntensityProperty"/>
-        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#PrecipitationProperty"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Rain_Intensity_Heavy"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Rain_Intensity_Init"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Rain_Intensity_Light"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_Rain_Intensity_Moderate"/>
+        <rdfs:comment>ObservableProperty_Rain_Intensity - an instance of the class irrig:IntensityProperty and caso:Property that represents the intensity observable property of a rain feature of interest.</rdfs:comment>
+        <rdfs:label>Observable Property Rain Intensity</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -952,7 +1048,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Rain_Quantity">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#PrecipitationProperty"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#AmountProperty"/>
+        <rdfs:comment>ObservableProperty_Rain_Quantity - an instance of the class irrig:AmountProperty and sosa:ObservableProperty that represents the quantity observable property of a rain feature of interest.</rdfs:comment>
+        <rdfs:label>Observable Property Rain Quantity</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -961,7 +1059,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Rain_TotalQuantityPerDay">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#PrecipitationProperty"/>
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#AmountProperty"/>
+        <rdfs:comment>ObservableProperty_Rain_TotalQuantityPerDay - an instance of the class irrig:AmountProperty and sosa:ObservableProperty that represents the observable property of total quantity per day of a rain feature of interest.</rdfs:comment>
+        <rdfs:label>Observable Property Rain Total Quantity Per Day</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -971,6 +1071,8 @@
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_RootZone_AverageMoisturePerDay">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#MoistureProperty"/>
+        <rdfs:comment>ObservableProperty_RootZone_AverageMoisturePerDay - an instance of the class irrig:MoistureProperty and sosa:ObservableProperty that represents the observable property of average moisture per day of a root zone feature of interest.</rdfs:comment>
+        <rdfs:label>Observable Property Root Zone Average Moisture Per Day</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -988,6 +1090,8 @@
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Saturated"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_VeryHigh"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_VeryLow"/>
+        <rdfs:comment>ObservableProperty_RootZone_MoistureLevel - an instance of the class irrig:MoistureProperty and caso:Property that represents the observable property of moisture level of a root zone feature of interest.</rdfs:comment>
+        <rdfs:label>Observable Property Root Zone Moisture Level</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -997,6 +1101,8 @@
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_AverageMoisturePerDay">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#MoistureProperty"/>
+        <rdfs:comment>ObservableProperty_Soil30cmDepth_AverageMoisturePerDay - an instance of the class irrig:MoistureProperty and sosa:ObservableProperty that represents the observable property of average moisture per day of a soil 30cm depth feature of interest.</rdfs:comment>
+        <rdfs:label>Observable Property Soil 30cm Depth Average Moisture Per Day</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1006,6 +1112,8 @@
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_Moisture">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#MoistureProperty"/>
+        <rdfs:comment>ObservableProperty_Soil30cmDepth_Moisture - an instance of the class irrig:MoistureProperty and sosa:ObservableProperty that represents the observable property of moisture of a soil 30cm depth feature of interest.</rdfs:comment>
+        <rdfs:label>Observable Property Soil 30cm Depth Moisture</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1015,6 +1123,8 @@
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_AverageMoisturePerDay">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#MoistureProperty"/>
+        <rdfs:comment>ObservableProperty_Soil60cmDepth_AverageMoisturePerDay - an instance of the class irrig:MoistureProperty and sosa:ObservableProperty that represents the observable property of average moisture per day of a soil 60cm depth feature of interest.</rdfs:comment>
+        <rdfs:label>Observable Property Soil 60cm Depth Average Moisture Per Day</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1024,6 +1134,8 @@
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_Moisture">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#MoistureProperty"/>
+        <rdfs:comment>ObservableProperty_Soil60cmDepth_Moisture - an instance of the class irrig:MoistureProperty and sosa:ObservableProperty that represents the observable property of moisture of a soil 60cm depth feature of interest.</rdfs:comment>
+        <rdfs:label>Observable Property Soil 60cm Depth Moisture</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1032,6 +1144,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Sensor_Pluviometer_01_Rain_Quantity">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#Pluviometer"/>
+        <rdfs:comment>Sensor_Pluviometer_01_Rain_Quantity - a pluviometer measures the rain quantity n° 01.</rdfs:comment>
+        <rdfs:label>Sensor Pluviometer 01 Rain Quantity</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1040,6 +1154,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Sensor_Pluviometer_02_Rain_Quantity">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#Pluviometer"/>
+        <rdfs:comment>Sensor_Pluviometer_02_Rain_Quantity - a pluviometer measures the rain quantity n° 02.</rdfs:comment>
+        <rdfs:label>Sensor Pluviometer 02 Rain Quantity</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1048,6 +1164,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
+        <rdfs:comment>Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture - a soil tensiometer measures the moisture at 30 cm depth n° 01.</rdfs:comment>
+        <rdfs:label>Sensor Soil Tensiometer 01 Soil 30cm Depth Moisture</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1056,6 +1174,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
+        <rdfs:comment>Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture - a soil tensiometer measures the moisture at 30 cm depth n° 02.</rdfs:comment>
+        <rdfs:label>Sensor Soil Tensiometer 02 Soil 30cm Depth Moisture</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1064,6 +1184,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
+        <rdfs:comment>Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture - a soil tensiometer measures the moisture at 30 cm depth n° 03.</rdfs:comment>
+        <rdfs:label>Sensor Soil Tensiometer 03 Soil 30cm Depth Moisture</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1072,6 +1194,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
+        <rdfs:comment>Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture - a soil tensiometer measures the moisture at 60 cm depth n° 04.</rdfs:comment>
+        <rdfs:label>Sensor Soil Tensiometer 04 Soil 60cm Depth Moisture</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1080,6 +1204,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
+        <rdfs:comment>Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture - a soil tensiometer measures the moisture at 60 cm depth n° 05.</rdfs:comment>
+        <rdfs:label>Sensor Soil Tensiometer 05 Soil 60cm Depth Moisture</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1088,6 +1214,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
+        <rdfs:comment>Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture - a soil tensiometer measures the moisture at 60 cm depth n° 06.</rdfs:comment>
+        <rdfs:label>Sensor Soil Tensiometer 06 Soil 60cm Depth Moisture</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1096,6 +1224,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_Growth_Init">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+        <rdfs:comment>State_Crop_Growth_Init - an instance of the class caso:State that represents the state of crop growth is temporary undefined.</rdfs:comment>
+        <rdfs:label>State Crop Growth Init</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1104,6 +1234,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_Growth_R1">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+        <rdfs:comment>State_Crop_Growth_R1 - an instance of the class caso:State that represents the crop after reaching the “silking” stage. This stage is also named R1.</rdfs:comment>
+        <rdfs:label>State Crop Growth R1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1112,6 +1244,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_Growth_R1d15">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+        <rdfs:comment>State_Crop_Growth_R1d15 - an instance of the class caso:State that represents the crop 15 days after reaching the “silking” stage.</rdfs:comment>
+        <rdfs:label>State Crop Growth R1d15</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1120,6 +1254,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_Growth_R5">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+        <rdfs:comment>State_Crop_Growth_R5 - an instance of the class caso:State that represents the crop after reaching the “dent stage within kernel containing 50% moisture”. This stage is also named R5</rdfs:comment>
+        <rdfs:label>State Crop Growth R5</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1128,6 +1264,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_Growth_R5hg45">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+        <rdfs:comment>State_Crop_Growth_R5hg45 - an instance of the class caso:State that represents the crop after reaching the “dent stage within kernel containing 45% moisture”.</rdfs:comment>
+        <rdfs:label>State Crop Growth R5hg45</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1136,6 +1274,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_Growth_V2">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+        <rdfs:comment>State_Crop_Growth_V2 - an instance of the class caso:State that represents the crop after reaching the crop stage “5 leaves”, also named V2.</rdfs:comment>
+        <rdfs:label>State Crop Growth V2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1144,6 +1284,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_Growth_V7">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+        <rdfs:comment>State_Crop_Growth_V7 - an instance of the class caso:State that represents the crop after reaching the crop stage “10 leaves”, also named V7.</rdfs:comment>
+        <rdfs:label>State Crop Growth V7</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1152,6 +1294,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_Growth_V7d20">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+        <rdfs:comment>State_Crop_Growth_V7d20 - an instance of the class caso:State that represents the crop 20 days after reaching the stage “10 leaves”.</rdfs:comment>
+        <rdfs:label>State Crop Growth V7d20</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1160,6 +1304,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_WaterNeed_No">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropWaterNeedState"/>
+        <rdfs:comment>State_Crop_WaterNeed_No - an instance of the class caso:State that represents the crop does not need water.</rdfs:comment>
+        <rdfs:label>State Crop Water Need No</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1168,6 +1314,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_WaterNeed_Wait">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropWaterNeedState"/>
+        <rdfs:comment>State_Crop_WaterNeed_Wait - an instance of the class caso:State that represents the crop may need water soon.</rdfs:comment>
+        <rdfs:label>State Crop Water Need Wait</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1176,6 +1324,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_WaterNeed_Yes">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropWaterNeedState"/>
+        <rdfs:comment>State_Crop_WaterNeed_Yes - an instance of the class caso:State that represents the crop needs water.</rdfs:comment>
+        <rdfs:label>State Crop Water Need Yes</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1184,6 +1334,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Crop_WaterNeed_init">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropWaterNeedState"/>
+        <rdfs:comment>State_Crop_WaterNeed_Init - an instance of the class caso:State that represents the state of crop water need is temporary undefined.</rdfs:comment>
+        <rdfs:label>State Crop Water Need Init</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1192,6 +1344,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Rain_Intensity_Heavy">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityState"/>
+        <rdfs:comment>State_Rain_Intensity_Heavy - an instance of the class caso:State that represents the rain intensity is heavy.</rdfs:comment>
+        <rdfs:label>State Rain Intensity Heavy</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1200,6 +1354,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Rain_Intensity_Init">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityState"/>
+        <rdfs:comment>State_Rain_Intensity_Init - an instance of the class caso:State that represents the rain intensity is temporary undefined.</rdfs:comment>
+        <rdfs:label>State Rain Intensity Init</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1208,6 +1364,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Rain_Intensity_Light">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityState"/>
+        <rdfs:comment>State_Rain_Intensity_Light - an instance of the class caso:State that represents the rain intensity is light.</rdfs:comment>
+        <rdfs:label>State Rain Intensity Light</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1216,6 +1374,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_Rain_Intensity_Moderate">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityState"/>
+        <rdfs:comment>State_Rain_Intensity_Moderate - an instance of the class caso:State that represents the rain intensity is moderate.</rdfs:comment>
+        <rdfs:label>State Rain Intensity Moderate</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1224,6 +1384,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Average">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+        <rdfs:comment>State_RootZone_MoistureLevel_Average - an instance of the class caso:State that represents the root zone moisture level is at the average state.</rdfs:comment>
+        <rdfs:label>State Root Zone Moisture Level Average</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1232,6 +1394,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Dry">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+        <rdfs:comment>State_RootZone_MoistureLevel_Dry - an instance of the class caso:State that represents the root zone moisture level is at the dry state.</rdfs:comment>
+        <rdfs:label>State Root Zone Moisture Level Dry</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1240,6 +1404,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_High">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+        <rdfs:comment>State_RootZone_MoistureLevel_High - an instance of the class caso:State that represents the root zone moisture level is at the high state.</rdfs:comment>
+        <rdfs:label>State Root Zone Moisture Level High</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1248,6 +1414,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Init">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+        <rdfs:comment>State_RootZone_MoistureLevel_Init - an instance of the class caso:State that represents the root zone moisture level is temporary undefined.</rdfs:comment>
+        <rdfs:label>State Root Zone Moisture Level Init</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1256,6 +1424,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Low">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+        <rdfs:comment>State_RootZone_MoistureLevel_Low - an instance of the class caso:State that represents the root zone moisture level is at the low state.</rdfs:comment>
+        <rdfs:label>State Root Zone Moisture Level Low</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1264,6 +1434,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Saturated">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+        <rdfs:comment>State_RootZone_MoistureLevel_Saturated - an instance of the class caso:State that represents the root zone moisture level is at the saturated state.</rdfs:comment>
+        <rdfs:label>State Root Zone Moisture Level Saturated</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1272,6 +1444,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_VeryHigh">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+        <rdfs:comment>State_RootZone_MoistureLevel_VeryHigh - an instance of the class caso:State that represents the root zone moisture level is at the very high state.</rdfs:comment>
+        <rdfs:label>State Root Zone Moisture Level Very High</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1280,6 +1454,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_VeryLow">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+        <rdfs:comment>State_RootZone_MoistureLevel_VeryLow - an instance of the class caso:State that represents the root zone moisture level is at the very low state.</rdfs:comment>
+        <rdfs:label>State Root Zone Moisture Level Very Low</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
