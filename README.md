@@ -9,7 +9,7 @@ Specific Irrigation Ontology for the experimentation in Irstea, center Clermont 
 **Link to**: <https://github.com/Irstea/irrig>  
 
 
-Testing files and other informations supporting the IRRIG ontology is published in (IRRIG2019)[https://gitlab.irstea.fr/irrig/public]
+Testing files and other informations supporting the IRRIG ontology is published in [IRRIG2019](https://gitlab.irstea.fr/irrig/public)
 
 ### Contact:  
 Catherine ROUSSEY <catherine.roussey@irstea.fr>   
