@@ -120,6 +120,24 @@
     
 
 
+    <!-- http://www.w3id.org/def/caso#Property -->
+
+    <rdf:Description rdf:about="http://www.w3id.org/def/caso#Property">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3id.org/def/caso#Observation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
+                        <owl:hasValue rdf:resource="http://www.w3id.org/def/irrig#observableProperty_irrigationDelay"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
     <!-- http://www.w3id.org/def/irrig#AmountProperty -->
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#AmountProperty">
@@ -298,6 +316,17 @@
     
 
 
+    <!-- http://www.w3id.org/def/irrig#IrrigationDelayObservation -->
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#IrrigationDelayObservation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
+        <rdfs:comment xml:lang="en">IrrigationDelayObservation - a defined class that represents act of carrying out an (Observation) Procedure to calculate the number of delay days of an irrigation turn.</rdfs:comment>
+        <rdfs:label xml:lang="en">Irrigation Delay Observation</rdfs:label>
+        <skos:example xml:lang="en">A IrrigationDelayObservation is computed by an aggregator that produce number of delay days based on the rainfall quantity of a day.</skos:example>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3id.org/def/irrig#MoistureProperty -->
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#MoistureProperty">
@@ -328,7 +357,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">RainQuantityObservation - a defined that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_rain_dailyTotalQuantity of the irrig:FeatureOfInterest_rain. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_rain_dailyTotalQuantity to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_rain. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">RainQuantityObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_rain_dailyTotalQuantity of the irrig:FeatureOfInterest_rain. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_rain_dailyTotalQuantity to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_rain. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
         <rdfs:label xml:lang="en">Rain Daily Total Quantity Observation</rdfs:label>
         <skos:example xml:lang="en">A RainDailyTotalQuantityObservation is computed by the SoftwareAgent Sensor based on observations made by a pluviometer.</skos:example>
     </owl:Class>
@@ -564,7 +593,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">Soil30cmDepthDailyAverageMoistureObservation - a defined that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_soil30cmDepth_dailyAverageMoisture of the irrig:FeatureOfInterest_soil30cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_soil30cmDepth_dailyAverageMoisture to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_soil30cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Soil30cmDepthDailyAverageMoistureObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_soil30cmDepth_dailyAverageMoisture of the irrig:FeatureOfInterest_soil30cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_soil30cmDepth_dailyAverageMoisture to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_soil30cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
         <rdfs:label xml:lang="en">Soil 30cm Depth Daily Average Moisture Observation</rdfs:label>
         <skos:example xml:lang="en">A Soil30cmDepthDailyAverageMoistureObservation is computed by the SoftwareAgent Sensor.</skos:example>
     </owl:Class>
@@ -642,7 +671,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">Soil60cmDepthDailyAverageMoistureObservation - an defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_soil60cmDepth_dailyAverageMoisture of the irrig:FeatureOfInterest_soil60cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_soil60cmDepth_dailyAverageMoisture to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_soil60cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Soil60cmDepthDailyAverageMoistureObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_soil60cmDepth_dailyAverageMoisture of the irrig:FeatureOfInterest_soil60cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_soil60cmDepth_dailyAverageMoisture to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_soil60cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
         <rdfs:label xml:lang="en">Soil 60cm Depth Moisture Observation</rdfs:label>
         <skos:example xml:lang="en">A Soil60cmDepthMoistureObservation is made by the Tensiometer Sensor placed at 60 cm depth in the soil.</skos:example>
     </owl:Class>
@@ -721,9 +750,9 @@
     
 
 
-    <!-- http://www.w3id.org/def/irrig#actuator_wateringValve_01_soil_moisture -->
+    <!-- http://www.w3id.org/def/irrig#actuator_wateringValve_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#actuator_wateringValve_01_soil_moisture">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#actuator_wateringValve_1">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#WateringValve"/>
         <rdfs:comment>Actuator_wateringValve_01_soil_moisture - an actuator controls the valve of a watering device n° 01. The actuator indirectly affects soil moisture.</rdfs:comment>
         <rdfs:label>Actuator Watering  Valve 01 Soil Moisture</rdfs:label>
@@ -1029,6 +1058,16 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
     
 
 
+    <!-- http://www.w3id.org/def/irrig#observableProperty_irrigationDelay -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#observableProperty_irrigationDelay">
+        <rdf:type rdf:resource="http://www.w3id.org/def/caso#Property"/>
+        <rdfs:comment xml:lang="en">Number of days that an watering is delayed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Observable Property Irrigation Delay</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.w3id.org/def/irrig#observableProperty_rain_dailyTotalQuantity -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#observableProperty_rain_dailyTotalQuantity">
@@ -1140,9 +1179,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
     
 
 
-    <!-- http://www.w3id.org/def/irrig#sensor_pluviometer_01_rain_quantity -->
+    <!-- http://www.w3id.org/def/irrig#pluviometer_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#sensor_pluviometer_01_rain_quantity">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#pluviometer_1">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#Pluviometer"/>
         <rdfs:comment>Sensor_pluviometer_01_rain_quantity - a pluviometer measures the rain quantity n° 01.</rdfs:comment>
         <rdfs:label>Sensor Pluviometer 01 Rain Quantity</rdfs:label>
@@ -1150,9 +1189,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
     
 
 
-    <!-- http://www.w3id.org/def/irrig#sensor_pluviometer_02_rain_quantity -->
+    <!-- http://www.w3id.org/def/irrig#pluviometer_2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#sensor_pluviometer_02_rain_quantity">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#pluviometer_2">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#Pluviometer"/>
         <rdfs:comment>Sensor_pluviometer_02_rain_quantity - a pluviometer measures the rain quantity n° 02.</rdfs:comment>
         <rdfs:label>Sensor Pluviometer 02 Rain Quantity</rdfs:label>
@@ -1160,9 +1199,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
     
 
 
-    <!-- http://www.w3id.org/def/irrig#sensor_soilTensiometer_01_soil30cmDepth_moisture -->
+    <!-- http://www.w3id.org/def/irrig#soilTensiometer_1_30cm -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#sensor_soilTensiometer_01_soil30cmDepth_moisture">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#soilTensiometer_1_30cm">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
         <rdfs:comment>Sensor_soilTensiometer_01_soil30cmDepth_moisture - a soil tensiometer measures the moisture at 30 cm depth n° 01.</rdfs:comment>
         <rdfs:label>Sensor Soil Tensiometer 01 Soil 30cm Depth Moisture</rdfs:label>
@@ -1170,9 +1209,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
     
 
 
-    <!-- http://www.w3id.org/def/irrig#sensor_soilTensiometer_02_soil30cmDepth_moisture -->
+    <!-- http://www.w3id.org/def/irrig#soilTensiometer_2_30cm -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#sensor_soilTensiometer_02_soil30cmDepth_moisture">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#soilTensiometer_2_30cm">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
         <rdfs:comment>Sensor_soilTensiometer_02_soil30cmDepth_moisture - a soil tensiometer measures the moisture at 30 cm depth n° 02.</rdfs:comment>
         <rdfs:label>Sensor Soil Tensiometer 02 Soil 30cm Depth Moisture</rdfs:label>
@@ -1180,9 +1219,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
     
 
 
-    <!-- http://www.w3id.org/def/irrig#sensor_soilTensiometer_03_soil30cmDepth_moisture -->
+    <!-- http://www.w3id.org/def/irrig#soilTensiometer_3_30cm -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#sensor_soilTensiometer_03_soil30cmDepth_moisture">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#soilTensiometer_3_30cm">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
         <rdfs:comment>Sensor_soilTensiometer_03_soil30cmDepth_moisture - a soil tensiometer measures the moisture at 30 cm depth n° 03.</rdfs:comment>
         <rdfs:label>Sensor Soil Tensiometer 03 Soil 30cm Depth Moisture</rdfs:label>
@@ -1190,9 +1229,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
     
 
 
-    <!-- http://www.w3id.org/def/irrig#sensor_soilTensiometer_04_soil60cmDepth_moisture -->
+    <!-- http://www.w3id.org/def/irrig#soilTensiometer_4_60cm -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#sensor_soilTensiometer_04_soil60cmDepth_moisture">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#soilTensiometer_4_60cm">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
         <rdfs:comment>Sensor_soilTensiometer_04_soil60cmDepth_moisture - a soil tensiometer measures the moisture at 60 cm depth n° 04.</rdfs:comment>
         <rdfs:label>Sensor Soil Tensiometer 04 Soil 60cm Depth Moisture</rdfs:label>
@@ -1200,9 +1239,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
     
 
 
-    <!-- http://www.w3id.org/def/irrig#sensor_soilTensiometer_05_soil60cmDepth_moisture -->
+    <!-- http://www.w3id.org/def/irrig#soilTensiometer_5_60cm -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#sensor_soilTensiometer_05_soil60cmDepth_moisture">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#soilTensiometer_5_60cm">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
         <rdfs:comment>Sensor_soilTensiometer_05_soil60cmDepth_moisture - a soil tensiometer measures the moisture at 60 cm depth n° 05.</rdfs:comment>
         <rdfs:label>Sensor Soil Tensiometer 05 Soil 60cm Depth Moisture</rdfs:label>
@@ -1210,9 +1249,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
     
 
 
-    <!-- http://www.w3id.org/def/irrig#sensor_soilTensiometer_06_soil60cmDepth_moisture -->
+    <!-- http://www.w3id.org/def/irrig#soilTensiometer_6_60cm -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#sensor_soilTensiometer_06_soil60cmDepth_moisture">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#soilTensiometer_6_60cm">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
         <rdfs:comment>Sensor_soilTensiometer_06_soil60cmDepth_moisture - a soil tensiometer measures the moisture at 60 cm depth n° 06.</rdfs:comment>
         <rdfs:label>Sensor Soil Tensiometer 06 Soil 60cm Depth Moisture</rdfs:label>
