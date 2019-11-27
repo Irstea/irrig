@@ -754,7 +754,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#actuator_wateringValve_1">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#WateringValve"/>
-        <rdfs:comment>Actuator_wateringValve_01_soil_moisture - an actuator controls the valve of a watering device n° 01. The actuator indirectly affects soil moisture.</rdfs:comment>
+        <rdfs:comment>Actuator_wateringValve_1 - an actuator controls the valve of a watering device n° 01. The actuator indirectly affects soil moisture.</rdfs:comment>
         <rdfs:label>Actuator Watering  Valve 01 Soil Moisture</rdfs:label>
     </owl:NamedIndividual>
     
@@ -803,7 +803,7 @@ In the example of Arvalis&apos; dataset, the value of boundary rain quantity max
         <rdfs:comment>Boundary_rain_quantity_maximum - a boundary line represents the minimal value that rain quantity cannot surpass.
 
 In the example of Arvalis&apos; dataset, the value of boundary rain quantity minimum is 0mm.</rdfs:comment>
-        <rdfs:label>Boundary_rain_quantity_minimum</rdfs:label>
+        <rdfs:label>Boundary Rain Quantity Minimum</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -963,7 +963,7 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#observableProperty_soil30cmDepth_dailyAverageMoisture"/>
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#observableProperty_soil30cmDepth_moisture"/>
         <rdfs:comment>FeatureOfInterest_soil30cmDepth - an instance of the class sosa:FeatureOfInterest that represents soil at 30cm depth.</rdfs:comment>
-        <rdfs:label>Feature Of Interest Soi at 30cm Depth</rdfs:label>
+        <rdfs:label>Feature Of Interest Soil at 30cm Depth</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1183,8 +1183,8 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#pluviometer_1">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#Pluviometer"/>
-        <rdfs:comment>Sensor_pluviometer_01_rain_quantity - a pluviometer measures the rain quantity n° 01.</rdfs:comment>
-        <rdfs:label>Sensor Pluviometer 01 Rain Quantity</rdfs:label>
+        <rdfs:comment>Pluviometer_1 - a pluviometer measures the rain quantity n° 01.</rdfs:comment>
+        <rdfs:label>Pluviometer 1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1193,8 +1193,8 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#pluviometer_2">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#Pluviometer"/>
-        <rdfs:comment>Sensor_pluviometer_02_rain_quantity - a pluviometer measures the rain quantity n° 02.</rdfs:comment>
-        <rdfs:label>Sensor Pluviometer 02 Rain Quantity</rdfs:label>
+        <rdfs:comment>Pluviometer_2 - a pluviometer measures the rain quantity n° 02.</rdfs:comment>
+        <rdfs:label>Pluviometer 2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1203,8 +1203,8 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#soilTensiometer_1_30cm">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
-        <rdfs:comment>Sensor_soilTensiometer_01_soil30cmDepth_moisture - a soil tensiometer measures the moisture at 30 cm depth n° 01.</rdfs:comment>
-        <rdfs:label>Sensor Soil Tensiometer 01 Soil 30cm Depth Moisture</rdfs:label>
+        <rdfs:comment>SoilTensiometer_1_30cm - a soil tensiometer measures the moisture at 30 cm depth n° 01.</rdfs:comment>
+        <rdfs:label>Soil Tensiometer 1 at 30cm Depth</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1213,8 +1213,8 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#soilTensiometer_2_30cm">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
-        <rdfs:comment>Sensor_soilTensiometer_02_soil30cmDepth_moisture - a soil tensiometer measures the moisture at 30 cm depth n° 02.</rdfs:comment>
-        <rdfs:label>Sensor Soil Tensiometer 02 Soil 30cm Depth Moisture</rdfs:label>
+        <rdfs:comment>SoilTensiometer_2_30cm - a soil tensiometer measures the moisture at 30 cm depth n° 02.</rdfs:comment>
+        <rdfs:label>Soil Tensiometer 2 at 30cm Depth</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1223,8 +1223,8 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#soilTensiometer_3_30cm">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
-        <rdfs:comment>Sensor_soilTensiometer_03_soil30cmDepth_moisture - a soil tensiometer measures the moisture at 30 cm depth n° 03.</rdfs:comment>
-        <rdfs:label>Sensor Soil Tensiometer 03 Soil 30cm Depth Moisture</rdfs:label>
+        <rdfs:comment>SoilTensiometer_3_30cm - a soil tensiometer measures the moisture at 30 cm depth n° 03.</rdfs:comment>
+        <rdfs:label>Soil Tensiometer 3 at 30cm Depth</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1233,8 +1233,8 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#soilTensiometer_4_60cm">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
-        <rdfs:comment>Sensor_soilTensiometer_04_soil60cmDepth_moisture - a soil tensiometer measures the moisture at 60 cm depth n° 04.</rdfs:comment>
-        <rdfs:label>Sensor Soil Tensiometer 04 Soil 60cm Depth Moisture</rdfs:label>
+        <rdfs:comment>SoilTensiometer_4_60cm - a soil tensiometer measures the moisture at 60 cm depth n° 04.</rdfs:comment>
+        <rdfs:label>Soil Tensiometer 4 at 60cm Depth</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1243,8 +1243,8 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#soilTensiometer_5_60cm">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
-        <rdfs:comment>Sensor_soilTensiometer_05_soil60cmDepth_moisture - a soil tensiometer measures the moisture at 60 cm depth n° 05.</rdfs:comment>
-        <rdfs:label>Sensor Soil Tensiometer 05 Soil 60cm Depth Moisture</rdfs:label>
+        <rdfs:comment>SoilTensiometer_5_60cm - a soil tensiometer measures the moisture at 60 cm depth n° 05.</rdfs:comment>
+        <rdfs:label>Soil Tensiometer 5 at 60cm Depth</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1253,8 +1253,8 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#soilTensiometer_6_60cm">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#SoilTensiometer"/>
-        <rdfs:comment>Sensor_soilTensiometer_06_soil60cmDepth_moisture - a soil tensiometer measures the moisture at 60 cm depth n° 06.</rdfs:comment>
-        <rdfs:label>Sensor Soil Tensiometer 06 Soil 60cm Depth Moisture</rdfs:label>
+        <rdfs:comment>SoilTensiometer_6_60cm - a soil tensiometer measures the moisture at 60 cm depth n° 06.</rdfs:comment>
+        <rdfs:label>Soil Tensiometer 6 at 60cm Depth</rdfs:label>
     </owl:NamedIndividual>
     
 
