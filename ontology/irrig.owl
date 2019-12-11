@@ -150,7 +150,7 @@
                     <rdf:Description rdf:about="http://www.w3id.org/def/caso#Observation"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
-                        <owl:hasValue rdf:resource="http://www.w3id.org/def/irrig#observableProperty_irrigationDelay"/>
+                        <owl:hasValue rdf:resource="http://www.w3id.org/def/irrig#observableProperty_delayDuration"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -269,6 +269,31 @@
     
 
 
+    <!-- http://www.w3id.org/def/irrig#DelayDurationObservation -->
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#DelayDurationObservation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3id.org/def/caso#Observation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
+                        <owl:hasValue rdf:resource="http://www.w3id.org/def/irrig#featureOfInterest_delay"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
+                        <owl:hasValue rdf:resource="http://www.w3id.org/def/irrig#observableProperty_delayDuration"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
+        <rdfs:comment xml:lang="en">DelayDurationObservation - a defined class that represents act of carrying out an (Observation) Procedure to calculate the number of delay days.</rdfs:comment>
+        <rdfs:label>Delay Duration Observation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3id.org/def/irrig#GrowthProperty -->
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#GrowthProperty">
@@ -333,17 +358,6 @@
         <rdfs:comment xml:lang="en">IrrigationActuation - Act of carrying out an Irrigation (Actuation) Procedure to change the State of a Moisture ActuatableProperty of a Soil FeatureOfInterest using a watering Actuator. This act is performed during the context exploitation phase of a context aware system. Links to an Actuator to describe what made the Actuation and how; links to an ActuatableProperty to describe the target that the Actuation change; links to a FeatureOfInterest to detail what that property was associated with. When the act is performed based on a Deduction, it should be linked to this Deduction by the wasInfluencedBy property. Links to the Function that is triggered by the Actuation.</rdfs:comment>
         <rdfs:label xml:lang="en">Irrigation actuation</rdfs:label>
         <skos:example xml:lang="en">An IrrigationActuation is made by Watering Valve Actuator, links to Soil30cmDepth FeatureOfInterest and its Soil30cmDepthMoisture ActuatableProperty.</skos:example>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3id.org/def/irrig#IrrigationDelayObservation -->
-
-    <owl:Class rdf:about="http://www.w3id.org/def/irrig#IrrigationDelayObservation">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">IrrigationDelayObservation - a defined class that represents act of carrying out an (Observation) Procedure to calculate the number of delay days of an irrigation turn.</rdfs:comment>
-        <rdfs:label xml:lang="en">Irrigation Delay Observation</rdfs:label>
-        <skos:example xml:lang="en">A IrrigationDelayObservation is computed by an aggregator that produce number of delay days based on the rainfall quantity of a day.</skos:example>
     </owl:Class>
     
 
@@ -591,6 +605,31 @@
         <rdfs:comment xml:lang="en">RootZoneMoistureLevelState - A qualitative value of the RootZoneMoistureLevel Property which changes over time, summarizing a set of information about that Property. To evaluate the State of the Property some Boundaries are defined.</rdfs:comment>
         <rdfs:label xml:lang="en">Root Zone Moisture Level State</rdfs:label>
         <skos:example xml:lang="en">The State Saturated of the RootZoneMoistureLevel Property represents a fact that the moisture in rootzone is saturated in water.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#SleepingDurationObservation -->
+
+    <owl:Class rdf:about="http://www.w3id.org/def/irrig#SleepingDurationObservation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3id.org/def/caso#Observation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
+                        <owl:hasValue rdf:resource="http://www.w3id.org/def/irrig#featureOfInterest_sleeping"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
+                        <owl:hasValue rdf:resource="http://www.w3id.org/def/irrig#observableProperty_sleepingDuration"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
+        <rdfs:comment xml:lang="en">SleepingDurationObservation - a defined class that represents act of carrying out an (Observation) Procedure to calculate the number of sleeping days before the next irrigation.</rdfs:comment>
+        <rdfs:label>Sleeping Duration Observation</rdfs:label>
     </owl:Class>
     
 
@@ -952,6 +991,17 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
     
 
 
+    <!-- http://www.w3id.org/def/irrig#featureOfInterest_delay -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#featureOfInterest_delay">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#observableProperty_delayDuration"/>
+        <rdfs:comment xml:lang="en">FeatureOfInterest_delay - an instance of the class sosa:FeatureOfInterest that represents delay phenomenon.</rdfs:comment>
+        <rdfs:label>Feature Of Interest Delay</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.w3id.org/def/irrig#featureOfInterest_rain -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#featureOfInterest_rain">
@@ -973,6 +1023,17 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
         <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#observableProperty_rootZone_moistureLevel"/>
         <rdfs:comment>FeatureOfInterest_rootzone - an instance of the class sosa:FeatureOfInterest that represents rootzone soil of a plant.</rdfs:comment>
         <rdfs:label>Feature Of Interest Root Zone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#featureOfInterest_sleeping -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#featureOfInterest_sleeping">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <ssn:hasProperty rdf:resource="http://www.w3id.org/def/irrig#observableProperty_sleepingDuration"/>
+        <rdfs:comment xml:lang="en">FeatureOfInterest_sleeping - an instance of the class sosa:FeatureOfInterest that represents sleeping phenomenon.</rdfs:comment>
+        <rdfs:label>Feature Of Interest Sleeping</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1071,7 +1132,7 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#StressProperty"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#state_crop_waterNeed_init"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#state_crop_waterNeed_no"/>
-        <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#state_crop_waterNeed_wait"/>
+        <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#state_crop_waterNeed_unavailable"/>
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#state_crop_waterNeed_yes"/>
         <rdfs:comment>ObservableProperty_crop_waterNeed - an instance of the class irrig:StressProperty and caso:Property that represents the observable property of water need of an crop feature of interest.</rdfs:comment>
         <rdfs:label>Observable Property Crop Water Need</rdfs:label>
@@ -1079,9 +1140,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
     
 
 
-    <!-- http://www.w3id.org/def/irrig#observableProperty_irrigationDelay -->
+    <!-- http://www.w3id.org/def/irrig#observableProperty_delayDuration -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#observableProperty_irrigationDelay">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#observableProperty_delayDuration">
         <rdf:type rdf:resource="http://www.w3id.org/def/caso#Property"/>
         <rdfs:comment xml:lang="en">Number of days that an watering is delayed.</rdfs:comment>
         <rdfs:label xml:lang="en">Observable Property Irrigation Delay</rdfs:label>
@@ -1152,6 +1213,16 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
         <caso:hasState rdf:resource="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_veryLow"/>
         <rdfs:comment>ObservableProperty_rootZone_moistureLevel - an instance of the class irrig:MoistureProperty and caso:Property that represents the observable property of moisture level of a root zone feature of interest.</rdfs:comment>
         <rdfs:label>Observable Property Root Zone Moisture Level</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#observableProperty_sleepingDuration -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#observableProperty_sleepingDuration">
+        <rdf:type rdf:resource="http://www.w3id.org/def/caso#Property"/>
+        <rdfs:comment xml:lang="en">Number of days that the system is waiting until the next irrigation.</rdfs:comment>
+        <rdfs:label>Observable Property Sleeping Duration</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1380,9 +1451,19 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
     
 
 
-    <!-- http://www.w3id.org/def/irrig#state_crop_waterNeed_wait -->
+    <!-- http://www.w3id.org/def/irrig#state_crop_waterNeed_notApplicable -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_crop_waterNeed_wait">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_crop_waterNeed_notApplicable">
+        <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropWaterNeedState"/>
+        <rdfs:comment>State_crop_waterNeed_notApplicable - an instance of the class caso:State that represents the state of crop water need has not been evaluated yet.</rdfs:comment>
+        <rdfs:label>State Crop Water Need Not Applicable</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/def/irrig#state_crop_waterNeed_unavailable -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_crop_waterNeed_unavailable">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropWaterNeedState"/>
         <rdfs:comment>State_crop_waterNeed_wait - an instance of the class caso:State that represents the crop may need water soon.</rdfs:comment>
         <rdfs:label>State Crop Water Need Wait</rdfs:label>
