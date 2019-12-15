@@ -1465,8 +1465,8 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_crop_waterNeed_unavailable">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropWaterNeedState"/>
-        <rdfs:comment>State_crop_waterNeed_wait - an instance of the class caso:State that represents the crop may need water soon.</rdfs:comment>
-        <rdfs:label>State Crop Water Need Wait</rdfs:label>
+        <rdfs:comment>State_crop_waterNeed_unavailable - an instance of the class caso:State that represents the crop may need water soon.</rdfs:comment>
+        <rdfs:label>State Crop Water Need Unavailable</rdfs:label>
     </owl:NamedIndividual>
     
 
