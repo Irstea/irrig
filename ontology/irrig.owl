@@ -21,7 +21,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:sosa="http://www.w3.org/ns/sosa/">
     <owl:Ontology rdf:about="http://www.w3id.org/def/irrig">
-        <owl:versionIRI rdf:resource="http://www.w3id.org/def/irrig/201905"/>
+        <owl:versionIRI rdf:resource="http://www.w3id.org/def/irrig/201912"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/Irstea/caso/master/ontology/caso.owl"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0003-3587-0367"/>
         <vann:preferredNamespacePrefix>irrig</vann:preferredNamespacePrefix>
@@ -850,7 +850,7 @@ In the example of Arvalis&apos; dataset, the value of boundary rain quantity low
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityBoundary"/>
         <rdfs:comment>Boundary_rain_quantity_maximum - a boundary line represents the maximal value that rain quantity cannot surpass.
 
-In the example of Arvalis&apos; dataset, the value of boundary rain quantity maximum is 71.8mm.</rdfs:comment>
+In the example of Arvalis&apos; dataset, the value of boundary rain quantity maximum is 90.0mm (even more than the word record which is 71.8mm)</rdfs:comment>
         <rdfs:label>Boundary Rain Quantity Maximum</rdfs:label>
     </owl:NamedIndividual>
     
@@ -874,7 +874,7 @@ In the example of Arvalis&apos; dataset, the value of boundary rain quantity min
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"/>
         <rdfs:comment>Boundary_rootZone_tension_average - a boundary line of division between two states of RootZone MoistureLevel: Low and Average.
 
-In the example of Arvalis&apos; dataset, the value of boundary rootzone tension average is 140cbar.</rdfs:comment>
+In the example of Arvalis&apos; dataset, the value of boundary rootzone tension average is 140.0 cbar or 1400.0 mbar.</rdfs:comment>
         <rdfs:label>Boundary RootZone Tension Average</rdfs:label>
     </owl:NamedIndividual>
     
@@ -886,7 +886,7 @@ In the example of Arvalis&apos; dataset, the value of boundary rootzone tension 
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"/>
         <rdfs:comment>Boundary_rootZone_tension_high - a boundary line of division between two states of RootZone MoistureLevel: Average and High.
 
-In the example of Arvalis&apos; dataset, the value of boundary rootzone tension high is 120cbar</rdfs:comment>
+In the example of Arvalis&apos; dataset, the value of boundary rootzone tension high is 120.0 cbar or 1200.0 mbar.</rdfs:comment>
         <rdfs:label>Boundary RootZone Tension High</rdfs:label>
     </owl:NamedIndividual>
     
@@ -898,7 +898,7 @@ In the example of Arvalis&apos; dataset, the value of boundary rootzone tension 
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"/>
         <rdfs:comment>Boundary_rootZone_tension_low - a boundary line of division between two states of RootZone MoistureLevel: VeryLow and Low.
 
-In the example of Arvalis&apos; dataset, the value of boundary rootzone tension low is 150cbar</rdfs:comment>
+In the example of Arvalis&apos; dataset, the value of boundary rootzone tension low is 150.0 cbar or 1500.0 mbar.</rdfs:comment>
         <rdfs:label>Boundary RootZone Tension Low</rdfs:label>
     </owl:NamedIndividual>
     
@@ -910,7 +910,7 @@ In the example of Arvalis&apos; dataset, the value of boundary rootzone tension 
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"/>
         <rdfs:comment>Boundary_rootZone_moistureLevel_maximum - a boundary line represents the maximal value that RootZone Tension cannot surpass.
 
-In the example of Arvalis&apos; dataset, the value of boundary rootzone tension maximum is 200cbar</rdfs:comment>
+In the example of Arvalis&apos; dataset, the value of boundary rootzone tension maximum is 301cbar or 3010 mbar (even more than the possible value of Watermark can evalute which is 300 cbar).</rdfs:comment>
         <rdfs:label>Boundary RootZone Tension Maximum</rdfs:label>
     </owl:NamedIndividual>
     
@@ -922,7 +922,7 @@ In the example of Arvalis&apos; dataset, the value of boundary rootzone tension 
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"/>
         <rdfs:comment>Boundary_rootZone_moistureLevel_minimum - a boundary line represents the minimal value that RootZone Tension cannot surpass.
 
-In the example of Arvalis&apos; dataset, the value of boundary rootzone tension minimum is 0cbar</rdfs:comment>
+In the example of Arvalis&apos; dataset, the value of boundary rootzone tension minimum is 0 cbar or 0 mbar.</rdfs:comment>
         <rdfs:label>Boundary RootZone Tension Minimum</rdfs:label>
     </owl:NamedIndividual>
     
@@ -934,7 +934,7 @@ In the example of Arvalis&apos; dataset, the value of boundary rootzone tension 
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"/>
         <rdfs:comment>Boundary_rootZone_tension_saturation - a boundary line of division between two states of RootZone MoistureLevel: VeryHigh and Saturated.
 
-In the example of Arvalis&apos; dataset, the value of boundary rootzone tension saturation is 10cbar</rdfs:comment>
+In the example of Arvalis&apos; dataset, the value of boundary rootzone tension saturation is 10.0 cbar or 100.0 mbar.</rdfs:comment>
         <rdfs:label>Boundary RootZone Tension Saturation</rdfs:label>
     </owl:NamedIndividual>
     
@@ -946,7 +946,7 @@ In the example of Arvalis&apos; dataset, the value of boundary rootzone tension 
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"/>
         <rdfs:comment>Boundary_rootZone_tension_veryHigh - a boundary line of division between two states of RootZone MoistureLevel: High and VeryHigh.
 
-In the example of Arvalis&apos; dataset, the value of boundary rootzone tension very high is 70cbar</rdfs:comment>
+In the example of Arvalis&apos; dataset, the value of boundary rootzone tension very high is 70.0 cbar or 700.0 mbar.</rdfs:comment>
         <rdfs:label>Boundary RootZone Tension VeryHigh</rdfs:label>
     </owl:NamedIndividual>
     
@@ -958,7 +958,7 @@ In the example of Arvalis&apos; dataset, the value of boundary rootzone tension 
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"/>
         <rdfs:comment>Boundary_rootZone_tension_veryLow - a boundary line of division between two states of RootZone MoistureLevel: Dry and VeryLow.
 
-In the example of Arvalis&apos; dataset, the value of boundary rootzone tension very low is 160cbar</rdfs:comment>
+In the example of Arvalis&apos; dataset, the value of boundary rootzone tension very low is 160.0 cbar or 1600.0 mbar.</rdfs:comment>
         <rdfs:label>Boundary RootZone Tension VeryLow</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1485,7 +1485,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rain_intensity_heavy">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityState"/>
-        <rdfs:comment>State_rain_intensity_heavy - an instance of the class caso:State that represents the rain intensity is heavy.</rdfs:comment>
+        <rdfs:comment>State_rain_intensity_heavy - an instance of the class caso:State that represents the rain intensity is heavy.
+
+In the example of Arvalis&apos; dataset, this RainIntensity property reaches this state the open upper boundary is RQ_maximum and the close lower boundary is RQ_high.</rdfs:comment>
         <rdfs:label>State Rain Intensity Heavy</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1505,7 +1507,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rain_intensity_light">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityState"/>
-        <rdfs:comment>State_rain_intensity_light - an instance of the class caso:State that represents the rain intensity is light.</rdfs:comment>
+        <rdfs:comment>State_rain_intensity_light - an instance of the class caso:State that represents the rain intensity is light.
+
+In the example of Arvalis&apos; dataset, this RainIntensity property reaches this state the open upper boundary is RQ_low and the close lower boundary is RQ_minimum.</rdfs:comment>
         <rdfs:label>State Rain Intensity Light</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1515,7 +1519,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rain_intensity_moderate">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityState"/>
-        <rdfs:comment>State_rain_intensity_moderate - an instance of the class caso:State that represents the rain intensity is moderate.</rdfs:comment>
+        <rdfs:comment>State_rain_intensity_moderate - an instance of the class caso:State that represents the rain intensity is moderate.
+
+In the example of Arvalis&apos; dataset, this RainIntensity property reaches this state the open upper boundary is RQ_high and the close lower boundary is RQ_low.</rdfs:comment>
         <rdfs:label>State Rain Intensity Moderate</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1525,7 +1531,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_average">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
-        <rdfs:comment>State_rootZone_moistureLevel_average - an instance of the class caso:State that represents the root zone moisture level is at the average state.</rdfs:comment>
+        <rdfs:comment>State_rootZone_moistureLevel_average - an instance of the class caso:State that represents the root zone moisture level is at the average state.
+
+In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_average and the close lower boundary is ST_high.</rdfs:comment>
         <rdfs:label>State Root Zone Moisture Level Average</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1535,7 +1543,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_dry">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
-        <rdfs:comment>State_rootZone_moistureLevel_dry - an instance of the class caso:State that represents the root zone moisture level is at the dry state.</rdfs:comment>
+        <rdfs:comment>State_rootZone_moistureLevel_dry - an instance of the class caso:State that represents the root zone moisture level is at the dry state.
+
+In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_maximum and the close lower boundary is ST_very_low.</rdfs:comment>
         <rdfs:label>State Root Zone Moisture Level Dry</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1545,7 +1555,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_high">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
-        <rdfs:comment>State_rootZone_moistureLevel_high - an instance of the class caso:State that represents the root zone moisture level is at the high state.</rdfs:comment>
+        <rdfs:comment>State_rootZone_moistureLevel_high - an instance of the class caso:State that represents the root zone moisture level is at the high state.
+
+In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_high and the close lower boundary is ST_very_high.</rdfs:comment>
         <rdfs:label>State Root Zone Moisture Level High</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1565,7 +1577,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_low">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
-        <rdfs:comment>State_rootZone_moistureLevel_low - an instance of the class caso:State that represents the root zone moisture level is at the low state.</rdfs:comment>
+        <rdfs:comment>State_rootZone_moistureLevel_low - an instance of the class caso:State that represents the root zone moisture level is at the low state.
+
+In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_low and the close lower boundary is ST_average.</rdfs:comment>
         <rdfs:label>State Root Zone Moisture Level Low</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1575,7 +1589,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_saturated">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
-        <rdfs:comment>State_rootZone_moistureLevel_saturated - an instance of the class caso:State that represents the root zone moisture level is at the saturated state.</rdfs:comment>
+        <rdfs:comment>State_rootZone_moistureLevel_saturated - an instance of the class caso:State that represents the root zone moisture level is at the saturated state.
+
+In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_saturated and the close lower boundary is ST_minimum.</rdfs:comment>
         <rdfs:label>State Root Zone Moisture Level Saturated</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1585,7 +1601,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_veryHigh">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
-        <rdfs:comment>State_rootZone_moistureLevel_veryHigh - an instance of the class caso:State that represents the root zone moisture level is at the very high state.</rdfs:comment>
+        <rdfs:comment>State_rootZone_moistureLevel_veryHigh - an instance of the class caso:State that represents the root zone moisture level is at the very high state.
+
+In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_very_high and the close lower boundary is ST_saturated.</rdfs:comment>
         <rdfs:label>State Root Zone Moisture Level Very High</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1595,7 +1613,9 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_veryLow">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
-        <rdfs:comment>State_rootZone_moistureLevel_veryLow - an instance of the class caso:State that represents the root zone moisture level is at the very low state.</rdfs:comment>
+        <rdfs:comment>State_rootZone_moistureLevel_veryLow - an instance of the class caso:State that represents the root zone moisture level is at the very low state.
+
+In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_very_low and the close lower boundary is ST_low.</rdfs:comment>
         <rdfs:label>State Root Zone Moisture Level Very Low</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
