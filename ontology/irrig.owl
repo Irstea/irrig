@@ -1365,6 +1365,8 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_crop_growth_r1">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+        <caso:greaterThan rdf:resource="http://www.w3id.org/def/irrig#state_crop_growth_v7d20"/>
+        <caso:lesserThan rdf:resource="http://www.w3id.org/def/irrig#state_crop_growth_r1d15"/>
         <rdfs:comment>State_crop_growth_r1 - an instance of the class caso:State that represents the crop after reaching the “silking” stage. This stage is also named R1.</rdfs:comment>
         <rdfs:label>State Crop Growth R1</rdfs:label>
     </owl:NamedIndividual>
@@ -1375,6 +1377,8 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_crop_growth_r1d15">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+        <caso:greaterThan rdf:resource="http://www.w3id.org/def/irrig#state_crop_growth_r1"/>
+        <caso:lesserThan rdf:resource="http://www.w3id.org/def/irrig#state_crop_growth_r5"/>
         <rdfs:comment>State_crop_growth_r1d15 - an instance of the class caso:State that represents the crop 15 days after reaching the “silking” stage.</rdfs:comment>
         <rdfs:label>State Crop Growth R1d15</rdfs:label>
     </owl:NamedIndividual>
@@ -1385,6 +1389,8 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_crop_growth_r5">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+        <caso:greaterThan rdf:resource="http://www.w3id.org/def/irrig#state_crop_growth_r1d15"/>
+        <caso:lesserThan rdf:resource="http://www.w3id.org/def/irrig#state_crop_growth_r5hg45"/>
         <rdfs:comment>State_crop_growth_r5 - an instance of the class caso:State that represents the crop after reaching the “dent stage within kernel containing 50% moisture”. This stage is also named R5</rdfs:comment>
         <rdfs:label>State Crop Growth R5</rdfs:label>
     </owl:NamedIndividual>
@@ -1395,6 +1401,7 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_crop_growth_r5hg45">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+        <caso:greaterThan rdf:resource="http://www.w3id.org/def/irrig#state_crop_growth_r5"/>
         <rdfs:comment>State_crop_growth_r5hg45 - an instance of the class caso:State that represents the crop after reaching the “dent stage within kernel containing 45% moisture”.</rdfs:comment>
         <rdfs:label>State Crop Growth R5hg45</rdfs:label>
     </owl:NamedIndividual>
@@ -1405,6 +1412,7 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_crop_growth_v2">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+        <caso:lesserThan rdf:resource="http://www.w3id.org/def/irrig#state_crop_growth_v7"/>
         <rdfs:comment>State_crop_growth_v2 - an instance of the class caso:State that represents the crop after reaching the crop stage “5 leaves”, also named V2.</rdfs:comment>
         <rdfs:label>State Crop Growth V2</rdfs:label>
     </owl:NamedIndividual>
@@ -1415,6 +1423,8 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_crop_growth_v7">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+        <caso:greaterThan rdf:resource="http://www.w3id.org/def/irrig#state_crop_growth_v2"/>
+        <caso:lesserThan rdf:resource="http://www.w3id.org/def/irrig#state_crop_growth_v7d20"/>
         <rdfs:comment>State_crop_growth_v7 - an instance of the class caso:State that represents the crop after reaching the crop stage “10 leaves”, also named V7.</rdfs:comment>
         <rdfs:label>State Crop Growth V7</rdfs:label>
     </owl:NamedIndividual>
@@ -1425,6 +1435,8 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_crop_growth_v7d20">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropGrowthState"/>
+        <caso:greaterThan rdf:resource="http://www.w3id.org/def/irrig#state_crop_growth_v7"/>
+        <caso:lesserThan rdf:resource="http://www.w3id.org/def/irrig#state_crop_growth_r1"/>
         <rdfs:comment>State_crop_growth_v7d20 - an instance of the class caso:State that represents the crop 20 days after reaching the stage “10 leaves”.</rdfs:comment>
         <rdfs:label>State Crop Growth V7d20</rdfs:label>
     </owl:NamedIndividual>
@@ -1465,8 +1477,8 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_crop_waterNeed_unavailable">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#CropWaterNeedState"/>
-        <rdfs:comment>State_crop_waterNeed_wait - an instance of the class caso:State that represents the crop may need water soon.</rdfs:comment>
-        <rdfs:label>State Crop Water Need Wait</rdfs:label>
+        <rdfs:comment>State_crop_waterNeed_unavailable - an instance of the class caso:State that represents the crop may need water soon.</rdfs:comment>
+        <rdfs:label>State Crop Water Need Unavailable</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1485,9 +1497,14 @@ In the example of Arvalis&apos; dataset, the crop is maize that growth in an Arv
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rain_intensity_heavy">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityState"/>
+<<<<<<< HEAD
         <rdfs:comment>State_rain_intensity_heavy - an instance of the class caso:State that represents the rain intensity is heavy.
 
 In the example of Arvalis&apos; dataset, this RainIntensity property reaches this state the open upper boundary is RQ_maximum and the close lower boundary is RQ_high.</rdfs:comment>
+=======
+        <caso:greaterThan rdf:resource="http://www.w3id.org/def/irrig#state_rain_intensity_moderate"/>
+        <rdfs:comment>State_rain_intensity_heavy - an instance of the class caso:State that represents the rain intensity is heavy.</rdfs:comment>
+>>>>>>> dd86b40610d16e50f56b517fc70a9d0cc3128408
         <rdfs:label>State Rain Intensity Heavy</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1507,9 +1524,14 @@ In the example of Arvalis&apos; dataset, this RainIntensity property reaches thi
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rain_intensity_light">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityState"/>
+<<<<<<< HEAD
         <rdfs:comment>State_rain_intensity_light - an instance of the class caso:State that represents the rain intensity is light.
 
 In the example of Arvalis&apos; dataset, this RainIntensity property reaches this state the open upper boundary is RQ_low and the close lower boundary is RQ_minimum.</rdfs:comment>
+=======
+        <caso:lesserThan rdf:resource="http://www.w3id.org/def/irrig#state_rain_intensity_moderate"/>
+        <rdfs:comment>State_rain_intensity_light - an instance of the class caso:State that represents the rain intensity is light.</rdfs:comment>
+>>>>>>> dd86b40610d16e50f56b517fc70a9d0cc3128408
         <rdfs:label>State Rain Intensity Light</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1519,9 +1541,15 @@ In the example of Arvalis&apos; dataset, this RainIntensity property reaches thi
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rain_intensity_moderate">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityState"/>
+<<<<<<< HEAD
         <rdfs:comment>State_rain_intensity_moderate - an instance of the class caso:State that represents the rain intensity is moderate.
 
 In the example of Arvalis&apos; dataset, this RainIntensity property reaches this state the open upper boundary is RQ_high and the close lower boundary is RQ_low.</rdfs:comment>
+=======
+        <caso:greaterThan rdf:resource="http://www.w3id.org/def/irrig#state_rain_intensity_light"/>
+        <caso:lesserThan rdf:resource="http://www.w3id.org/def/irrig#state_rain_intensity_heavy"/>
+        <rdfs:comment>State_rain_intensity_moderate - an instance of the class caso:State that represents the rain intensity is moderate.</rdfs:comment>
+>>>>>>> dd86b40610d16e50f56b517fc70a9d0cc3128408
         <rdfs:label>State Rain Intensity Moderate</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1531,9 +1559,15 @@ In the example of Arvalis&apos; dataset, this RainIntensity property reaches thi
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_average">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+<<<<<<< HEAD
         <rdfs:comment>State_rootZone_moistureLevel_average - an instance of the class caso:State that represents the root zone moisture level is at the average state.
 
 In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_average and the close lower boundary is ST_high.</rdfs:comment>
+=======
+        <caso:greaterThan rdf:resource="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_low"/>
+        <caso:lesserThan rdf:resource="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_high"/>
+        <rdfs:comment>State_rootZone_moistureLevel_average - an instance of the class caso:State that represents the root zone moisture level is at the average state.</rdfs:comment>
+>>>>>>> dd86b40610d16e50f56b517fc70a9d0cc3128408
         <rdfs:label>State Root Zone Moisture Level Average</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1543,9 +1577,14 @@ In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property rea
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_dry">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+<<<<<<< HEAD
         <rdfs:comment>State_rootZone_moistureLevel_dry - an instance of the class caso:State that represents the root zone moisture level is at the dry state.
 
 In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_maximum and the close lower boundary is ST_very_low.</rdfs:comment>
+=======
+        <caso:lesserThan rdf:resource="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_veryLow"/>
+        <rdfs:comment>State_rootZone_moistureLevel_dry - an instance of the class caso:State that represents the root zone moisture level is at the dry state.</rdfs:comment>
+>>>>>>> dd86b40610d16e50f56b517fc70a9d0cc3128408
         <rdfs:label>State Root Zone Moisture Level Dry</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1555,9 +1594,15 @@ In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property rea
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_high">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+<<<<<<< HEAD
         <rdfs:comment>State_rootZone_moistureLevel_high - an instance of the class caso:State that represents the root zone moisture level is at the high state.
 
 In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_high and the close lower boundary is ST_very_high.</rdfs:comment>
+=======
+        <caso:greaterThan rdf:resource="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_average"/>
+        <caso:lesserThan rdf:resource="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_veryHigh"/>
+        <rdfs:comment>State_rootZone_moistureLevel_high - an instance of the class caso:State that represents the root zone moisture level is at the high state.</rdfs:comment>
+>>>>>>> dd86b40610d16e50f56b517fc70a9d0cc3128408
         <rdfs:label>State Root Zone Moisture Level High</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1577,9 +1622,15 @@ In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property rea
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_low">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+<<<<<<< HEAD
         <rdfs:comment>State_rootZone_moistureLevel_low - an instance of the class caso:State that represents the root zone moisture level is at the low state.
 
 In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_low and the close lower boundary is ST_average.</rdfs:comment>
+=======
+        <caso:greaterThan rdf:resource="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_veryLow"/>
+        <caso:lesserThan rdf:resource="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_average"/>
+        <rdfs:comment>State_rootZone_moistureLevel_low - an instance of the class caso:State that represents the root zone moisture level is at the low state.</rdfs:comment>
+>>>>>>> dd86b40610d16e50f56b517fc70a9d0cc3128408
         <rdfs:label>State Root Zone Moisture Level Low</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1589,9 +1640,14 @@ In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property rea
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_saturated">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+<<<<<<< HEAD
         <rdfs:comment>State_rootZone_moistureLevel_saturated - an instance of the class caso:State that represents the root zone moisture level is at the saturated state.
 
 In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_saturated and the close lower boundary is ST_minimum.</rdfs:comment>
+=======
+        <caso:greaterThan rdf:resource="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_veryHigh"/>
+        <rdfs:comment>State_rootZone_moistureLevel_saturated - an instance of the class caso:State that represents the root zone moisture level is at the saturated state.</rdfs:comment>
+>>>>>>> dd86b40610d16e50f56b517fc70a9d0cc3128408
         <rdfs:label>State Root Zone Moisture Level Saturated</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1601,9 +1657,15 @@ In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property rea
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_veryHigh">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+<<<<<<< HEAD
         <rdfs:comment>State_rootZone_moistureLevel_veryHigh - an instance of the class caso:State that represents the root zone moisture level is at the very high state.
 
 In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_very_high and the close lower boundary is ST_saturated.</rdfs:comment>
+=======
+        <caso:greaterThan rdf:resource="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_high"/>
+        <caso:lesserThan rdf:resource="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_saturated"/>
+        <rdfs:comment>State_rootZone_moistureLevel_veryHigh - an instance of the class caso:State that represents the root zone moisture level is at the very high state.</rdfs:comment>
+>>>>>>> dd86b40610d16e50f56b517fc70a9d0cc3128408
         <rdfs:label>State Root Zone Moisture Level Very High</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1613,9 +1675,15 @@ In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property rea
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_veryLow">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"/>
+<<<<<<< HEAD
         <rdfs:comment>State_rootZone_moistureLevel_veryLow - an instance of the class caso:State that represents the root zone moisture level is at the very low state.
 
 In the example of Arvalis&apos; dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_very_low and the close lower boundary is ST_low.</rdfs:comment>
+=======
+        <caso:greaterThan rdf:resource="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_dry"/>
+        <caso:lesserThan rdf:resource="http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_low"/>
+        <rdfs:comment>State_rootZone_moistureLevel_veryLow - an instance of the class caso:State that represents the root zone moisture level is at the very low state.</rdfs:comment>
+>>>>>>> dd86b40610d16e50f56b517fc70a9d0cc3128408
         <rdfs:label>State Root Zone Moisture Level Very Low</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
