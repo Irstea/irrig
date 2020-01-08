@@ -3,9 +3,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.w3id.org/def/caso#Deduction"
-    }, {
-      "@id" : "_:genid5"
+      "@id" : "http://www.w3id.org/def/caso#Observation"
     }, {
       "@id" : "_:genid3"
     } ]
@@ -13,174 +11,258 @@
 }, {
   "@id" : "_:genid101",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_Moisture"
-  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
+    "@id" : "http://www.w3id.org/def/caso#hasClosedLowerBoundary"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"
   } ]
 }, {
   "@id" : "_:genid103",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_Soil30cmDepth"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
-  } ]
-}, {
-  "@id" : "_:genid105",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3id.org/def/caso#Observation"
     }, {
-      "@id" : "_:genid109"
-    }, {
       "@id" : "_:genid107"
+    }, {
+      "@id" : "_:genid105"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid105",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_sleepingDuration"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
   } ]
 }, {
   "@id" : "_:genid107",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_AverageMoisturePerDay"
+    "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_sleeping"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
+    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
   } ]
 }, {
   "@id" : "_:genid109",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_Soil60cmDepth"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_Crop"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
-  } ]
-}, {
-  "@id" : "_:genid111",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3id.org/def/caso#Observation"
     }, {
-      "@id" : "_:genid115"
-    }, {
       "@id" : "_:genid113"
+    }, {
+      "@id" : "_:genid111"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3id.org/def/caso#Observation"
+    }, {
+      "@id" : "_:genid15"
+    }, {
+      "@id" : "_:genid13"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_soil30cmDepth_dailyAverageMoisture"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
   } ]
 }, {
   "@id" : "_:genid113",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_Moisture"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
-  } ]
-}, {
-  "@id" : "_:genid115",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_Soil60cmDepth"
+    "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_soil30cmDepth"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
   } ]
 }, {
-  "@id" : "_:genid13",
+  "@id" : "_:genid115",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.w3id.org/def/caso#Deduction"
+      "@id" : "http://www.w3id.org/def/caso#Observation"
     }, {
-      "@id" : "_:genid17"
+      "@id" : "_:genid119"
     }, {
-      "@id" : "_:genid15"
+      "@id" : "_:genid117"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid117",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_soil30cmDepth_moisture"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
+  } ]
+}, {
+  "@id" : "_:genid119",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_soil30cmDepth"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
+  } ]
+}, {
+  "@id" : "_:genid121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3id.org/def/caso#Observation"
+    }, {
+      "@id" : "_:genid125"
+    }, {
+      "@id" : "_:genid123"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_soil60cmDepth_dailyAverageMoisture"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
+  } ]
+}, {
+  "@id" : "_:genid125",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_soil60cmDepth"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
+  } ]
+}, {
+  "@id" : "_:genid127",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3id.org/def/caso#Observation"
+    }, {
+      "@id" : "_:genid131"
+    }, {
+      "@id" : "_:genid129"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid129",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_soil60cmDepth_moisture"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_crop_growth"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
+  } ]
+}, {
+  "@id" : "_:genid131",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_soil60cmDepth"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
   } ]
 }, {
   "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Crop_WaterNeed"
+    "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_crop"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3id.org/def/caso#Deduction"
+    }, {
+      "@id" : "_:genid21"
+    }, {
+      "@id" : "_:genid19"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_crop_waterNeed"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/sosa/observedProperty"
   } ]
 }, {
-  "@id" : "_:genid17",
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_Crop"
+    "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_crop"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
-  } ]
-}, {
-  "@id" : "_:genid19",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid27"
-    }, {
-      "@id" : "_:genid21"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid21",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid25"
-    }, {
-      "@id" : "_:genid23"
-    } ]
   } ]
 }, {
   "@id" : "_:genid23",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_Soil30cmDepth"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3id.org/def/caso#Observation"
+    }, {
+      "@id" : "_:genid27"
+    }, {
+      "@id" : "_:genid25"
+    } ]
   } ]
 }, {
   "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_Moisture"
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_delayDuration"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/actsOnProperty"
+    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
   } ]
 }, {
   "@id" : "_:genid27",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3id.org/def/caso#Actuation"
-    }, {
-      "@id" : "_:genid29"
-    } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_delay"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
   } ]
 }, {
   "@id" : "_:genid29",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid33"
+      "@id" : "_:genid37"
     }, {
       "@id" : "_:genid31"
     } ]
@@ -189,83 +271,173 @@
   "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Crop_Growth"
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_delayDuration"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/sosa/observedProperty"
   } ]
 }, {
   "@id" : "_:genid31",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_Soil60cmDepth"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid35"
+    }, {
+      "@id" : "_:genid33"
+    } ]
   } ]
 }, {
   "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_Moisture"
+    "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_soil30cmDepth"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_soil30cmDepth_moisture"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/sosa/actsOnProperty"
   } ]
 }, {
-  "@id" : "_:genid35",
+  "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.w3id.org/def/caso#Deduction"
+      "@id" : "http://www.w3id.org/def/caso#Actuation"
     }, {
       "@id" : "_:genid39"
-    }, {
-      "@id" : "_:genid37"
     } ]
   } ]
 }, {
-  "@id" : "_:genid37",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Rain_Intensity"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid43"
+    }, {
+      "@id" : "_:genid41"
+    } ]
   } ]
 }, {
-  "@id" : "_:genid39",
+  "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_Rain"
+    "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_soil60cmDepth"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
   } ]
 }, {
-  "@id" : "_:genid41",
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_soil60cmDepth_moisture"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/actsOnProperty"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3id.org/def/caso#Observation"
+    }, {
+      "@id" : "_:genid49"
+    }, {
+      "@id" : "_:genid47"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_rain_dailyTotalQuantity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_rain"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3id.org/def/caso#Deduction"
+    }, {
+      "@id" : "_:genid9"
+    }, {
+      "@id" : "_:genid7"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3id.org/def/caso#Deduction"
+    }, {
+      "@id" : "_:genid55"
+    }, {
+      "@id" : "_:genid53"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_rain_intensity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_rain"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
+  } ]
+}, {
+  "@id" : "_:genid57",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3id.org/def/caso#State"
     }, {
-      "@id" : "_:genid49"
+      "@id" : "_:genid65"
     }, {
-      "@id" : "_:genid43"
+      "@id" : "_:genid59"
     } ]
   } ]
 }, {
-  "@id" : "_:genid43",
+  "@id" : "_:genid59",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid47"
+      "@id" : "_:genid63"
     }, {
-      "@id" : "_:genid45"
+      "@id" : "_:genid61"
     } ]
   } ]
 }, {
-  "@id" : "_:genid45",
+  "@id" : "_:genid61",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3id.org/def/caso#hasOpenUpperBoundary"
@@ -274,7 +446,7 @@
     "@id" : "http://www.w3id.org/def/irrig#RainIntensityBoundary"
   } ]
 }, {
-  "@id" : "_:genid47",
+  "@id" : "_:genid63",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3id.org/def/caso#hasClosedUpperBoundary"
@@ -283,26 +455,17 @@
     "@id" : "http://www.w3id.org/def/irrig#RainIntensityBoundary"
   } ]
 }, {
-  "@id" : "_:genid49",
+  "@id" : "_:genid65",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid53"
+      "@id" : "_:genid69"
     }, {
-      "@id" : "_:genid51"
+      "@id" : "_:genid67"
     } ]
   } ]
 }, {
-  "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_Crop"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
-  } ]
-}, {
-  "@id" : "_:genid51",
+  "@id" : "_:genid67",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3id.org/def/caso#hasOpenLowerBoundary"
@@ -311,7 +474,7 @@
     "@id" : "http://www.w3id.org/def/irrig#RainIntensityBoundary"
   } ]
 }, {
-  "@id" : "_:genid53",
+  "@id" : "_:genid69",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3id.org/def/caso#hasClosedLowerBoundary"
@@ -320,161 +483,137 @@
     "@id" : "http://www.w3id.org/def/irrig#RainIntensityBoundary"
   } ]
 }, {
-  "@id" : "_:genid55",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3id.org/def/caso#Observation"
-    }, {
-      "@id" : "_:genid59"
-    }, {
-      "@id" : "_:genid57"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid57",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Rain_Quantity"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
-  } ]
-}, {
-  "@id" : "_:genid59",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_Rain"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
-  } ]
-}, {
-  "@id" : "_:genid61",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3id.org/def/caso#Observation"
-    }, {
-      "@id" : "_:genid65"
-    }, {
-      "@id" : "_:genid63"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid63",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Rain_TotalQuantityPerDay"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
-  } ]
-}, {
-  "@id" : "_:genid65",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_Rain"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
-  } ]
-}, {
-  "@id" : "_:genid67",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3id.org/def/caso#Observation"
-    }, {
-      "@id" : "_:genid71"
-    }, {
-      "@id" : "_:genid69"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid69",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_RootZone_AverageMoisturePerDay"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
-  } ]
-}, {
   "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3id.org/def/caso#Observation"
-    }, {
-      "@id" : "_:genid11"
-    }, {
-      "@id" : "_:genid9"
-    } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_crop_growth"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
   } ]
 }, {
   "@id" : "_:genid71",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_RootZone"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
-  } ]
-}, {
-  "@id" : "_:genid73",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.w3id.org/def/caso#Deduction"
-    }, {
-      "@id" : "_:genid77"
+      "@id" : "http://www.w3id.org/def/caso#Observation"
     }, {
       "@id" : "_:genid75"
+    }, {
+      "@id" : "_:genid73"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid73",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_rain_quantity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
   } ]
 }, {
   "@id" : "_:genid75",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_RootZone_MoistureLevel"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
-  } ]
-}, {
-  "@id" : "_:genid77",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_RootZone"
+    "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_rain"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
   } ]
 }, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3id.org/def/caso#Observation"
+    }, {
+      "@id" : "_:genid81"
+    }, {
+      "@id" : "_:genid79"
+    } ]
+  } ]
+}, {
   "@id" : "_:genid79",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_rootZone_dailyAverageMoisture"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
+  } ]
+}, {
+  "@id" : "_:genid81",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_rootZone"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3id.org/def/caso#Deduction"
+    }, {
+      "@id" : "_:genid87"
+    }, {
+      "@id" : "_:genid85"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid85",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_rootZone_moistureLevel"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
+  } ]
+}, {
+  "@id" : "_:genid87",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_rootZone"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
+  } ]
+}, {
+  "@id" : "_:genid89",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3id.org/def/caso#State"
     }, {
-      "@id" : "_:genid87"
+      "@id" : "_:genid97"
     }, {
-      "@id" : "_:genid81"
+      "@id" : "_:genid91"
     } ]
   } ]
 }, {
-  "@id" : "_:genid81",
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_crop"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
+  } ]
+}, {
+  "@id" : "_:genid91",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid85"
+      "@id" : "_:genid95"
     }, {
-      "@id" : "_:genid83"
+      "@id" : "_:genid93"
     } ]
   } ]
 }, {
-  "@id" : "_:genid83",
+  "@id" : "_:genid93",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3id.org/def/caso#hasOpenUpperBoundary"
@@ -483,7 +622,7 @@
     "@id" : "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"
   } ]
 }, {
-  "@id" : "_:genid85",
+  "@id" : "_:genid95",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3id.org/def/caso#hasClosedUpperBoundary"
@@ -492,83 +631,23 @@
     "@id" : "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"
   } ]
 }, {
-  "@id" : "_:genid87",
+  "@id" : "_:genid97",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid91"
+      "@id" : "_:genid101"
     }, {
-      "@id" : "_:genid89"
+      "@id" : "_:genid99"
     } ]
   } ]
 }, {
-  "@id" : "_:genid89",
+  "@id" : "_:genid99",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3id.org/def/caso#hasOpenLowerBoundary"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"
-  } ]
-}, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Crop_Growth"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
-  } ]
-}, {
-  "@id" : "_:genid91",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3id.org/def/caso#hasClosedLowerBoundary"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"
-  } ]
-}, {
-  "@id" : "_:genid93",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3id.org/def/caso#Observation"
-    }, {
-      "@id" : "_:genid97"
-    }, {
-      "@id" : "_:genid95"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid95",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_AverageMoisturePerDay"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
-  } ]
-}, {
-  "@id" : "_:genid97",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_Soil30cmDepth"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
-  } ]
-}, {
-  "@id" : "_:genid99",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3id.org/def/caso#Observation"
-    }, {
-      "@id" : "_:genid103"
-    }, {
-      "@id" : "_:genid101"
-    } ]
   } ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#definition",
@@ -579,6 +658,24 @@
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#note",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "wasDerivedFrom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasInfluencedBy"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/caso#Property",
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
@@ -618,19 +715,10 @@
     "@id" : "https://raw.githubusercontent.com/Irstea/caso/master/ontology/caso.owl"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://www.w3id.org/def/irrig/201905"
+    "@id" : "http://www.w3id.org/def/irrig/201912"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "1.0.0"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Actuator_WateringValve_01_Soil_Moisture",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4agri#WateringValve" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Actuator_WateringValve_01_Soil_Moisture - an actuator controls the valve of a watering device n° 01. The actuator indirectly affects soil moisture."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Actuator Watering  Valve 01 Soil Moisture"
+    "@value" : "1.2.0"
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#AmountProperty",
@@ -645,119 +733,11 @@
     "@id" : "http://www.w3.org/ns/ssn/Property"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_High",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RainIntensityBoundary" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Boundary_Rain_Quantity_High - a boundary line of division between two states of Rain Intensity: Heavy and Moderate.\n\nIn the example of Arvalis' dataset, the value of boundary rain quantity high is 40mm."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Boundary Rain Quantity High"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_Low",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RainIntensityBoundary" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Boundary_Rain_Quantity_Low  - a boundary line of division between two states of Rain Intensity: Moderate and Light.\n\nIn the example of Arvalis' dataset, the value of boundary rain quantity low is 10mm."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Boundary Rain Quantity Low"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_Maximum",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RainIntensityBoundary" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Boundary_Rain_Quantity_Maximum - a boundary line represents the maximal value that rain quantity cannot surpass.\n\nIn the example of Arvalis' dataset, the value of boundary rain quantity maximum is 71.8mm."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Boundary Rain Quantity Maximum"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Boundary_Rain_Quantity_Minimum",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RainIntensityBoundary" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Boundary_Rain_Quantity_Maximum - a boundary line represents the minimal value that rain quantity cannot surpass.\n\nIn the example of Arvalis' dataset, the value of boundary rain quantity minimum is 0mm."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Boundary_Rain_Quantity_Minimum"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Average",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Boundary_RootZone_Tension_Average - a boundary line of division between two states of RootZone MoistureLevel: Low and Average.\n\nIn the example of Arvalis' dataset, the value of boundary rootzone tension average is 140cbar."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Boundary RootZone Tension Average"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_High",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Boundary_RootZone_Tension_High - a boundary line of division between two states of RootZone MoistureLevel: Average and High.\n\nIn the example of Arvalis' dataset, the value of boundary rootzone tension high is 120cbar"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Boundary RootZone Tension High"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Low",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Boundary_RootZone_Tension_Low - a boundary line of division between two states of RootZone MoistureLevel: VeryLow and Low.\n\nIn the example of Arvalis' dataset, the value of boundary rootzone tension low is 150cbar"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Boundary RootZone Tension Low"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Maximum",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Boundary_RootZone_MoistureLevel_Maximum - a boundary line represents the maximal value that RootZone Tension cannot surpass.\n\nIn the example of Arvalis' dataset, the value of boundary rootzone tension maximum is 200cbar"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Boundary RootZone Tension Maximum"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Minimum",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Boundary_RootZone_MoistureLevel_Minimum - a boundary line represents the minimal value that RootZone Tension cannot surpass.\n\nIn the example of Arvalis' dataset, the value of boundary rootzone tension minimum is 0cbar"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Boundary RootZone Tension Minimum"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_Saturation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Boundary_RootZone_Tension_Saturation - a boundary line of division between two states of RootZone MoistureLevel: VeryHigh and Saturated.\n\nIn the example of Arvalis' dataset, the value of boundary rootzone tension saturation is 10cbar"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Boundary RootZone Tension Saturation"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_VeryHigh",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Boundary_RootZone_Tension_VeryHigh - a boundary line of division between two states of RootZone MoistureLevel: High and VeryHigh.\n\nIn the example of Arvalis' dataset, the value of boundary rootzone tension very high is 70cbar"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Boundary RootZone Tension VeryHigh"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Boundary_RootZone_Tension_VeryLow",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Boundary_RootZone_Tension_VeryLow - a boundary line of division between two states of RootZone MoistureLevel: Dry and VeryLow.\n\nIn the example of Arvalis' dataset, the value of boundary rootzone tension very low is 160cbar"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Boundary RootZone Tension VeryLow"
-  } ]
-}, {
   "@id" : "http://www.w3id.org/def/irrig#CropGrowthDeduction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "CropGrowthDeduction - a defined class represents act of carrying out an (Observation) Procedure to estimate a State of the irrig:ObservableProperty_Crop_Growth of the irrig:FeatureOfInterest_Crop. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time."
+    "@value" : "CropGrowthDeduction - a defined class represents act of carrying out an (Observation) Procedure to estimate a State of the irrig:ObservableProperty_crop_growth of the irrig:FeatureOfInterest_crop. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -767,18 +747,18 @@
     "@id" : "http://www.w3id.org/def/caso#Deduction"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid1"
+    "@id" : "_:genid5"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
-    "@value" : "A CropGrowthDeduction is made by the Software_Agent Sensor based on human observation"
+    "@value" : "A CropGrowthDeduction is made by the Software_agent Sensor based on human observation"
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#CropGrowthObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "CropGrowthObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_Crop_Growth of the irrig:FeatureOfInterest_Crop. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_Crop_Growth to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_Crop. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
+    "@value" : "CropGrowthObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_crop_growth of the irrig:FeatureOfInterest_crop. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_crop_growth to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_crop. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -788,7 +768,7 @@
     "@id" : "http://www.w3id.org/def/caso#Observation"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid7"
+    "@id" : "_:genid11"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -817,7 +797,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "CropWaterNeedDeduction - a defined class represents act of carrying out an (Observation) Procedure to estimate a State of the irrig:ObservableProperty_Crop_WaterNeed of the irrig:FeatureOfInterest_Crop. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time."
+    "@value" : "CropWaterNeedDeduction - a defined class represents act of carrying out an (Observation) Procedure to estimate a State of the irrig:ObservableProperty_crop_waterNeed of the irrig:FeatureOfInterest_crop. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -827,11 +807,11 @@
     "@id" : "http://www.w3id.org/def/caso#Deduction"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid13"
+    "@id" : "_:genid17"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
-    "@value" : "A CropWaterNeedDeduction that made by the Software_Agent Sensor based on observations made by tensiometer sensor"
+    "@value" : "A CropWaterNeedDeduction that made by the Software_agent Sensor based on observations made by tensiometer sensor"
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#CropWaterNeedState",
@@ -852,92 +832,20 @@
     "@value" : "Example: The State No of the CropWaterNeed Property represents the fact that the crop does not need water. The State Yes of the CropWaterNeed Property represents the fact that the crop needs extra water."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_Air",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/FeatureOfInterest" ],
+  "@id" : "http://www.w3id.org/def/irrig#DelayDurationObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "FeatureOfInterest_Air - an instance of the class sosa:FeatureOfInterest that represents air."
+    "@language" : "en",
+    "@value" : "DelayDurationObservation - a defined class that represents act of carrying out an (Observation) Procedure to calculate the number of delay days."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Feature Of Interest Air"
+    "@value" : "Delay Duration Observation"
   } ],
-  "http://www.w3.org/ns/ssn/hasProperty" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Air_MaxTemperaturePerDay"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Air_MinTemperaturePerDay"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Air_Temperature"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_Crop",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/FeatureOfInterest" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "FeatureOfInterest_Crop - an instance of the class sosa:FeatureOfInterest that represents crop. The crop needs to be irrigated. \n\nIn the example of Arvalis' dataset, the crop is maize that growth in an Arvalis' plot in 2013."
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/def/caso#Observation"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Feature Of Interest Crop"
-  } ],
-  "http://www.w3.org/ns/ssn/hasProperty" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Crop_Growth"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Crop_WaterNeed"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_Rain",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/FeatureOfInterest" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "FeatureOfInterest_Rain - an instance of the class sosa:FeatureOfInterest that represents rain."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Feature Of Interest Rain"
-  } ],
-  "http://www.w3.org/ns/ssn/hasProperty" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Rain_Intensity"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Rain_Quantity"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Rain_TotalQuantityPerDay"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_RootZone",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/FeatureOfInterest" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "FeatureOfInterest_Rootzone - an instance of the class sosa:FeatureOfInterest that represents rootzone soil of a plant."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Feature Of Interest Root Zone"
-  } ],
-  "http://www.w3.org/ns/ssn/hasProperty" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_RootZone_AverageMoisturePerDay"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_RootZone_MoistureLevel"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_Soil30cmDepth",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/FeatureOfInterest" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "FeatureOfInterest_Soil30cmDepth - an instance of the class sosa:FeatureOfInterest that represents soil at 30cm depth."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Feature Of Interest Soi at 30cm Depth"
-  } ],
-  "http://www.w3.org/ns/ssn/hasProperty" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_AverageMoisturePerDay"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_Moisture"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#FeatureOfInterest_Soil60cmDepth",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/FeatureOfInterest" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "FeatureOfInterest_Soil30cmDepth - an instance of the class sosa:FeatureOfInterest that represents soil at 60cm depth."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Feature Of Interest Soil at 60cm Depth"
-  } ],
-  "http://www.w3.org/ns/ssn/hasProperty" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_AverageMoisturePerDay"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_Moisture"
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid23"
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#GrowthProperty",
@@ -990,7 +898,7 @@
     "@id" : "http://www.w3id.org/def/caso#Actuation"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid19"
+    "@id" : "_:genid29"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -1015,191 +923,25 @@
     "@value" : "RootZoneMoistureLevel is a MoistureProperty representing the amount of water available around the soil’s root zone area of a plant."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Air_MaxTemperaturePerDay",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#TemperatureProperty" ],
+  "@id" : "http://www.w3id.org/def/irrig#RainDailyTotalQuantityObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "ObservableProperty_Air_MaxTemperaturePerDay - an instance of the class irrig:TemperatureProperty and sosa:ObservableProperty that represents the observable property of max temperature per day of an air feature of interest."
+    "@language" : "en",
+    "@value" : "RainQuantityObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_rain_dailyTotalQuantity of the irrig:FeatureOfInterest_rain. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_rain_dailyTotalQuantity to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_rain. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Observable Property Air Max Temperature Per Day"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Air_MinTemperaturePerDay",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#TemperatureProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "ObservableProperty_Air_MinTemperaturePerDay - an instance of the class irrig:TemperatureProperty and sosa:ObservableProperty that represents the observable property of min temperature per day of an air feature of interest."
+    "@language" : "en",
+    "@value" : "Rain Daily Total Quantity Observation"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Observable Property Air Min Temperature Per Day"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Air_Temperature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#TemperatureProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "ObservableProperty_Air_Temperature - an instance of the class irrig:TemperatureProperty and sosa:ObservableProperty that represents the observable property of temperature of an air feature of interest."
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/def/caso#Observation"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Observable Property Air Temperature"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Crop_Growth",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/caso#Property", "http://www.w3id.org/def/irrig#GrowthProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "ObservableProperty_Crop_Growth - an instance of the class irrig:GrowthProperty and caso:Property that represents the observable property of growth of a crop feature of interest."
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid45"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Observable Property Crop Growth"
-  } ],
-  "http://www.w3id.org/def/caso#hasState" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#State_Crop_Growth_Init"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_Crop_Growth_R1"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_Crop_Growth_R1d15"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_Crop_Growth_R5"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_Crop_Growth_R5hg45"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_Crop_Growth_V2"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_Crop_Growth_V7"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_Crop_Growth_V7d20"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Crop_Stage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/caso#Property", "http://www.w3id.org/def/irrig#GrowthProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "ObservableProperty_Crop_Stage - an instance of the class irrig:GrowthProperty and caso:Property that represents the stage observable property of a crop feature of interest."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Observable Property Crop Stage"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Crop_WaterNeed",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/caso#Property", "http://www.w3id.org/def/irrig#StressProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "ObservableProperty_Crop_WaterNeed - an instance of the class irrig:StressProperty and caso:Property that represents the observable property of water need of an crop feature of interest."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Observable Property Crop Water Need"
-  } ],
-  "http://www.w3id.org/def/caso#hasState" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#State_Crop_WaterNeed_No"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_Crop_WaterNeed_Wait"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_Crop_WaterNeed_Yes"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_Crop_WaterNeed_init"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Rain_Intensity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/caso#Property", "http://www.w3id.org/def/irrig#IntensityProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "ObservableProperty_Rain_Intensity - an instance of the class irrig:IntensityProperty and caso:Property that represents the intensity observable property of a rain feature of interest."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Observable Property Rain Intensity"
-  } ],
-  "http://www.w3id.org/def/caso#hasState" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#State_Rain_Intensity_Heavy"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_Rain_Intensity_Init"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_Rain_Intensity_Light"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_Rain_Intensity_Moderate"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Rain_Quantity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#AmountProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "ObservableProperty_Rain_Quantity - an instance of the class irrig:AmountProperty and sosa:ObservableProperty that represents the quantity observable property of a rain feature of interest."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Observable Property Rain Quantity"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Rain_TotalQuantityPerDay",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#AmountProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "ObservableProperty_Rain_TotalQuantityPerDay - an instance of the class irrig:AmountProperty and sosa:ObservableProperty that represents the observable property of total quantity per day of a rain feature of interest."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Observable Property Rain Total Quantity Per Day"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_RootZone_AverageMoisturePerDay",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#MoistureProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "ObservableProperty_RootZone_AverageMoisturePerDay - an instance of the class irrig:MoistureProperty and sosa:ObservableProperty that represents the observable property of average moisture per day of a root zone feature of interest."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Observable Property Root Zone Average Moisture Per Day"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_RootZone_MoistureLevel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/caso#Property", "http://www.w3id.org/def/irrig#MoistureProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "ObservableProperty_RootZone_MoistureLevel - an instance of the class irrig:MoistureProperty and caso:Property that represents the observable property of moisture level of a root zone feature of interest."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Observable Property Root Zone Moisture Level"
-  } ],
-  "http://www.w3id.org/def/caso#hasState" : [ {
-    "@id" : "http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Average"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Dry"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_High"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Init"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Low"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Saturated"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_VeryHigh"
-  }, {
-    "@id" : "http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_VeryLow"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_AverageMoisturePerDay",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#MoistureProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "ObservableProperty_Soil30cmDepth_AverageMoisturePerDay - an instance of the class irrig:MoistureProperty and sosa:ObservableProperty that represents the observable property of average moisture per day of a soil 30cm depth feature of interest."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Observable Property Soil 30cm Depth Average Moisture Per Day"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Soil30cmDepth_Moisture",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#MoistureProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "ObservableProperty_Soil30cmDepth_Moisture - an instance of the class irrig:MoistureProperty and sosa:ObservableProperty that represents the observable property of moisture of a soil 30cm depth feature of interest."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Observable Property Soil 30cm Depth Moisture"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_AverageMoisturePerDay",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#MoistureProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "ObservableProperty_Soil60cmDepth_AverageMoisturePerDay - an instance of the class irrig:MoistureProperty and sosa:ObservableProperty that represents the observable property of average moisture per day of a soil 60cm depth feature of interest."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Observable Property Soil 60cm Depth Average Moisture Per Day"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#ObservableProperty_Soil60cmDepth_Moisture",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#MoistureProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "ObservableProperty_Soil60cmDepth_Moisture - an instance of the class irrig:MoistureProperty and sosa:ObservableProperty that represents the observable property of moisture of a soil 60cm depth feature of interest."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Observable Property Soil 60cm Depth Moisture"
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A RainDailyTotalQuantityObservation is computed by the SoftwareAgent Sensor based on observations made by a pluviometer."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#RainIntensityBoundary",
@@ -1217,14 +959,14 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
-    "@value" : "10 mm is the value of the Quantity_Low Boundary that distinguish the Light State from the Moderate State of the RainIntensity Property."
+    "@value" : "10 mm is the value of the Quantity_low Boundary that distinguish the Light State from the Moderate State of the RainIntensity Property."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#RainIntensityDeduction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "RainIntensityDeduction - a defined class that represents act of carrying out an (Observation) Procedure to estimate a State of the irrig:Observable_Rain_Intensity of the irrig:FeatureOfInterest_Rain. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time."
+    "@value" : "RainIntensityDeduction - a defined class that represents act of carrying out an (Observation) Procedure to estimate a State of the irrig:Observable_rain_intensity of the irrig:FeatureOfInterest_rain. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1234,11 +976,11 @@
     "@id" : "http://www.w3id.org/def/caso#Deduction"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid35"
+    "@id" : "_:genid51"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
-    "@value" : "A RainIntensityDeduction that made by the Software_Agent Sensor based on observations made by a pluviometer sensor"
+    "@value" : "A RainIntensityDeduction that made by the Software_agent Sensor based on observations made by a pluviometer sensor"
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#RainIntensityState",
@@ -1255,7 +997,7 @@
     "@id" : "http://www.w3id.org/def/caso#State"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid41"
+    "@id" : "_:genid57"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -1266,7 +1008,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "RainQuantityObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of irrig:ObservableProperty_Rain_Quantity of the irrig:FeatureOfInterest_Rain. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_Rain_Quantity to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_Rain. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
+    "@value" : "RainQuantityObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of irrig:ObservableProperty_rain_quantity of the irrig:FeatureOfInterest_rain. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_rain_quantity to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_rain. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1276,53 +1018,32 @@
     "@id" : "http://www.w3id.org/def/caso#Observation"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid55"
+    "@id" : "_:genid71"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
     "@value" : "A RainQuantityObservation that made by the Pluviometer Sensor."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/def/irrig#RainTotalQuantityPerDayObservation",
+  "@id" : "http://www.w3id.org/def/irrig#RootZoneDailyAverageMoistureObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "RainQuantityObservation - a defined that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_Rain_TotalQuantityPerDay of the irrig:FeatureOfInterest_Rain. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_Rain_TotalQuantityPerDay to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_Rain. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
+    "@value" : "RootZoneDailyAverageMoistureObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_rootZone_dailyAverageMoisture  of the  irrig:FeatureOfInterest_rootZone. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_rootZone_dailyAverageMoisture to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_rootZone. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Rain Total Quantity Per Day Observation"
+    "@value" : "Root Zone Daily Moisture Observation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3id.org/def/caso#Observation"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid61"
+    "@id" : "_:genid77"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
-    "@value" : "A RainTotalQuantityPerDayObservation is computed by the SoftwareAgent Sensor based on observations made by a pluviometer."
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#RootZoneAverageMoisturePerDayObservation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "RootZoneAverageMoisturePerDayObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_RootZone_AverageMoisturePerDay  of the  irrig:FeatureOfInterest_RootZone. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_RootZone_AverageMoisturePerDay to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_RootZone. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Root Zone Moisture Per Day Observation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/def/caso#Observation"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid67"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "en",
-    "@value" : "A RootZoneAverageMoisturePerDayObservation is computed by the SoftwareAgent Sensor."
+    "@value" : "A RootZoneDailyAverageMoistureObservation is computed by the SoftwareAgent Sensor."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary",
@@ -1340,14 +1061,14 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
-    "@value" : "10 cbar is the value of the Tension_VeryHigh Boundary that distinguish the Saturated State from the VeryHigh State of the RootZoneMoistureLevel Property."
+    "@value" : "10 cbar is the value of the Tension_veryHigh Boundary that distinguish the Saturated State from the VeryHigh State of the RootZoneMoistureLevel Property."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#RootZoneMoistureLevelDeduction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "RootZoneMoistureLevelDeduction - a defined class represents act of carrying out an (Observation) Procedure to estimate a State of the irrig:ObservableProperty_RootZone_MoistureLevel of the irrig:FeatureOfInterest_RootZone. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time."
+    "@value" : "RootZoneMoistureLevelDeduction - a defined class represents act of carrying out an (Observation) Procedure to estimate a State of the irrig:ObservableProperty_rootZone_moistureLevel of the irrig:FeatureOfInterest_rootZone. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1357,11 +1078,11 @@
     "@id" : "http://www.w3id.org/def/caso#Deduction"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid73"
+    "@id" : "_:genid83"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
-    "@value" : "A RootZoneMoistureLevelDeduction that made by the Software_Agent."
+    "@value" : "A RootZoneMoistureLevelDeduction that made by the Software_agent."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState",
@@ -1378,111 +1099,55 @@
     "@id" : "http://www.w3id.org/def/caso#State"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid79"
+    "@id" : "_:genid89"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
     "@value" : "The State Saturated of the RootZoneMoistureLevel Property represents a fact that the moisture in rootzone is saturated in water."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/def/irrig#Sensor_Pluviometer_01_Rain_Quantity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4agri#Pluviometer" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Sensor_Pluviometer_01_Rain_Quantity - a pluviometer measures the rain quantity n° 01."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Sensor Pluviometer 01 Rain Quantity"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Sensor_Pluviometer_02_Rain_Quantity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4agri#Pluviometer" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Sensor_Pluviometer_02_Rain_Quantity - a pluviometer measures the rain quantity n° 02."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Sensor Pluviometer 02 Rain Quantity"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4agri#SoilTensiometer" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Sensor_SoilTensiometer_01_Soil30cmDepth_Moisture - a soil tensiometer measures the moisture at 30 cm depth n° 01."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Sensor Soil Tensiometer 01 Soil 30cm Depth Moisture"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4agri#SoilTensiometer" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Sensor_SoilTensiometer_02_Soil30cmDepth_Moisture - a soil tensiometer measures the moisture at 30 cm depth n° 02."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Sensor Soil Tensiometer 02 Soil 30cm Depth Moisture"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4agri#SoilTensiometer" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Sensor_SoilTensiometer_03_Soil30cmDepth_Moisture - a soil tensiometer measures the moisture at 30 cm depth n° 03."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Sensor Soil Tensiometer 03 Soil 30cm Depth Moisture"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4agri#SoilTensiometer" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Sensor_SoilTensiometer_04_Soil60cmDepth_Moisture - a soil tensiometer measures the moisture at 60 cm depth n° 04."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Sensor Soil Tensiometer 04 Soil 60cm Depth Moisture"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4agri#SoilTensiometer" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Sensor_SoilTensiometer_05_Soil60cmDepth_Moisture - a soil tensiometer measures the moisture at 60 cm depth n° 05."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Sensor Soil Tensiometer 05 Soil 60cm Depth Moisture"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4agri#SoilTensiometer" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Sensor_SoilTensiometer_06_Soil60cmDepth_Moisture - a soil tensiometer measures the moisture at 60 cm depth n° 06."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Sensor Soil Tensiometer 06 Soil 60cm Depth Moisture"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#Soil30cmDepthAverageMoisturePerDayObservation",
+  "@id" : "http://www.w3id.org/def/irrig#SleepingDurationObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Soil30cmDepthAverageMoisturePerDayObservation - a defined that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_Soil30cmDepth_AverageMoisturePerDay of the irrig:FeatureOfInterest_Soil30cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_Soil30cmDepth_AverageMoisturePerDay to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_Soil30cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
+    "@value" : "SleepingDurationObservation - a defined class that represents act of carrying out an (Observation) Procedure to calculate the number of sleeping days before the next irrigation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Soil 30cm Depth Average Moisture Per Day Observation"
+    "@value" : "Sleeping Duration Observation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3id.org/def/caso#Observation"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid93"
+    "@id" : "_:genid103"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#Soil30cmDepthDailyAverageMoistureObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Soil30cmDepthDailyAverageMoistureObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_soil30cmDepth_dailyAverageMoisture of the irrig:FeatureOfInterest_soil30cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_soil30cmDepth_dailyAverageMoisture to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_soil30cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Soil 30cm Depth Daily Average Moisture Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/def/caso#Observation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid109"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
-    "@value" : "A Soil30cmDepthAverageMoisturePerDayObservation is computed by the SoftwareAgent Sensor."
+    "@value" : "A Soil30cmDepthDailyAverageMoistureObservation is computed by the SoftwareAgent Sensor."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#Soil30cmDepthMoistureObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Soil30cmDepthAverageMoisturePerDayObservation - a defined class represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_Soil30cmDepth_MoisturePerDay of the  irrig:FeatureOfInterest_Soil30cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the  irrig:ObservableProperty_Soil30cmDepth_MoisturePerDay to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_Soil30cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
+    "@value" : "Soil30cmDepthDailyAverageMoistureObservation - a defined class represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_soil30cmDepth_dailyMoisture of the  irrig:FeatureOfInterest_soil30cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the  irrig:ObservableProperty_soil30cmDepth_dailyMoisture to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_soil30cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1492,39 +1157,39 @@
     "@id" : "http://www.w3id.org/def/caso#Observation"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid99"
+    "@id" : "_:genid115"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
     "@value" : "A Soil30cmDepthMoistureObservation is made by the SoilTensiometer_01 Sensor placed at 30 cm depth in the soil."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/def/irrig#Soil60cmDepthAverageMoisturePerDayObservation",
+  "@id" : "http://www.w3id.org/def/irrig#Soil60cmDepthDailyAverageMoistureObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Soil60cmDepthAverageMoisturePerDayObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_Soil60cmDepth_AverageMoisturePerDay of the irrig:FeatureOfInterest_Soil60cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_Soil60cmDepth_AverageMoisturePerDay to describe what the result is an estimate of, and to the  irrig:FeatureOfInterest_Soil60cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
+    "@value" : "Soil60cmDepthDailyAverageMoistureObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_soil60cmDepth_dailyAverageMoisture of the irrig:FeatureOfInterest_soil60cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_soil60cmDepth_dailyAverageMoisture to describe what the result is an estimate of, and to the  irrig:FeatureOfInterest_soil60cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Soil 60cm Depth Average Moisture Per Day Observation"
+    "@value" : "Soil 60cm Depth Daily Average Moisture Observation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3id.org/def/caso#Observation"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid105"
+    "@id" : "_:genid121"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
-    "@value" : "A Soil60cmDepthAverageMoisturePerDayObservation ismade by the SoftwareAgent Sensor."
+    "@value" : "A Soil60cmDepthAverageDailyMoistureObservation ismade by the SoftwareAgent Sensor."
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#Soil60cmDepthMoistureObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Soil60cmDepthAverageMoisturePerDayObservation - an defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_Soil60cmDepth_MoisturePerDay of the irrig:FeatureOfInterest_Soil60cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_Soil60cmDepth_MoisturePerDay to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_Soil60cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
+    "@value" : "Soil60cmDepthDailyAverageMoistureObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_soil60cmDepth_dailyAverageMoisture of the irrig:FeatureOfInterest_soil60cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_soil60cmDepth_dailyAverageMoisture to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_soil60cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1534,227 +1199,11 @@
     "@id" : "http://www.w3id.org/def/caso#Observation"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid111"
+    "@id" : "_:genid127"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
     "@value" : "A Soil60cmDepthMoistureObservation is made by the Tensiometer Sensor placed at 60 cm depth in the soil."
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_Crop_Growth_Init",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropGrowthState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_Crop_Growth_Init - an instance of the class caso:State that represents the state of crop growth is temporary undefined."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Crop Growth Init"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_Crop_Growth_R1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropGrowthState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_Crop_Growth_R1 - an instance of the class caso:State that represents the crop after reaching the “silking” stage. This stage is also named R1."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Crop Growth R1"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_Crop_Growth_R1d15",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropGrowthState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_Crop_Growth_R1d15 - an instance of the class caso:State that represents the crop 15 days after reaching the “silking” stage."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Crop Growth R1d15"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_Crop_Growth_R5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropGrowthState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_Crop_Growth_R5 - an instance of the class caso:State that represents the crop after reaching the “dent stage within kernel containing 50% moisture”. This stage is also named R5"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Crop Growth R5"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_Crop_Growth_R5hg45",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropGrowthState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_Crop_Growth_R5hg45 - an instance of the class caso:State that represents the crop after reaching the “dent stage within kernel containing 45% moisture”."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Crop Growth R5hg45"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_Crop_Growth_V2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropGrowthState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_Crop_Growth_V2 - an instance of the class caso:State that represents the crop after reaching the crop stage “5 leaves”, also named V2."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Crop Growth V2"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_Crop_Growth_V7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropGrowthState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_Crop_Growth_V7 - an instance of the class caso:State that represents the crop after reaching the crop stage “10 leaves”, also named V7."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Crop Growth V7"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_Crop_Growth_V7d20",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropGrowthState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_Crop_Growth_V7d20 - an instance of the class caso:State that represents the crop 20 days after reaching the stage “10 leaves”."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Crop Growth V7d20"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_Crop_WaterNeed_No",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropWaterNeedState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_Crop_WaterNeed_No - an instance of the class caso:State that represents the crop does not need water."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Crop Water Need No"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_Crop_WaterNeed_Wait",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropWaterNeedState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_Crop_WaterNeed_Wait - an instance of the class caso:State that represents the crop may need water soon."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Crop Water Need Wait"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_Crop_WaterNeed_Yes",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropWaterNeedState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_Crop_WaterNeed_Yes - an instance of the class caso:State that represents the crop needs water."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Crop Water Need Yes"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_Crop_WaterNeed_init",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropWaterNeedState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_Crop_WaterNeed_Init - an instance of the class caso:State that represents the state of crop water need is temporary undefined."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Crop Water Need Init"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_Rain_Intensity_Heavy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RainIntensityState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_Rain_Intensity_Heavy - an instance of the class caso:State that represents the rain intensity is heavy."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Rain Intensity Heavy"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_Rain_Intensity_Init",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RainIntensityState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_Rain_Intensity_Init - an instance of the class caso:State that represents the rain intensity is temporary undefined."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Rain Intensity Init"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_Rain_Intensity_Light",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RainIntensityState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_Rain_Intensity_Light - an instance of the class caso:State that represents the rain intensity is light."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Rain Intensity Light"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_Rain_Intensity_Moderate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RainIntensityState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_Rain_Intensity_Moderate - an instance of the class caso:State that represents the rain intensity is moderate."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Rain Intensity Moderate"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Average",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_RootZone_MoistureLevel_Average - an instance of the class caso:State that represents the root zone moisture level is at the average state."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Root Zone Moisture Level Average"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Dry",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_RootZone_MoistureLevel_Dry - an instance of the class caso:State that represents the root zone moisture level is at the dry state."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Root Zone Moisture Level Dry"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_High",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_RootZone_MoistureLevel_High - an instance of the class caso:State that represents the root zone moisture level is at the high state."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Root Zone Moisture Level High"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Init",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_RootZone_MoistureLevel_Init - an instance of the class caso:State that represents the root zone moisture level is temporary undefined."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Root Zone Moisture Level Init"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Low",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_RootZone_MoistureLevel_Low - an instance of the class caso:State that represents the root zone moisture level is at the low state."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Root Zone Moisture Level Low"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_Saturated",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_RootZone_MoistureLevel_Saturated - an instance of the class caso:State that represents the root zone moisture level is at the saturated state."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Root Zone Moisture Level Saturated"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_VeryHigh",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_RootZone_MoistureLevel_VeryHigh - an instance of the class caso:State that represents the root zone moisture level is at the very high state."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Root Zone Moisture Level Very High"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/def/irrig#State_RootZone_MoistureLevel_VeryLow",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "State_RootZone_MoistureLevel_VeryLow - an instance of the class caso:State that represents the root zone moisture level is at the very low state."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "State Root Zone Moisture Level Very Low"
   } ]
 }, {
   "@id" : "http://www.w3id.org/def/irrig#StressProperty",
@@ -1784,6 +1233,826 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/ssn/Property"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#actuator_wateringValve_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4agri#WateringValve" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Actuator_wateringValve_1 - an actuator controls the valve of a watering device n° 01. The actuator indirectly affects soil moisture."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Actuator Watering  Valve 01 Soil Moisture"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#boundary_rain_quantity_high",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RainIntensityBoundary" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boundary_rain_quantity_high - a boundary line of division between two states of Rain Intensity: Heavy and Moderate.\n\nIn the example of Arvalis' dataset, the value of boundary rain quantity high is 40mm."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boundary Rain Quantity High"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#boundary_rain_quantity_low",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RainIntensityBoundary" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boundary_rain_quantity_low  - a boundary line of division between two states of Rain Intensity: Moderate and Light.\n\nIn the example of Arvalis' dataset, the value of boundary rain quantity low is 10mm."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boundary Rain Quantity Low"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#boundary_rain_quantity_maximum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RainIntensityBoundary" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boundary_rain_quantity_maximum - a boundary line represents the maximal value that rain quantity cannot surpass.\n\nIn the example of Arvalis' dataset, the value of boundary rain quantity maximum is 90.0mm (even more than the word record which is 71.8mm)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boundary Rain Quantity Maximum"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#boundary_rain_quantity_minimum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RainIntensityBoundary" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boundary_rain_quantity_maximum - a boundary line represents the minimal value that rain quantity cannot surpass.\n\nIn the example of Arvalis' dataset, the value of boundary rain quantity minimum is 0mm."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boundary Rain Quantity Minimum"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#boundary_rootZone_tension_average",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boundary_rootZone_tension_average - a boundary line of division between two states of RootZone MoistureLevel: Low and Average.\n\nIn the example of Arvalis' dataset, the value of boundary rootzone tension average is 140.0 cbar or 1400.0 mbar."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boundary RootZone Tension Average"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#boundary_rootZone_tension_high",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boundary_rootZone_tension_high - a boundary line of division between two states of RootZone MoistureLevel: Average and High.\n\nIn the example of Arvalis' dataset, the value of boundary rootzone tension high is 120.0 cbar or 1200.0 mbar."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boundary RootZone Tension High"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#boundary_rootZone_tension_low",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boundary_rootZone_tension_low - a boundary line of division between two states of RootZone MoistureLevel: VeryLow and Low.\n\nIn the example of Arvalis' dataset, the value of boundary rootzone tension low is 150.0 cbar or 1500.0 mbar."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boundary RootZone Tension Low"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#boundary_rootZone_tension_maximum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boundary_rootZone_moistureLevel_maximum - a boundary line represents the maximal value that RootZone Tension cannot surpass.\n\nIn the example of Arvalis' dataset, the value of boundary rootzone tension maximum is 301cbar or 3010 mbar (even more than the possible value of Watermark can evalute which is 300 cbar)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boundary RootZone Tension Maximum"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#boundary_rootZone_tension_minimum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boundary_rootZone_moistureLevel_minimum - a boundary line represents the minimal value that RootZone Tension cannot surpass.\n\nIn the example of Arvalis' dataset, the value of boundary rootzone tension minimum is 0 cbar or 0 mbar."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boundary RootZone Tension Minimum"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#boundary_rootZone_tension_saturation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boundary_rootZone_tension_saturation - a boundary line of division between two states of RootZone MoistureLevel: VeryHigh and Saturated.\n\nIn the example of Arvalis' dataset, the value of boundary rootzone tension saturation is 10.0 cbar or 100.0 mbar."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boundary RootZone Tension Saturation"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#boundary_rootZone_tension_veryHigh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boundary_rootZone_tension_veryHigh - a boundary line of division between two states of RootZone MoistureLevel: High and VeryHigh.\n\nIn the example of Arvalis' dataset, the value of boundary rootzone tension very high is 70.0 cbar or 700.0 mbar."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boundary RootZone Tension VeryHigh"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#boundary_rootZone_tension_veryLow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boundary_rootZone_tension_veryLow - a boundary line of division between two states of RootZone MoistureLevel: Dry and VeryLow.\n\nIn the example of Arvalis' dataset, the value of boundary rootzone tension very low is 160.0 cbar or 1600.0 mbar."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boundary RootZone Tension VeryLow"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_air",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/FeatureOfInterest" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "FeatureOfInterest_air - an instance of the class sosa:FeatureOfInterest that represents air."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feature Of Interest Air"
+  } ],
+  "http://www.w3.org/ns/ssn/hasProperty" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_air_dailyMaxTemperature"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_air_dailyMinTemperature"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_air_temperature"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_crop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/FeatureOfInterest" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "FeatureOfInterest_crop - an instance of the class sosa:FeatureOfInterest that represents crop. The crop needs to be irrigated. \n\nIn the example of Arvalis' dataset, the crop is maize that growth in an Arvalis' plot in 2013."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feature Of Interest Crop"
+  } ],
+  "http://www.w3.org/ns/ssn/hasProperty" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_crop_growth"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_crop_waterNeed"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_delay",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/FeatureOfInterest" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "FeatureOfInterest_delay - an instance of the class sosa:FeatureOfInterest that represents delay phenomenon."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feature Of Interest Delay"
+  } ],
+  "http://www.w3.org/ns/ssn/hasProperty" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_delayDuration"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_rain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/FeatureOfInterest" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "FeatureOfInterest_rain - an instance of the class sosa:FeatureOfInterest that represents rain."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feature Of Interest Rain"
+  } ],
+  "http://www.w3.org/ns/ssn/hasProperty" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_rain_dailyTotalQuantity"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_rain_intensity"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_rain_quantity"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_rootZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/FeatureOfInterest" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "FeatureOfInterest_rootzone - an instance of the class sosa:FeatureOfInterest that represents rootzone soil of a plant."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feature Of Interest Root Zone"
+  } ],
+  "http://www.w3.org/ns/ssn/hasProperty" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_rootZone_dailyAverageMoisture"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_rootZone_moistureLevel"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_sleeping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/FeatureOfInterest" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "FeatureOfInterest_sleeping - an instance of the class sosa:FeatureOfInterest that represents sleeping phenomenon."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feature Of Interest Sleeping"
+  } ],
+  "http://www.w3.org/ns/ssn/hasProperty" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_sleepingDuration"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_soil30cmDepth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/FeatureOfInterest" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "FeatureOfInterest_soil30cmDepth - an instance of the class sosa:FeatureOfInterest that represents soil at 30cm depth."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feature Of Interest Soil at 30cm Depth"
+  } ],
+  "http://www.w3.org/ns/ssn/hasProperty" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_soil30cmDepth_dailyAverageMoisture"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_soil30cmDepth_moisture"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#featureOfInterest_soil60cmDepth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/FeatureOfInterest" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "FeatureOfInterest_soil30cmDepth - an instance of the class sosa:FeatureOfInterest that represents soil at 60cm depth."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feature Of Interest Soil at 60cm Depth"
+  } ],
+  "http://www.w3.org/ns/ssn/hasProperty" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_soil60cmDepth_dailyAverageMoisture"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#observableProperty_soil60cmDepth_moisture"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#observableProperty_air_dailyMaxTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#TemperatureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ObservableProperty_air_dailyMaxTemperature - an instance of the class irrig:TemperatureProperty and sosa:ObservableProperty that represents the observable property of max temperature per day of an air feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observable Property Air Daily Max Temperature"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#observableProperty_air_dailyMinTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#TemperatureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ObservableProperty_air_dailyMinTemperature - an instance of the class irrig:TemperatureProperty and sosa:ObservableProperty that represents the observable property of min temperature per day of an air feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observable Property Air Daily Min Temperature"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#observableProperty_air_temperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#TemperatureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ObservableProperty_air_temperature - an instance of the class irrig:TemperatureProperty and sosa:ObservableProperty that represents the observable property of temperature of an air feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observable Property Air Temperature"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#observableProperty_crop_growth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/caso#Property", "http://www.w3id.org/def/irrig#GrowthProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ObservableProperty_crop_growth - an instance of the class irrig:GrowthProperty and caso:Property that represents the observable property of growth of a crop feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observable Property Crop Growth"
+  } ],
+  "http://www.w3id.org/def/caso#hasState" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_init"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_r1"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_r1d15"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_r5"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_r5hg45"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_v2"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_v7"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_v7d20"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#observableProperty_crop_stage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/caso#Property", "http://www.w3id.org/def/irrig#GrowthProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ObservableProperty_crop_stage - an instance of the class irrig:GrowthProperty and caso:Property that represents the stage observable property of a crop feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observable Property Crop Stage"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#observableProperty_crop_waterNeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/caso#Property", "http://www.w3id.org/def/irrig#StressProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ObservableProperty_crop_waterNeed - an instance of the class irrig:StressProperty and caso:Property that represents the observable property of water need of an crop feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observable Property Crop Water Need"
+  } ],
+  "http://www.w3id.org/def/caso#hasState" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_waterNeed_init"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_waterNeed_no"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_waterNeed_unavailable"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_waterNeed_yes"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#observableProperty_delayDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/caso#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Number of days that an watering is delayed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Observable Property Irrigation Delay"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#observableProperty_rain_dailyTotalQuantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#AmountProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ObservableProperty_rain_dailyTotalQuantity - an instance of the class irrig:AmountProperty and sosa:ObservableProperty that represents the observable property of total quantity per day of a rain feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observable Property Rain Daily Total Quantity"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#observableProperty_rain_intensity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/caso#Property", "http://www.w3id.org/def/irrig#IntensityProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ObservableProperty_rain_intensity - an instance of the class irrig:IntensityProperty and caso:Property that represents the intensity observable property of a rain feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observable Property Rain Intensity"
+  } ],
+  "http://www.w3id.org/def/caso#hasState" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_rain_intensity_heavy"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_rain_intensity_init"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_rain_intensity_light"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_rain_intensity_moderate"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#observableProperty_rain_quantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#AmountProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ObservableProperty_rain_quantity - an instance of the class irrig:AmountProperty and sosa:ObservableProperty that represents the quantity observable property of a rain feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observable Property Rain Quantity"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#observableProperty_rootZone_dailyAverageMoisture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#MoistureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ObservableProperty_rootZone_dailyAverageMoisture - an instance of the class irrig:MoistureProperty and sosa:ObservableProperty that represents the observable property of average moisture per day of a root zone feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observable Property Root Zone Daily Average Moisture"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#observableProperty_rootZone_moistureLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/caso#Property", "http://www.w3id.org/def/irrig#MoistureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ObservableProperty_rootZone_moistureLevel - an instance of the class irrig:MoistureProperty and caso:Property that represents the observable property of moisture level of a root zone feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observable Property Root Zone Moisture Level"
+  } ],
+  "http://www.w3id.org/def/caso#hasState" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_average"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_dry"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_high"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_init"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_low"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_saturated"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_veryHigh"
+  }, {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_veryLow"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#observableProperty_sleepingDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/caso#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Number of days that the system is waiting until the next irrigation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observable Property Sleeping Duration"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#observableProperty_soil30cmDepth_dailyAverageMoisture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#MoistureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ObservableProperty_soil30cmDepth_dailyAverageMoisture - an instance of the class irrig:MoistureProperty and sosa:ObservableProperty that represents the observable property of average moisture per day of a soil 30cm depth feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observable Property Soil 30cm Depth Daily Average Moisture"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#observableProperty_soil30cmDepth_moisture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#MoistureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ObservableProperty_soil30cmDepth_moisture - an instance of the class irrig:MoistureProperty and sosa:ObservableProperty that represents the observable property of moisture of a soil 30cm depth feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observable Property Soil 30cm Depth Moisture"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#observableProperty_soil60cmDepth_dailyAverageMoisture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#MoistureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ObservableProperty_soil60cmDepth_dailyAverageMoisture - an instance of the class irrig:MoistureProperty and sosa:ObservableProperty that represents the observable property of average moisture per day of a soil 60cm depth feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observable Property Soil 60cm Depth Daily Average Moisture"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#observableProperty_soil60cmDepth_moisture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3id.org/def/irrig#MoistureProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ObservableProperty_soil60cmDepth_moisture - an instance of the class irrig:MoistureProperty and sosa:ObservableProperty that represents the observable property of moisture of a soil 60cm depth feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observable Property Soil 60cm Depth Moisture"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#pluviometer_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4agri#Pluviometer" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Pluviometer_1 - a pluviometer measures the rain quantity n° 01."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pluviometer 1"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#pluviometer_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4agri#Pluviometer" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Pluviometer_2 - a pluviometer measures the rain quantity n° 02."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pluviometer 2"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#soilTensiometer_1_30cm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4agri#SoilTensiometer" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "SoilTensiometer_1_30cm - a soil tensiometer measures the moisture at 30 cm depth n° 01."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Soil Tensiometer 1 at 30cm Depth"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#soilTensiometer_2_30cm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4agri#SoilTensiometer" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "SoilTensiometer_2_30cm - a soil tensiometer measures the moisture at 30 cm depth n° 02."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Soil Tensiometer 2 at 30cm Depth"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#soilTensiometer_3_30cm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4agri#SoilTensiometer" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "SoilTensiometer_3_30cm - a soil tensiometer measures the moisture at 30 cm depth n° 03."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Soil Tensiometer 3 at 30cm Depth"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#soilTensiometer_4_60cm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4agri#SoilTensiometer" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "SoilTensiometer_4_60cm - a soil tensiometer measures the moisture at 60 cm depth n° 04."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Soil Tensiometer 4 at 60cm Depth"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#soilTensiometer_5_60cm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4agri#SoilTensiometer" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "SoilTensiometer_5_60cm - a soil tensiometer measures the moisture at 60 cm depth n° 05."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Soil Tensiometer 5 at 60cm Depth"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#soilTensiometer_6_60cm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4agri#SoilTensiometer" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "SoilTensiometer_6_60cm - a soil tensiometer measures the moisture at 60 cm depth n° 06."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Soil Tensiometer 6 at 60cm Depth"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_init",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropGrowthState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_crop_growth_init - an instance of the class caso:State that represents the state of crop growth is temporary undefined."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Crop Growth Init"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_r1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropGrowthState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_crop_growth_r1 - an instance of the class caso:State that represents the crop after reaching the “silking” stage. This stage is also named R1."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Crop Growth R1"
+  } ],
+  "http://www.w3id.org/def/caso#greaterThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_v7d20"
+  } ],
+  "http://www.w3id.org/def/caso#lesserThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_r1d15"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_r1d15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropGrowthState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_crop_growth_r1d15 - an instance of the class caso:State that represents the crop 15 days after reaching the “silking” stage."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Crop Growth R1d15"
+  } ],
+  "http://www.w3id.org/def/caso#greaterThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_r1"
+  } ],
+  "http://www.w3id.org/def/caso#lesserThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_r5"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_r5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropGrowthState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_crop_growth_r5 - an instance of the class caso:State that represents the crop after reaching the “dent stage within kernel containing 50% moisture”. This stage is also named R5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Crop Growth R5"
+  } ],
+  "http://www.w3id.org/def/caso#greaterThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_r1d15"
+  } ],
+  "http://www.w3id.org/def/caso#lesserThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_r5hg45"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_r5hg45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropGrowthState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_crop_growth_r5hg45 - an instance of the class caso:State that represents the crop after reaching the “dent stage within kernel containing 45% moisture”."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Crop Growth R5hg45"
+  } ],
+  "http://www.w3id.org/def/caso#greaterThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_r5"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_v2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropGrowthState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_crop_growth_v2 - an instance of the class caso:State that represents the crop after reaching the crop stage “5 leaves”, also named V2."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Crop Growth V2"
+  } ],
+  "http://www.w3id.org/def/caso#lesserThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_v7"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_v7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropGrowthState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_crop_growth_v7 - an instance of the class caso:State that represents the crop after reaching the crop stage “10 leaves”, also named V7."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Crop Growth V7"
+  } ],
+  "http://www.w3id.org/def/caso#greaterThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_v2"
+  } ],
+  "http://www.w3id.org/def/caso#lesserThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_v7d20"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_v7d20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropGrowthState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_crop_growth_v7d20 - an instance of the class caso:State that represents the crop 20 days after reaching the stage “10 leaves”."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Crop Growth V7d20"
+  } ],
+  "http://www.w3id.org/def/caso#greaterThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_v7"
+  } ],
+  "http://www.w3id.org/def/caso#lesserThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_crop_growth_r1"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_crop_waterNeed_init",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropWaterNeedState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_crop_waterNeed_init - an instance of the class caso:State that represents the state of crop water need is temporary undefined."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Crop Water Need Init"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_crop_waterNeed_no",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropWaterNeedState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_crop_waterNeed_no - an instance of the class caso:State that represents the crop does not need water."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Crop Water Need No"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_crop_waterNeed_notApplicable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropWaterNeedState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_crop_waterNeed_notApplicable - an instance of the class caso:State that represents the state of crop water need has not been evaluated yet."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Crop Water Need Not Applicable"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_crop_waterNeed_unavailable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropWaterNeedState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_crop_waterNeed_unavailable - an instance of the class caso:State that represents the crop may need water soon."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Crop Water Need Unavailable"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_crop_waterNeed_yes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#CropWaterNeedState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_crop_waterNeed_yes - an instance of the class caso:State that represents the crop needs water."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Crop Water Need Yes"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_rain_intensity_heavy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RainIntensityState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_rain_intensity_heavy - an instance of the class caso:State that represents the rain intensity is heavy.\n\nIn the example of Arvalis' dataset, this RainIntensity property reaches this state the open upper boundary is RQ_maximum and the close lower boundary is RQ_high."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Rain Intensity Heavy"
+  } ],
+  "http://www.w3id.org/def/caso#greaterThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_rain_intensity_moderate"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_rain_intensity_init",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RainIntensityState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_rain_intensity_init - an instance of the class caso:State that represents the rain intensity is temporary undefined."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Rain Intensity Init"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_rain_intensity_light",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RainIntensityState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_rain_intensity_light - an instance of the class caso:State that represents the rain intensity is light.\n\nIn the example of Arvalis' dataset, this RainIntensity property reaches this state the open upper boundary is RQ_low and the close lower boundary is RQ_minimum."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Rain Intensity Light"
+  } ],
+  "http://www.w3id.org/def/caso#lesserThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_rain_intensity_moderate"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_rain_intensity_moderate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RainIntensityState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_rain_intensity_moderate - an instance of the class caso:State that represents the rain intensity is moderate.\n\nIn the example of Arvalis' dataset, this RainIntensity property reaches this state the open upper boundary is RQ_high and the close lower boundary is RQ_low."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Rain Intensity Moderate"
+  } ],
+  "http://www.w3id.org/def/caso#greaterThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_rain_intensity_light"
+  } ],
+  "http://www.w3id.org/def/caso#lesserThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_rain_intensity_heavy"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_average",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_rootZone_moistureLevel_average - an instance of the class caso:State that represents the root zone moisture level is at the average state.\n\nIn the example of Arvalis' dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_average and the close lower boundary is ST_high."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Root Zone Moisture Level Average"
+  } ],
+  "http://www.w3id.org/def/caso#greaterThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_low"
+  } ],
+  "http://www.w3id.org/def/caso#lesserThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_high"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_dry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_rootZone_moistureLevel_dry - an instance of the class caso:State that represents the root zone moisture level is at the dry state.\n\nIn the example of Arvalis' dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_maximum and the close lower boundary is ST_very_low."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Root Zone Moisture Level Dry"
+  } ],
+  "http://www.w3id.org/def/caso#lesserThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_veryLow"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_high",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_rootZone_moistureLevel_high - an instance of the class caso:State that represents the root zone moisture level is at the high state.\n\nIn the example of Arvalis' dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_high and the close lower boundary is ST_very_high."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Root Zone Moisture Level High"
+  } ],
+  "http://www.w3id.org/def/caso#greaterThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_average"
+  } ],
+  "http://www.w3id.org/def/caso#lesserThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_veryHigh"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_init",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_rootZone_moistureLevel_init - an instance of the class caso:State that represents the root zone moisture level is temporary undefined."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Root Zone Moisture Level Init"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_low",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_rootZone_moistureLevel_low - an instance of the class caso:State that represents the root zone moisture level is at the low state.\n\nIn the example of Arvalis' dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_low and the close lower boundary is ST_average."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Root Zone Moisture Level Low"
+  } ],
+  "http://www.w3id.org/def/caso#greaterThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_veryLow"
+  } ],
+  "http://www.w3id.org/def/caso#lesserThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_average"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_saturated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_rootZone_moistureLevel_saturated - an instance of the class caso:State that represents the root zone moisture level is at the saturated state.\n\nIn the example of Arvalis' dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_saturated and the close lower boundary is ST_minimum."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Root Zone Moisture Level Saturated"
+  } ],
+  "http://www.w3id.org/def/caso#greaterThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_veryHigh"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_veryHigh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_rootZone_moistureLevel_veryHigh - an instance of the class caso:State that represents the root zone moisture level is at the very high state.\n\nIn the example of Arvalis' dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_very_high and the close lower boundary is ST_saturated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Root Zone Moisture Level Very High"
+  } ],
+  "http://www.w3id.org/def/caso#greaterThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_high"
+  } ],
+  "http://www.w3id.org/def/caso#lesserThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_saturated"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_veryLow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "State_rootZone_moistureLevel_veryLow - an instance of the class caso:State that represents the root zone moisture level is at the very low state.\n\nIn the example of Arvalis' dataset, this RootZoneMoistureLevel property reaches this state the open upper boundary is ST_very_low and the close lower boundary is ST_low."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Root Zone Moisture Level Very Low"
+  } ],
+  "http://www.w3id.org/def/caso#greaterThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_dry"
+  } ],
+  "http://www.w3id.org/def/caso#lesserThan" : [ {
+    "@id" : "http://www.w3id.org/def/irrig#state_rootZone_moistureLevel_low"
   } ]
 }, {
   "@id" : "https://w3id.org/def/saref4agri#Pluviometer",
