@@ -30,6 +30,9 @@
     "license" : {
       "@id" : "http://purl.org/dc/terms/license"
     },
+    "RootZoneDailyAverageMoistureObservation" : {
+      "@id" : "http://www.w3id.org/def/irrig#RootZoneDailyAverageMoistureObservation"
+    },
     "Soil60cmDepthMoistureObservation" : {
       "@id" : "http://www.w3id.org/def/irrig#Soil60cmDepthMoistureObservation"
     },
@@ -42,6 +45,10 @@
     "hasName" : {
       "@id" : "https://w3id.org/saref#hasName",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "greaterThan" : {
+      "@id" : "http://www.w3id.org/def/caso#greaterThan",
+      "@type" : "@id"
     },
     "actsOnProperty" : {
       "@id" : "http://www.w3.org/ns/sosa/actsOnProperty",
@@ -57,6 +64,9 @@
       "@id" : "http://www.w3id.org/def/caso#hasOpenUpperBoundary",
       "@type" : "@id"
     },
+    "SleepingDurationObservation" : {
+      "@id" : "http://www.w3id.org/def/irrig#SleepingDurationObservation"
+    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
@@ -66,6 +76,10 @@
     },
     "Thermometer" : {
       "@id" : "https://w3id.org/def/saref4agri#Thermometer"
+    },
+    "wasInfluencedBy" : {
+      "@id" : "http://www.w3.org/ns/prov#wasInfluencedBy",
+      "@type" : "@id"
     },
     "RainQuantityObservation" : {
       "@id" : "http://www.w3id.org/def/irrig#RainQuantityObservation"
@@ -92,6 +106,10 @@
     "note" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#note"
     },
+    "lesserThan" : {
+      "@id" : "http://www.w3id.org/def/caso#lesserThan",
+      "@type" : "@id"
+    },
     "RootZoneMoistureLevelState" : {
       "@id" : "http://www.w3id.org/def/irrig#RootZoneMoistureLevelState"
     },
@@ -105,14 +123,12 @@
       "@id" : "http://www.w3id.org/def/caso#hasClosedLowerBoundary",
       "@type" : "@id"
     },
+    "wasDerivedFrom" : {
+      "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
+      "@type" : "@id"
+    },
     "Soil30cmDepthMoistureObservation" : {
       "@id" : "http://www.w3id.org/def/irrig#Soil30cmDepthMoistureObservation"
-    },
-    "RainTotalQuantityPerDayObservation" : {
-      "@id" : "http://www.w3id.org/def/irrig#RainTotalQuantityPerDayObservation"
-    },
-    "RootZoneAverageMoisturePerDayObservation" : {
-      "@id" : "http://www.w3id.org/def/irrig#RootZoneAverageMoisturePerDayObservation"
     },
     "preferredNamespacePrefix" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
@@ -128,9 +144,6 @@
     },
     "RainIntensityBoundary" : {
       "@id" : "http://www.w3id.org/def/irrig#RainIntensityBoundary"
-    },
-    "Soil30cmDepthAverageMoisturePerDayObservation" : {
-      "@id" : "http://www.w3id.org/def/irrig#Soil30cmDepthAverageMoisturePerDayObservation"
     },
     "Property" : {
       "@id" : "http://www.w3.org/ns/ssn/Property"
@@ -174,6 +187,9 @@
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
+    "Soil60cmDepthDailyAverageMoistureObservation" : {
+      "@id" : "http://www.w3id.org/def/irrig#Soil60cmDepthDailyAverageMoistureObservation"
+    },
     "ObservableProperty" : {
       "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
     },
@@ -186,11 +202,17 @@
     "IrrigationActuation" : {
       "@id" : "http://www.w3id.org/def/irrig#IrrigationActuation"
     },
-    "Soil60cmDepthAverageMoisturePerDayObservation" : {
-      "@id" : "http://www.w3id.org/def/irrig#Soil60cmDepthAverageMoisturePerDayObservation"
+    "DelayDurationObservation" : {
+      "@id" : "http://www.w3id.org/def/irrig#DelayDurationObservation"
     },
     "Actuation" : {
       "@id" : "http://www.w3id.org/def/caso#Actuation"
+    },
+    "RainDailyTotalQuantityObservation" : {
+      "@id" : "http://www.w3id.org/def/irrig#RainDailyTotalQuantityObservation"
+    },
+    "Soil30cmDepthDailyAverageMoistureObservation" : {
+      "@id" : "http://www.w3id.org/def/irrig#Soil30cmDepthDailyAverageMoistureObservation"
     },
     "description" : {
       "@id" : "http://purl.org/dc/elements/1.1/description"
