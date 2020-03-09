@@ -163,8 +163,9 @@
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#AmountProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <rdfs:comment>AmountProperty - Amount aspect of an entity representing the quantity of the entity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">AmountProperty - Amount or quantity aspect of an entity. The amount aspect of an entity is intrinsic and cannot exist without the entity. The value of the amount should be expressed by a qualitative value such as a state or by a quantitative value.</rdfs:comment>
         <rdfs:label>Amount Property</rdfs:label>
+        <skos:example xml:lang="en">RainQuantity is an AmountProperty representing the amount of rain.</skos:example>
     </owl:Class>
     
 
@@ -188,9 +189,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Deduction"/>
-        <rdfs:comment xml:lang="en">CropGrowthDeduction - a defined class represents act of carrying out an (Observation) Procedure to estimate a State of the irrig:ObservableProperty_crop_growth of the irrig:FeatureOfInterest_crop. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time.</rdfs:comment>
+        <rdfs:comment xml:lang="en">CropGrowthDeduction - A defined class that represents the act of carrying out a procedure to estimate the state of the growth property for the crop entity. The growth property is represented by the individual irrig:observableProperty_crop_growth. The crop entity is represented by the individual irrig:featureOfInterest_crop. Two necessary and sufficient conditions are defined: (1) All instances of this class are linked to the individual irrig:observableProperty_crop_growth via the sosa:observedProperty object property; (2) All instance of this class are linked to the individual irrig:featureOfInterest_crop via the sosa:hasFeatureOfInterest object property. Additionally, each instance of this class is linked to an instance of the class irrig:CropGrowthState by the caso:hasResultState object property, is linked to an instance of the class irrig:CropGrowthObservation by the prov:wasInformedBy object property, and is linked to a sensor to describe the agent that made the deduction.</rdfs:comment>
         <rdfs:label xml:lang="en">Crop Growth Deduction</rdfs:label>
-        <skos:example xml:lang="en">A CropGrowthDeduction is made by the Software_agent Sensor based on human observation</skos:example>
+        <skos:example xml:lang="en">A CropGrowthDeduction is made by an inference engine based on human observation.</skos:example>
     </owl:Class>
     
 
@@ -214,9 +215,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">CropGrowthObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_crop_growth of the irrig:FeatureOfInterest_crop. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_crop_growth to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_crop. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">CropGrowthObservation - A defined class that represents the act of carrying out a procedure (observation) to estimate the value of the growth property for the crop entity. The growth property is represented by the individual irrig:observableProperty_crop_growth. The crop entity is represented by the individual irrig:featureOfInterest_crop. Two necessary and sufficient conditions are defined: (1) All instances of this class are linked to the individual irrig:observableProperty_crop_growth} via the sosa:observedProperty object property; (2) All instance of this class are linked to the individual irrig:featureOfInterest_crop} via the sosa:hasFeatureOfInterest object property. Additionally, each instance of this class is linked to a sensor to describe the agent that made the observation.</rdfs:comment>
         <rdfs:label xml:lang="en">Crop Growth Observation</rdfs:label>
-        <skos:example xml:lang="en">A CropGrowthObservation that made by the CatherineRoussey Sensor (human observation or biology sensor).</skos:example>
+        <skos:example xml:lang="en">A CropGrowthObservation that made by a famer called John Doe.</skos:example>
     </owl:Class>
     
 
@@ -225,9 +226,9 @@
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#CropGrowthState">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#State"/>
-        <rdfs:comment xml:lang="en">CropGrowthState - A qualitative value of the CropGrowth Property which changes over time, summarizing a set of information about that Property. To evaluate the State of the Property, some Boundaries are defined.</rdfs:comment>
+        <rdfs:comment xml:lang="en">CropGrowthState - A qualitative value of the crop growth property, which changes over time, summarising a set of information about that property. To evaluate the state of the property, some boundaries need to be defined.</rdfs:comment>
         <rdfs:label xml:lang="en">Crop Growth State</rdfs:label>
-        <skos:example xml:lang="en">A State V2 is linked to an individual of  CropGrowth Property dedicated to maize crop. The V2 State is reached when two leaves are fully emerged with collars visible in a maize plant. The State appearance could be evaluated by human observation or by automatic method like the Growing Degree Unit (GDU).</skos:example>
+        <skos:example xml:lang="en">A state V2 is linked to an individual of the CropGrowth property dedicated to maize crop. The state V2 is reached when two leaves have fully emerged with collars visible in a maize plant.</skos:example>
     </owl:Class>
     
 
@@ -253,7 +254,7 @@
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Deduction"/>
         <rdfs:comment xml:lang="en">CropWaterNeedDeduction - a defined class represents act of carrying out an (Observation) Procedure to estimate a State of the irrig:ObservableProperty_crop_waterNeed of the irrig:FeatureOfInterest_crop. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time.</rdfs:comment>
         <rdfs:label xml:lang="en">Crop Water Need Deduction</rdfs:label>
-        <skos:example xml:lang="en">A CropWaterNeedDeduction that made by the Software_agent Sensor based on observations made by tensiometer sensor</skos:example>
+        <skos:example xml:lang="en">A CropWaterNeedDeduction that made by an inference engine based on the state of the other properties such as RainIntensity property.</skos:example>
     </owl:Class>
     
 
@@ -262,9 +263,9 @@
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#CropWaterNeedState">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#State"/>
-        <rdfs:comment xml:lang="en">CropWaterNeedState - A qualitative value of the CropWaterNeed Property which changes over time, summarizing a set of information about that Property. To evaluate the State of the Property, some Boundaries are defined.</rdfs:comment>
+        <rdfs:comment xml:lang="en">CropWaterNeedState - A qualitative value of the crop water need property, which changes over time, summarizing a set of information about that property. To evaluate the state of the property, some boundaries need to be defined.</rdfs:comment>
         <rdfs:label xml:lang="en">Crop Water Need State</rdfs:label>
-        <skos:example xml:lang="en">Example: The State No of the CropWaterNeed Property represents the fact that the crop does not need water. The State Yes of the CropWaterNeed Property represents the fact that the crop needs extra water.</skos:example>
+        <skos:example xml:lang="en">The state No of the crop water need Property represents the fact that the crop does not need water.</skos:example>
     </owl:Class>
     
 
@@ -288,8 +289,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">DelayDurationObservation - a defined class that represents act of carrying out an (Observation) Procedure to calculate the number of delay days.</rdfs:comment>
+        <rdfs:comment xml:lang="en">DelayDurationObservation - a defined class that represents act of carrying out a procedure (observation) to calculate the number of delay days of the duration property for the delay entity. Delay days are the number of days that the system postpones the schedule. The duration property is represented by the individual irrig:observableProperty_delayDuration. The delay entity is represented by the individual irrig:featureOfInterest_delay. Two necessary and sufficient conditions are defined: (1) All instances of this class are linked to the individual irrig:observableProperty_delayDuration via the sosa:observedProperty object property; (2) All instance of this class are linked to the individual irrig:featureOfInterest_delay} via the sosa:hasFeatureOfInterest object property. Additionally, each instance of this class is linked to a sensor to describe the agent that made the observation.</rdfs:comment>
         <rdfs:label>Delay Duration Observation</rdfs:label>
+        <skos:example xml:lang="en">A delay duration to postpone the irrigation schedule is two days.</skos:example>
     </owl:Class>
     
 
@@ -298,9 +300,9 @@
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#GrowthProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <rdfs:comment xml:lang="en">GrowthProperty - Growth aspect (characteristic dimension) of an entity representing the physical development or the increasing in amount, number or size of the entity. The Growth aspect of an entity is intrinsic to and cannot exist without the entity. The Growth quality values should be expressed by a qualitative value such as States or by a quantitative value.</rdfs:comment>
+        <rdfs:comment xml:lang="en">GrowthProperty - Growth aspect of an entity representing the physical development or the increasing of amount, number, or size of the entity. The growth aspect of an entity is intrinsic and cannot exist without the entity. The growth quality should be expressed by a qualitative value such as a state or by a quantitative value.</rdfs:comment>
         <rdfs:label xml:lang="en">Growth Property</rdfs:label>
-        <skos:example xml:lang="en">CropGrowth is a GrowthProperty representing the physical development of crop.</skos:example>
+        <skos:example xml:lang="en">CropGrowth is a growth property representing the development of a crop.</skos:example>
     </owl:Class>
     
 
@@ -309,9 +311,9 @@
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#IntensityProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <rdfs:comment xml:lang="en">IntensityProperty - Intensity aspect of an entity representing the strength effect or the level of power per unit area of the entity. The Intensity aspect of the entity is intrinsic to and cannot exist without the entity. The Intensity quality value should be expressed by a qualitative value such as States or by a quantitative value.</rdfs:comment>
+        <rdfs:comment xml:lang="en">IntensityProperty - Intensity aspect of an entity, that is,  the strong effect or the level of power per unit area of the entity. The intensity aspect of an entity is intrinsic and cannot exist without the entity. The intensity quality should be expressed by a qualitative value such as a state or by a quantitative value.</rdfs:comment>
         <rdfs:label xml:lang="en">Intensity Property</rdfs:label>
-        <skos:example xml:lang="en">RainIntensity is a IntensityProperty representing the strength effect of rain.</skos:example>
+        <skos:example xml:lang="en">RainIntensity is an intensity representing the strength of rain.</skos:example>
     </owl:Class>
     
 
@@ -366,7 +368,7 @@
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#MoistureProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <rdfs:comment xml:lang="en">MoistureProperty - Moisture aspect of an entity representing the amount of water available inside the entity. The Moisture aspect of the entity is intrinsic to and cannot exist without the entity. The Moisture quality value should be expressed by a qualitative value such as States or by a quantitative value.</rdfs:comment>
+        <rdfs:comment xml:lang="en">MoistureProperty - Moisture aspect of an entity representing the amount of water available inside the entity. The moisture aspect of the entity is intrinsic to and cannot exist without the entity. The moisture quality should be expressed by a qualitative value such as States or by a quantitative value.</rdfs:comment>
         <rdfs:label xml:lang="en">Moisture Property</rdfs:label>
         <skos:example xml:lang="en">RootZoneMoistureLevel is a MoistureProperty representing the amount of water available around the soil’s root zone area of a plant.</skos:example>
     </owl:Class>
@@ -394,7 +396,7 @@
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
         <rdfs:comment xml:lang="en">RainQuantityObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_rain_dailyTotalQuantity of the irrig:FeatureOfInterest_rain. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_rain_dailyTotalQuantity to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_rain. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
         <rdfs:label xml:lang="en">Rain Daily Total Quantity Observation</rdfs:label>
-        <skos:example xml:lang="en">A RainDailyTotalQuantityObservation is computed by the SoftwareAgent Sensor based on observations made by a pluviometer.</skos:example>
+        <skos:example xml:lang="en">A RainDailyTotalQuantityObservation is based on observations made by an aggregator.</skos:example>
     </owl:Class>
     
 
@@ -403,9 +405,9 @@
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#RainIntensityBoundary">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Boundary"/>
-        <rdfs:comment xml:lang="en">RainIntensityBoundary - Limit of a State of the RainIntensity Property. The value of the limit is a quantitative data. To store the value, the boundaryValue data property is used.</rdfs:comment>
+        <rdfs:comment xml:lang="en">RainIntensityBoundary - Limit of a state of the rain intensity property. The value of the limit is quantitative. The irrig:boundaryValue data property is used to store this value.</rdfs:comment>
         <rdfs:label xml:lang="en">Rain Intensity Boundary</rdfs:label>
-        <skos:example xml:lang="en">10 mm is the value of the Quantity_low Boundary that distinguish the Light State from the Moderate State of the RainIntensity Property.</skos:example>
+        <skos:example xml:lang="en">10 mm is the value of the low boundary that distinguishes the light state from the moderate state of the rain intensity property.</skos:example>
     </owl:Class>
     
 
@@ -429,9 +431,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Deduction"/>
-        <rdfs:comment xml:lang="en">RainIntensityDeduction - a defined class that represents act of carrying out an (Observation) Procedure to estimate a State of the irrig:Observable_rain_intensity of the irrig:FeatureOfInterest_rain. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time.</rdfs:comment>
+        <rdfs:comment xml:lang="en">RainIntensityDeduction - a defined class that represents act of carrying out a procedure to estimate the state of the intensity property for the rain entity. The intensity property is represented by the individual irrig:observableProperty_rain_intensity. The rain entity is represented by the individual irrig:featureOfInterest_rain. Two necessary and sufficient conditions are defined: (1) All instances of this class are linked to the individual irrig:observableProperty_rain_intensity via the sosa:observedProperty object property; (2) All instances of this class are linked to the individual irrig:featureOfInterest_rain via the sosa:hasFeatureOfInterest object property. Additionally, each instance of this class is linked to an instance of the class irrig:RainIntensityState by the caso:hasResultState object property; is linked to an instance of the class irrig:RainDailyTotalQuantityObservation by the prov:wasInformedBy object property; and is linked to a sensor to describe the agent that made the deduction.</rdfs:comment>
         <rdfs:label xml:lang="en">Rain Intensity Deduction</rdfs:label>
-        <skos:example xml:lang="en">A RainIntensityDeduction that made by the Software_agent Sensor based on observations made by a pluviometer sensor</skos:example>
+        <skos:example xml:lang="en">A RainIntensityDeduction that made by an inference engine based on observations made by an aggregator.</skos:example>
     </owl:Class>
     
 
@@ -471,9 +473,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#State"/>
-        <rdfs:comment xml:lang="en">RainIntensityState - A qualitative value of the RainIntensity Property which changes over time, summarizing a set of information about that Property. To evaluate the State of the Property, some Boundaries are defined.</rdfs:comment>
+        <rdfs:comment xml:lang="en">RainIntensityState - Qualitative value of the rain intensity property, which changes over time, summarizing a set of information about that property. To evaluate the state of the property, some boundaries need to be defined.</rdfs:comment>
         <rdfs:label xml:lang="en">Rain Intensity State</rdfs:label>
-        <skos:example xml:lang="en">Example: The State Light of the RainIntensity Property represents a fact that there is no enought rain to take any decision about irrigation.</skos:example>
+        <skos:example xml:lang="en">The state Light of the RainIntensity property represents the fact that the rain has no impact on irrigation decisions.</skos:example>
     </owl:Class>
     
 
@@ -497,9 +499,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">RainQuantityObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of irrig:ObservableProperty_rain_quantity of the irrig:FeatureOfInterest_rain. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_rain_quantity to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_rain. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">RainQuantityObservation - A defined class that represents the act of carrying out a procedure (observation) to estimate the value of the quantity property for the rain entity. The quantity property is represented by the individual irrig:observableProperty_rain_quantity. The rain entity is represented by the individual irrig:featureOfInterest_rain. Two necessary and sufficient conditions are defined: (1) All instances of this class are linked to the individual irrig:observableProperty_rain_quantity via the sosa:observedProperty object property; (2) All instances of this class are linked to the individual irrig:featureOfInterest_rain via the sosa:hasFeatureOfInterest object property. Additionally, each instance of this class is linked to a sensor to describe the agent that made the observation.</rdfs:comment>
         <rdfs:label xml:lang="en">Rain Quantity Observation</rdfs:label>
-        <skos:example xml:lang="en">A RainQuantityObservation that made by the Pluviometer Sensor.</skos:example>
+        <skos:example xml:lang="en">A RainQuantityObservation that made by a pluviometer.</skos:example>
     </owl:Class>
     
 
@@ -523,9 +525,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">RootZoneDailyAverageMoistureObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_rootZone_dailyAverageMoisture  of the  irrig:FeatureOfInterest_rootZone. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_rootZone_dailyAverageMoisture to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_rootZone. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">RootZoneDailyAverageMoistureObservation - A defined class that represents the act of carrying out a procedure (observation) to estimate the value of the daily average moisture property for the root zone entity. The daily moisture property is represented by the individual irrig:observableProperty_rootZone_dailyAverageMoisture. The root zone entity is represented by the individual irrig:featureOfInterest_rootZone. Two necessary and sufficient conditions are defined: (1) All instances of this class are linked to the individual irrig:observableProperty_rootZone_dailyAverageMoisture via the sosa:observedProperty object property; (2) All instances of this class are linked to the individual irrig:featureOfInterest_rootZone via the sosa:hasFeatureOfInterest object property. Additionally, each instance of this class is linked to a sensor to describe the agent that made the observation.</rdfs:comment>
         <rdfs:label xml:lang="en">Root Zone Daily Moisture Observation</rdfs:label>
-        <skos:example xml:lang="en">A RootZoneDailyAverageMoistureObservation is computed by the SoftwareAgent Sensor.</skos:example>
+        <skos:example xml:lang="en">A RootZoneDailyAverageMoistureObservation is computed by an aggregator.</skos:example>
     </owl:Class>
     
 
@@ -534,9 +536,9 @@
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Boundary"/>
-        <rdfs:comment xml:lang="en">RootZoneMoistureLevelBoundary - Limit of a State of the RootZoneMoistureLevel Property. The value of the limit is a quantitative data. To store the value, the boundaryValue data property is used.</rdfs:comment>
+        <rdfs:comment xml:lang="en">RootZoneMoistureLevelBoundary - Limit of a state of the root zone moisture level property. The value of the limit is quantitative. To store this value, the irrig:boundaryValue data property is used.</rdfs:comment>
         <rdfs:label xml:lang="en">Root Zone Moisture Level Boundary</rdfs:label>
-        <skos:example xml:lang="en">10 cbar is the value of the Tension_veryHigh Boundary that distinguish the Saturated State from the VeryHigh State of the RootZoneMoistureLevel Property.</skos:example>
+        <skos:example xml:lang="en">10 cbar is the value of the very high tension boundary that distinguishes the saturated state from the very high state of the RootZoneMoistureLevel property.</skos:example>
     </owl:Class>
     
 
@@ -560,9 +562,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Deduction"/>
-        <rdfs:comment xml:lang="en">RootZoneMoistureLevelDeduction - a defined class represents act of carrying out an (Observation) Procedure to estimate a State of the irrig:ObservableProperty_rootZone_moistureLevel of the irrig:FeatureOfInterest_rootZone. The Observation may be performed by an inference engine. Links to a State to describe what the result is. Links to a TemporalEntity to indicate when the result is valid and for how many time.</rdfs:comment>
+        <rdfs:comment xml:lang="en">RootZoneMoistureLevelDeduction - A defined class that represents the act of carrying out a procedure to estimate the state of the moisture level property for the root zone entity. The moisture level property is represented by the individual irrig:observableProperty_rootZone_moistureLevel. The root zone entity is represented by the individual irrig:featureOfInterest_rootZone. Two necessary and sufficient conditions are defined: (1) All instances of this class are linked to the individual irrig:observableProperty_rootZone_moistureLevel} via the sosa:observedProperty object property; (2) All instances of this class are linked to the individual irrig:featureOfInterest_rootZone via the sosa:hasFeatureOfInterest object property. Additionally, each instance of this class is linked to an instance of the class irrig:RootZoneMoistureLevelState by the caso:hasResultState object property; is linked to an instance of the class irrig:RootZoneDailyAverageMoistureObservation by the prov:wasInformedBy object property; and is linked to a sensor to describe the agent that made the deduction.</rdfs:comment>
         <rdfs:label xml:lang="en">Root Zone Moisture Level Deduction</rdfs:label>
-        <skos:example xml:lang="en">A RootZoneMoistureLevelDeduction that made by the Software_agent.</skos:example>
+        <skos:example xml:lang="en">A RootZoneMoistureLevelDeduction that made by an inference engine based on observations from an aggregator.</skos:example>
     </owl:Class>
     
 
@@ -602,9 +604,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#State"/>
-        <rdfs:comment xml:lang="en">RootZoneMoistureLevelState - A qualitative value of the RootZoneMoistureLevel Property which changes over time, summarizing a set of information about that Property. To evaluate the State of the Property some Boundaries are defined.</rdfs:comment>
+        <rdfs:comment xml:lang="en">RootZoneMoistureLevelState - Qualitative value of the root zone moisture level property, which changes over time, summarizing a set of information about that property. To evaluate the state of the property, some boundaries need to be defined.</rdfs:comment>
         <rdfs:label xml:lang="en">Root Zone Moisture Level State</rdfs:label>
-        <skos:example xml:lang="en">The State Saturated of the RootZoneMoistureLevel Property represents a fact that the moisture in rootzone is saturated in water.</skos:example>
+        <skos:example xml:lang="en">The saturated state of the RootZoneMoistureLevel Property represents a fact that the moisture in the root zone is saturated with water.</skos:example>
     </owl:Class>
     
 
@@ -628,8 +630,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">SleepingDurationObservation - a defined class that represents act of carrying out an (Observation) Procedure to calculate the number of sleeping days before the next irrigation.</rdfs:comment>
+        <rdfs:comment xml:lang="en">SleepingDurationObservation - A defined class that represents the act of carrying out a procedure (observation) to calculate the number of sleeping days of the duration property for the sleeping entity. Sleeping days are the number of days that the system needs to wait until the next turn of doing an action. The duration property is represented by the individual irrig:observableProperty_sleepingDuration. The sleeping entity is represented by the individual irrig:featureOfInterest_sleeping. Two necessary and sufficient conditions are defined: (1) All instances of this class are linked to the individual irrig:observableProperty_sleepingDuration via the sosa:observedProperty object property; (2) All instances of this class are linked to the individual irrig:featureOfInterest_sleeping via the sosa:hasFeatureOfInterest object property. Additionally, each instance of this class is linked to a sensor to describe the agent that made the observation.</rdfs:comment>
         <rdfs:label>Sleeping Duration Observation</rdfs:label>
+        <skos:example xml:lang="en">A sleeping duration for the next irrigation is eight days.</skos:example>
     </owl:Class>
     
 
@@ -653,9 +656,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">Soil30cmDepthDailyAverageMoistureObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_soil30cmDepth_dailyAverageMoisture of the irrig:FeatureOfInterest_soil30cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_soil30cmDepth_dailyAverageMoisture to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_soil30cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Soil30cmDepthDailyAverageMoistureObservation - A defined class that represents the act of carrying out a procedure (observation) to estimate the value of the daily average moisture property for the soil at 30 cm depth entity. The daily average moisture property is represented by the individual irrig:observableProperty_soil30cmDepth_dailyAverageMoisture. The soil at 30 cm depth entity is represented by the individual irrig:featureOfInterest_soil30cmDepth. Two necessary and sufficient conditions are defined: (1) All instances of this class are linked to the individual irrig:observableProperty_soil30cmDepth_dailyAverageMoisture via the sosa:observedProperty object property; (2) All instances of this class are linked to the individual irrig:featureOfInterest_soil30cmDepth via the sosa:hasFeatureOfInterest object property. Additionally, each instance of this class is linked to a sensor to describe the agent that made the observation.</rdfs:comment>
         <rdfs:label xml:lang="en">Soil 30cm Depth Daily Average Moisture Observation</rdfs:label>
-        <skos:example xml:lang="en">A Soil30cmDepthDailyAverageMoistureObservation is computed by the SoftwareAgent Sensor.</skos:example>
+        <skos:example xml:lang="en">A Soil30cmDepthDailyAverageMoistureObservation is computed by an aggregator.</skos:example>
     </owl:Class>
     
 
@@ -679,9 +682,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">Soil30cmDepthDailyAverageMoistureObservation - a defined class represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_soil30cmDepth_dailyMoisture of the  irrig:FeatureOfInterest_soil30cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the  irrig:ObservableProperty_soil30cmDepth_dailyMoisture to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_soil30cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Soil30cmDepthDailyAverageMoistureObservation - A defined class that represents the act of carrying out a procedure (observation) to estimate the value of the moisture property for the soil at 30 cm depth entity. The daily average moisture property is represented by the individual irrig:observableProperty_soil30cmDepth_moisture. The soil at 30 cm depth entity is represented by the individual irrig:featureOfInterest_soil30cmDepth. Two necessary and sufficient conditions are defined: (1) All instances of this class are linked to the individual irrig:observableProperty_soil30cmDepth_moisture via the sosa:observedProperty object property; (2) All instances of this class are linked to the individual irrig:featureOfInterest_soil30cmDepth via the sosa:hasFeatureOfInterest object property. Additionally, each instance of this class is linked to a sensor to describe the agent that made the observation.</rdfs:comment>
         <rdfs:label xml:lang="en">Soil 30cm Depth Moisture Observation</rdfs:label>
-        <skos:example xml:lang="en">A Soil30cmDepthMoistureObservation is made by the SoilTensiometer_01 Sensor placed at 30 cm depth in the soil.</skos:example>
+        <skos:example xml:lang="en">A Soil30cmDepthMoistureObservation is made by a tensiometer placed at 30 cm depth in the soil.</skos:example>
     </owl:Class>
     
 
@@ -705,9 +708,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">Soil60cmDepthDailyAverageMoistureObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_soil60cmDepth_dailyAverageMoisture of the irrig:FeatureOfInterest_soil60cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_soil60cmDepth_dailyAverageMoisture to describe what the result is an estimate of, and to the  irrig:FeatureOfInterest_soil60cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Soil60cmDepthDailyAverageMoistureObservation - A defined class that represents the act of carrying out a procedure (observation) to estimate the value of the daily average moisture property for the soil at 60 cm depth entity. The daily average moisture property is represented by the individual irrig:observableProperty_soil60cmDepth_dailyAverageMoisture. The soil at 60 cm depth entity is represented by the individual irrig:featureOfInterest_soil60cmDepth. Two necessary and sufficient conditions are defined: (1) All instances of this class are linked to the individual irrig:observableProperty_soil60cmDepth_dailyAverageMoisture via the sosa:observedProperty object property; (2) All instances of this class are linked to the individual irrig:featureOfInterest_soil60cmDepth via the sosa:hasFeatureOfInterest object property. Additionally, each instance of this class is linked to a sensor to describe the agent that made the observation.</rdfs:comment>
         <rdfs:label xml:lang="en">Soil 60cm Depth Daily Average Moisture Observation</rdfs:label>
-        <skos:example xml:lang="en">A Soil60cmDepthAverageDailyMoistureObservation ismade by the SoftwareAgent Sensor.</skos:example>
+        <skos:example xml:lang="en">A Soil60cmDepthAverageDailyMoistureObservation is made by an aggregator.</skos:example>
     </owl:Class>
     
 
@@ -731,9 +734,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/def/caso#Observation"/>
-        <rdfs:comment xml:lang="en">Soil60cmDepthDailyAverageMoistureObservation - a defined class that represents act of carrying out an (Observation) Procedure to estimate or calculate a value of the irrig:ObservableProperty_soil60cmDepth_dailyAverageMoisture of the irrig:FeatureOfInterest_soil60cmDepth. This act can be performed during the context acquisition or context processing phases of a context aware system. Links to a Sensor to describe what made the Observation and how; links to the irrig:ObservableProperty_soil60cmDepth_dailyAverageMoisture to describe what the result is an estimate of, and to the irrig:FeatureOfInterest_soil60cmDepth. When the act is made during the context processing phase the entry values of the procedure should be linked to the Observation by the wasDerivedFrom property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Soil60cmDepthDailyAverageMoistureObservation - A defined class that represents the act of carrying out a procedure (observation) to estimate the value of the moisture property for the soil at 60 cm depth entity. The daily average moisture property is represented by the individual irrig:observableProperty_soil60cmDepth_moisture. The soil at 60 cm depth entity is represented by the individual irrig:featureOfInterest_soil60cmDepth. Two necessary and sufficient conditions are defined: (1) All instances of this class are linked to the individual irrig:observableProperty_soil60cmDepth_moisture via the sosa:observedProperty object property; (2) All instances of this class are linked to the individual irrig:featureOfInterest_soil60cmDepth via the sosa:hasFeatureOfInterest object property. Additionally, each instance of this class is linked to a sensor to describe the agent that made the observation.</rdfs:comment>
         <rdfs:label xml:lang="en">Soil 60cm Depth Moisture Observation</rdfs:label>
-        <skos:example xml:lang="en">A Soil60cmDepthMoistureObservation is made by the Tensiometer Sensor placed at 60 cm depth in the soil.</skos:example>
+        <skos:example xml:lang="en">A Soil60cmDepthMoistureObservation is made by a tensiometer placed at 60 cm depth in the soil.</skos:example>
     </owl:Class>
     
 
@@ -742,9 +745,9 @@
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#StressProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <rdfs:comment xml:lang="en">StressProperty - Stress aspect of an entity representing the pressure inside the entity. The Stress aspect of the entity is intrinsic to and cannot exist without the entity. The Stress quality values should be expressed by a qualitative value such as States or by a quantitative value.</rdfs:comment>
+        <rdfs:comment xml:lang="en">StressProperty - Stress aspect of an entity, that is, the pressure inside the entity. The stress aspect of an entity is intrinsic and cannot exist without the entity. The stress quality should be expressed by a qualitative value such as a state or by a quantitative value.</rdfs:comment>
         <rdfs:label xml:lang="en">Stress Property</rdfs:label>
-        <skos:example xml:lang="en">CropWaterNeed is a StressProperty representing the stress inside the plant when it needs extra water. It corresponds to the drought stress.</skos:example>
+        <skos:example xml:lang="en">CropWaterNeed is a StressProperty representing the stress inside the plant when it needs extra water.</skos:example>
     </owl:Class>
     
 
@@ -754,7 +757,8 @@
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#TemperatureProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
         <rdfs:label>Temperature Property</rdfs:label>
-        <rdfs:label>TemperatureProperty - Temperature aspect of an entity representing the measure of how hot or cold of the entity.</rdfs:label>
+        <rdfs:label>TemperatureProperty - Temperature aspect of an entity. The temperature aspect of an entity is intrinsic and cannot exist without the entity. The temperature quality should be expressed by a qualitative value such as a state or by a quantitative value.</rdfs:label>
+        <skos:example xml:lang="en">AirTemperature is a TemperatureProperty representing the temperature value of the air.</skos:example>
     </owl:Class>
     
 
@@ -814,7 +818,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#actuator_wateringValve_1">
         <rdf:type rdf:resource="https://w3id.org/def/saref4agri#WateringValve"/>
-        <rdfs:comment>Actuator_wateringValve_1 - an actuator controls the valve of a watering device n° 01. The actuator indirectly affects soil moisture.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Actuator_wateringValve_1 - An actuator n°1 that controls the valve of water.</rdfs:comment>
         <rdfs:label>Actuator Watering  Valve 01 Soil Moisture</rdfs:label>
     </owl:NamedIndividual>
     
@@ -860,7 +864,7 @@ In the example of Arvalis&apos; dataset, the value of boundary rain quantity max
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#boundary_rain_quantity_minimum">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RainIntensityBoundary"/>
-        <rdfs:comment>Boundary_rain_quantity_maximum - a boundary line represents the minimal value that rain quantity cannot surpass.
+        <rdfs:comment>Boundary_rain_quantity_maximum - a boundary line represents the minimal value that rain quantity cannot below.
 
 In the example of Arvalis&apos; dataset, the value of boundary rain quantity minimum is 0mm.</rdfs:comment>
         <rdfs:label>Boundary Rain Quantity Minimum</rdfs:label>
@@ -920,7 +924,7 @@ In the example of Arvalis&apos; dataset, the value of boundary rootzone tension 
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/def/irrig#boundary_rootZone_tension_minimum">
         <rdf:type rdf:resource="http://www.w3id.org/def/irrig#RootZoneMoistureLevelBoundary"/>
-        <rdfs:comment>Boundary_rootZone_moistureLevel_minimum - a boundary line represents the minimal value that RootZone Tension cannot surpass.
+        <rdfs:comment>Boundary_rootZone_moistureLevel_minimum - a boundary line represents the minimal value that RootZone Tension cannot below.
 
 In the example of Arvalis&apos; dataset, the value of boundary rootzone tension minimum is 0 cbar or 0 mbar.</rdfs:comment>
         <rdfs:label>Boundary RootZone Tension Minimum</rdfs:label>
