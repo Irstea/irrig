@@ -756,8 +756,8 @@
 
     <owl:Class rdf:about="http://www.w3id.org/def/irrig#TemperatureProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:comment>TemperatureProperty - Temperature aspect of an entity. The temperature aspect of an entity is intrinsic and cannot exist without the entity. The temperature quality should be expressed by a qualitative value such as a state or by a quantitative value.</rdfs:comment>
         <rdfs:label>Temperature Property</rdfs:label>
-        <rdfs:label>TemperatureProperty - Temperature aspect of an entity. The temperature aspect of an entity is intrinsic and cannot exist without the entity. The temperature quality should be expressed by a qualitative value such as a state or by a quantitative value.</rdfs:label>
         <skos:example xml:lang="en">AirTemperature is a TemperatureProperty representing the temperature value of the air.</skos:example>
     </owl:Class>
     
