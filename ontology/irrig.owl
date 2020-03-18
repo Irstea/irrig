@@ -23,18 +23,20 @@
     <owl:Ontology rdf:about="http://www.w3id.org/def/irrig">
         <owl:versionIRI rdf:resource="http://www.w3id.org/def/irrig/201912"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/Irstea/caso/master/ontology/caso.owl"/>
-        <terms:creator rdf:resource="https://orcid.org/0000-0003-3587-0367"/>
         <vann:preferredNamespacePrefix>irrig</vann:preferredNamespacePrefix>
+        <terms:creator rdf:resource="https://orcid.org/0000-0003-3587-0367"/>
         <vann:preferredNamespaceUri>https://w3id.org/def/irrig#</vann:preferredNamespaceUri>
-        <terms:contributor>https://orcid.org/0000-0002-0421-452X</terms:contributor>
         <owl:versionInfo>1.2.0</owl:versionInfo>
-        <dc:description xml:lang="en">IRRIG is an Irrigation Ontology for experimentation in TSCF, Irstea Clermont-Fd.</dc:description>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0002-7011-4535"/>
         <dc:title xml:lang="en">Irrigation ontology for experimentation in TSCF</dc:title>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-7011-4535"/>
+        <dc:publisher rdf:resource="https://www6.ara.inrae.fr/tscf/"/>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0421-452X"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-3517-0945"/>
+        <dc:description xml:lang="en">IRRIG is an ontology specified for modeling data from a decision support system (DSS) experimented in TSCF, INRAE center Clermont Ferrand. The DSS automatize the IRRINOV©, a manual irrigation method build by Arvalis and their partners. 
+
+The website of TSCF: https://www6.ara.inrae.fr/tscf/</dc:description>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-3076-5499"/>
-        <dc:publisher rdf:resource="https://www.irstea.fr/en/research/research-units/tscf"/>
     </owl:Ontology>
     
 
