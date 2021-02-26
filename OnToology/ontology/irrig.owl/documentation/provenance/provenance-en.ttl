@@ -1,0 +1,18 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<http://www.w3id.org/def/irrig/201912> a prov:Entity;
+	 dc:title "Irrigation ontology for experimentation in TSCF";
+	 prov:wasAttributedTo <https://orcid.org/0000-0002-3076-5499>;
+	 dc:creator <https://orcid.org/0000-0002-3076-5499>;
+	 prov:wasAttributedTo <https://orcid.org/0000-0002-3517-0945>;
+	 dc:creator <https://orcid.org/0000-0002-3517-0945>;
+	 prov:wasAttributedTo <https://orcid.org/0000-0003-3587-0367>;
+	 dc:creator <https://orcid.org/0000-0003-3587-0367>;
+	 prov:wasAttributedTo <https://orcid.org/0000-0002-0421-452X>;
+	 dc:contributor <https://orcid.org/0000-0002-0421-452X>;
+	 prov:wasAttributedTo <https://orcid.org/0000-0002-7011-4535>;
+	 dc:contributor <https://orcid.org/0000-0002-7011-4535>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.
