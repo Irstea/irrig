@@ -24,12 +24,11 @@
         <owl:versionIRI rdf:resource="http://www.w3id.org/def/irrig/201912"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/Irstea/caso/master/ontology/caso.owl"/>
         <vann:preferredNamespacePrefix>irrig</vann:preferredNamespacePrefix>
-	<vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3id.org/def/irrig#</vann:preferredNamespaceUri>
+				<vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3id.org/def/irrig#</vann:preferredNamespaceUri>
         <owl:versionInfo>1.2.0</owl:versionInfo>
         <dc:title xml:lang="en">Irrigation ontology for experimentation in TSCF</dc:title>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <dc:publisher rdf:resource="https://www6.clermont.inrae.fr/tscf"/>
-        <dc:title xml:lang="en">Context Aware System Observation Ontology</dc:title>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-7011-4535"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0421-452X"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-3076-5499"/>
